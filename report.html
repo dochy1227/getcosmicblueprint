@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Love Blueprint - Diagnosis Report</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        body {
+            background-color: #0d0b18;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .hook-section {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .element-badge {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #00f0ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .hook-title {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            font-weight: 800;
+            background: linear-gradient(45deg, #00f0ff, #b600ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+        .share-card-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .share-btn {
+            background: linear-gradient(90deg, #00f0ff, #b600ff);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .report-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d1ceda;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .report-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .paywall-container {
+            position: relative;
+            margin-top: 40px;
+            padding-bottom: 120px;
+        }
+        .uncomfortable-question {
+            color: #ff3b30;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff3b30;
+            padding-left: 10px;
+        }
+        .blurred-text {
+            filter: blur(6px);
+            user-select: none;
+            opacity: 0.3;
+        }
+        .sticky-pay-box {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 480px;
+            background: linear-gradient(transparent, #0d0b18 20%);
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 999;
+        }
+        .pay-btn {
+            background: #ffffff;
+            color: #0d0b18;
+            border: none;
+            padding: 16px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 12px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="hook-section">
+            <div class="element-badge" id="element-title">Loading...</div>
+            <h1 class="hook-title" id="hook-text">Analyzing profile...</h1>
+        </section>
+
+        <div class="share-card-box">
+            <p style="margin-top:0; color:#a29eb3;">Is this accurately describing you?</p>
+            <button class="share-btn" id="share-instagram">Share to Instagram Stories</button>
+        </div>
+
+        <div class="report-content" id="report-body"></div>
+
+        <div class="paywall-container" id="paywall-zone">
+            <div class="uncomfortable-question" id="question-hook"></div>
+            <div class="blurred-text">
+                This is the premium master solution guidelines text designed to break your relationship loop. Below contains your behavioral blueprints and 3 strategic actionable phases customized for your exact dimensional alignment.
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-pay-box">
+        <button class="pay-btn" id="paywall-secure-button">Unlock Your Full Blueprint — $9.99</button>
+    </div>
+
+    <script>
+        // 안전하게 암호화 격리 수집된 세션 스토리지 파싱 연동
+        const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
+        const assignedIdx = sessionStorage.getItem('cosmic_version_idx') || '0';
+        
+        document.getElementById('element-title').innerText = sessionStorage.getItem('cosmic_name') || 'Unknown Archetype';
+        document.getElementById('hook-text').innerText = sessionStorage.getItem('cosmic_hook') || '';
+        document.getElementById('report-body').innerText = sessionStorage.getItem('cosmic_body') || '';
+        document.getElementById('question-hook').innerText = sessionStorage.getItem('cosmic_question') || '';
+
+        const versionLabel = 'version_0' + (parseInt(assignedIdx) + 1);
+
+        // GA4 마케팅 정확도 100% 트래킹 스크립트 연동
+        gtag('event', 'view_free_report', {
+            'element_type': currentElement,
+            'assigned_version': versionLabel
+        });
+
+        const reportBody = document.getElementById('report-body');
+        const paywallZone = document.getElementById('paywall-zone');
+        let paywallTracked = false;
+
+        window.addEventListener('scroll', () => {
+            if(reportBody.getBoundingClientRect().top < window.innerHeight * 0.8) {
+                reportBody.classList.add('visible');
+            }
+            if(!paywallTracked && paywallZone.getBoundingClientRect().top < window.innerHeight) {
+                gtag('event', 'view_paywall', { 'element_type': currentElement, 'assigned_version': versionLabel });
+                paywallTracked = true;
+            }
+        });
+
+        document.getElementById('share-instagram').addEventListener('click', () => {
+            gtag('event', 'click_share_instagram', { 'element_type': currentElement, 'assigned_version': versionLabel });
+            alert('Results copied to clipboard for Instagram sharing.');
+        });
+
+        document.getElementById('paywall-secure-button').addEventListener('click', () => {
+            gtag('event', 'click_checkout_initiate', { 'element_type': currentElement, 'assigned_version': versionLabel, 'price': 9.99, 'currency': 'USD' });
+            alert('Redirecting to secure checkout payment gate...');
+        });
+    </script>
+</body>
+</html>

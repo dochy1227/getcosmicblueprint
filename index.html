@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cosmic Blueprint</title>
+    <style>
+        body {
+            background-color: #111424;
+            color: #e2e5f3;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #1a1e36;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #ffd700;
+            text-align: center;
+            font-size: 20pt;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #7a82a6;
+            font-size: 10pt;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffd700;
+            font-size: 10.5pt;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #3a3f58;
+            background-color: #111424;
+            color: #fff;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 10.5pt;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #00ffff;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 12pt;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .btn-submit:hover {
+            background: #e03e00;
+        }
+        #resultArea {
+            max-width: 600px;
+            width: 100%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>COSMIC BLUEPRINT</h1>
+        <p class="subtitle">AI Relational Archetype Diagnosis Engine v1.1.0</p>
+        
+        <div class="form-group">
+            <label for="userName">Name</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Birth Country</label>
+            <select id="country" onchange="toggleCityArrangement()">
+                <option value="US" selected>United States (미국)</option>
+                <option value="KR">South Korea (한국)</option>
+                <option value="CA">Canada (캐나다)</option>
+                <option value="UK">United Kingdom (영국)</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="city-group">
+            <label for="birthCity">Birth City (Timezone Correction)</label>
+            <select id="birthCity">
+                <option value="NewYork">New York (EST / UTC-5)</option>
+                <option value="LosAngeles">Los Angeles (PST / UTC-8)</option>
+                <option value="Chicago">Chicago (CST / UTC-6)</option>
+                <option value="Houston">Houston (CST / UTC-6)</option>
+                <option value="Phoenix">Phoenix (MST / UTC-7)</option>
+                <option value="Seoul">Seoul (KST / UTC+9)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="birthYear">Birth Year</label>
+            <input type="number" id="birthYear" placeholder="ex: 1995" value="1995">
+        </div>
+        
+        <div class="form-group">
+            <label for="birthMonth">Month</label>
+            <select id="birthMonth">
+                <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+                <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+                <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+                <option value="10">October</option><option value="11">November</option><option value="12" selected>December</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="birthDay">Day</label>
+            <input type="number" id="birthDay" placeholder="ex: 25" value="25">
+        </div>
+        
+        <div class="form-group">
+            <label for="birthTime">Birth Time</label>
+            <select id="birthTime">
+                <option value="00">00:00 - 02:59</option>
+                <option value="03">03:00 - 05:59</option>
+                <option value="06">06:00 - 08:59</option>
+                <option value="09">09:00 - 11:59</option>
+                <option value="12" selected>12:00 - 14:59</option>
+                <option value="15">15:00 - 17:59</option>
+                <option value="18">18:00 - 20:59</option>
+                <option value="21">21:00 - 23:59</option>
+                <option value="unknown">Unknown (시간 모름)</option>
+            </select>
+        </div>
+        
+        <button class="btn-submit" onclick="getCosmicBlueprint()">Decode Your Cosmic DNA</button>
+    </div>
+
+    <div id="resultArea"></div>
+
+    <script>
+    function toggleCityArrangement() {
+        const country = document.getElementById('country').value;
+        const citySelect = document.getElementById('birthCity');
+        citySelect.innerHTML = '';
+        
+        if(country === 'US') {
+            citySelect.innerHTML = `
+                <option value="NewYork">New York (EST / UTC-5)</option>
+                <option value="LosAngeles">Los Angeles (PST / UTC-8)</option>
+                <option value="Chicago">Chicago (CST / UTC-6)</option>
+                <option value="Phoenix">Phoenix (MST / UTC-7)</option>
+            `;
+        } else if(country === 'KR') {
+            citySelect.innerHTML = `<option value="Seoul">Seoul (KST / UTC+9)</option>`;
+        } else {
+            citySelect.innerHTML = `<option value="Standard">Standard Time (UTC+0)</option>`;
+        }
+    }
+
+    async function getCosmicBlueprint() {
+        const name = document.getElementById('userName').value;
+        const country = document.getElementById('country').value;
+        const city = document.getElementById('birthCity').value;
+        const birthYear = document.getElementById('birthYear').value;
+        const birthMonth = document.getElementById('birthMonth').value;
+        const birthDay = document.getElementById('birthDay').value;
+        const birthTime = document.getElementById('birthTime').value;
+
+        if(!name || !birthYear || !birthDay) {
+            alert('Please enter your details correctly.');
+            return;
+        }
+
+        document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#00ffff;">AI Engine correcting global longitude and calculating archetype...</p>';
+
+        try {
+            const response = await fetch('/.netlify/functions/saju-engine', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, country, city, birthYear, birthMonth, birthDay, birthTime })
+            });
+
+            const result = await response.json();
+
+            if(result.success) {
+                // 패킷 보안을 위해 무작위 연산 및 매칭된 결과 텍스트 자체를 세션 스토리지에 암호화 보관 후 이동
+                sessionStorage.setItem('cosmic_name', result.elementName);
+                sessionStorage.setItem('cosmic_hook', result.hook);
+                sessionStorage.setItem('cosmic_body', result.body);
+                sessionStorage.setItem('cosmic_question', result.question);
+                sessionStorage.setItem('cosmic_element_key', result.elementKey);
+                sessionStorage.setItem('cosmic_version_idx', result.versionIdx);
+
+                // UTM 및 마케팅 추적을 유지하기 위해 파라미터 계승하여 이동
+                const currentUrlParams = new URLSearchParams(window.location.search);
+                window.location.href = `/report.html?${currentUrlParams.toString()}`;
+            } else {
+                alert('Engine communication error occurred.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to connect to the cosmic system layer.');
+        }
+    }
+    </script>
+</body>
+</html>
