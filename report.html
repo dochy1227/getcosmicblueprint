@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Love Blueprint - Diagnosis Report</title>
 
+    <!-- Google 태그 (gtag.js) - 2026.06.20 추가, index.html과 동일 ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5PQGM126Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -91,7 +92,7 @@
         .paywall-container {
             position: relative;
             margin-top: 40px;
-            padding-bottom: 120px;
+            padding-bottom: 40px;
         }
         .uncomfortable-question {
             color: #ff3b30;
@@ -106,6 +107,33 @@
             filter: blur(6px);
             user-select: none;
             opacity: 0.3;
+        }
+        .site-footer {
+            text-align: center;
+            color: #5b5870;
+            font-size: 8pt;
+            padding-bottom: 160px;
+        }
+        .site-footer a {
+            color: #8a86a8;
+            text-decoration: none;
+            margin: 0 6px;
+        }
+        .site-footer a:hover {
+            color: #00f0ff;
+        }
+        .footer-divider {
+            color: #3a3650;
+        }
+        .escrow-mark {
+            margin-top: 14px;
+        }
+        .escrow-mark img {
+            opacity: 0.8;
+        }
+        .footer-copyright {
+            margin-top: 14px;
+            color: #3a3650;
         }
         .sticky-pay-box {
             position: fixed;
@@ -153,6 +181,36 @@
                 This is the premium master solution guidelines text designed to break your relationship loop. Below contains your behavioral blueprints and 3 strategic actionable phases customized for your exact dimensional alignment.
             </div>
         </div>
+
+        <footer class="site-footer">
+            <div>
+                <a href="/terms.html">Terms of Service</a><span class="footer-divider">·</span><a href="/privacy.html">Privacy Policy</a>
+            </div>
+
+            <!-- KB에스크로 이체 인증마크 적용 시작 -->
+            <script>
+            function onPopKBAuthMark()
+            {
+            window.open('','KB_AUTHMARK','height=604, width=648, status=yes, toolbar=no, menubar=no, location=no');
+            document.KB_AUTHMARK_FORM.action='https://okbfex.kbstar.com/quics';
+            document.KB_AUTHMARK_FORM.target='KB_AUTHMARK';
+            document.KB_AUTHMARK_FORM.submit();
+            }
+            </script>
+            <form name="KB_AUTHMARK_FORM" method="get">
+            <input type="hidden" name="page" value="C021590"/>
+            <input type="hidden" name="cc" value="b034066:b035526"/>
+            <input type="hidden" name="mHValue" value='965812af2d8e70591fdc7c4e0d2ae5dd'/>
+            </form>
+            <div class="escrow-mark">
+                <a href="#" onclick="javascript:onPopKBAuthMark();return false;">
+                <img src="https://img1.kbstar.com/img/escrow/escrowcmark.gif" border="0"/>
+                </a>
+            </div>
+            <!-- KB에스크로 이체 인증마크 적용 종료 -->
+
+            <p class="footer-copyright">&copy; 2026 Cosmic Blueprint</p>
+        </footer>
     </div>
 
     <div class="sticky-pay-box">
