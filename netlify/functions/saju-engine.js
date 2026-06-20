@@ -108,363 +108,465 @@ function resolveHourMinute(birthTimeCode) {
 // ============================================================
 // 콘텐츠 DB — 10원소 V1~V5 (무료 리포트 Share Card 시리즈)
 // ============================================================
-// 각 버전은 "국면(phase) 변주" 방식: 같은 원소의 다른 시점/다른 갈등 각도.
+// 2026.06.20 전면 교체: 19~21번 파일(외향2+내향2+혼합1 구조) 최종 텍스트로 동기화.
+// 각 version에 group 태그(outgoing/introvert/mixed) 추가 — branch 매칭에 사용됨.
 // hook = Share Card 카피, body = 보조 설명, question = 결제 유도 질문.
 // ============================================================
+
+// ------------------------------------------------------------
+// 매칭 모듈 — branch(지지) 기반 외향/내향/혼합 그룹 선택
+// 출처: 00_MASTER_BRIEFING.md "60개 일주 분류" + 16번 합성성향표
+// ★검증완료 8개(갑인,갑오,갑자,병자,무진,경자,신유,계해), 나머지는 1차 추정.
+// 미분류 일주는 해시 기반 결정적 50/50 폴백.
+// ------------------------------------------------------------
+
+const GROUP_MAP = {
+  "갑인": "outgoing", "갑오": "outgoing", "갑자": "introvert",
+  "을사": "outgoing", "을유": "outgoing", "을묘": "introvert", "을축": "introvert",
+  "병인": "outgoing", "병자": "introvert",
+  "정사": "outgoing", "정유": "outgoing", "정묘": "introvert", "정해": "introvert",
+  "무신": "outgoing", "무인": "outgoing", "무오": "outgoing", "무술": "outgoing",
+  "무진": "introvert", "무자": "introvert",
+  "기미": "outgoing", "기사": "outgoing", "기묘": "outgoing",
+  "기축": "introvert", "기유": "introvert", "기해": "introvert",
+  "경자": "outgoing", "경인": "outgoing", "경진": "outgoing", "경오": "outgoing", "경신": "outgoing",
+  "신유": "outgoing", "신묘": "outgoing",
+  "신해": "introvert", "신축": "introvert", "신미": "introvert",
+  "임오": "outgoing", "임인": "outgoing", "임신": "outgoing",
+  "임술": "introvert", "임자": "introvert", "임진": "introvert",
+  "계해": "outgoing", "계묘": "outgoing",
+  "계축": "introvert", "계미": "introvert", "계유": "introvert"
+};
+
+function hashFallbackGroup(gapjaHangul) {
+  let sum = 0;
+  for (let i = 0; i < gapjaHangul.length; i++) sum += gapjaHangul.charCodeAt(i);
+  return sum % 2 === 0 ? "outgoing" : "introvert";
+}
+
+function getGroupForGapja(gapjaHangul) {
+  return GROUP_MAP[gapjaHangul] || hashFallbackGroup(gapjaHangul);
+}
+
+function selectCardForUser(targetArchetype, gapjaHangul) {
+  const versions = targetArchetype.versions;
+  const hasAnyGroupTag = versions.some(v => v.group);
+
+  if (!hasAnyGroupTag) {
+    const idx = Math.floor(Math.random() * versions.length);
+    return { selectedVersion: versions[idx], userGroup: null, poolSize: versions.length };
+  }
+
+  const userGroup = getGroupForGapja(gapjaHangul);
+  const pool = versions.filter(v => v.group === userGroup || v.group === "mixed");
+  const finalPool = pool.length > 0 ? pool : versions;
+  const idx = Math.floor(Math.random() * finalPool.length);
+
+  return { selectedVersion: finalPool[idx], userGroup, poolSize: finalPool.length };
+}
 
 const blueprintDb = {
   "갑목": {
     name: "甲木 · THE PIONEER",
     versions: [
       {
-        angle: "자존심 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I don't give up on people. I give up on people who give up on themselves.",
-        body: "You don't walk away easily. But you will not carry someone who has already put themselves down. That's not coldness — that's a line you learned to draw the hard way.",
-        question: "Where is the line between believing in someone and carrying them by yourself?"
+        body: "People say you're cold. They're wrong. You wait longer than anyone before you decide to let go. What that waiting costs you — nobody sees.",
+        question: "Why do you keep waiting — even when you already know the answer?"
       },
       {
-        angle: "리더십 각도",
-        hook: "The moment I feel like a passenger in my own relationship, I'm already halfway out the door.",
-        body: "You don't make a scene when it ends. The door doesn't slam — it just slowly, quietly closes. By the time anyone notices, you've already left in every way that matters.",
-        question: "How many relationships have ended quietly before they ended officially?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I don't wait to be chosen. I choose first.",
+        body: "When I want someone, I don't spend months wondering. I move first, make space, and see where it goes. What hurts isn't rejection. It's realizing I was the only one moving.",
+        question: "How long can you carry a relationship by yourself before you let go?"
       },
       {
-        angle: "자기고백 각도 (메인)",
-        hook: "My biggest flaw in love? I see what you could be so clearly, I forget to see who you actually are.",
-        body: "You are falling in love with a future that hasn't happened yet. The person in front of you and the person in your head are not always the same one.",
-        question: "How much of what you love in them is actually them?"
+        angle: "내향",
+        group: "introvert",
+        hook: "I don't hide my feelings. I hide who caused them.",
+        body: "When I really like someone, I become harder to read. The more I care, the more carefully I protect the evidence. Some people think I never wanted them. That was never the truth.",
+        question: "Why does being seen feel more dangerous than being alone?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I loved you through every version of you. You just never stayed long enough to love me back.",
-        body: "You were the foundation — and foundations don't get thanked. They just get stood on.",
-        question: "How many people have built their stability on top of yours?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I make quick decisions. Just not about you.",
+        body: "People think I know exactly what I want. Most of the time, they're right. But when my heart is involved, certainty suddenly takes much longer.",
+        question: "Why is the one thing you want the hardest thing to choose?"
       },
       {
-        angle: "자기선언 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I don't need to be chosen first. I need to be chosen consistently. Everything else is just noise.",
-        body: "The question was never whether someone wanted you. It was always whether they were serious enough to stay in the answer.",
-        question: "What would it feel like to be chosen the same way, every single day?"
-      }
+        body: "Being chosen first doesn't matter. Being chosen every day does. Your standard isn't high. It's just exact.",
+        question: "Have you ever been with someone who chose you — not just once, but every single day?"
+      },
     ]
   },
   "을목": {
     name: "乙木 · THE VINE",
     versions: [
       {
-        angle: "자기상실 각도",
-        hook: "I'm so good at becoming what you need me to be, I sometimes forget what I actually am.",
-        body: "Bending isn't the problem. Forgetting your original shape is.",
+        angle: "혼합",
+        group: "mixed",
+        hook: "I've been so busy becoming you that I forgot who I was.",
+        body: "You can adjust to anyone. You thought that was a strength. One day you were alone — and couldn't remember who you actually were.",
         question: "If no one needed anything from you right now, what shape would you actually take?"
       },
       {
-        angle: "관계중독 각도",
-        hook: "I don't stay because I'm weak. I stay because I can see exactly how good this could be — if they would just try.",
-        body: "You're not holding on to what's there. You're holding on to what's possible — and doing all the work to get there alone.",
-        question: "How much of this relationship are you carrying that they don't even know about?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I don't chase people. I chase what we could become.",
+        body: "I see potential long before anyone else does. So I stay longer and give more chances. Most of the time, I'm the only one building that future.",
+        question: "How many relationships survived only because you carried them?"
       },
       {
-        angle: "자기고백 각도 (메인)",
-        hook: "My love language is making myself smaller so you feel bigger. And I'm exhausted.",
-        body: "You didn't choose to shrink. It just kept working, so you kept doing it — until smaller became your default size.",
-        question: "When did you last take up the space you actually needed?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "Everyone feels chosen. I rarely feel chosen back.",
+        body: "Making people feel comfortable comes naturally to me. I know how to make space for almost anyone. The problem is, very few people ever make space for me.",
+        question: "Who knows how to care for you the way you care for them?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I have never once left a relationship without wondering if I gave up too soon. Even the ones that were destroying me.",
-        body: "Discomfort was never proof that you should leave. You were never taught that it could be.",
-        question: "What would you need to feel before you let yourself walk away?"
+        angle: "내향",
+        group: "introvert",
+        hook: "I lost myself so quietly, nobody noticed.",
+        body: "Every compromise felt small when it happened. I told myself it wasn't worth fighting over. One day I looked up and couldn't find myself anymore.",
+        question: "When did keeping the peace become more important than being yourself?"
       },
       {
-        angle: "자기선언 각도",
-        hook: "I used to think being easy to love meant making myself easy to be around. It took me too long to learn those are not the same thing.",
-        body: "Easy to be around gets you kept. Easy to love gets you chosen. You deserve the second one.",
-        question: "Who in your life loves you for what you give, versus who you actually are?"
-      }
+        angle: "내향",
+        group: "introvert",
+        hook: "I say 'it's okay' before I know how I feel.",
+        body: "I forgive quickly. I adapt quickly. Sometimes I do both before I've even felt the hurt.",
+        question: "What feelings never got the chance to speak?"
+      },
     ]
   },
   "병화": {
     name: "丙火 · THE SUN",
     versions: [
       {
-        angle: "에너지 소진 각도",
-        hook: "I light up every room I walk into. I just wish someone would notice when I start to dim.",
-        body: "You give your light out freely. The problem is no one's watching closely enough to see when it runs low.",
-        question: "Who actually notices when your energy changes — not just when it's gone?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I light up every room I walk into. I just test, every time, whether anyone notices when I stop.",
+        body: "You walk in and the room changes. Every time. What you actually do — without anyone noticing — is test whether they'd notice if you stopped. Most of the time, the test fails. And you keep lighting up anyway.",
+        question: "How many times have you tested whether someone would notice — before you stopped testing?"
       },
       {
-        angle: "관심중독 각도",
-        hook: "I don't need to be the center of attention. I need to know that if I disappeared, someone would actually notice.",
-        body: "It's not about being seen. It's about mattering enough that your absence would register.",
-        question: "If you went quiet for a week, who would actually reach out first?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I don't perform for attention. I perform to see who's actually watching.",
+        body: "You're not performing for the applause. You're performing to find out who's actually paying attention. That's a different game. And you've been playing it for years.",
+        question: "If you stopped performing tomorrow — who would actually notice the silence?"
       },
       {
-        angle: "자기고백 각도 (메인)",
-        hook: "My greatest fear in love isn't being left. It's being truly known — and still not being enough.",
-        body: "Being bright is easy. Being known, fully, with the dim parts showing — that's the part you've never tested.",
-        question: "Has anyone ever seen the version of you that isn't lit up?"
+        angle: "내향",
+        group: "introvert",
+        hook: "I let people get close enough to know me. Then I watch what they do with the parts that aren't bright.",
+        body: "You let people in — just enough to see the parts that don't shine. Then you watch closely. What do they do with that? Most people flinch. You remember who didn't.",
+        question: "What did the last person do — when they finally saw the part of you that wasn't lit up?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I give and give and give — and then one day I stop. Not because I ran out of love. Because I ran out of reasons to believe it was going anywhere.",
-        body: "The stop never looks dramatic from the outside. By the time it happens, you've already done the math in private, more than once.",
-        question: "How long do you usually keep giving after you've stopped believing it'll be returned?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I gave and gave and then I tested the silence — to see if anyone would fill it.",
+        body: "You gave until you weren't sure it was landing anywhere. So you stopped — just to test the silence. What filled it told you everything.",
+        question: "What did the silence tell you — the last time you tested it?"
       },
       {
-        angle: "자기선언 각도",
-        hook: "I am not hard to love. I am hard to love halfway. All or nothing isn't a flaw. It's just how I'm built.",
-        body: "Half-love asks you to dim yourself to match it. You were never the one with the problem.",
-        question: "What does it cost you to stay in something that only loves you halfway?"
-      }
+        angle: "내향",
+        group: "introvert",
+        hook: "I don't ask for all or nothing. I just stop showing up the moment it becomes halfway.",
+        body: "You don't demand everything. You just quietly stop showing up the moment it becomes halfway. No warning. No negotiation. Just absence.",
+        question: "How many times have you walked away from \"halfway\" without ever explaining why?"
+      },
     ]
   },
   "정화": {
     name: "丁火 · THE CANDLE",
     versions: [
       {
-        angle: "선택적 헌신 각도",
+        angle: "혼합",
+        group: "mixed",
         hook: "I don't open easily. But when I do — I burn for you completely. That's not romantic. That's dangerous.",
-        body: "You don't do anything halfway once you've decided someone is worth it. The risk isn't loving too little. It's loving with nothing held back.",
+        body: "You don't open easily. But when you do — you give everything. The other person rarely understands what that means.",
         question: "What happens to you when that kind of devotion isn't met the same way?"
       },
       {
-        angle: "조용한 소진 각도",
-        hook: "I never ask for much. I just notice, very quietly, every time you don't give it.",
-        body: "You keep a private ledger. No one sees the entries. You just know exactly what's owed.",
-        question: "How long have you been keeping score without ever saying so out loud?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "Everyone knew I cared. Just not how much.",
+        body: "I don't have trouble showing affection. I say nice things, stay close, and make people feel wanted. The problem is, nobody notices when it stops being casual for me.",
+        question: "When did caring become something deeper than you admitted?"
       },
       {
-        angle: "자기고백 각도 (메인)",
+        angle: "내향",
+        group: "introvert",
         hook: "I have loved people so quietly and so completely that they never even knew what they had.",
-        body: "Quiet devotion can look like nothing from the outside. That doesn't mean it was nothing.",
-        question: "Has someone ever had your full devotion without ever realizing it?"
+        body: "You loved too quietly. So completely that they never knew what they had. That's the most painful part of how you love.",
+        question: "Has anyone ever loved you back with the same depth — or have you always been the one who loved more?"
       },
       {
-        angle: "냉정한 현실 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I don't leave loud. I leave after I've already grieved the relationship while I was still in it.",
-        body: "By the time you actually go, the goodbye already happened in private, weeks or months earlier.",
-        question: "How many relationships have you grieved before they officially ended?"
+        body: "You don't leave loud. By the time you go, you've already finished grieving — while you were still there. They never see it coming.",
+        question: "Why do you always grieve alone — even when you're still in the relationship?"
       },
       {
-        angle: "자기선언 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I am not for everyone. I am for the one person who understands that quiet devotion is the loudest love there is.",
-        body: "You were never meant to compete with louder, flashier love. You were built for someone who knows what quiet actually means.",
-        question: "Does the person you're with know how loud your quiet actually is?"
-      }
-    ]
-  },
-  "무토": {
-    name: "戊土 · THE MOUNTAIN",
-    versions: [
-      {
-        angle: "강함의 고독 각도",
-        hook: "Everyone leans on me. I have never once leaned back. Not because I don't need to. Because I never learned how.",
-        body: "Being the one everyone counts on doesn't mean you don't need someone to count on too. It just means no one's checked.",
-        question: "Who in your life would you actually let yourself lean on, if you let yourself?"
+        body: "You're not for everyone. You're for the one person who understands what quiet devotion actually means. Have you met that person yet?",
+        question: "What would it feel like to be with someone who finally speaks your language?"
       },
-      {
-        angle: "감정표현 차단 각도",
-        hook: "I feel everything. I just refuse to let it become your emergency.",
-        body: "Not showing it isn't the same as not having it. You just decided a long time ago that your weight was yours to carry.",
-        question: "What would it look like to let your weight become someone else's to share, even once?"
-      },
-      {
-        angle: "자기고백 각도 (메인)",
-        hook: "My love language is showing up. Every single time. Without being asked. Without being thanked.",
-        body: "You say it with presence, not words. The risk is that people learn to expect it without ever learning to see it.",
-        question: "Does the person you love know that showing up IS how you say I love you?"
-      },
-      {
-        angle: "냉정한 현실 각도",
-        hook: "The most exhausting thing about being strong is that no one ever thinks to check if you're okay.",
-        body: "Strength becomes invisible once people get used to it. Eventually it stops looking like strength and starts looking like just... you.",
-        question: "When's the last time someone asked if you were okay before you said you were fine?"
-      },
-      {
-        angle: "자기선언 각도",
-        hook: "I don't need someone to save me. I need someone who stays long enough to realize I was never as okay as I looked.",
-        body: "You're not asking to be rescued. You're asking to be seen clearly, by someone patient enough to look twice.",
-        question: "Who in your life has actually looked twice?"
-      }
     ]
   },
   "기토": {
     name: "己土 · THE SOIL",
     versions: [
       {
-        angle: "자기상실 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I know exactly what everyone around me needs. I just have no idea what I need. I'm not sure I ever did.",
-        body: "You learned everyone else's needs by heart. Your own got filed away so long ago you're not sure where you put them.",
-        question: "If you had to name one thing you need right now, could you?"
+        body: "You know exactly what everyone needs. You have become the one people pour into. The question is — who pours into you?",
+        question: "When was the last time someone gave to you — without you having to ask, hint, or earn it?"
       },
       {
-        angle: "과잉배려 각도",
-        hook: "I would rather absorb your discomfort than watch you sit with it. That's not kindness. That's me not knowing how to watch someone I love struggle.",
-        body: "Taking on someone else's hard moment feels like love. Sometimes it's actually you avoiding the discomfort of doing nothing.",
-        question: "What would happen if you let someone sit in their own discomfort, just once?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I don't know how to watch someone I love struggle.",
+        body: "You can't watch someone you love struggle. So you absorb it. Every time. But no one has ever done that for you.",
+        question: "What would it feel like to let someone carry something — without stepping in to take it?"
       },
       {
-        angle: "자기고백 각도 (메인)",
+        angle: "내향",
+        group: "introvert",
         hook: "I have never once said 'this isn't working for me' without first spending weeks making sure it was working for you.",
-        body: "Your own discomfort gets a delay built in — checked, double-checked, deprioritized — until it's almost too late to mention.",
-        question: "How long do you usually wait before admitting something bothers you?"
+        body: "You check on everyone else first. Your own discomfort always comes last. And somehow, that became your normal.",
+        question: "What are you waiting for before you finally say — this isn't working for me?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I am the person everyone grows in. I just wish, sometimes, that something would grow toward me.",
-        body: "You've watched people become better versions of themselves in your presence. The growth rarely seems to flow back.",
-        question: "What has actually grown toward you, instead of just in you?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "Your bad mood always finds room here. Mine learned to wait outside.",
+        body: "When something's off with you, I clear space before you even ask. I rearrange myself around whatever you're carrying that day. What I never learned is how to ask you to do the same.",
+        question: "How much room have you made for someone who never thought to make any back?"
       },
       {
-        angle: "자기선언 각도",
-        hook: "I have bent myself into every shape love asked of me. I am done bending. I want someone who loves the shape I actually am.",
-        body: "Adaptability was never the problem. Never being asked to stop adapting was.",
-        question: "What would it take for you to stop adjusting and just be received as-is?"
-      }
+        angle: "외향",
+        group: "outgoing",
+        hook: "Love bent me into every shape it asked. I want someone who loves this shape too.",
+        body: "You've bent yourself into every shape love asked for. You're done bending. You want someone who loves what's left.",
+        question: "What does the unbent version of you actually look like — and does anyone know her?"
+      },
     ]
   },
   "경금": {
     name: "庚金 · THE BLADE",
     versions: [
       {
-        angle: "자존심 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I'm not hard to love. I'm hard to deceive. There's a difference.",
-        body: "You don't need someone perfect. You need someone who isn't pretending to be something they're not.",
-        question: "How quickly do you usually know when something doesn't add up?"
+        body: "You're not difficult. You just see through things — faster than most people are comfortable with. The ones who left weren't scared of your standards. They were scared of your clarity.",
+        question: "Have you ever mistaken someone leaving for proof that you're too much — when really, you were just too clear?"
       },
       {
-        angle: "기준의 외로움 각도",
-        hook: "I push people to be better. I just wish, sometimes, someone would push me.",
-        body: "You raise everyone else's standards without ever asking who's raising yours.",
-        question: "Who has ever challenged you the way you challenge everyone else?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I already know we're done. I just haven't stopped calling you.",
+        body: "I can tell exactly when something's over — the data's already in. I still call anyway, like the conversation hasn't ended yet. Walking away makes sense. Calling you doesn't. I do the second one.",
+        question: "How long do you keep reaching out to someone your own judgment already let go of?"
       },
       {
-        angle: "자기고백 각도 (메인)",
+        angle: "내향",
+        group: "introvert",
         hook: "I have never once left a relationship without knowing, in full detail, exactly where it broke. What I still don't know is why I walked into it anyway.",
-        body: "Your analysis is never the problem. The gap between what you see clearly in hindsight and what you ignore in the moment — that's the real pattern.",
-        question: "What's the one early sign you've ignored more than once?"
+        body: "You always know exactly where it broke. You could write the autopsy before the ending even came. What you still can't explain is why you walked in anyway.",
+        question: "If you already knew how it would end — why did you stay as long as you did?"
       },
       {
-        angle: "냉정한 현실 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I don't hold grudges. I just update my understanding of who you are — permanently.",
-        body: "Forgiveness and forgetting are not the same thing for you. Once trust breaks, your read on someone changes for good.",
-        question: "How many people are you still in a relationship with, but no longer fully trust?"
+        body: "You don't hold grudges. You just never unknow what you know. Once trust is broken, your read on that person changes — forever.",
+        question: "How many people are still in your life — but in a permanently different category than before?"
       },
       {
-        angle: "자기선언 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I don't need someone to complete me. I need someone who doesn't flinch when I show them exactly who I am.",
-        body: "You're not looking for softness. You're looking for someone who can stand in the full, unfiltered truth of you without backing away.",
-        question: "Who in your life has seen all of you and stayed anyway?"
-      }
+        body: "You don't need to be completed. You need to be seen — fully, directly, without someone looking away. That's rarer than it sounds.",
+        question: "Has anyone ever seen all of you — and stayed anyway?"
+      },
     ]
   },
   "신금": {
     name: "辛金 · THE GEM",
     versions: [
       {
-        angle: "예민한 직관 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I knew something was wrong three weeks before you admitted it. I just kept hoping I was wrong.",
-        body: "Your read on people is rarely off. The problem isn't your accuracy. It's how long you talk yourself out of trusting it.",
-        question: "How many times has your first instinct turned out to be right, after all?"
+        body: "You felt it before anyone said anything. You kept hoping your instincts were off this time. They weren't.",
+        question: "Why do you keep hoping you're wrong — when you're almost never wrong?"
       },
       {
-        angle: "완벽주의 각도",
-        hook: "My standards aren't too high. I just refuse to pretend that almost is the same as enough.",
-        body: "You're not asking for perfect. You're refusing to call 'almost' something it isn't.",
-        question: "What have you settled for calling 'enough' when it wasn't?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "Almost isn't enough. I'm sorry it took you so long to figure that out.",
+        body: "Almost isn't enough. You've known that your whole life. The only question is how long you keep accepting it before you stop.",
+        question: "What have you been calling \"enough\" — that you've known, quietly, wasn't?"
       },
       {
-        angle: "자기고백 각도 (메인)",
+        angle: "내향",
+        group: "introvert",
         hook: "I don't get over things quickly. I get over them completely. But the time in between is something I go through entirely alone.",
-        body: "You heal fully — eventually. The part no one sees is how solitary that process is while it's happening.",
-        question: "Has anyone ever actually witnessed you in the middle of healing, not just before or after?"
+        body: "You don't rush healing. You go through it fully — every layer, every detail. But you always do it alone.",
+        question: "What would it be like to let someone sit with you in the middle of it — not just after?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I have ended relationships that were almost perfect because almost perfect was slowly breaking me.",
-        body: "From the outside, it looked fine. From the inside, you knew exactly which 2% was quietly costing you everything.",
-        question: "What's the smallest gap that has ever ended something for you?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I already see exactly what's wrong. I just don't want to be the one who says it first.",
+        body: "I notice the shift in your voice before you've finished the sentence. I could name the problem in one line, right now, if I wanted to. I don't — because if I'm wrong about this one thing, I don't trust myself with anything else.",
+        question: "What truth have you been precisely right about — and still refused to say out loud?"
       },
       {
-        angle: "자기선언 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I am not too sensitive. I am precisely sensitive. And I am done apologizing for feeling everything at full resolution.",
-        body: "What gets called 'too much' is often just precision other people aren't used to receiving.",
-        question: "What would change if you stopped apologizing for noticing what you notice?"
-      }
+        body: "You're not too much. You feel at a resolution most people can't access. You've been apologizing for that your whole life.",
+        question: "What would change — in your relationships, in your life — if you stopped apologizing for how clearly you feel?"
+      },
     ]
   },
   "임수": {
     name: "壬水 · THE OCEAN",
     versions: [
       {
-        angle: "자유와 연결 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I don't fear love. I fear losing myself inside it.",
-        body: "You don't pull back from closeness. You pull back from the version of closeness that asks you to disappear into someone else.",
-        question: "How much of yourself do you usually keep, even with people you love?"
+        body: "You're not afraid of love. You're afraid of what happens when you love someone deeply enough to disappear into them. That's a different fear. And it's a real one.",
+        question: "How much of yourself do you hold back — even with the people you love most?"
       },
       {
-        angle: "잠수 패턴 각도",
-        hook: "I don't pull away because I stopped caring. I pull away because I started caring more than felt safe.",
-        body: "Your retreat isn't the opposite of love. It's what happens right after love starts to feel real.",
-        question: "When was the last time you pulled back right after something started feeling good?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I can talk to anyone. That's not the same as letting them in.",
+        body: "Meeting people has never been the hard part. Most conversations come naturally to me. The hard part starts when someone wants to know me for real.",
+        question: "When did being known start feeling more dangerous than being alone?"
       },
       {
-        angle: "자기고백 각도 (메인)",
+        angle: "내향",
+        group: "introvert",
         hook: "I have ended things with people who loved me well because being loved well felt more terrifying than being loved badly.",
-        body: "Chaos is familiar. Being loved consistently and well is the thing you've never built tolerance for.",
-        question: "Has steady, good love ever made you more anxious than chaotic love did?"
+        body: "You've ended things with people who loved you well. Not because they did anything wrong. Because being loved well was the scariest thing that ever happened to you.",
+        question: "Why does being loved badly feel safer than being loved well?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I process everything alone. Not because I don't trust you. Because I don't yet trust that showing you the process won't change how you see me.",
-        body: "You show people the finished version. The messy middle stays hidden, every time, with everyone.",
-        question: "Has anyone ever seen you mid-process, not just before or after?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I wanted you closer. I just didn't know what to do when you came.",
+        body: "For a long time, I wished someone would finally understand me. Then someone actually tried. That's usually the moment I start pulling away.",
+        question: "What are you protecting when you pull away from what you wanted?"
       },
       {
-        angle: "자기선언 각도",
+        angle: "외향",
+        group: "outgoing",
         hook: "I am not commitment-phobic. I am depth-seeking. Most people mistake the two because shallow water is easier to stay in.",
-        body: "You're not afraid of commitment. You're allergic to shallow commitment dressed up as depth.",
-        question: "What's the difference, for you, between someone staying and someone actually going deep?"
-      }
+        body: "You're not afraid of commitment. You're allergic to shallow commitment dressed up as depth. Most people can't tell the difference.",
+        question: "Have you ever been with someone who could actually match your depth — or have you always been the deeper one?"
+      },
     ]
   },
   "계수": {
     name: "癸水 · THE MIST",
     versions: [
       {
-        angle: "감정 흡수 각도",
+        angle: "내향",
+        group: "introvert",
         hook: "I feel your feelings before you've named them. I just don't always know which ones are mine.",
-        body: "You read people's emotional weather before they do. The part that's hard is sorting out which storm actually belongs to you.",
-        question: "Right now, can you tell which feeling in the room is actually yours?"
+        body: "You read the room before anyone speaks. You absorb what's happening — automatically, instantly. The problem isn't the feeling. It's sorting out whose it actually is.",
+        question: "When was the last time you felt something — and knew, for certain, it was yours?"
       },
       {
-        angle: "경계 상실 각도",
-        hook: "I don't just love you. I become a little bit of you. And then I spend months finding my way back to myself.",
-        body: "Closeness, for you, isn't just connection. It's a slow merge — and every ending means relearning where you stop and they start.",
-        question: "How long does it usually take you to feel fully like yourself again after a relationship ends?"
+        angle: "외향",
+        group: "outgoing",
+        hook: "I don't just love you. I take on your mood as my job to fix — before you even ask.",
+        body: "You don't just love someone. The moment their mood shifts, you start working on it — without being asked. You call it caring. It might be something else.",
+        question: "What would happen if you let someone's bad mood stay theirs — just once?"
       },
       {
-        angle: "자기고백 각도 (메인)",
-        hook: "I have never once been in a relationship without wondering, quietly, whether I am too much to be loved or too little to be worth staying for.",
-        body: "That question runs in the background more than anyone knows — swinging between too much and not enough, never landing on just right.",
-        question: "Which one do you find yourself believing more often — too much, or not enough?"
+        angle: "내향",
+        group: "introvert",
+        hook: "I check how someone feels three times before I ever check how I feel.",
+        body: "Before you ask yourself how you feel, you've already checked on them — three times. That order became automatic so long ago you stopped noticing it.",
+        question: "What would it take for you to check your own feelings first — just once?"
       },
       {
-        angle: "냉정한 현실 각도",
-        hook: "I give people the benefit of the doubt long after the doubt has become the evidence.",
-        body: "Your forgiveness is real every time. The pattern is how long it keeps getting offered after the proof has already arrived.",
-        question: "What's the longest you've kept giving the benefit of the doubt after you already had your answer?"
+        angle: "혼합",
+        group: "mixed",
+        hook: "I keep giving people the benefit of the doubt — long after I've already done the math.",
+        body: "You've already calculated the pattern. You know exactly what's happening. And you keep giving them another chance anyway.",
+        question: "At what point does giving the benefit of the doubt become something you're doing to yourself, not for them?"
       },
       {
-        angle: "자기선언 각도",
-        hook: "I have felt everything. I have forgiven everything. I am done mistaking that for not deserving more.",
-        body: "Capacity to feel and forgive was never a measure of how little you deserve. It was just always mistaken for one.",
-        question: "What would you ask for, if feeling everything didn't mean expecting less?"
-      }
+        angle: "외향",
+        group: "outgoing",
+        hook: "I have absorbed everyone's feelings for years. I am done volunteering for that job.",
+        body: "You've been the one who absorbs. For years, without being asked. You're done volunteering for a job no one offered you.",
+        question: "What would it look like to let someone else's feelings be someone else's to carry?"
+      },
     ]
-  }
+  },
+  "무토": {
+    name: "戊土 · THE MOUNTAIN",
+    versions: [
+      {
+        angle: "외향",
+        group: "outgoing",
+        hook: "I solved it before you finished texting me about it.",
+        body: "You start typing out what's wrong, and I'm already three steps into fixing it. By the time you hit send, the hard part is already handled. You've never once had to ask me twice — but you've also never once asked how I was doing.",
+        question: "How many times have you solved someone's problem before they even finished asking — and never once been asked the same?"
+      },
+      {
+        angle: "내향",
+        group: "introvert",
+        hook: "I feel everything. I just never let it become your problem.",
+        body: "You feel everything, deeply. You just decided, a long time ago, never to let it become someone else's burden. That decision has a cost no one sees.",
+        question: "What would happen if, just once, you let your weight become someone else's to share?"
+      },
+      {
+        angle: "외향",
+        group: "outgoing",
+        hook: "My love language is showing up. Every single time. Without being asked. Without being thanked.",
+        body: "You show up. Every time. Without being asked. That's how you say I love you. The question is whether anyone has ever understood that's what it meant.",
+        question: "Does the person you love know that showing up IS how you say I love you?"
+      },
+      {
+        angle: "혼합",
+        group: "mixed",
+        hook: "I'll fix your day. Just don't ask me how mine was.",
+        body: "You tell me your day was hard, and I already know what to say. I ask follow-up questions, remember the details, make you feel held. Then you ask how my day was, and I say \"fine\" — even when it wasn't.",
+        question: "How many times have you made someone feel completely heard, while staying completely unheard yourself?"
+      },
+      {
+        angle: "내향",
+        group: "introvert",
+        hook: "I don't need to be saved. I just need someone to stay.",
+        body: "You don't want to be rescued. You want someone who pays attention long enough to notice what you never say. That's harder to ask for than rescue.",
+        question: "Who in your life has actually stayed long enough to see past the strength?"
+      },
+    ]
+  },
 };
-
 // ============================================================
 // Handler
 // ============================================================
@@ -518,8 +620,8 @@ exports.handler = async (event, context) => {
       };
     }
 
-    const assignedVersionIdx = Math.floor(Math.random() * targetArchetype.versions.length);
-    const selectedVersion = targetArchetype.versions[assignedVersionIdx];
+    // 2026.06.20 변경: 전체랜덤(Math.random) → branch 기반 매칭으로 교체
+    const { selectedVersion, userGroup, poolSize } = selectCardForUser(targetArchetype, pillar.gapjaHangul);
 
     return {
       statusCode: 200,
@@ -528,7 +630,6 @@ exports.handler = async (event, context) => {
         success: true,
         elementKey: finalElementKey,
         elementName: targetArchetype.name,
-        versionIdx: assignedVersionIdx,
         versionAngle: selectedVersion.angle,
         hook: selectedVersion.hook,
         body: selectedVersion.body,
@@ -539,7 +640,10 @@ exports.handler = async (event, context) => {
           inputDate: `${y}-${m}-${d}`,
           resolvedHour: hour,
           wasNightAdjusted: pillar.wasNightAdjusted,
-          adjustedDate: pillar.adjustedDate
+          adjustedDate: pillar.adjustedDate,
+          matchedGroup: userGroup,
+          poolSize: poolSize,
+          isUnclassifiedBranch: !GROUP_MAP[pillar.gapjaHangul]
         }
       })
     };
