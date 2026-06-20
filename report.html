@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Love Blueprint - Diagnosis Report</title>
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -160,18 +160,20 @@
     </div>
 
     <script>
-        // 안전하게 암호화 격리 수집된 세션 스토리지 파싱 연동
         const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
         const assignedIdx = sessionStorage.getItem('cosmic_version_idx') || '0';
-        
-        document.getElementById('element-title').innerText = sessionStorage.getItem('cosmic_name') || 'Unknown Archetype';
+
+        // elementName에서 한자 제거 (예: "甲木 · THE PIONEER" → "THE PIONEER")
+        const rawName = sessionStorage.getItem('cosmic_name') || 'Unknown Archetype';
+        const cleanName = rawName.replace(/^[\u4e00-\u9fff\u3400-\u4dbf]+[\s·\-·]+/, '').trim();
+
+        document.getElementById('element-title').innerText = cleanName;
         document.getElementById('hook-text').innerText = sessionStorage.getItem('cosmic_hook') || '';
         document.getElementById('report-body').innerText = sessionStorage.getItem('cosmic_body') || '';
         document.getElementById('question-hook').innerText = sessionStorage.getItem('cosmic_question') || '';
 
         const versionLabel = 'version_0' + (parseInt(assignedIdx) + 1);
 
-        // GA4 마케팅 정확도 100% 트래킹 스크립트 연동
         gtag('event', 'view_free_report', {
             'element_type': currentElement,
             'assigned_version': versionLabel
