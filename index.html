@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) - 2026.06.20 추가, report.html과 동일 ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5PQGM126Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S5PQGM126Y');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cosmic Blueprint</title>
     <style>
         body {
@@ -155,6 +164,9 @@
             alert('Please enter your details correctly.');
             return;
         }
+
+        // 2026.06.20 추가: 생년월일 입력 후 제출 이벤트 추적 (퍼널 1단계)
+        gtag('event', 'submit_birth_form', { 'method': 'manual_entry' });
 
         document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#00ffff;">Calculating your archetype...</p>';
 
