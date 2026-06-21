@@ -119,7 +119,7 @@ const ORIENTATION_BY_STEM_BRANCH = {
   "정": { "축": "내향", "묘": "내향", "사": "외향", "미": "내향", "유": "외향", "해": "내향" },
   "무": { "자": "내향", "인": "외향", "진": "내향", "오": "외향", "신": "외향", "술": "외향" },
   "기": { "축": "내향", "묘": "외향", "사": "외향", "미": "외향", "유": "내향", "해": "내향" },
-  "경": { "자": "외향", "인": "외향", "진": "외향", "오": "외향", "신": "외향", "술": "외향" },
+  "경": { "자": "외향", "인": "외향", "진": "외향", "오": "외향", "신": "내향", "술": "외향" },
   "신": { "축": "내향", "묘": "외향", "사": "외향", "미": "내향", "유": "외향", "해": "내향" },
   "임": { "자": "내향", "인": "외향", "진": "내향", "오": "외향", "신": "외향", "술": "내향" },
   "계": { "축": "내향", "묘": "외향", "사": "외향", "미": "내향", "유": "내향", "해": "외향" }
@@ -419,7 +419,7 @@ const blueprintDb = {
       },
       {
         angle: "자기고백 각도 (메인)",
-        orientation: "외향",
+        orientation: "혼합",
         hook: "I have never once left a relationship without knowing, in full detail, exactly where it broke. What I still don't know is why I walked into it anyway.",
         body: "Your analysis is never the problem. The gap between what you see clearly in hindsight and what you ignore in the moment — that's the real pattern.",
         question: "What's the one early sign you've ignored more than once?"
@@ -437,6 +437,13 @@ const blueprintDb = {
         hook: "I don't need someone to complete me. I need someone who doesn't flinch when I show them exactly who I am.",
         body: "You're not looking for softness. You're looking for someone who can stand in the full, unfiltered truth of you without backing away.",
         question: "Who in your life has seen all of you and stayed anyway?"
+      },
+      {
+        angle: "자기검열형 각도 (2026.06.23 신규 — 경금 유일하게 '기준을 안으로' 향하는 결)",
+        orientation: "내향",
+        hook: "I don't blame you. I just keep checking what I missed.",
+        body: "You never said it was their fault. You just replayed every conversation, looking for the moment you should have done better. By the end, you'd examined it so many times that only your mistakes were left.",
+        question: "How many times have you reviewed the same ending until only your mistakes remained?"
       }
     ]
   },
