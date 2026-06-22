@@ -135,6 +135,117 @@ function resolveOrientation(stem, branch) {
   return table[branch];
 }
 
+// ============================================================
+// 레이더차트 5축 데이터 — 20개 결(10천간 × 외향/내향) 정량화
+// (2026.06.23, 18_radar_chart_quantification.md 기준 확정본)
+// ============================================================
+// 척도: 1~5점. 5축 정의(00_MASTER_BRIEFING.md 확정, 구 5축 폐기):
+//   drive(추진력) / expression(표현력) / pride(경쟁·자존) /
+//   warmth(배려·포용) / stability(안정성)
+// 키 형식: "{elementKey}_{orientation}" (orientation: "외향" | "내향")
+// 경금은 ORIENTATION_BY_STEM_BRANCH상 "외향"=타인교정형, "내향"=자기검열형으로
+// 이미 매핑돼 있으므로 별도 분기 없이 동일한 키 포맷을 그대로 사용한다.
+// ============================================================
+const RADAR_SCORES = {
+  "갑목_내향": { drive: 4, expression: 2, pride: 3, warmth: 4, stability: 2 },
+  "갑목_외향": { drive: 5, expression: 3, pride: 3, warmth: 3, stability: 2 },
+  "을목_외향": { drive: 2, expression: 2, pride: 2, warmth: 5, stability: 3 },
+  "을목_내향": { drive: 1, expression: 1, pride: 1, warmth: 4, stability: 2 },
+  "병화_내향": { drive: 3, expression: 2, pride: 2, warmth: 5, stability: 3 },
+  "병화_외향": { drive: 4, expression: 4, pride: 4, warmth: 3, stability: 2 },
+  "정화_내향": { drive: 2, expression: 1, pride: 2, warmth: 4, stability: 2 },
+  "정화_외향": { drive: 3, expression: 4, pride: 2, warmth: 5, stability: 3 },
+  "무토_내향": { drive: 3, expression: 1, pride: 3, warmth: 4, stability: 4 },
+  "무토_외향": { drive: 5, expression: 2, pride: 4, warmth: 4, stability: 4 },
+  "기토_내향": { drive: 2, expression: 2, pride: 3, warmth: 4, stability: 4 },
+  "기토_외향": { drive: 3, expression: 3, pride: 2, warmth: 5, stability: 3 },
+  "경금_외향": { drive: 4, expression: 3, pride: 4, warmth: 2, stability: 3 }, // 타인교정형
+  "경금_내향": { drive: 2, expression: 1, pride: 2, warmth: 3, stability: 3 }, // 자기검열형
+  "신금_내향": { drive: 1, expression: 1, pride: 2, warmth: 3, stability: 2 },
+  "신금_외향": { drive: 4, expression: 4, pride: 3, warmth: 3, stability: 3 },
+  "임수_내향": { drive: 2, expression: 1, pride: 2, warmth: 3, stability: 2 },
+  "임수_외향": { drive: 4, expression: 3, pride: 2, warmth: 3, stability: 4 },
+  "계수_내향": { drive: 1, expression: 1, pride: 1, warmth: 5, stability: 3 },
+  "계수_외향": { drive: 2, expression: 2, pride: 4, warmth: 3, stability: 2 }
+};
+
+const RADAR_AXIS_KEYS = ["drive", "expression", "pride", "warmth", "stability"];
+const RADAR_AXIS_LABELS = ["Drive", "Expression", "Pride", "Warmth", "Stability"];
+
+/**
+ * elementKey("갑목" 등) + orientation("외향"|"내향"|"혼합")으로
+ * 레이더차트 5축 점수를 조회. "혼합"은 안전하게 "외향" 풀로 매핑.
+ */
+function getRadarScores(elementKey, orientation) {
+  const normalized = orientation === "혼합" ? "외향" : orientation;
+  return RADAR_SCORES[`${elementKey}_${normalized}`] || null;
+}
+
+/**
+ * 5축 점수(1~5)로 SVG 레이더차트 마크업 생성.
+ * 11_willsmith_pdf_template.html의 좌표 계산식(value/5*90)과
+ * 그리드 구조(4단 링)를 동일하게 재사용 — 5축이라 정오각형으로 배치.
+ */
+function buildRadarSvgMarkup(scores) {
+  const maxRadius = 90;
+  const angleStep = (2 * Math.PI) / 5;
+  const axisAngles = RADAR_AXIS_KEYS.map((_, i) => -Math.PI / 2 + i * angleStep);
+
+  function pointAt(radius, angleIdx) {
+    const angle = axisAngles[angleIdx];
+    const x = Math.round(radius * Math.cos(angle) * 10) / 10;
+    const y = Math.round(radius * Math.sin(angle) * 10) / 10;
+    return [x, y];
+  }
+
+  function ringPolygon(radius) {
+    return RADAR_AXIS_KEYS.map((_, i) => pointAt(radius, i).join(",")).join(" ");
+  }
+
+  function dataPolygon() {
+    return RADAR_AXIS_KEYS.map((key, i) => {
+      const value = Math.max(0, Math.min(5, Number(scores[key]) || 0));
+      const r = (value / 5) * maxRadius;
+      return pointAt(r, i).join(",");
+    }).join(" ");
+  }
+
+  const gridRings = [22.5, 45, 67.5, 90]
+    .map(r => `<polygon points="${ringPolygon(r)}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>`)
+    .join("\n        ");
+
+  const axisLines = RADAR_AXIS_KEYS.map((_, i) => {
+    const [x, y] = pointAt(maxRadius, i);
+    return `<line x1="0" y1="0" x2="${x}" y2="${y}" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>`;
+  }).join("\n        ");
+
+  const labels = RADAR_AXIS_KEYS.map((_, i) => {
+    const [x, y] = pointAt(maxRadius + 18, i);
+    let anchor = "middle";
+    if (x > 15) anchor = "start";
+    else if (x < -15) anchor = "end";
+    return `<text x="${x}" y="${y}" fill="#d1ceda" font-size="11" text-anchor="${anchor}">${RADAR_AXIS_LABELS[i]}</text>`;
+  }).join("\n        ");
+
+  return `<svg width="380" height="280" viewBox="0 0 380 280">
+  <g transform="translate(190,140)">
+        ${gridRings}
+        ${axisLines}
+        <polygon points="${dataPolygon()}" fill="rgba(0,240,255,0.25)" stroke="#00f0ff" stroke-width="2"/>
+        ${labels}
+  </g>
+</svg>`;
+}
+
+/**
+ * chart-wrap 블록 전체 생성(11_willsmith_pdf_template.html 스타일 그대로).
+ * captionText는 각 리포트 01장 "YOUR LOVE PROFILE" 줄의 "— 이하" 문구를 그대로 전달.
+ */
+function buildRadarChartBlock(scores, captionText) {
+  const svg = buildRadarSvgMarkup(scores);
+  return `<div class="chart-wrap">\n    ${svg}\n    <div class="chart-caption">YOUR LOVE PROFILE · ${captionText}</div>\n  </div>`;
+}
+
 /**
  * versions 배열에서 orientation에 맞는 버전만 추려서 랜덤 선택.
  * "혼합"으로 태그된 버전은 외향/내향 양쪽 풀에 모두 포함됨.
@@ -624,6 +735,7 @@ exports.handler = async (event, context) => {
 
     const orientation = resolveOrientation(pillar.stem, pillar.branch);
     const { selected: selectedVersion, originalIdx: assignedVersionIdx } = pickVersion(targetArchetype.versions, orientation);
+    const radarScores = getRadarScores(finalElementKey, orientation);
 
     return {
       statusCode: 200,
@@ -639,6 +751,11 @@ exports.handler = async (event, context) => {
         question: selectedVersion.question,
         dayPillar: pillar.gapjaHangul,
         orientation: orientation,
+        // 레이더차트 5축 데이터 — 유료 리포트(9+1장) 발급 시 01장 차트에 사용.
+        // radarScores: {drive, expression, pride, warmth, stability} (1~5점)
+        // radarSvg: 위 점수로 미리 렌더링된 SVG 마크업 (프론트에서 그대로 삽입 가능)
+        radarScores: radarScores,
+        radarSvg: radarScores ? buildRadarSvgMarkup(radarScores) : null,
         // 디버그/내부 검증용 (운영 단계에서는 제거 가능)
         _debug: {
           inputDate: `${y}-${m}-${d}`,
@@ -656,3 +773,13 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
+// ============================================================
+// 외부(리포트 생성 스크립트 등)에서 재사용 가능하도록 export.
+// netlify function의 진입점(exports.handler)과는 별개로,
+// 9+1장 유료 리포트를 HTML/PDF로 만들 때 이 함수들을 직접 가져다 쓸 수 있다.
+// ============================================================
+exports.getRadarScores = getRadarScores;
+exports.buildRadarSvgMarkup = buildRadarSvgMarkup;
+exports.buildRadarChartBlock = buildRadarChartBlock;
+exports.RADAR_SCORES = RADAR_SCORES;
