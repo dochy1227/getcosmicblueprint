@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Blueprint</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5PQGM126Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S5PQGM126Y');
+    </script>
     <style>
         body {
             background-color: #111424;
@@ -121,6 +129,23 @@
             width: 100%;
             margin-top: 30px;
         }
+        .legal-footer {
+            max-width: 600px;
+            width: 100%;
+            margin-top: 22px;
+            text-align: center;
+            color: #7a82a6;
+            font-size: 9pt;
+            line-height: 1.7;
+        }
+        .legal-footer a {
+            color: #7a82a6;
+            text-decoration: none;
+            margin: 0 6px;
+        }
+        .legal-footer a:hover {
+            color: #00ffff;
+        }
     </style>
 </head>
 <body>
@@ -139,10 +164,6 @@
         <div class="form-stage hidden" id="formStage">
             <p class="form-hint">Enter your birth details to reveal your personalized relationship pattern.</p>
 
-            <div class="form-group">
-                <label for="userName">Name</label>
-                <input type="text" id="userName" placeholder="Enter your name">
-            </div>
 
             <div class="form-group">
                 <label for="birthYear">Birth Year</label>
@@ -191,25 +212,38 @@
         </div>
     </div>
 
+    <footer class="legal-footer">
+        <a href="/terms.html">Terms of Service</a> ·
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/refund.html">Refund Policy</a> ·
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+
     <div id="resultArea"></div>
 
     <script>
     function showBirthForm() {
+        if (typeof gtag === 'function') {
+            gtag('event', 'click_start_blueprint');
+        }
         document.getElementById('heroStage').classList.add('hidden');
         document.getElementById('formStage').classList.remove('hidden');
         document.getElementById('formStage').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     async function getCosmicBlueprint() {
-        const name = document.getElementById('userName').value;
         const birthYear = document.getElementById('birthYear').value;
         const birthMonth = document.getElementById('birthMonth').value;
         const birthDay = document.getElementById('birthDay').value;
         const birthTime = document.getElementById('birthTime').value;
 
-        if(!name || !birthYear || !birthDay) {
+        if(!birthYear || !birthDay) {
             alert('Please enter your details correctly.');
             return;
+        }
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'submit_birth_details');
         }
 
         document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#00ffff;">Calculating your archetype...</p>';
@@ -218,7 +252,7 @@
             const response = await fetch('/.netlify/functions/saju-engine', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, birthYear, birthMonth, birthDay, birthTime })
+                body: JSON.stringify({ name: 'Guest', birthYear, birthMonth, birthDay, birthTime })
             });
 
             const result = await response.json();

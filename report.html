@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Blueprint Report</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5PQGM126Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag('config', 'G-S5PQGM126Y');
     </script>
 
     <style>
@@ -130,6 +130,55 @@
             width: 100%;
             cursor: pointer;
         }
+        .survey-box {
+            background: rgba(0, 240, 255, 0.08);
+            border: 1px solid rgba(0, 240, 255, 0.25);
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center;
+            margin: 30px 0 36px 0;
+        }
+        .survey-box h2 {
+            color: #00f0ff;
+            font-size: 1.15rem;
+            margin: 0 0 8px 0;
+        }
+        .survey-box p {
+            color: #d1ceda;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            margin: 0 0 18px 0;
+        }
+        .survey-btn {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            background: linear-gradient(90deg, #00f0ff, #b600ff);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 13px 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+        .legal-footer {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            color: #7a82a6;
+            font-size: 9pt;
+            line-height: 1.8;
+            padding: 0 20px 150px 20px;
+            box-sizing: border-box;
+        }
+        .legal-footer a {
+            color: #7a82a6;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .legal-footer a:hover {
+            color: #00f0ff;
+        }
     </style>
 </head>
 <body>
@@ -141,11 +190,17 @@
         </section>
 
         <div class="share-card-box">
-            <p style="margin-top:0; color:#a29eb3;">Is this accurately describing you?</p>
-            <button class="share-btn" id="share-instagram">Share to Instagram Stories</button>
+            <p style="margin-top:0; color:#a29eb3;">Want to share this result?</p>
+            <button class="share-btn" id="share-instagram">Take a Screenshot to Share</button>
         </div>
 
         <div class="report-content" id="report-body"></div>
+
+        <div class="survey-box">
+            <h2>Help us improve Cosmic Blueprint</h2>
+            <p>Take a 2-minute feedback survey after reviewing your result.</p>
+            <a class="survey-btn" id="feedback-survey-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf8mlLLc_6SqR0v4ORGnHaoxuUWpvRr9UA-pnqs13THQeOV5A/viewform" target="_blank" rel="noopener">Share Your Feedback</a>
+        </div>
 
         <div class="paywall-container" id="paywall-zone">
             <div class="uncomfortable-question" id="question-hook"></div>
@@ -154,6 +209,13 @@
             </div>
         </div>
     </div>
+
+    <footer class="legal-footer">
+        <a href="/terms.html">Terms of Service</a> ·
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/refund.html">Refund Policy</a> ·
+        <a href="/contact.html">Contact Us</a>
+    </footer>
 
     <div class="sticky-pay-box">
         <button class="pay-btn" id="paywall-secure-button">Unlock Your Full Blueprint — $9.99</button>
@@ -195,7 +257,11 @@
 
         document.getElementById('share-instagram').addEventListener('click', () => {
             gtag('event', 'click_share_instagram', { 'element_type': currentElement, 'assigned_version': versionLabel });
-            alert('Results copied to clipboard for Instagram sharing.');
+            alert('Take a screenshot of this page to share your result.');
+        });
+
+        document.getElementById('feedback-survey-button').addEventListener('click', () => {
+            gtag('event', 'click_feedback_survey', { 'element_type': currentElement, 'assigned_version': versionLabel });
         });
 
         document.getElementById('paywall-secure-button').addEventListener('click', () => {
