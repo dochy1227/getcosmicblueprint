@@ -14,10 +14,20 @@
     </script>
 
     <style>
+        * { box-sizing: border-box; }
         body {
             background-color: #0d0b18;
+            background-image:
+                radial-gradient(1px 1px at 20% 15%, rgba(255,255,255,0.5) 0, transparent 50%),
+                radial-gradient(1px 1px at 75% 8%, rgba(255,255,255,0.4) 0, transparent 50%),
+                radial-gradient(1px 1px at 40% 35%, rgba(255,255,255,0.3) 0, transparent 50%),
+                radial-gradient(1px 1px at 85% 45%, rgba(255,255,255,0.4) 0, transparent 50%),
+                radial-gradient(1px 1px at 10% 60%, rgba(255,255,255,0.3) 0, transparent 50%),
+                radial-gradient(1px 1px at 60% 75%, rgba(255,255,255,0.4) 0, transparent 50%),
+                radial-gradient(1px 1px at 90% 85%, rgba(255,255,255,0.3) 0, transparent 50%);
+            background-attachment: fixed;
             color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -28,139 +38,178 @@
         .container {
             width: 100%;
             max-width: 480px;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 24px 20px;
         }
-        .hook-section {
-            min-height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+
+        /* ---------- 공통 카드 ---------- */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            padding: 22px 22px;
+            margin-bottom: 14px;
         }
-        .element-badge {
-            font-size: 1.1rem;
-            font-weight: bold;
+        .card-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
             color: #00f0ff;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
+            margin: 0 0 14px 0;
+            text-align: center;
         }
-        .hook-title {
+
+        /* ---------- 헤더카드 ---------- */
+        .header-card { text-align: center; padding: 20px 22px 22px; }
+        .archetype-hanja {
+            font-size: 1.05rem;
+            color: #a29eb3;
+            letter-spacing: 3px;
+            margin: 0 0 4px 0;
+        }
+        .archetype-name {
             font-size: 1.6rem;
-            line-height: 1.4;
             font-weight: 800;
+            line-height: 1.2;
             background: linear-gradient(45deg, #00f0ff, #b600ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
+            margin: 0 0 14px 0;
         }
-        .share-card-box {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 25px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .share-btn {
-            background: linear-gradient(90deg, #00f0ff, #b600ff);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-weight: bold;
-            border-radius: 30px;
-            cursor: pointer;
-            width: 100%;
+        .hook-quote {
             font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #f1eef7;
+            position: relative;
+            padding: 0 6px;
         }
-        .report-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .hook-quote::before {
+            content: "\201C";
+            color: #b600ff;
+            font-size: 1.6rem;
+            display: block;
+            line-height: 0.4;
+            margin-bottom: 4px;
+        }
+
+        /* ---------- YOUR READING ---------- */
+        .reading-body p {
+            font-size: 1.05rem;
+            line-height: 1.85;
             color: #d1ceda;
-            margin-bottom: 30px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
+            margin: 0 0 16px 0;
         }
-        .report-content.visible {
+        .reading-body p:last-child { margin-bottom: 0; }
+        .reading-body.fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: all 0.7s ease-out;
+        }
+        .reading-body.fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        .paywall-container {
-            position: relative;
-            margin-top: 40px;
-            padding-bottom: 120px;
+
+        /* ---------- THREE QUESTIONS ---------- */
+        .question-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            margin-bottom: 18px;
         }
-        .uncomfortable-question {
-            color: #ff3b30;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-align: center;
-            margin-bottom: 20px;
-            border-left: 4px solid #ff3b30;
-            padding-left: 10px;
+        .question-item:last-child { margin-bottom: 0; }
+        .question-num {
+            flex: 0 0 auto;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff3b5c, #b600ff);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .blurred-text {
-            filter: blur(6px);
-            user-select: none;
-            opacity: 0.3;
-        }
-        .sticky-pay-box {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            max-width: 480px;
-            background: linear-gradient(transparent, #0d0b18 20%);
-            padding: 20px;
-            box-sizing: border-box;
-            z-index: 999;
-        }
-        .pay-btn {
-            background: #ffffff;
-            color: #0d0b18;
-            border: none;
-            padding: 16px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 12px;
-            width: 100%;
-            cursor: pointer;
-        }
-        .survey-box {
-            background: rgba(0, 240, 255, 0.08);
-            border: 1px solid rgba(0, 240, 255, 0.25);
-            border-radius: 16px;
-            padding: 22px;
-            text-align: center;
-            margin: 30px 0 36px 0;
-        }
-        .survey-box h2 {
-            color: #00f0ff;
-            font-size: 1.15rem;
-            margin: 0 0 8px 0;
-        }
-        .survey-box p {
-            color: #d1ceda;
-            font-size: 0.98rem;
-            line-height: 1.5;
-            margin: 0 0 18px 0;
-        }
-        .survey-btn {
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
-            background: linear-gradient(90deg, #00f0ff, #b600ff);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 13px 18px;
-            font-weight: bold;
-            border-radius: 30px;
+        .question-text {
             font-size: 1rem;
+            line-height: 1.6;
+            color: #f1eef7;
+            font-weight: 600;
+            padding-top: 3px;
         }
+
+        /* ---------- CTA 라인 ---------- */
+        .cta-line {
+            font-size: 0.98rem;
+            line-height: 1.7;
+            color: #a29eb3;
+            text-align: center;
+            margin: 4px 0 26px 0;
+            padding: 0 6px;
+        }
+
+        /* ---------- 감정 버튼 (구매 무관) ---------- */
+        .emotion-btn {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #f1eef7;
+            padding: 14px;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 14px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .emotion-btn.saved {
+            background: rgba(255, 59, 92, 0.12);
+            border-color: rgba(255, 59, 92, 0.4);
+            color: #ff8fa3;
+        }
+
+        /* ---------- 구매 버튼(골드 강조) ---------- */
+        .buy-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff9d00);
+            color: #1a1306;
+            border: none;
+            padding: 18px;
+            font-size: 1.15rem;
+            font-weight: 800;
+            border-radius: 14px;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(255, 180, 0, 0.25);
+            margin-bottom: 22px;
+        }
+        .buy-btn:active { transform: scale(0.99); }
+
+        /* ---------- 하단 3버튼줄 ---------- */
+        .bottom-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .bottom-actions button,
+        .bottom-actions a {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #d1ceda;
+            padding: 12px 6px;
+            border-radius: 12px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .bottom-actions .save-action { text-align: left; padding-left: 14px; }
+
         .legal-footer {
             width: 100%;
             max-width: 480px;
@@ -168,45 +217,53 @@
             color: #7a82a6;
             font-size: 9pt;
             line-height: 1.8;
-            padding: 0 20px 150px 20px;
-            box-sizing: border-box;
+            padding: 28px 20px 60px 20px;
         }
         .legal-footer a {
             color: #7a82a6;
             text-decoration: none;
             margin: 0 5px;
         }
-        .legal-footer a:hover {
-            color: #00f0ff;
-        }
+        .legal-footer a:hover { color: #00f0ff; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <section class="hook-section">
-            <div class="element-badge" id="element-title">Loading...</div>
-            <h1 class="hook-title" id="hook-text">Analyzing profile...</h1>
+
+        <!-- 헤더카드 -->
+        <section class="card header-card">
+            <p class="archetype-hanja" id="archetype-hanja"></p>
+            <h1 class="archetype-name" id="archetype-name">Loading...</h1>
+            <p class="hook-quote" id="hook-text"></p>
         </section>
 
-        <div class="share-card-box">
-            <p style="margin-top:0; color:#a29eb3;">Want to share this result?</p>
-            <button class="share-btn" id="share-instagram">Take a Screenshot to Share</button>
-        </div>
+        <!-- YOUR READING -->
+        <section class="card">
+            <p class="card-label">Your Reading</p>
+            <div class="reading-body fade-in" id="report-body"></div>
+        </section>
 
-        <div class="report-content" id="report-body"></div>
+        <!-- THREE QUESTIONS -->
+        <section class="card">
+            <p class="card-label">Three Questions</p>
+            <div id="questions-list"></div>
+        </section>
 
-        <div class="survey-box">
-            <h2>Help us improve Cosmic Blueprint</h2>
-            <p>Take a 2-minute feedback survey after reviewing your result.</p>
-            <a class="survey-btn" id="feedback-survey-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf8mlLLc_6SqR0v4ORGnHaoxuUWpvRr9UA-pnqs13THQeOV5A/viewform" target="_blank" rel="noopener">Share Your Feedback</a>
-        </div>
+        <!-- CTA 한 줄 -->
+        <p class="cta-line" id="cta-text"></p>
 
-        <div class="paywall-container" id="paywall-zone">
-            <div class="uncomfortable-question" id="question-hook"></div>
-            <div class="blurred-text">
-                This is the premium master solution guidelines text designed to break your relationship loop. Below contains your behavioral blueprints and 3 strategic actionable phases customized for your exact dimensional alignment.
-            </div>
+        <!-- 감정 버튼 -->
+        <button class="emotion-btn" id="emotion-save-btn">&#10084; This Felt Like Me</button>
+
+        <!-- 구매 버튼 -->
+        <button class="buy-btn" id="paywall-secure-button">&#128274; Unlock Your Full Blueprint — $9.99</button>
+
+        <!-- 하단 3버튼줄 -->
+        <div class="bottom-actions">
+            <button class="save-action" id="bottom-save-btn">&#128190; Save</button>
+            <button id="bottom-share-btn">&#128279; Share</button>
+            <a id="bottom-survey-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdFkagn2LIlcYSsjUEnHys75ilIV4l3fsvYYObfDvA0YoMhSA/viewform" target="_blank" rel="noopener">&#128203; Survey</a>
         </div>
     </div>
 
@@ -217,55 +274,101 @@
         <a href="/contact.html">Contact Us</a>
     </footer>
 
-    <div class="sticky-pay-box">
-        <button class="pay-btn" id="paywall-secure-button">Unlock Your Full Blueprint — $9.99</button>
-    </div>
-
     <script>
         const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
-        const assignedIdx = sessionStorage.getItem('cosmic_version_idx') || '0';
+        const orientation = sessionStorage.getItem('cosmic_orientation') || 'unknown';
 
-        // elementName에서 한자 제거 (예: "甲木 · THE PIONEER" → "THE PIONEER")
-        const rawName = sessionStorage.getItem('cosmic_name') || 'Unknown Archetype';
-        const cleanName = rawName.replace(/^[\u4e00-\u9fff\u3400-\u4dbf]+[\s·\-·]+/, '').trim();
+        // "甲木 · THE PIONEER" → 한자 부분 / 영문 아키타입명 분리
+        const rawName = sessionStorage.getItem('cosmic_name') || '· UNKNOWN ARCHETYPE';
+        const nameParts = rawName.split('·').map(s => s.trim());
+        const hanjaPart = nameParts.length > 1 ? nameParts[0] : '';
+        const archetypePart = nameParts.length > 1 ? nameParts[1] : nameParts[0];
 
-        document.getElementById('element-title').innerText = cleanName;
+        document.getElementById('archetype-hanja').innerText = hanjaPart;
+        document.getElementById('archetype-name').innerText = archetypePart;
         document.getElementById('hook-text').innerText = sessionStorage.getItem('cosmic_hook') || '';
-        document.getElementById('report-body').innerText = sessionStorage.getItem('cosmic_body') || '';
-        document.getElementById('question-hook').innerText = sessionStorage.getItem('cosmic_question') || '';
 
-        const versionLabel = 'version_0' + (parseInt(assignedIdx) + 1);
+        // 본문 — \n\n 기준 단락 분리
+        const bodyRaw = sessionStorage.getItem('cosmic_body') || '';
+        const bodyContainer = document.getElementById('report-body');
+        bodyRaw.split(/\n\n+/).filter(Boolean).forEach(paragraph => {
+            const p = document.createElement('p');
+            p.innerText = paragraph;
+            bodyContainer.appendChild(p);
+        });
+
+        // 질문 3개 — JSON 배열 파싱
+        let questions = [];
+        try {
+            questions = JSON.parse(sessionStorage.getItem('cosmic_questions') || '[]');
+        } catch (e) {
+            questions = [];
+        }
+        const questionsList = document.getElementById('questions-list');
+        questions.forEach((q, idx) => {
+            const item = document.createElement('div');
+            item.className = 'question-item';
+            item.innerHTML = `<div class="question-num">${idx + 1}</div><div class="question-text"></div>`;
+            item.querySelector('.question-text').innerText = q;
+            questionsList.appendChild(item);
+        });
+
+        document.getElementById('cta-text').innerText = sessionStorage.getItem('cosmic_cta') || '';
 
         gtag('event', 'view_free_report', {
             'element_type': currentElement,
-            'assigned_version': versionLabel
+            'orientation': orientation
         });
 
+        // 본문 스크롤 페이드인 — 로드 즉시 1회 체크 + 스크롤마다 체크
         const reportBody = document.getElementById('report-body');
-        const paywallZone = document.getElementById('paywall-zone');
-        let paywallTracked = false;
-
-        window.addEventListener('scroll', () => {
-            if(reportBody.getBoundingClientRect().top < window.innerHeight * 0.8) {
+        function checkReportBodyVisible() {
+            if (reportBody.getBoundingClientRect().top < window.innerHeight * 0.8) {
                 reportBody.classList.add('visible');
             }
-            if(!paywallTracked && paywallZone.getBoundingClientRect().top < window.innerHeight) {
-                gtag('event', 'view_paywall', { 'element_type': currentElement, 'assigned_version': versionLabel });
-                paywallTracked = true;
-            }
+        }
+        checkReportBodyVisible();
+        window.addEventListener('scroll', checkReportBodyVisible);
+
+        // 감정 버튼 (구매와 무관, 토글)
+        const emotionBtn = document.getElementById('emotion-save-btn');
+        let emotionSaved = false;
+        emotionBtn.addEventListener('click', () => {
+            emotionSaved = !emotionSaved;
+            emotionBtn.classList.toggle('saved', emotionSaved);
+            emotionBtn.innerHTML = emotionSaved ? '&#10084; Glad This Resonated' : '&#10084; This Felt Like Me';
+            gtag('event', 'click_save_emotional', {
+                'element_type': currentElement,
+                'orientation': orientation,
+                'saved_state': emotionSaved
+            });
         });
 
-        document.getElementById('share-instagram').addEventListener('click', () => {
-            gtag('event', 'click_share_instagram', { 'element_type': currentElement, 'assigned_version': versionLabel });
-            alert('Take a screenshot of this page to share your result.');
+        // 하단 저장
+        document.getElementById('bottom-save-btn').addEventListener('click', () => {
+            gtag('event', 'click_save_button', { 'element_type': currentElement, 'orientation': orientation });
+            alert('Save your result by taking a screenshot.');
         });
 
-        document.getElementById('feedback-survey-button').addEventListener('click', () => {
-            gtag('event', 'click_feedback_survey', { 'element_type': currentElement, 'assigned_version': versionLabel });
+        // 하단 공유
+        document.getElementById('bottom-share-btn').addEventListener('click', () => {
+            gtag('event', 'click_share_button', { 'element_type': currentElement, 'orientation': orientation });
+            alert('Take a screenshot whenever you want to share this.');
         });
 
+        // 하단 설문
+        document.getElementById('bottom-survey-btn').addEventListener('click', () => {
+            gtag('event', 'click_feedback_survey', { 'element_type': currentElement, 'orientation': orientation });
+        });
+
+        // 구매 버튼
         document.getElementById('paywall-secure-button').addEventListener('click', () => {
-            gtag('event', 'click_checkout_initiate', { 'element_type': currentElement, 'assigned_version': versionLabel, 'price': 9.99, 'currency': 'USD' });
+            gtag('event', 'click_checkout_initiate', {
+                'element_type': currentElement,
+                'orientation': orientation,
+                'price': 9.99,
+                'currency': 'USD'
+            });
             alert('Redirecting to secure checkout payment gate...');
         });
     </script>

@@ -152,7 +152,7 @@
 
     <div class="container">
         <h1>COSMIC BLUEPRINT</h1>
-        <p class="subtitle">Relational Archetype Diagnosis</p>
+        <p class="subtitle">A New Way to Understand How You Love</p>
 
         <div class="hero-stage" id="heroStage">
             <p class="hero-line">Why do you keep attracting<br>the same kind of person?</p>
@@ -249,7 +249,7 @@
         document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#00ffff;">Calculating your archetype...</p>';
 
         try {
-            const response = await fetch('/.netlify/functions/saju-engine', {
+            const response = await fetch('/.netlify/functions/blueprint-engine', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name: 'Guest', birthYear, birthMonth, birthDay, birthTime })
@@ -261,9 +261,10 @@
                 sessionStorage.setItem('cosmic_name', result.elementName);
                 sessionStorage.setItem('cosmic_hook', result.hook);
                 sessionStorage.setItem('cosmic_body', result.body);
-                sessionStorage.setItem('cosmic_question', result.question);
+                sessionStorage.setItem('cosmic_questions', JSON.stringify(result.questions));
+                sessionStorage.setItem('cosmic_cta', result.cta);
                 sessionStorage.setItem('cosmic_element_key', result.elementKey);
-                sessionStorage.setItem('cosmic_version_idx', result.versionIdx);
+                sessionStorage.setItem('cosmic_orientation', result.orientation);
 
                 const currentUrlParams = new URLSearchParams(window.location.search);
                 window.location.href = `/report.html?${currentUrlParams.toString()}`;
