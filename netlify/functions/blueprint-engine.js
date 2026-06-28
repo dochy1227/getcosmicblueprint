@@ -281,17 +281,24 @@ function getFreeReportContent(elementKey, orientation) {
 // cta는 20개 전체 동일(2026.06.27 최종 확정본).
 // ============================================================
 
+// 2026.06.28 수정: 한자(천간 원문) 노출 버그 수정.
+// 기존엔 "갑목": "甲木 · THE PIONEER" 식으로 한자가 그대로 API 응답에
+// 노출되어 "사주 용어 비노출" 핵심 원칙 위반 + report.html에서 화면에도
+// 그대로 보임(THE MIST/THE SUN뿐 아니라 10종 전부 동일 문제였음).
+// 한자 대신 기존 JSON 스키마(identity.element_name)와 동일한 영문 음양오행
+// 표기로 교체 (예: "Yang Wood · THE PIONEER"). 사주 용어 비노출 + 기존
+// element_name 표기 규칙과 통일.
 const ARCHETYPE_NAMES = {
-  "갑목": "甲木 · THE PIONEER",
-  "을목": "乙木 · THE VINE",
-  "병화": "丙火 · THE SUN",
-  "정화": "丁火 · THE CANDLE",
-  "무토": "戊土 · THE MOUNTAIN",
-  "기토": "己土 · THE SOIL",
-  "경금": "庚金 · THE BLADE",
-  "신금": "辛金 · THE GEM",
-  "임수": "壬水 · THE OCEAN",
-  "계수": "癸水 · THE MIST"
+  "갑목": "Yang Wood · THE PIONEER",
+  "을목": "Yin Wood · THE VINE",
+  "병화": "Yang Fire · THE SUN",
+  "정화": "Yin Fire · THE CANDLE",
+  "무토": "Yang Earth · THE MOUNTAIN",
+  "기토": "Yin Earth · THE SOIL",
+  "경금": "Yang Metal · THE BLADE",
+  "신금": "Yin Metal · THE GEM",
+  "임수": "Yang Water · THE OCEAN",
+  "계수": "Yin Water · THE MIST"
 };
 
 const FREE_REPORT_CTA = "Your Full Blueprint goes further. It's where you'll discover why you love this way—and what patterns may keep repeating if nothing changes.";
