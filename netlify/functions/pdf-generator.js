@@ -512,14 +512,17 @@ function generateReportHTML(data) {
   h2 { font-size: 17px; color: #00f0ff; margin: 30px 0 12px 0; border-left: 3px solid #b600ff; padding-left: 10px; }
   h3 { font-size: 15px; color: #ffffff; margin: 18px 0 8px 0; font-weight: 700; }
   p { font-size: 14px; line-height: 1.75; color: #d1ceda; margin-bottom: 12px; }
-  .quote-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px 16px; margin: 10px 0 4px 0; font-style: italic; font-size: 14px; color: #fff; }
-  .truth-label { color: #ff6b9d; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 6px 0; }
+  .quote-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 10px 14px; margin: 6px 0 4px 0; font-style: italic; font-size: 14px; color: #fff; }
+  .truth-label { color: #ff6b9d; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 2px 0 4px 0; }
   .punch { font-weight: 700; color: #fff; font-size: 15px; line-height: 1.6; }
   .transition-note { color: #8a85a0; font-style: italic; }
   /* 2026.06.29 수정: 7페이지(챕터3) "거의 빈 페이지" 문제 해결 — belief/truth 쌍 사이 여백이
      28px×2(위아래)×2(divider 2개)=112px로 과도해서 마지막 한 문장이 8페이지로 밀려나던 것.
      이 클래스는 챕터3(7페이지)에서만 쓰임 — 다른 페이지엔 영향 없음(확인됨). */
-  .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 14px 0; }
+  /* 2026.06.29 추가 수정: type_06_b(기토 외향)이 belief/truth 4개 항목으로 만들어져
+     divider가 3개(기존 가정 2개보다 많음)로 늘어나면서 7→8페이지 문제가 재발함이 실제 PDF로 확인됨.
+     항목 개수(3개/4개)에 관계없이 안전하도록 마진을 한 단계 더 축소. */
+  .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 8px 0; }
   .chart-wrap { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 18px; margin: 16px 0; text-align: center; }
   .chart-caption { font-size: 12px; color: #8a85a0; margin-top: 8px; }
   .pattern-name { color: #00f0ff; font-weight: 700; margin-bottom: 8px; }
