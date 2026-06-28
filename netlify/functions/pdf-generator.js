@@ -45,10 +45,16 @@ const COVER_BG_FILES = {
   mist: 'coverbg_10_mist_png.png',
 };
 
+// 2026.06.29 수정: 상대경로 → 절대 URL로 변경.
+// Doppio는 우리 사이트가 아니라 Doppio 자체 서버에서 HTML을 렌더링하기 때문에,
+// 상대경로(cover-bg/...)로는 이미지를 절대 찾을 수 없음(페이지 컨텍스트가 없음).
+// 실제 PDF 1차 테스트(type_01_a)에서 표지 배경이 빈 동그라미로 깨지는 것으로 확인됨.
+const SITE_ORIGIN = 'https://getcosmicblueprint.com';
+
 function coverBgUrl(visualKey) {
   const file = COVER_BG_FILES[visualKey];
   // 매핑에 없는 visual_key가 들어오면(오타 등) 기존 규칙으로 폴백 — 에러 대신 빈 배경으로 graceful degradation
-  return file ? `cover-bg/${file}` : `cover-bg/${visualKey || 'default'}.jpg`;
+  return file ? `${SITE_ORIGIN}/cover-bg/${file}` : `${SITE_ORIGIN}/cover-bg/${visualKey || 'default'}.jpg`;
 }
 
 // 5축 레이더차트 각도 (5각형, POC와 동일 — 변경 금지)
