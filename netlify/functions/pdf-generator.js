@@ -413,6 +413,7 @@ function generateReportHTML(data) {
     14,
     c9.page_map,
     `
+    <div class="ch10-tight">
     <h2>10. ${need('chapters[9].title', c9.title)}</h2>
     <h3>Who Breaks You, Who Steadies You</h3>
     <p>${escapeHtml(sec.who_breaks_you)}</p>
@@ -423,6 +424,7 @@ function generateReportHTML(data) {
     <h3>If You See the Sign, Try This</h3>
     <p>${escapeHtml(sec.try_this)}</p>
     <p class="punch">${escapeHtml(sec.final_line)}</p>
+    </div>
   `
   );
 
@@ -538,6 +540,11 @@ function generateReportHTML(data) {
   .center-label { text-align: center; color: #8a85a0; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
   .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
   .toc-item { font-size: 12px; color: #d1ceda; }
+  /* 2026.06.29 추가: 14페이지(챕터10)는 h3 4개+p 5개로 다른 챕터보다 섹션 수가 많아
+     마지막 한두 문장이 15페이지로 밀리는 문제가 발생(type_08_b에서 확인됨).
+     이 클래스 범위 내에서만 여백을 축소 — 다른 페이지의 전역 h3/p 스타일은 그대로 유지됨. */
+  .ch10-tight h3 { margin: 10px 0 6px 0; }
+  .ch10-tight p { margin-bottom: 8px; }
 </style>
 </head>
 <body>
