@@ -61,7 +61,7 @@
 
         /* ---------- 헤더카드 ---------- */
         .header-card { text-align: center; padding: 20px 22px 22px; }
-        .archetype-hanja {
+        .archetype-element {
             font-size: 1.05rem;
             color: #a29eb3;
             letter-spacing: 3px;
@@ -233,7 +233,7 @@
 
         <!-- 헤더카드 -->
         <section class="card header-card">
-            <p class="archetype-hanja" id="archetype-hanja"></p>
+            <p class="archetype-element" id="archetype-element"></p>
             <h1 class="archetype-name" id="archetype-name">Loading...</h1>
             <p class="hook-quote" id="hook-text"></p>
         </section>
@@ -278,13 +278,16 @@
         const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
         const orientation = sessionStorage.getItem('cosmic_orientation') || 'unknown';
 
-        // "甲木 · THE PIONEER" → 한자 부분 / 영문 아키타입명 분리
+        // 2026.06.28 수정: 기존엔 "甲木 · THE PIONEER" 같은 한자 표기를
+        // 분리해서 보여주는 로직이었으나, 한자 노출 버그 수정으로
+        // elementName이 이제 "Yang Wood · THE PIONEER" 형식으로 들어옴.
+        // "원소명 / 아키타입명" 분리 로직은 동일하게 유지.
         const rawName = sessionStorage.getItem('cosmic_name') || '· UNKNOWN ARCHETYPE';
         const nameParts = rawName.split('·').map(s => s.trim());
-        const hanjaPart = nameParts.length > 1 ? nameParts[0] : '';
+        const elementPart = nameParts.length > 1 ? nameParts[0] : '';
         const archetypePart = nameParts.length > 1 ? nameParts[1] : nameParts[0];
 
-        document.getElementById('archetype-hanja').innerText = hanjaPart;
+        document.getElementById('archetype-element').innerText = elementPart;
         document.getElementById('archetype-name').innerText = archetypePart;
         document.getElementById('hook-text').innerText = sessionStorage.getItem('cosmic_hook') || '';
 
