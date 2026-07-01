@@ -13,7 +13,7 @@
 //   Supabase REST API(PostgREST)는 fetch 몇 줄로 충분히 호출 가능.
 //
 // 사전 준비물 (또치님이 Netlify 환경변수에 등록):
-//   - SUPABASE_URL      예: https://ahzptyysdoijqphagaki.supabase.co
+//   - SUPABASE_URL      예: https://your-project-ref.supabase.co
 //   - SUPABASE_SECRET_KEY   Supabase 대시보드 "비밀 키"(sb_secret_...)
 //     ⚠ 이 키는 RLS(행 수준 보안)를 우회하는 강력한 키입니다.
 //     절대 클라이언트(브라우저) 코드에 노출하면 안 되고, Netlify Function
