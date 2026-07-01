@@ -20,9 +20,9 @@
     "subtitle": "The one who steps up first, and rarely lets anyone see the shaking.",
     "tagline": "You solve things so well that people forget you might need help too.",
     "traits": [
-      "CAPABLE",
       "STEADY",
-      "DECISIVE"
+      "RELIABLE",
+      "STRONG"
     ]
   },
   "profile_scores": {
@@ -226,11 +226,11 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You almost never fail to solve a problem. The issue is that it becomes too natural — too much of a given. So there's a type that doesn't work for you: someone who just accepts your competence as the default. They think \"this person always handles it\" and leave it there. When you're the one shaking, they can't even read the sign.",
-          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who notices when you're different from usual. When you put off a decision or go quiet, they ask first — \"you seem a bit off today, is something going on?\" Around someone like this, you don't have to keep performing solidity.",
-          "same_pattern_repeats": "You might be drawn again to someone who just follows your decisions. You might also be drawn to someone who only reaches for you during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself — it's how long you end up carrying everything alone afterward.",
-          "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment you pause for half a second in front of a small problem you'd normally have already solved — that's the start.",
-          "try_this": "Normally you'd already be stepping in to fix it. This time, don't. Just once. When a problem comes up, hold still. And watch how they react. Someone who's with you will step up and try to work through it together. Someone who isn't will just keep waiting for you to step in again.",
+          "who_breaks_you": "You almost never fail to solve a problem. The issue is that your competence becomes the default. So there's a type that doesn't work for you: someone who thinks, \"this person always handles it.\" When you're shaking, they can't even read the sign.",
+          "who_steadies_you": "There's also a surprisingly good fit: someone who notices when you're different from usual. If you go quiet or put off a decision, they ask, \"is something going on?\" With them, you don't have to perform solidity.",
+          "same_pattern_repeats": "You may be drawn again to someone who follows your decisions, or only reaches for you during a crisis. That can't be stopped. The issue isn't the attraction — it's how long you carry everything alone afterward.",
+          "next_signs": "Remember Chapter 8? This time the signs show up faster, smaller. The moment you pause in front of a small problem you'd normally solve right away — that's the start.",
+          "try_this": "Normally you'd step in and fix it. This time, don't. Just once, hold still and watch. Someone who's with you steps up too. Someone who isn't keeps waiting for you to handle it again.",
           "final_line": "That reaction is your answer."
         }
       }

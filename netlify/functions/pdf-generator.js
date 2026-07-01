@@ -61,6 +61,51 @@ function coverBgUrl(visualKey) {
 const RADAR_AXES = ['drive', 'expression', 'pride', 'warmth', 'stability'];
 const RADAR_ANGLES = [-90, -18, 54, 126, 198];
 
+// ============================================================
+// 챕터별 글자수 상한 사전검사 (A안, 2026.07.02 추가)
+//
+// 배경: 07.02 QA 라운드에서 20개 PDF 전수 검수 결과, 챕터10(14페이지)에서만
+// 7건 중 6건이 오버플로우로 재발함. 원인은 .pdf-page가 min-height:854px로만
+// 지정돼 있어 상한이 없다는 것 — 원고가 조금만 길어도 그대로 페이지가 늘어나고
+// page-break-after가 그 지점에서 다음 페이지를 만들어 총 페이지 수가 초과됨.
+// CSS 여백 재설계(위 .ch10-tight)만으로는 원고 길이 편차를 완전히 흡수하지
+// 못하므로, "사후 발견 → 개별 패치"를 반복하는 대신 생성 "전" 단계에서
+// 원고 길이 자체를 검사해서 걸러내는 안전장치를 추가함.
+//
+// 임계값 근거 (임의 추정 아님 — 실제 20개 파일 실측 대조):
+//   챕터10 총 글자수(title + sections 6개 필드 합) 기준으로 정렬했을 때,
+//   QA 통과 그룹 최대값 = 1285자 (type_01_a)
+//   오버플로우 그룹 최소값 = 1370자 (type_03_b)
+//   → 두 그룹 사이에 명확한 경계(85자 간격)가 존재. 안전 마진을 두고
+//     1300자를 상한으로 채택.
+//   (주의: 이 값은 위 .ch10-tight CSS 기준으로 보정된 값. CSS를 추가로
+//   수정하면 이 상한도 재보정해야 함 — CSS와 상한값은 반드시 함께 관리.)
+//
+// v3 확장 안내: 새 챕터(예: compatibility) 추가 시, 동일한 방식(실제 파일
+// 글자수 vs 실제 QA 결과 대조)으로 아래 CHAPTER_CHAR_BUDGETS에 항목을
+// 추가할 것. 근거 데이터 없이 임의 숫자를 넣지 말 것.
+// ============================================================
+const CHAPTER_CHAR_BUDGETS = {
+  chapter10: 1300,
+};
+
+function countChapter10Chars(c9) {
+  const sec = c9.sections || {};
+  const fields = [
+    'who_breaks_you',
+    'who_steadies_you',
+    'same_pattern_repeats',
+    'next_signs',
+    'try_this',
+    'final_line',
+  ];
+  let total = String(c9.title || '').length;
+  fields.forEach((k) => {
+    total += String(sec[k] || '').length;
+  });
+  return total;
+}
+
 function escapeHtml(str) {
   if (str === undefined || str === null) return '';
   return String(str)
@@ -82,6 +127,7 @@ function radarPoint(value, angleDeg) {
  */
 function generateReportHTML(data) {
   const missing = [];
+  const warnings = [];
   function need(label, value) {
     if (value === undefined || value === null || value === '') {
       missing.push(label);
@@ -403,6 +449,17 @@ function generateReportHTML(data) {
   ['who_breaks_you', 'who_steadies_you', 'next_signs', 'try_this', 'final_line'].forEach((k) =>
     need(`chapters[9].sections.${k}`, sec[k])
   );
+  // 2026.07.02 추가: 사전 글자수 검사 (CHAPTER_CHAR_BUDGETS 참고).
+  // missingFields(필드 누락)와는 별개로 warnings에 기록 — "값은 있지만 너무 길어서
+  // 16페이지를 넘길 가능성이 높다"는 다른 종류의 문제이기 때문에 구분함.
+  const ch10Chars = countChapter10Chars(c9);
+  if (ch10Chars > CHAPTER_CHAR_BUDGETS.chapter10) {
+    warnings.push(
+      `chapters[9](챕터10) 글자수 ${ch10Chars}자 — 상한 ${CHAPTER_CHAR_BUDGETS.chapter10}자 초과 ` +
+        `(오버 ${ch10Chars - CHAPTER_CHAR_BUDGETS.chapter10}자). 16페이지 기준 오버플로우 가능성 높음 — ` +
+        `PDF 생성 전 원고 축약 검토 필요.`
+    );
+  }
   const hasPatternRepeats = !!(
     sec.same_pattern_repeats && String(sec.same_pattern_repeats).trim().length > 0
   );
@@ -523,7 +580,19 @@ function generateReportHTML(data) {
      divider가 3개(기존 가정 2개보다 많음)로 늘어나면서 7→8페이지 문제가 재발함이 실제 PDF로 확인됨.
      항목 개수(3개/4개)에 관계없이 안전하도록 마진을 한 단계 더 축소. */
   .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 8px 0; }
-  .chart-wrap { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 18px; margin: 16px 0; text-align: center; }
+  .chart-wrap {
+    background: rgba(255,255,255,0.03); border-radius: 14px; padding: 18px; margin: 16px 0; text-align: center;
+    /* 2026.07.02 추가: type_02_b QA에서 발견된 "막대 위치 밀림" 원인 분석 결과 —
+       챕터4(8페이지, GIVE/GET 막대차트) body 원고가 유독 길어 페이지가 854px를
+       넘길 때, chart-wrap 내부(특히 고정 100px SVG)가 인쇄 페이지 경계에서
+       그대로 잘려 렌더링되는 것으로 확인됨(막대가 중간에 잘리면서 위치가
+       밀려 보이는 시각적 버그). break-inside 지정으로 chart-wrap 전체가
+       한 페이지 안에서만 렌더링되도록 강제 — 넘칠 경우 다음 페이지로
+       통째로 밀리게 해서 최소한 "깨져 보이는" 렌더링은 방지함.
+       (근본 해결은 원고 길이 자체를 줄이는 것 — 별도 조치 필요, 이 CSS는
+       방어 장치일 뿐 페이지 수 초과 자체를 막지는 못함.) */
+    break-inside: avoid; page-break-inside: avoid;
+  }
   .chart-caption { font-size: 12px; color: #8a85a0; margin-top: 8px; }
   .pattern-name { color: #00f0ff; font-weight: 700; margin-bottom: 8px; }
   .checklist-item { display: flex; gap: 10px; margin-bottom: 14px; }
@@ -543,11 +612,16 @@ function generateReportHTML(data) {
   .center-label { text-align: center; color: #8a85a0; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
   .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
   .toc-item { font-size: 12px; color: #d1ceda; }
-  /* 2026.06.29 추가: 14페이지(챕터10)는 h3 4개+p 5개로 다른 챕터보다 섹션 수가 많아
-     마지막 한두 문장이 15페이지로 밀리는 문제가 발생(type_08_b에서 확인됨).
-     이 클래스 범위 내에서만 여백을 축소 — 다른 페이지의 전역 h3/p 스타일은 그대로 유지됨. */
-  .ch10-tight h3 { margin: 10px 0 6px 0; }
-  .ch10-tight p { margin-bottom: 8px; }
+  /* 2026.07.02 재설계(v2): 기존 .ch10-tight(06.29, h3 margin 10/6, p margin-bottom 8만 축소)로는
+     부족함이 07.02 QA 라운드에서 확인됨 — 20개 중 6개가 이 패치를 적용한 상태에서도 여전히
+     오버플로우 재발(type_02_a/b, 03_b, 04_b, 05_b, 06_b, 09_b). 임시 땜질 대신 여백을 한 단계 더
+     근본적으로 축소하고, line-height도 함께 조정해서 여유 공간을 실질적으로 확보함.
+     (병행 조치: 아래 CHAPTER_CHAR_BUDGETS 사전검사로 이 CSS로도 못 담는 원고는 생성 전에 걸러냄 —
+     CSS 튜닝만으로는 원고 길이 편차를 완전히 흡수할 수 없다는 게 이번 라운드의 교훈.)
+     이 클래스 범위 내에서만 적용 — 다른 페이지의 전역 h3/p 스타일은 그대로 유지됨. */
+  .ch10-tight h3 { margin: 8px 0 4px 0; font-size: 14px; }
+  .ch10-tight p { margin-bottom: 6px; line-height: 1.6; }
+  .ch10-tight p.punch { margin-bottom: 0; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -555,7 +629,7 @@ ${pages.join('\n')}
 </body>
 </html>`;
 
-  return { html, missingFields: missing };
+  return { html, missingFields: missing, warnings };
 }
 
 module.exports = { generateReportHTML };
