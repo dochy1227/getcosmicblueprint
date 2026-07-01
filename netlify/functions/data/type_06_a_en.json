@@ -1,0 +1,244 @@
+{
+  "report_id": "type_06_a",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "기토",
+      "day_pillar": "기토 내향",
+      "orientation_raw": "내향",
+      "element_name_en": "Yin Earth"
+    },
+    "public_key": "type_06_a",
+    "display_label": "The Soil",
+    "orientation_display": "introvert",
+    "archetype_name": "THE SOIL",
+    "visual_key": "soil"
+  },
+  "cover": {
+    "title": "THE SOIL",
+    "subtitle": "The one who holds steady while everyone slowly leans in.",
+    "tagline": "You keep your own path, but somehow become the place others rest.",
+    "traits": [
+      "NURTURING",
+      "RELIABLE",
+      "SUPPORTIVE"
+    ]
+  },
+  "profile_scores": {
+    "drive": 2,
+    "expression": 2,
+    "pride": 3,
+    "warmth": 4,
+    "stability": 4,
+    "caption": "High stability and warmth, low drive and expression — you walk your own path, while always holding someone within it."
+  },
+  "free_result": {
+    "short_summary": [
+      "You're more independent than people think, but people still keep leaning on you because your steadiness feels comfortable.",
+      "The exhaustion you've felt wasn't weakness. It came from always looking like someone who could hold steady, no matter what.",
+      "What changes love for you is learning what is actually yours to carry — and what belongs back with them."
+    ]
+  },
+  "full_report": {
+    "headline": "THE SOIL",
+    "intro": "You're more independent than people think. You have your own life, your own plans, and your own way of doing things — but somehow, people keep leaning on you anyway. This report follows the pattern underneath that: why you become the center of gravity, what it costs you, and how your relationships get lighter.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You're more independent than people think.",
+          "Even when you fall for someone, you don't suddenly change everything. You still have your own life. Your own plans. Your own way of doing things.",
+          "So people often get the wrong idea. They assume you'd never get swept up by anyone.",
+          "But here's the thing — strangely, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
+          "You never went out of your way to accommodate them. You never put on an act of being especially nice. They just say being near you feels comfortable.",
+          "So love starts the same way. At first it's two people. At some point, you become the center of gravity."
+        ],
+        "highlight": null,
+        "profile_note": "High Stability · High Care, Low Drive · Low Expression — Walking your own path, while always holding someone within it"
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating",
+        "body": [
+          "The early stage of a relationship is good. You like each other. You're curious about each other. You both make an effort.",
+          "But as time goes on, something strange happens. They start leaning toward you, more and more. You start carrying more and more.",
+          "You never asked for it. It just happens naturally.",
+          "Because you're good at it. Sorting things out. Making the call. Taking responsibility.",
+          "So people gradually hand it all to you. And one day you catch yourself thinking, \"why am I doing everything, again?\""
+        ],
+        "highlight": "You're not tired because you're weak. You're tired because you always looked like someone who could hold steady, no matter what.",
+        "pattern_name": "THE GRAVITY CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE GRAVITY CURVE",
+          "description": "The flow where, as time passes, people naturally drift toward leaning on you."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I take care of people too much.",
+            "truth": "No, you don't. You actually take care of people less than you think. If anything, you're living life your own way. The real problem is that people mistake your stability for being taken care of.",
+            "truth_short": "You don't over-care as much as you think — people mistake your stability for care."
+          },
+          {
+            "belief": "I can't say no.",
+            "truth": "Hmm. You can say no. It's that you understand why they need it, and that's why you can't. You get why they're asking. You get why it's hard for them. So you keep making exceptions.",
+            "truth_short": "You can say no — but once you understand their need, you keep making exceptions."
+          },
+          {
+            "belief": "I need to get stronger.",
+            "truth": "No. You don't need to get any stronger. You're already strong enough. What you need isn't strength — it's boundaries.",
+            "truth_short": "You don't need more strength. You need clearer boundaries."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "You're particularly drawn to people whose lives aren't quite put together.",
+          "Good-hearted, but their life is a little messy. Lots of thoughts, but not much follow-through.",
+          "At first it's fine. You can fill in what they're missing.",
+          "But the longer the relationship goes on, you split into two roles: the one who fills in, and the one who leans."
+        ],
+        "highlight": "Someone who finds you comfortable uses your stability. Someone who loves you protects your stability.",
+        "bar_chart": {
+          "give_percent": 60,
+          "get_percent": 40
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't to give more. You're already doing plenty.",
+          "What you need is to check.",
+          "Is this actually mine to do?",
+          "More often than you'd think, the answer is no.",
+          "The worry that's theirs to carry. The decision that's theirs to make. The responsibility that's theirs to take.",
+          "Handing that back is also a form of love."
+        ],
+        "action_sentence": "In the right relationship, you don't carry what was never yours to hold."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You already know how to hold someone. You already know how to take people in. You already know how to wait.",
+          "What you're going to learn next is how to tell things apart.",
+          "Love and responsibility. Care and self-sacrifice. Helping and solving it for them.",
+          "Once that line exists, the relationship will get a lot lighter."
+        ],
+        "transition_note": "This isn't about becoming less caring. It's about knowing where your care ends and their responsibility begins."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "Someone whose life is unstable",
+            "description": "They have dreams, plans, and good intentions. Every conversation is full of what could happen next. But months later, you're still helping them hold together a life they haven't learned to carry themselves. Potential and readiness are two different things."
+          },
+          {
+            "type_title": "Someone who struggles to decide things",
+            "description": "At first, it's cute. They ask where to eat, what to do, where to go. Eventually, every small choice quietly becomes yours, and you realize you've been leading the relationship alone."
+          },
+          {
+            "type_title": "A nice person",
+            "description": "They're genuinely kind. They never mean harm. But kindness alone doesn't create maturity. A good person and a mature partner are not always the same thing."
+          },
+          {
+            "type_title": "Someone who tells you they need you",
+            "description": "It feels meaningful to hear it. It makes you feel important and trusted. But being needed and being loved are different experiences, and confusing the two becomes exhausting over time."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "This one showed up pretty early. You just called it responsibility.",
+        "signal_strength": [
+          {
+            "label": "When they bring you a problem, you're already looking for the solution",
+            "percent": 60
+          },
+          {
+            "label": "You're the one deciding most of the dating plans",
+            "percent": 72
+          },
+          {
+            "label": "You're more invested in the progress of their problems than they are",
+            "percent": 85
+          },
+          {
+            "label": "You spend more and more time waiting for them to grow",
+            "percent": 95
+          }
+        ],
+        "core_signal": "The better their life gets, the bigger your role grows — and your own life stays exactly the same."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "Each of you carries your own share.",
+            "description": "One person isn't always pulling the relationship forward."
+          },
+          {
+            "title": "They solve their own problems.",
+            "description": "They can receive help. But no one's living their life for them."
+          },
+          {
+            "title": "Asking favors isn't one-sided.",
+            "description": "You're not the only one receiving. It comes back to you too."
+          },
+          {
+            "title": "Being together doesn't add to your responsibilities.",
+            "description": "This part matters. A good relationship isn't just one more job."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow-through. Because you're capable of follow-through. So you keep stepping in to help.",
+          "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who handles their own things. Someone who moves when a problem comes up. Someone who admits it when they're wrong. Someone who learns when they need to. This kind of person doesn't drain your energy. They build with you.",
+          "same_pattern_repeats": "You'll be drawn again to someone whose life isn't quite put together. That can't be stopped — that's just who you are. The issue was never the attraction itself, it's what you do after.",
+          "next_signs": "This time it'll show up sooner. In how they handle problems — whether they look for an excuse, or look for a way through. You'll see it within a few weeks. More precisely than you'd expect.",
+          "try_this": "This time, don't solve it for them. Just once. When they bring you a problem, don't give the answer. Ask instead: \"What do you want to do?\" Then watch. Do they try to find their own answer? Or do they just wait for yours again?",
+          "final_line": "That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "You already know how to hold someone within your own life. What's left is learning which responsibilities are yours — and which ones belong back with them.",
+      "action_items": [
+        "This week, pause before solving one problem and ask, \"Is this actually mine to do?\"",
+        "When someone brings you a problem, ask what they want to do before offering an answer.",
+        "Notice whether being with someone makes your life lighter, or simply adds another responsibility."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to hold someone within your own life. This report covered why people keep leaning on you — and how that relationship finds its balance again.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}

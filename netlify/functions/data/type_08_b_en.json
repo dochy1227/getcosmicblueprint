@@ -5,7 +5,7 @@
   "identity": {
     "_internal": {
       "stem": "신금",
-      "day_pillar": "신유",
+      "day_pillar": "",
       "orientation_raw": "외향",
       "element_name_en": "Yin Metal"
     },
@@ -17,8 +17,8 @@
   },
   "cover": {
     "title": "THE GEM",
-    "subtitle": "The one who sees what could be better — and says so.",
-    "tagline": "You don't see what's lacking. You see what could be refined.",
+    "subtitle": "The one who sees what could be refined — and says it before the heart is visible.",
+    "tagline": "You don't point things out because you don't care. You point them out because you see what they could become.",
     "traits": [
       "PERCEPTIVE",
       "PRECISE",
@@ -31,18 +31,18 @@
     "pride": 3,
     "warmth": 3,
     "stability": 3,
-    "caption": "High drive and expression, low warmth in delivery — you see the spot that could get better, and you say it exactly as it is."
+    "caption": "High drive and expression with balanced pride, warmth, and stability — you see the spot that could get better, and you say it exactly as it is."
   },
   "free_result": {
     "short_summary": [
-      "You don't see what's lacking in people — you see what could be refined, and you say so right away.",
-      "The loneliness you've felt wasn't about loving precision too much. It was that no one ever realized precision was your way of loving.",
-      "What's still missing isn't softer eyes. It's one more sentence that shows your sharp words come from seeing someone's potential."
+      "You see the last part that could make something better, and you rarely pretend not to see it.",
+      "The loneliness comes when people hear criticism, even when what you meant was potential.",
+      "What changes next is not becoming less precise. It's letting your heart arrive with the precision."
     ]
   },
   "full_report": {
     "headline": "THE GEM",
-    "intro": "You say what you see. When something could get better but stops right there, you don't let it go — you point it out precisely. This report follows what that precision costs you in love: why it gets heard as criticism, what's actually missing, and what changes it.",
+    "intro": "You are someone who says what you see. If something could get better but stops right there, you don't just let it go. You point it out precisely. This report follows the pattern underneath that: why your refinement is often misread as criticism, why that makes people shrink back, and how your care can be heard more accurately.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -50,48 +50,53 @@
         "title": "When You Love",
         "subtitle": null,
         "body": [
-          "You're someone who says what you see. If something could get better but stops right there, you don't just let it go — you point it out precisely. People call you sharp because of that. They call you picky too. Sometimes they call you cold.",
-          "But here's the thing — you're not someone who looks for what's lacking. You're someone who sees the part that could get even better. It's the same when you love. When you see that just a little more polish would make things so much better, you say it right away, because you see the potential.",
+          "You're someone who says what you see. If something could get better but stops right there, you don't just let it go. You point it out precisely.",
+          "People call you sharp because of that. They call you picky too. Sometimes they call you cold.",
+          "But here's the thing — you're not someone who looks for what's lacking. You're someone who sees the part that could get even better.",
+          "It's the same when you love. When you see that just a little more polish would make things so much better, you say it right away. Because you see the potential.",
           "But the people on the receiving end only ever hear it as \"you're saying I'm not enough again.\" Actually, you weren't angry — you were just a little disappointed."
         ],
         "highlight": null,
-        "profile_note": "High drive and expression, low warmth in delivery — You see the spot that could get better, and you say it exactly as it is."
+        "profile_note": "High Drive · High Expression, Balanced Pride · Warmth · Stability — You see the spot that could get better, and you say it exactly as it is."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat",
+        "title": "The Pattern You Keep Repeating",
         "body": [
-          "You're an attractive person early in a relationship, because you tell the truth and there's no empty flattery. So the other person trusts you. The problem starts after that.",
-          "You're not someone who looks for what's lacking — you're someone who sees the part that could get even better. The problem is the other person doesn't know the difference. They don't feel like you're showing them potential; they feel like they're being criticized for falling short. So they start trying less, and you point that out precisely too: \"You don't seem to be putting in effort lately.\" But that wasn't them losing interest — it was them giving up. You were accurate, but you missed the most important signal of all."
+          "You're an attractive person early in a relationship. Because you tell the truth. Because there's no empty flattery. So the other person trusts you.",
+          "The problem starts after that. You're not someone who looks for what's lacking. You're someone who sees the part that could get even better.",
+          "The problem is the other person doesn't know the difference. They don't feel like you're showing them potential — they feel like they're being criticized for falling short.",
+          "So they start trying less. You point that out precisely too: \"You don't seem to be putting in effort lately.\" But that wasn't them losing interest — it was them giving up.",
+          "You were accurate, but you missed the most important signal of all."
         ],
         "highlight": "The reason you feel lonely isn't that you love precision. It's that no one ever realized that precision was love.",
         "pattern_name": "THE NEVER ENOUGH CURVE",
         "chart": {
           "chart_type": "curve",
           "title": "THE NEVER ENOUGH CURVE",
-          "description": "As the relationship deepens, your wish to refine things further stays the same, the other person's attempts keep shrinking, and you keep precisely pointing out that shrinking."
+          "description": "The pattern where your wish to refine stays the same, while the other person's attempts shrink and you keep pointing out that shrinking."
         }
       },
       {
         "chapter_number": 3,
         "page_map": "chapter_03",
-        "title": "What You Got Wrong About Yourself",
+        "title": "What You've Gotten Wrong About Yourself",
         "items": [
           {
             "belief": "I'm just being honest.",
-            "truth": "That's partly true. But you're not just being honest — you're someone who believes that noticing what could be refined further is itself a form of love. But the other person might not know how to take that precision as affection.",
-            "truth_short": "You're not just honest — you believe noticing potential is love. The other person may not read precision as affection."
+            "truth": "That's partly true. But you're not just being honest — you're someone who believes that noticing what could be refined further is itself a form of love. The other person might not know how to take that precision as affection.",
+            "truth_short": "You're not just honest. You see refinement as care, but others may not hear it that way."
           },
           {
             "belief": "You should listen to what's true.",
             "truth": "Well, that's true. But even true things have timing and delivery. Being right and being helpful in that moment are two different things.",
-            "truth_short": "Being right and being helpful in the moment aren't the same thing."
+            "truth_short": "Truth matters, but timing and delivery decide whether it helps."
           },
           {
             "belief": "If I let it slide, I lose myself.",
             "truth": "No. That's not telling you to see less. It's telling you to show, through your delivery, that the precision is interest in their potential, not criticism.",
-            "truth_short": "It's not about seeing less — it's about showing your precision is interest, not criticism."
+            "truth_short": "You don't need to see less. You need to show that the precision comes from potential, not criticism."
           }
         ]
       },
@@ -100,7 +105,9 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "They're all different people. But strangely, people with a similar texture keep coming into your life — someone who settles for \"good enough,\" someone who could clearly get much better but stops right there. That always feels like a waste to you — not because they lack ability, but because they give up right when just a little more polish would do it."
+          "They're all different people. But strangely, people with a similar texture keep coming into your life.",
+          "Someone who settles for \"good enough.\" Someone who could clearly get much better, but stops right there.",
+          "That always feels like a waste to you. Not because they lack ability, but because they give up right when just a little more polish would do it."
         ],
         "highlight": "Someone who acknowledges you finds your gaze burdensome. Someone who loves you knows you're seeing their potential.",
         "bar_chart": {
@@ -114,40 +121,44 @@
         "title": "What Actually Changes Something",
         "body": [
           "What you need isn't to see less. That's who you are at your core, and there's no need to dial it down.",
-          "What you actually need is to add one more sentence after you point something out. Don't stop at \"this part is a bit lacking.\" Go all the way to \"but I think it'd be really great if you polished it just a little more.\""
+          "What you actually need is to add one more sentence after you point something out.",
+          "Don't stop at \"this part is a bit lacking.\" Go all the way to \"but I think it'd be really great if you polished it just a little more.\"",
+          "Sounds like nothing, right? But that one sentence is the only signal that separates criticism from potential."
         ],
-        "action_sentence": "That one sentence is the only signal that separates criticism from potential."
+        "action_sentence": "After precision, add the sentence that shows the heart behind it."
       },
       {
         "chapter_number": 6,
         "page_map": "chapter_06",
-        "title": "Where to Go From Here",
+        "title": "Where You Go From Here",
         "body": [
           "You already know how to spot the place that could get better. You know how to say it accurately.",
-          "But what you'll learn next is how to show that your gaze comes from seeing potential."
+          "But what you'll learn next is how to show that your gaze comes from seeing potential.",
+          "This isn't about being less precise. It's actually the opposite.",
+          "It's about your sincerity getting through more accurately."
         ],
-        "transition_note": "This isn't about being less precise. It's actually the opposite — it's about your sincerity getting through more accurately."
+        "transition_note": "You've spent a long time learning to see and say where things could get better. Now the next step is delivering the heart behind it more accurately."
       },
       {
         "chapter_number": 7,
         "page_map": "chapter_07",
-        "title": "The Type You Keep Falling For",
+        "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone Who Settles for \"Good Enough\"",
-            "description": "Just a little more would do it, but they stop there and settle. That stopping point feels like such a waste to you."
+            "type_title": "Someone Who Settles for Good Enough",
+            "description": "The project is 90% finished, and they say, \"That's enough.\" You immediately see the final 10% that could make it great. That gap keeps pulling at your heart."
           },
           {
             "type_title": "Someone Who Chooses Comfort Over Growth",
-            "description": "The process of refining things is tiring, so they'd rather just leave things as they are. That feels like a shame to you."
+            "description": "Whenever things get difficult, they say, \"Why make life harder?\" You understand the logic, but part of you mourns the version of them that never got refined."
           },
           {
-            "type_title": "Someone Who Thinks \"Close Enough\" Is Fine",
-            "description": "Once it's almost right, that's it for them. For you, \"almost\" and \"exactly\" are completely different words — but to this person, they're the same word."
+            "type_title": "Someone Who Thinks Close Enough Is Fine",
+            "description": "They shrug and say, \"It's basically the same thing.\" For you, the difference between almost and exactly matters. For them, it never does."
           },
           {
             "type_title": "Someone Who Doesn't Care Much About Detail",
-            "description": "They only look at the big picture and stop there. This person doesn't really believe that small differences end up changing the whole thing."
+            "description": "They only notice the big picture. The tiny adjustments you care about seem unnecessary to them. Yet you know that small differences are often what change everything."
           }
         ]
       },
@@ -162,7 +173,7 @@
             "percent": 60
           },
           {
-            "label": "You mistake that for \"they must be trying to do better\"",
+            "label": "You mistake that for them trying to do better",
             "percent": 72
           },
           {
@@ -170,7 +181,7 @@
             "percent": 85
           },
           {
-            "label": "You point that out accurately too, but you miss that it's actually a sign of giving up",
+            "label": "You point that out accurately too, but miss that it's actually a sign of giving up",
             "percent": 95
           }
         ],
@@ -179,7 +190,7 @@
       {
         "chapter_number": 9,
         "page_map": "chapter_09",
-        "title": "What a Healthy Relationship Looks Like to You",
+        "title": "What a Healthy Relationship Looks Like for You",
         "checklist": [
           {
             "title": "They understand the heart behind your gaze.",
@@ -195,34 +206,34 @@
           },
           {
             "title": "Being together makes things more refined.",
-            "description": "This is the most important part — a relationship where both sides refine each other, not one where only one side does the refining."
+            "description": "A healthy relationship refines both sides, not only one side."
           }
         ]
       },
       {
         "chapter_number": 10,
         "page_map": "chapter_10",
-        "title": "What Happens in Your Next Relationship",
+        "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You almost never fail to spot where something could get better. The problem is that gaze always comes across as criticism. So there's someone who doesn't fit you well: someone who only hears your words as criticism and reduces their attempts. They talk less and less, try less and less. You point that out accurately too, but you fail to read that it's actually a sign of giving up.",
-          "who_steadies_you": "On the other hand, there's someone who unexpectedly fits you well: someone who accepts that your gaze is disappointment, not anger. Someone who, when you point something out, asks back, \"So you were just disappointed, right?\" In front of someone like that, you don't need to keep adding explanations every single time.",
-          "same_pattern_repeats": "You might be drawn again to someone who settles for \"good enough.\" You might fall for someone who doesn't care much about detail. That can't really be stopped — that's just who you are. The problem isn't being drawn to them — it's how long you keep showing only your gaze without showing your heart, after that.",
-          "next_signs": "Remember the signs from Chapter 8? They usually didn't show up until months in. This time, they'll show up faster, and smaller. The moment, right as you're about to point something out, when their words get just slightly shorter than usual — that's where it starts.",
-          "try_this": "Normally, you would've just pointed it out and stopped there. This time, don't. Just once. After you point it out, add: \"But I think it'd be really great if you polished it just a little more.\" Then watch their reaction. Someone who can take it listens without getting defensive. Someone who can't still only hears it as criticism.",
-          "final_line": "That reaction is the answer."
+          "who_breaks_you": "You almost never fail to spot where something could get better. The problem is that gaze always comes across as criticism. Someone who only hears your words as criticism will talk less, try less, and reduce their attempts.",
+          "who_steadies_you": "The surprisingly good fit is someone who accepts that your gaze is disappointment, not anger. Someone who can ask, \"So you were just disappointed, right?\" without turning your precision into a fight.",
+          "same_pattern_repeats": "You might be drawn again to someone who settles for good enough, or someone who doesn't care much about detail. That can't really be stopped. That's just who you are.",
+          "next_signs": "This time, the sign will show up earlier and smaller: the moment right as you're about to point something out, when their words get just slightly shorter than usual.",
+          "try_this": "Normally, you would point it out and stop there. This time, after you point it out, add: \"But I think it'd be really great if you polished it just a little more.\" Then watch their reaction.",
+          "final_line": "Someone who can take it listens without getting defensive. Someone who can't still only hears it as criticism. That reaction is your answer."
         }
       }
     ],
     "action_plan": {
-      "summary": "You already know how to see what could be better. What's left is showing that the seeing comes from care, not criticism.",
+      "summary": "You already know how to see what could be refined. What changes now is making sure the care behind that precision is visible too.",
       "action_items": [
-        "Next time you point something out, add one sentence: what you think it could become, not just what's missing.",
-        "Notice when someone's words start getting shorter — that's often a quieter sign of giving up, not improving.",
-        "Ask yourself before you speak: am I about to name a gap, or name a possibility?"
+        "After pointing something out, add one sentence that explains the potential you see.",
+        "Watch whether the other person hears refinement as care or only as criticism.",
+        "Before repeating the same point, check whether they are trying less because they feel defeated."
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning to see and say where things could get better. This report covered why your precision has so often been misread as criticism, and how you can deliver the heart behind it more accurately.",
+      "message": "You've spent a long time learning to see and say where things could get better. This report covered why that precision is often misread — and how to let the heart behind it be heard.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

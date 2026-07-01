@@ -1,0 +1,239 @@
+{
+  "report_id": "type_08_a",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "신금",
+      "day_pillar": "",
+      "orientation_raw": "내향",
+      "element_name_en": "Yin Metal"
+    },
+    "public_key": "type_08_a",
+    "display_label": "The Gem",
+    "orientation_display": "introvert",
+    "archetype_name": "THE GEM",
+    "visual_key": "gem"
+  },
+  "cover": {
+    "title": "THE GEM",
+    "subtitle": "The one who feels the truth early, then questions themselves in silence.",
+    "tagline": "You sense what others miss — but certainty comes only after you've doubted yourself first.",
+    "traits": [
+      "PERCEPTIVE",
+      "PRECISE",
+      "REFINED"
+    ]
+  },
+  "profile_scores": {
+    "drive": 1,
+    "expression": 1,
+    "pride": 2,
+    "warmth": 3,
+    "stability": 2,
+    "caption": "Low drive and expression, with quiet warmth — you sense things accurately, but in the end doubt yourself and stay silent."
+  },
+  "free_result": {
+    "short_summary": [
+      "You notice the smallest shifts in tone, timing, and mood — but you often question yourself before trusting what you felt.",
+      "The pattern wasn't that you were too sensitive. It was that you kept believing someone else's explanation more than your own senses.",
+      "What changes next is not seeing people better. It's trusting yourself sooner."
+    ]
+  },
+  "full_report": {
+    "headline": "THE GEM",
+    "intro": "You notice more than people think. The other person's expression, tone, reply speed, and small changes in mood rarely pass you by. But even when you feel something clearly, you often question yourself before you trust it. This report follows that pattern: why you sense things early, why you stay silent anyway, and what changes when you finally trust yourself.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You're someone who notices more than people think. The other person's expression. Their tone. How fast they reply. A mood that's different from usual.",
+          "Things other people just pass by, you pick up on pretty accurately. But here's the funny part — even while you feel it, you don't really trust yourself.",
+          "\"Am I being too sensitive?\" \"Am I overreacting?\" \"Maybe it's nothing.\" You think it over one more time.",
+          "So people find you unexpected. Your instincts are quick. But your judgment comes late.",
+          "And love is the same way. The feeling of liking someone shows up faster than almost anyone. But certainty shows up the latest of all."
+        ],
+        "highlight": null,
+        "profile_note": "High Warmth · High Perceptiveness, Low Drive · Low Expression — You sense things accurately, but in the end doubt yourself and stay silent."
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating",
+        "body": [
+          "This has probably repeated quite often. Something felt off from the start. Something snagged. Something felt uncomfortable. Something didn't quite add up.",
+          "But you let it go. Because there's no proof. Then time passes. And eventually you find out that what you felt at first was right.",
+          "The thought that comes every time is similar: \"I knew it — that feeling back then was right.\"",
+          "But strangely, when the next relationship comes, you repeat it again. Once again, you trust the other person more than your own senses."
+        ],
+        "highlight": "The reason you get hurt isn't that you're sensitive. It's that you keep trusting the other person's explanation more than your own senses.",
+        "pattern_name": "THE SELF-DOUBT CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE SELF-DOUBT CURVE",
+          "description": "The pattern of sensing something, doubting yourself, and eventually confirming that your first feeling was right."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I'm too sensitive.",
+            "truth": "No. You're actually more accurate than you think. The problem isn't sensing things wrong — it's sensing them right and then ignoring it.",
+            "truth_short": "You're not too sensitive. You're often accurate, then you ignore what you felt."
+          },
+          {
+            "belief": "Wanting to be noticed is too much to ask.",
+            "truth": "No, it's not. It's a natural need. Someone who loves you should want to know your effort too.",
+            "truth_short": "Wanting to be noticed is not too much. It's a natural need."
+          },
+          {
+            "belief": "Let's just wait a little longer.",
+            "truth": "Hmm. Sometimes that's not waiting — it's avoiding. You're putting off an answer you don't want to confirm.",
+            "truth_short": "Sometimes waiting is avoidance — postponing an answer you already feel."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "You're drawn to people who don't express much. People who don't say things easily. Who don't reveal things easily. Who don't easily give you certainty.",
+          "At first they seem deep. There's even some fun in slowly getting to know them.",
+          "But as time passes, you often end up guessing alone. The other person hasn't said anything, but you keep interpreting anyway."
+        ],
+        "highlight": "Someone who's curious about you tries to express it. Someone who takes you for granted expects you to just figure it out yourself.",
+        "bar_chart": {
+          "give_percent": 60,
+          "get_percent": 40
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't to see things even better. You already see plenty.",
+          "What you need is to trust what you first felt, just a little more.",
+          "If it's uncomfortable, it's uncomfortable. If it's hurtful, it's hurtful.",
+          "You don't need to prove that feeling like courtroom evidence. Sometimes just feeling it is enough."
+        ],
+        "action_sentence": "In the right relationship, your feelings don't need a full legal case before they matter."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You know how to read people delicately. You know how to be considerate. You know how to think from the other person's perspective.",
+          "But what you'll learn next is how to think from your own perspective.",
+          "You already understand why they did what they did. Now it's time to look at how that action made you feel.",
+          "That's the moment the relationship changes."
+        ],
+        "transition_note": "You've spent a long time learning how to understand others. Now the next step is learning to trust yourself more."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "Someone Who Talks Little",
+            "description": "You ask how their day was, and they answer with one sentence and a smile. You fill in the rest yourself. But mystery and emotional absence are not the same thing."
+          },
+          {
+            "type_title": "Someone Stingy With Compliments",
+            "description": "They notice your effort but rarely say it out loud. Every small word of recognition becomes precious. Yet love isn't something you should have to earn like a perfect score."
+          },
+          {
+            "type_title": "Someone Who Copes Well Alone",
+            "description": "They carry everything by themselves and never ask for help. It looks strong and admirable. But sometimes independence is just another way of staying distant."
+          },
+          {
+            "type_title": "Someone Who Doesn't Talk About Feelings",
+            "description": "Serious conversations always end with, 'I'm fine.' You assume there's depth underneath the silence. But being deep and being emotionally unavailable are two different things."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "The truth is, you felt it pretty early. You just didn't trust yourself.",
+        "signal_strength": [
+          {
+            "label": "There's a moment that hurts, but you let it go right away",
+            "percent": 60
+          },
+          {
+            "label": "You interpret the other person's intent before you look at their actual behavior",
+            "percent": 72
+          },
+          {
+            "label": "You have less and less to say",
+            "percent": 85
+          },
+          {
+            "label": "You want to be noticed, but you still don't say anything",
+            "percent": 95
+          }
+        ],
+        "core_signal": "You keep understanding, while the other person keeps thinking they don't need to explain."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "They don't hold back expression.",
+            "description": "They don't make you guess at their good intentions."
+          },
+          {
+            "title": "They say thank you.",
+            "description": "They don't wait to be noticed."
+          },
+          {
+            "title": "They say it directly.",
+            "description": "They can explain when something hurts."
+          },
+          {
+            "title": "There's no guessing game.",
+            "description": "You feel comfortable. You don't have to keep interpreting everything."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You're weak to people who react little. Whether they like it, dislike it, are grateful, or aren't — it's hard to tell. So you watch more, worry more, and interpret more.",
+          "who_steadies_you": "The good fit is someone who says they like it when they like it, says thanks when they're grateful, and says it hurts when it hurts. Nothing dramatic. Just someone who doesn't hide things.",
+          "same_pattern_repeats": "You'll probably sense awkwardness, discomfort, or a small distance faster than before. The issue isn't whether you sense it — it's whether you ignore it again.",
+          "next_signs": "This time, that feeling may come earlier. And there is a good chance it will be right again. Notice the moment you start explaining it away.",
+          "try_this": "This time, don't interpret it alone. Just once, ask in the moment: \"I might be reading this wrong, but — does this mean...?\" Then watch how they respond.",
+          "final_line": "A healthy person explains. An uncomfortable person makes an issue out of your question itself. That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "You already know how to read people. What changes now is trusting what you felt before you talk yourself out of it.",
+      "action_items": [
+        "When something feels off, write down the feeling before you explain it away.",
+        "Ask one direct question instead of interpreting the whole situation alone.",
+        "When you feel hurt, treat that feeling as enough information to pay attention."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to understand others. This report covered why you often understand them first — and how you can start trusting yourself sooner.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}
