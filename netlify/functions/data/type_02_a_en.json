@@ -107,13 +107,8 @@
           },
           {
             "belief": "It's because I'm just less sensitive than others.",
-            "truth": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened.",
-            "truth_short": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened."
-          },
-          {
-            "belief": "That fast smoothing-over isn't insensitivity — it's a trained reflex.",
-            "truth": "",
-            "truth_short": ""
+            "truth": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened. That fast smoothing-over isn't insensitivity — it's a trained reflex.",
+            "truth_short": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened. That fast smoothing-over isn't insensitivity — it's a trained reflex."
           }
         ]
       },
@@ -201,7 +196,7 @@
           "It's about bringing things up little by little, starting small, before they pile up.",
           "That's the only thing that prevents it all from accumulating and bursting at once."
         ],
-        "transition_note": ""
+        "transition_note": "It's about bringing things up little by little, starting small, before they pile up. That's the only thing that prevents it all from accumulating and bursting at once."
       },
       {
         "chapter_number": 7,
