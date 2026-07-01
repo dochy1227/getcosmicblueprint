@@ -1,0 +1,262 @@
+{
+  "report_id": "type_03_b",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "병화",
+      "day_pillar": "병인",
+      "orientation_raw": "외향",
+      "element_name_en": "Yang Fire"
+    },
+    "public_key": "type_03_b",
+    "display_label": "The Sun",
+    "orientation_display": "extrovert",
+    "archetype_name": "THE SUN",
+    "visual_key": "sun"
+  },
+  "cover": {
+    "title": "THE SUN",
+    "subtitle": "The one who keeps the lights on, even when they're tired.",
+    "tagline": "You brighten the room first — then quietly wonder who sees you when the light goes out.",
+    "traits": [
+      "PASSIONATE",
+      "WARM",
+      "EXPRESSIVE"
+    ]
+  },
+  "profile_scores": {
+    "drive": 4,
+    "expression": 4,
+    "pride": 4,
+    "warmth": 3,
+    "stability": 2,
+    "caption": "High Expression · High Pride, Low Stability — Reaching out first to set the mood, but checking if anyone's watching comes before that"
+  },
+  "free_result": {
+    "short_summary": [
+      "You change the mood the moment you enter a room, but people often notice your energy before they notice you.",
+      "The loneliness you've felt before wasn't from being unpopular. It was from only showing the version of yourself that's onstage.",
+      "What you're learning is how to trust that the right person stays even when your light goes quiet."
+    ]
+  },
+  "full_report": {
+    "headline": "THE SUN",
+    "intro": "You make people laugh, lift the mood, and bring warmth into the room. This report follows the pattern underneath that light: why you keep performing even when you're tired, who mistakes your energy for all of you, and what changes when someone finally sees you after the lights go out.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You're the kind of person who changes the mood the moment you walk into a room.",
+          "Even an awkward gathering loosens up once you're in it. You speak first, laugh first, set the mood first.",
+          "People take that completely for granted.",
+          "It comes so naturally that no one stops to notice it.",
+          "You're the same way when you love someone. You make them laugh. You light up the mood. You hear \"it's fun being with you\" a lot.",
+          "But here's the thing.",
+          "The truth is, setting the mood isn't actually your priority — checking whether people are watching you comes first.",
+          "You're not trying to be funny. You're trying to see if they laugh.",
+          "And when you're alone — no one asks you anything.",
+          "Because you always look fine.",
+          "Because you shine too well."
+        ],
+        "highlight": null,
+        "profile_note": "High Expression · High Pride, Low Stability — Reaching out first to set the mood, but checking if anyone's watching comes before that"
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating — THE EMPTY SPOTLIGHT CURVE",
+        "body": [
+          "You're the brightest person in the room at the start of a relationship.",
+          "Being together is fun. The mood is always good. The conversation never runs dry.",
+          "They get drawn to you fast because of it.",
+          "The problem starts after that.",
+          "The deeper the relationship gets, the brighter you get.",
+          "But the real you behind that light shows up less and less.",
+          "When something's hard, you laugh it off. When you're upset, you boost the mood even more, so it doesn't break.",
+          "And then at some point, something feels strange.",
+          "People like your energy. Very few of them actually know who you are.",
+          "So sometimes, on purpose, you turn the tension down.",
+          "And you watch.",
+          "To see whether people still look at you. Or whether they scatter the moment your light dims."
+        ],
+        "highlight": "You're not lonely because you're unpopular. You're lonely because you only ever showed the version of yourself that's onstage.",
+        "pattern_name": "THE EMPTY SPOTLIGHT CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE EMPTY SPOTLIGHT CURVE",
+          "description": "Early on, you shine brilliantly and draw people in — but the real you behind the light shows up less and less, until you end up alone on the stage."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I'm just naturally the mood maker.",
+            "truth": "No. It's not that you love setting the mood. What you're actually more curious about is whether people stay even when you're not shining. Being a mood maker is a trait. That checking impulse is a learned fear. Indifference scares you more than rejection does.",
+            "truth_short": "No. It's not that you love setting the mood. What you're actually more curious about is whether people stay even when you're not shining. Being a mood maker is a trait. That checking impulse is a learned fear. Indifference scares you more than rejection does."
+          },
+          {
+            "belief": "People like me because I'm fun.",
+            "truth": "Hmm, that's true to some extent. But push that all the way and a problem shows up. There comes a point where even you can't tell whether people like \"you\" or \"your energy.\" That distinction matters more and more, the deeper the relationship goes.",
+            "truth_short": "Hmm, that's true to some extent. But push that all the way and a problem shows up. There comes a point where even you can't tell whether people like \"you\" or \"your energy.\" That distinction matters more and more, the deeper the relationship goes."
+          },
+          {
+            "belief": "If I show a weak side, people will leave.",
+            "truth": "No. It's actually the opposite. People drift further away from someone who's never once shown a crack. Someone with no gaps feels less close than someone who reveals a few.",
+            "truth_short": "No. It's actually the opposite. People drift further away from someone who's never once shown a crack. Someone with no gaps feels less close than someone who reveals a few."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "Every face is different. But strangely, the people who come into your life have a similar texture.",
+          "Someone who watches you, specifically. Even in a crowded room, somehow their eyes only go to you.",
+          "You can't easily walk past attention like that.",
+          "Someone who reacts well. They laugh hard at your stories, get surprised by your jokes, respond well to your presence.",
+          "Seeing that reaction makes you want to shine even more.",
+          "But at some point, having to keep producing that reaction becomes a job."
+        ],
+        "highlight": "Someone who likes you likes the stage. Someone who loves you sees you after the lights go out.",
+        "bar_chart": {
+          "give_percent": 40,
+          "get_percent": 60
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't to turn the tension down. That's just who you are — no need to dial it back.",
+          "What you actually need is to show one person what's backstage.",
+          "Not everything. Not a full reveal.",
+          "Just one thing.",
+          "That today was actually kind of rough. That this one thing still isn't sorted out. That you're a little tired right now.",
+          "Starting with one small line like that.",
+          "This doesn't ruin the show.",
+          "It's the act of leaving the real you inside the relationship."
+        ],
+        "action_sentence": "This doesn't ruin the show. It's the act of leaving the real you inside the relationship."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You already know how to light up a room. You already know how to draw people in. You already know how to lift the mood.",
+          "What you're going to learn next is something else.",
+          "Trusting that people won't leave when the lights go out. Trusting that you can be loved even on a low-tension day.",
+          "Hmm.",
+          "This might genuinely scare you more than it sounds.",
+          "But given everything you've already created, you can definitely learn this too."
+        ],
+        "transition_note": "Trusting that people won't leave when the lights go out. Trusting that you can be loved even on a low-tension day."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "The Person Who Reacts To Everything",
+            "description": "They laugh loudly. They get excited. They make you feel interesting. And honestly? You shine even brighter around people like that. The problem starts when that reaction becomes quieter. Because without realizing it, you start working to get it back."
+          },
+          {
+            "type_title": "The Person Who Makes You Feel Special",
+            "description": "Even in a crowded room, their attention always lands on you. They remember what you said. They notice small things. You can't easily walk past someone who makes you feel chosen."
+          },
+          {
+            "type_title": "The Person Who Says, \"The Mood Changes When You're Here\"",
+            "description": "At first, it feels wonderful. You feel needed. You feel important. But one day, you realize the relationship only works as long as you're the one keeping the lights on."
+          },
+          {
+            "type_title": "The Person Who Was Excited At First",
+            "description": "In the beginning, they reacted to everything. They loved your energy. Then slowly, they stopped. You try harder. You become brighter. But maybe nothing is wrong. Maybe they simply got used to receiving what you always give."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "These signs actually showed up pretty early. It's just that every time, you laughed even brighter in response.",
+        "signal_strength": [
+          {
+            "label": "You're almost always the one setting the mood, while they only react",
+            "percent": 60
+          },
+          {
+            "label": "When something hard comes up, you laugh it off first so the mood doesn't sink",
+            "percent": 72
+          },
+          {
+            "label": "You laugh more in front of people, then your energy suddenly drains when you're alone",
+            "percent": 85
+          },
+          {
+            "label": "They barely know about the moments you were actually struggling",
+            "percent": 95
+          }
+        ],
+        "core_signal": "People have seen you shine more times than you can count. They've never once seen you go dark."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "They like you even without the stage.",
+            "description": "On low-tension days, on quiet days, they like you exactly the same."
+          },
+          {
+            "title": "They ask first.",
+            "description": "Before you say anything. How today actually went."
+          },
+          {
+            "title": "They don't leave when you show a weak side.",
+            "description": "You don't have to be cheerful all the time. They stay exactly where they are."
+          },
+          {
+            "title": "You don't have to shine alone.",
+            "description": "This is the most important one. With the right person, the space doesn't feel empty even when your light's not on."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You almost never fail to set the mood. The problem is that it becomes too much of a given. So there's a type that doesn't work for you: someone who only consumes your energy. They applaud, but they never step closer. The moment your light's off, their interest fades too.",
+          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who doesn't leave even on your quiet days. On a low-tension day, they ask first — \"what's up with you today?\" Someone like this comes to see you, not your stage.",
+          "same_pattern_repeats": "You might be drawn again to someone who only enjoys your energy. You might also be drawn to someone who only shows up during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself — it's how long you keep hiding what's backstage afterward.",
+          "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment your tension dips slightly — right before you'd normally pull it right back up — there's a brief pause. That's the start.",
+          "try_this": "Normally you'd already be lifting the mood back up. This time, don't. Just once. Don't pull the tension back up. Just stay quiet. And watch how they react. Someone who's with you stays put even when you're not shining. Someone who isn't loses interest the moment your light's off.",
+          "final_line": "That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "You don't need to dim your light. You need to let someone see what exists behind it.",
+      "action_items": [
+        "Tell one trusted person when today was actually rough.",
+        "Let one quiet moment stay quiet instead of immediately lifting the mood.",
+        "Watch whether they stay close when you're not performing."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to set the mood. The next report covers why you always had to be the one on the stage — and how you come to believe you can be loved without it.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}
