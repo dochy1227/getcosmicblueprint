@@ -467,14 +467,48 @@
             });
         }
 
-        document.getElementById('paywall-secure-button').addEventListener('click', () => {
+        // 2026.07.02 추가: 더미 waitlist 연결을 실제 Creem 체크아웃 호출로 교체.
+        // create-checkout.js 함수 호출이 실패하면(예: Netlify 환경변수 CREEM_API_KEY /
+        // CREEM_PRODUCT_ID가 아직 등록 안 된 상태, 또는 Creem 승인 전) 기존처럼
+        // waitlist 폼으로 자동 폴백하므로, 서비스가 끊기는 일 없이 안전하게 배포 가능.
+        document.getElementById('paywall-secure-button').addEventListener('click', async () => {
             gtag('event', 'click_checkout_initiate', {
                 'element_type': currentElement,
                 'orientation': orientation,
                 'price': 4.99,
                 'currency': 'USD'
             });
-            showWaitlistForm();
+
+            const buyBtn = document.getElementById('paywall-secure-button');
+            const originalLabel = buyBtn.innerHTML;
+            buyBtn.disabled = true;
+            buyBtn.innerHTML = 'Preparing your checkout…';
+
+            try {
+                const res = await fetch('/.netlify/functions/create-checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ archetypeId: currentElement })
+                });
+                const data = await res.json();
+
+                if (!res.ok || !data.checkoutUrl) {
+                    throw new Error(data.error || 'checkoutUrl missing from response');
+                }
+
+                gtag('event', 'checkout_redirect', {
+                    'element_type': currentElement,
+                    'orientation': orientation,
+                    'test_mode': !!data.testMode
+                });
+
+                window.location.href = data.checkoutUrl;
+            } catch (err) {
+                console.warn('[checkout] Creem 체크아웃 생성 실패, waitlist 폼으로 전환:', err.message);
+                buyBtn.disabled = false;
+                buyBtn.innerHTML = originalLabel;
+                showWaitlistForm();
+            }
         });
     </script>
 </body>
