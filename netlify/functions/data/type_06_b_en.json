@@ -88,23 +88,18 @@
         "items": [
           {
             "belief": "I just like harmony.",
-            "truth": "It's true that you like harmony, but the real thing is that you can't stand an uncomfortable atmosphere. When conflict shows up, you're the one who can't hold back and steps in to resolve it. More often than it's affection for harmony, it's an inability to tolerate awkwardness.",
-            "truth_short": "You like harmony, but often you're reacting to how unbearable awkwardness feels."
+            "truth": "It's true that you like harmony. But often, what you can't stand is the uncomfortable atmosphere. When conflict shows up, you step in fast — less from love of harmony than from the need to end the awkwardness.",
+            "truth_short": "You like harmony, but often you're trying to end the awkwardness."
           },
           {
             "belief": "I can't say no.",
-            "truth": "It's not that you can't say no. It's that saying no would leave a visible gap between two people, and you're rushing to fill that gap before it even opens. You're good at seeing the gaps between other people. You just never apply that same eye to the gap between yourself and everyone else.",
+            "truth": "It's not that you can't say no. It's that saying no would leave a visible gap, and you rush to fill it before it opens. You see gaps between other people clearly — just not the gap between yourself and everyone else.",
             "truth_short": "You can say no — but you rush to fill the gap it might create."
           },
           {
             "belief": "I always have to be the one keeping the balance in the middle.",
             "truth": "No. Sometimes you're allowed to stand on one side too. What you need isn't balance. It's a position of your own.",
             "truth_short": "You don't always need balance. Sometimes you need a position of your own."
-          },
-          {
-            "belief": "I'm just good at mediating.",
-            "truth": "You are good at mediating, but that's not the whole story. When someone's struggling, it somehow feels like your responsibility. If you don't fix it, you can't settle. So you step in — not because you're good at it, but because not doing it makes you more uncomfortable than doing it does.",
-            "truth_short": "You mediate well, but sometimes you step in because not fixing it feels worse."
           }
         ]
       },
