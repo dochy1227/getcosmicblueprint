@@ -28,6 +28,12 @@
 //   - 아키타입 20종을 상품 20개로 나누지 않고, 상품은 1개로 통일하고
 //     metadata.archetype_id로 어떤 리포트인지 구분하는 방식 채택
 //     (또치님과 합의된 설계 — Creem 대시보드 상품 관리 부담을 줄이기 위함)
+//
+// ⚠️ 2026.07.03 확인: 이 파일이 실제 사이트에 배포되어 정상 작동 중인 버전입니다.
+//    (Netlify 환경변수 CREEM_API_KEY/CREEM_PRODUCT_ID가 이미 이 버전 기준으로 등록되어 있고,
+//     브라우저 콘솔 테스트로 checkout_url이 정상 반환되는 것까지 확인됨)
+//    metadata.archetype_id 값은 creem-webhook.js가 그대로 읽어서 PDF 생성에 사용하므로,
+//    이 파일과 creem-webhook.js는 항상 짝을 맞춰서 함께 배포할 것.
 // ============================================================
 
 const CREEM_TEST_ENDPOINT = 'https://test-api.creem.io/v1/checkouts';
