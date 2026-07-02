@@ -254,7 +254,7 @@
             text-decoration: none;
             display: block;
         }
-        .bottom-actions .save-action { text-align: left; padding-left: 14px; }
+        .bottom-actions .preview-action { text-align: left; padding-left: 14px; }
 
         .legal-footer {
             width: 100%;
@@ -308,7 +308,7 @@
         <!-- 감정 버튼 -->
         <button class="emotion-btn" id="emotion-save-btn">&#10084; This Felt Like Me</button>
 
-        <!-- 미리보기 (2026.07.03, 인계노트 v48 확정 구조 — /preview.js가 렌더링) -->
+        <!-- 미리보기 영역: 기본은 비어 있고, 하단 Preview 버튼 클릭 시 /preview.js가 렌더링 -->
         <div id="preview-root"></div>
 
         <!-- 구매 버튼 / waitlist 폼 영역 -->
@@ -318,7 +318,7 @@
 
         <!-- 하단 3버튼줄 -->
         <div class="bottom-actions">
-            <button class="save-action" id="bottom-save-btn">&#128190; Save</button>
+            <button class="preview-action" id="bottom-preview-btn">&#128064; Preview</button>
             <button id="bottom-share-btn">&#128279; Share</button>
             <a id="bottom-survey-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdFkagn2LIlcYSsjUEnHys75ilIV4l3fsvYYObfDvA0YoMhSA/viewform" target="_blank" rel="noopener">&#128203; Survey</a>
         </div>
@@ -410,10 +410,27 @@
             });
         });
 
-        // 하단 저장
-        document.getElementById('bottom-save-btn').addEventListener('click', () => {
-            gtag('event', 'click_save_button', { 'element_type': currentElement, 'orientation': orientation });
-            alert('Save your result by taking a screenshot.');
+        // 하단 미리보기: 저장 alert 제거, 버튼 클릭 시에만 미리보기 렌더링
+        let previewLoaded = false;
+        document.getElementById('bottom-preview-btn').addEventListener('click', () => {
+            gtag('event', 'click_preview_button', { 'element_type': currentElement, 'orientation': orientation });
+
+            const previewRoot = document.getElementById('preview-root');
+            if (!previewRoot) return;
+
+            if (!previewLoaded) {
+                previewRoot.innerHTML = '<div class="card"><p class="card-label">Preview</p><p style="color:#d1ceda;text-align:center;margin:0;">Loading your preview...</p></div>';
+                previewLoaded = true;
+
+                if (currentElement && currentElement !== 'unknown' && typeof initPreview === 'function') {
+                    initPreview(currentElement);
+                } else {
+                    previewRoot.innerHTML = '';
+                    previewLoaded = false;
+                }
+            }
+
+            previewRoot.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
         // 하단 공유 (2026.07.03 수정: alert 더미 → 실제 공유 기능.
@@ -533,22 +550,8 @@
     <!-- 미리보기 모듈 (2026.07.03, v48 확정 구조 8요소) -->
     <script src="/preview.js"></script>
     <script>
-        // currentElement는 위 메인 스크립트의 최상위 const — type_XX_y 형식(publicKey).
-        // 값이 없으면(직접 URL 진입 등) 미리보기는 조용히 생략됨(initPreview 내부 안전 처리).
-        if (currentElement && currentElement !== 'unknown' && typeof initPreview === 'function') {
-            initPreview(currentElement, {
-                onUnlock: () => {
-                    const buyBtn = document.getElementById('paywall-secure-button');
-                    if (buyBtn) {
-                        buyBtn.click();
-                    } else {
-                        // 구매 버튼이 waitlist 폼으로 대체된 상태면 그 영역으로 스크롤
-                        const area = document.getElementById('paywall-area');
-                        if (area) area.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                }
-            });
-        }
+        // 미리보기는 자동 노출하지 않음.
+        // 하단 Preview 버튼 클릭 시 위 메인 스크립트에서 initPreview(currentElement)를 호출함.
     </script>
 </body>
 </html>
