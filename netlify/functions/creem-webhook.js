@@ -204,13 +204,37 @@ function extractOrderInfo(payload) {
 
 // ------------------------------------------------------------
 // Resend로 PDF 첨부 이메일 발송
+// 2026.07.03 수정: 이메일 문구 개선 — archetypeId(type_NN_x)에서 아키타입
+// 표시명(THE PIONEER 등)을 뽑아 제목/본문에 반영. 사주/오행 용어는
+// 일절 사용하지 않음(외부 노출 원칙). 매핑에 없는 id면 표시명 없이
+// 기존과 동일한 일반 문구로 발송(안전 폴백).
 // ------------------------------------------------------------
+const ARCHETYPE_EMAIL_NAMES = {
+  '01': 'THE PIONEER',
+  '02': 'THE VINE',
+  '03': 'THE SUN',
+  '04': 'THE CANDLE',
+  '05': 'THE MOUNTAIN',
+  '06': 'THE SOIL',
+  '07': 'THE BLADE',
+  '08': 'THE GEM',
+  '09': 'THE OCEAN',
+  '10': 'THE MIST',
+};
+
+function archetypeDisplayName(archetypeId) {
+  const m = /^type_(\d{2})_/.exec(String(archetypeId || ''));
+  return (m && ARCHETYPE_EMAIL_NAMES[m[1]]) || null;
+}
+
 async function sendReportEmail({ to, archetypeId, pdfBase64 }) {
   const apiKey = process.env.RESEND_API_KEY;
   const fromEmail = process.env.RESEND_FROM_EMAIL;
   if (!apiKey || !fromEmail) {
     throw new Error('RESEND_API_KEY 또는 RESEND_FROM_EMAIL 환경변수가 없습니다.');
   }
+
+  const displayName = archetypeDisplayName(archetypeId);
 
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -221,11 +245,15 @@ async function sendReportEmail({ to, archetypeId, pdfBase64 }) {
     body: JSON.stringify({
       from: fromEmail,
       to,
-      subject: 'Your Cosmic Blueprint is ready',
+      subject: displayName
+        ? `Your Cosmic Blueprint is ready — ${displayName}`
+        : 'Your Cosmic Blueprint is ready',
       html: `
         <p>Hi,</p>
-        <p>Your Full Blueprint report is attached as a PDF. We hope it helps you see your patterns more clearly.</p>
-        <p>If you have any trouble opening it, just reply to this email or reach us at
+        <p>Your ${displayName ? `<strong>${displayName}</strong> ` : ''}Full Blueprint is attached as a PDF —
+        10 chapters on how you love, the pattern you keep repeating, and what to do differently next time.</p>
+        <p>It's yours to keep. Read it slowly, and come back to it whenever a relationship starts to feel familiar.</p>
+        <p>Trouble opening the file? Just reply to this email or reach us at
         <a href="mailto:support@getcosmicblueprint.com">support@getcosmicblueprint.com</a>.</p>
         <p>— Cosmic Blueprint</p>
       `,

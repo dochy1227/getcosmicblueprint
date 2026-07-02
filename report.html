@@ -308,6 +308,9 @@
         <!-- 감정 버튼 -->
         <button class="emotion-btn" id="emotion-save-btn">&#10084; This Felt Like Me</button>
 
+        <!-- 미리보기 (2026.07.03, 인계노트 v48 확정 구조 — /preview.js가 렌더링) -->
+        <div id="preview-root"></div>
+
         <!-- 구매 버튼 / waitlist 폼 영역 -->
         <div id="paywall-area">
             <button class="buy-btn" id="paywall-secure-button">&#128274; Unlock Your Full Blueprint — $4.99</button>
@@ -413,10 +416,25 @@
             alert('Save your result by taking a screenshot.');
         });
 
-        // 하단 공유
-        document.getElementById('bottom-share-btn').addEventListener('click', () => {
+        // 하단 공유 (2026.07.03 수정: alert 더미 → 실제 공유 기능.
+        // 모바일은 네이티브 공유 시트(navigator.share), 데스크톱은 링크 복사 폴백)
+        document.getElementById('bottom-share-btn').addEventListener('click', async () => {
             gtag('event', 'click_share_button', { 'element_type': currentElement, 'orientation': orientation });
-            alert('Take a screenshot whenever you want to share this.');
+            const shareData = {
+                title: 'Cosmic Blueprint',
+                text: 'I just found my relationship archetype. Find yours:',
+                url: 'https://getcosmicblueprint.com'
+            };
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    await navigator.clipboard.writeText(shareData.url);
+                    alert('Link copied to clipboard!');
+                }
+            } catch (e) {
+                // 사용자가 공유 시트를 닫은 경우 — 아무것도 하지 않음 (정상 동작)
+            }
         });
 
         // 하단 설문
@@ -510,6 +528,27 @@
                 showWaitlistForm();
             }
         });
+    </script>
+
+    <!-- 미리보기 모듈 (2026.07.03, v48 확정 구조 8요소) -->
+    <script src="/preview.js"></script>
+    <script>
+        // currentElement는 위 메인 스크립트의 최상위 const — type_XX_y 형식(publicKey).
+        // 값이 없으면(직접 URL 진입 등) 미리보기는 조용히 생략됨(initPreview 내부 안전 처리).
+        if (currentElement && currentElement !== 'unknown' && typeof initPreview === 'function') {
+            initPreview(currentElement, {
+                onUnlock: () => {
+                    const buyBtn = document.getElementById('paywall-secure-button');
+                    if (buyBtn) {
+                        buyBtn.click();
+                    } else {
+                        // 구매 버튼이 waitlist 폼으로 대체된 상태면 그 영역으로 스크롤
+                        const area = document.getElementById('paywall-area');
+                        if (area) area.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            });
+        }
     </script>
 </body>
 </html>

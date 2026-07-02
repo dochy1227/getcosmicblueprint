@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Complete · Cosmic Blueprint</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5PQGM126Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S5PQGM126Y');
+        // 결제 성공 페이지 도달 이벤트 (전환 추적용)
+        gtag('event', 'purchase_success_page_view');
+    </script>
+    <style>
+        body {
+            background-color: #111424;
+            color: #e2e5f3;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 560px;
+            width: 100%;
+            background: #1a1e36;
+            padding: 48px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 6vh;
+        }
+        .check-circle {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px auto;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00f0ff, #b600ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #111424;
+            font-weight: 800;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 20pt;
+            margin: 0 0 10px 0;
+            letter-spacing: 0.5px;
+        }
+        p.lead {
+            color: #e2e5f3;
+            font-size: 12pt;
+            margin-bottom: 28px;
+        }
+        .info-box {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 18px 20px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+        .info-box p {
+            color: #c8cce0;
+            font-size: 10.5pt;
+            margin: 0 0 10px 0;
+        }
+        .info-box p:last-child { margin-bottom: 0; }
+        .sender {
+            color: #00ffff;
+            font-weight: 600;
+            word-break: break-all;
+        }
+        .fine-print {
+            color: #7a82a6;
+            font-size: 9.5pt;
+            margin-bottom: 28px;
+        }
+        .fine-print a { color: #00ffff; }
+        .home-link {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #00f0ff, #b600ff);
+            color: #111424;
+            font-weight: 700;
+            font-size: 10.5pt;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="check-circle">&#10003;</div>
+        <h1>Payment Complete!</h1>
+        <p class="lead">Your Cosmic Blueprint is on its way.</p>
+
+        <div class="info-box">
+            <p>We're generating your personalized report right now. It will arrive in your inbox <strong>within a few minutes</strong> as a PDF attachment.</p>
+            <p>Look for an email from:<br><span class="sender">Cosmic Blueprint &lt;noreply@getcosmicblueprint.com&gt;</span></p>
+        </div>
+
+        <p class="fine-print">
+            Don't see it? Check your spam or promotions folder first.<br>
+            Still nothing after 15 minutes? Contact
+            <a href="mailto:support@getcosmicblueprint.com">support@getcosmicblueprint.com</a>
+            with the email address you used at checkout.
+        </p>
+
+        <a href="/" class="home-link">Back to Cosmic Blueprint</a>
+    </div>
+</body>
+</html>
