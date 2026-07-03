@@ -51,7 +51,10 @@
     '#preview-root .pv-toc li { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13.5px; color: #d1ceda; }',
     '#preview-root .pv-toc .pv-num { color: #00f0ff; font-weight: 700; font-size: 12px; width: 22px; flex-shrink: 0; }',
     '#preview-root .pv-toc .pv-locked { color: #5a5670; }',
-    '#preview-root .pv-cta-wrap { text-align: center; margin-top: 8px; }',
+    '#preview-root .pv-arrow-cta { text-align: center; margin-top: 4px; }',
+    '#preview-root .pv-arrow-cta .pv-arrow-text { color: #d1ceda; font-size: 13px; margin-bottom: 4px; }',
+    '#preview-root .pv-arrow-cta .pv-arrow-icon { font-size: 26px; color: #00f0ff; animation: pvBounce 1.4s infinite; }',
+    '@keyframes pvBounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }',
   ].join('\n');
 
   function injectStyle() {
@@ -91,11 +94,14 @@
     }).join(' ');
     var labels = RADAR_LABELS.map(function (label, i) {
       var rad = (RADAR_ANGLES[i] * Math.PI) / 180;
-      var x = 108 * Math.cos(rad), y = 108 * Math.sin(rad);
+      var x = 100 * Math.cos(rad), y = 100 * Math.sin(rad);
       var anchor = Math.abs(x) < 20 ? 'middle' : (x > 0 ? 'start' : 'end');
       return '<text x="' + x.toFixed(1) + '" y="' + (y + 4).toFixed(1) + '" text-anchor="' + anchor + '" fill="#8a85a0" font-size="10">' + label + '</text>';
     }).join('');
-    return '<svg viewBox="-135 -125 270 250" width="280" height="260" xmlns="http://www.w3.org/2000/svg">'
+    // viewBox를 좌우로 넉넉히 넓히고(±160) width를 100%로 반응형 처리해
+    // 좁은 모바일 화면에서도 "Expression"/"Stability" 같은 긴 라벨이
+    // 잘리지 않도록 함 (2026.07.03 수정, 또치님 모바일 테스트 피드백 반영).
+    return '<svg viewBox="-160 -125 320 250" width="100%" height="auto" style="max-width:280px;display:block" xmlns="http://www.w3.org/2000/svg">'
       + rings + axes
       + '<polygon points="' + poly + '" fill="rgba(0,240,255,0.18)" stroke="#00f0ff" stroke-width="2"/>'
       + labels + '</svg>';
@@ -169,24 +175,17 @@
     }
     html += '</ul></div>';
 
-    // 8. 잠금 해제 CTA (기존 buy-btn 스타일 클래스 재사용)
-    html += '<div class="pv-section pv-cta-wrap">'
-      + '<button id="pv-unlock-btn" class="buy-btn">Unlock Your Full Blueprint</button>'
+    // 실제 결제 버튼은 preview-root 바로 아래(paywall-area)에 있으므로,
+    // 미리보기 끝에서 그쪽으로 시선을 유도하는 화살표 안내 추가
+    // (2026.07.03, 또치님 UX 피드백 반영 — 결제 버튼 위치를 못 찾는 문제 개선).
+    html += '<div class="pv-section pv-arrow-cta">'
+      + '<div class="pv-arrow-text">Unlock everything below</div>'
+      + '<div class="pv-arrow-icon">&#8595;</div>'
       + '</div>';
 
+    // 결제 CTA는 report.html의 paywall-secure-button 하나만 사용한다.
+    // 미리보기 내부 CTA를 만들면 결제 버튼이 중복 노출되므로 여기서는 렌더링하지 않는다.
     root.innerHTML = html;
-
-    var btn = document.getElementById('pv-unlock-btn');
-    if (btn) {
-      btn.addEventListener('click', function () {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'click_preview_unlock');
-        }
-        if (typeof onUnlock === 'function') { onUnlock(); return; }
-        var buyBtn = document.getElementById('buy-btn');
-        if (buyBtn) buyBtn.click();
-      });
-    }
   }
 
   // ---------- 진입점 ----------

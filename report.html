@@ -255,6 +255,12 @@
             display: block;
         }
         .bottom-actions .preview-action { text-align: left; padding-left: 14px; }
+        #bottom-preview-btn {
+            background: rgba(0, 240, 255, 0.12);
+            border: 1px solid rgba(0, 240, 255, 0.5);
+            color: #00f0ff;
+            font-weight: 700;
+        }
 
         .legal-footer {
             width: 100%;
@@ -519,12 +525,21 @@
             buyBtn.disabled = true;
             buyBtn.innerHTML = 'Preparing your checkout…';
 
+            // 2026.07.03 수정: 응답이 오래 걸리거나 아예 안 올 경우 버튼이
+            // "Preparing your checkout…" 상태로 영원히 멈추는 문제 발견(또치님
+            // 모바일 테스트) — 10초 타임아웃 추가, 시간 초과 시 catch로 빠져
+            // waitlist 폼 폴백이 정상 동작하도록 함.
+            const checkoutController = new AbortController();
+            const checkoutTimeout = setTimeout(() => checkoutController.abort(), 10000);
+
             try {
                 const res = await fetch('/.netlify/functions/create-checkout', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ archetypeId: currentElement })
+                    body: JSON.stringify({ archetypeId: currentElement }),
+                    signal: checkoutController.signal
                 });
+                clearTimeout(checkoutTimeout);
                 const data = await res.json();
 
                 if (!res.ok || !data.checkoutUrl) {
@@ -539,6 +554,7 @@
 
                 window.location.href = data.checkoutUrl;
             } catch (err) {
+                clearTimeout(checkoutTimeout);
                 console.warn('[checkout] Creem 체크아웃 생성 실패, waitlist 폼으로 전환:', err.message);
                 buyBtn.disabled = false;
                 buyBtn.innerHTML = originalLabel;
