@@ -1,0 +1,253 @@
+{
+  "report_id": "type_10_b",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "계수",
+      "day_pillar": "",
+      "orientation_raw": "외향",
+      "element_name_en": "Yin Water"
+    },
+    "public_key": "type_10_b",
+    "display_label": "The Mist",
+    "orientation_display": "extrovert",
+    "archetype_name": "THE MIST",
+    "visual_key": "type_10_b"
+  },
+  "cover": {
+    "title": "THE MIST",
+    "subtitle": "The one who looks calm from the outside, until everything hidden rises at once.",
+    "tagline": "You seem quiet — but what you feel is deeper and stronger than people expect.",
+    "traits": [
+      "SUBTLE",
+      "ADAPTIVE",
+      "ELUSIVE"
+    ]
+  },
+  "profile_scores": {
+    "drive": 2,
+    "expression": 2,
+    "pride": 4,
+    "warmth": 3,
+    "stability": 2,
+    "caption": "High competitiveness and pride, low stability — you look hazy like mist, but underneath you're clear, and once things build up, they erupt all at once."
+  },
+  "free_result": {
+    "short_summary": [
+      "You seem calm from the outside, but your feelings are much clearer and stronger underneath.",
+      "People often think you changed suddenly, when the truth is that something had been building for a long time.",
+      "What changes love for you is letting small feelings out before they become a flood."
+    ]
+  },
+  "full_report": {
+    "headline": "THE MIST",
+    "intro": "From a distance, you're a calm person. Your expression barely changes, your voice isn't loud, and you don't show much of what you like or dislike. This report follows the pattern underneath that calmness: why feelings pile up beneath the surface, why they sometimes erupt all at once, and how love changes when you let small things out sooner.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "From a distance, you're a calm person.",
+          "Your expression barely changes. Your voice isn't loud. You don't show much of what you like or dislike.",
+          "So people think you're easygoing. Like mist — even up close, something about you never quite comes into focus.",
+          "But that's only the surface.",
+          "Beneath the mist, things are clear.",
+          "Your pride is clear. What you want is clear. Once you make up your mind, you don't bend easily.",
+          "When you do fall for someone, that feeling runs far deeper and stronger than it looks.",
+          "But what you actually show is less than half of that feeling.",
+          "So the people who genuinely come to like you usually find out late.",
+          "Oh — this person was so much deeper than I thought."
+        ],
+        "highlight": null,
+        "profile_note": "High Pride · High Drive, Low Stability — You look hazy like mist, but underneath you're clear, and once things build up, they erupt all at once."
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Repeat",
+        "body": [
+          "This has probably repeated quite often.",
+          "At first, something hurts a little. But you just let it pass. It happens, you tell yourself.",
+          "It happens again. You let it pass again. The surface stays calm. To anyone watching, you look fine.",
+          "But underneath, it's actually piling up the whole time. Drop by drop. Invisibly.",
+          "Then one day, something small suddenly makes you collapse. You get angry, or you sort your feelings out, or you end the relationship altogether.",
+          "The other person is shocked. Why are you suddenly like this? But to you, it's not sudden at all. Everything you never showed just erupted all at once."
+        ],
+        "highlight": "You didn't suddenly change. Something you'd hidden for a long time just erupted all at once.",
+        "pattern_name": "THE SUDDEN FLOOD CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE SUDDEN FLOOD CURVE",
+          "description": "The pattern of hurt feelings piling up beneath a calm surface, until they erupt all at once."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You Got Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I'm just naturally indifferent.",
+            "truth": "No. It's not indifference — it's hiding. Not feeling something and not showing it are completely different things.",
+            "truth_short": "Not feeling and not showing are completely different things."
+          },
+          {
+            "belief": "Since I don't get angry, I guess I'm okay.",
+            "truth": "Hmm. It's not that there's no anger — you're storing it up. And once what's stored crosses a certain point, it ends up erupting as anger.",
+            "truth_short": "No anger on the surface doesn't mean nothing is stored inside."
+          },
+          {
+            "belief": "I don't really want much.",
+            "truth": "No, you do. You have pride, and a clear desire to be loved. You just choose to keep it inside instead of saying it out loud.",
+            "truth_short": "You do want more — you just keep it inside."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "You're drawn to people who are calm to the point of being oblivious.",
+          "People who think, if you say you're fine, you must be fine, and just move on.",
+          "People who don't dig deeper, who don't double-check.",
+          "At first that feels comfortable. Because you don't really want to show anything either.",
+          "But here's the problem. If you're someone who hides, and they're someone who doesn't dig deeper, you're both comfortable — but neither of you ever sees the real problem.",
+          "The surface stays calm, while only you know what's piling up underneath."
+        ],
+        "highlight": "Someone who simply accepts your calmness eventually loses you. Someone who's curious about what's underneath that calmness holds onto you.",
+        "bar_chart": {
+          "give_percent": 40,
+          "get_percent": 60
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't an even greater ability to endure. You're already enduring more than enough — way more than enough.",
+          "What you need is to let the small things out as they happen.",
+          "Don't just sit still like mist filling up completely. Let a little of it leak out along the way.",
+          "If something hurts, say it small, right there. You don't have to make a big confession.",
+          "Hmm, that kind of hurt. That's enough.",
+          "A feeling that doesn't pile up never erupts all at once later."
+        ],
+        "action_sentence": "For you, change begins when a small feeling comes out before it becomes a flood."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where to Go From Here",
+        "body": [
+          "You know how to hold feelings deeply and firmly.",
+          "When you like someone, you like them intensely. Once you make up your mind, you're not easily shaken.",
+          "But what you'll learn next is how to let that feeling out little by little, before it fills up completely.",
+          "Not waiting until it's completely full and then pouring it all out at once.",
+          "Showing it bit by bit, as it happens, safely.",
+          "Once you have that, your relationships become far less precarious."
+        ],
+        "transition_note": "You've spent a long time learning how to hold things inside. Now you're learning how to let them out safely before everything fills up."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Type You Keep Falling For",
+        "items": [
+          {
+            "type_title": "Someone consistently easygoing",
+            "description": "They laugh things off, avoid difficult conversations, and say, \"Don't worry about it,\" every time. At first it feels peaceful. Months later, you realize neither of you has talked about anything real."
+          },
+          {
+            "type_title": "Someone who takes \"I'm fine\" at face value",
+            "description": "You say you're okay with a small smile. They nod and move on. No second question. No checking in later. The silence feels comfortable, right until everything you've stored comes out at once."
+          },
+          {
+            "type_title": "Someone who likes your calmness",
+            "description": "They love that you're never dramatic and never demanding. But they've never seen how deeply you actually feel. When your hidden intensity finally appears, they think you've suddenly changed."
+          },
+          {
+            "type_title": "Someone with strong pride",
+            "description": "Dinner ends with both of you saying, \"It's fine.\" Neither person apologizes first. Neither person asks one more question. The relationship stays quiet — until someone finally breaks the silence with an explosion."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "These signs were there pretty early. It's just that the surface was so calm, even you didn't notice.",
+        "signal_strength": [
+          {
+            "label": "Even when something hurts, you don't express it and just let it pass",
+            "percent": 60
+          },
+          {
+            "label": "You don't show it even when you like someone",
+            "percent": 72
+          },
+          {
+            "label": "What's piled up keeps growing, but the surface still looks calm",
+            "percent": 85
+          },
+          {
+            "label": "You suddenly react more strongly than usual to something small",
+            "percent": 95
+          }
+        ],
+        "core_signal": "The longer the calm period looks like it's lasting, the longer the time spent piling up inside has also been lasting."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like to You",
+        "checklist": [
+          {
+            "title": "It's okay to say what hurts in the moment.",
+            "description": "You don't have to let it pile up."
+          },
+          {
+            "title": "Getting angry doesn't break the relationship.",
+            "description": "Expressing it isn't a threat."
+          },
+          {
+            "title": "They tell the difference between your calm and indifference.",
+            "description": "They don't assume quiet automatically means fine."
+          },
+          {
+            "title": "They're not afraid of the intensity inside you.",
+            "description": "They accept you as you are, even when you feel things deeply and strongly."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens in Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You're weak to people who only look at the surface. You assume things are fine because they look fine. You assume nothing's wrong because it's quiet. So your own heart ends up staying on the surface too — because no one ever asks what's underneath the mist.",
+          "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who asks one more time, even when things look calm. Someone who says, \"you look fine today, but are you really okay?\" In front of someone like that, you no longer have to let things pile up. You can let them out as they happen.",
+          "same_pattern_repeats": "This time, you'll notice the buildup happening faster. The moment something hurts, you'll catch it sooner than before. And at the same time, the usual urge to just let it pass will rise up too. Because it's familiar.",
+          "next_signs": "The sign will be the moment something small hurts, and you feel the urge to say nothing again.",
+          "try_this": "This time, don't let it pile up. Just once. Before it fills up completely, let a small thing out right there. Try: \"Actually, that kind of hurt.\" That's enough. You don't need a long explanation. Then watch their reaction.",
+          "final_line": "Someone who receives it well actually comes closer. Someone who's uncomfortable finds your emotion itself burdensome. That reaction is the answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "You already know how to hold feelings deeply. What's left is learning how to let small things out before they become too heavy.",
+      "action_items": [
+        "This week, say one small hurt before it turns into a larger reaction.",
+        "Notice when your surface looks calm but something inside is starting to build.",
+        "Choose someone who asks one more question instead of accepting your calmness too quickly."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to hold things inside. This report covered why your calm sometimes collapses all at once — and how you can learn to let things out safely before that happens.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}

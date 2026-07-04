@@ -1,0 +1,270 @@
+{
+  "report_id": "type_02_a",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "을목",
+      "day_pillar": "을해",
+      "orientation_raw": "내향",
+      "element_name_en": "Yin Wood"
+    },
+    "public_key": "type_02_a",
+    "display_label": "The Vine",
+    "orientation_display": "introvert",
+    "archetype_name": "THE VINE",
+    "visual_key": "type_02_a"
+  },
+  "cover": {
+    "title": "THE VINE",
+    "subtitle": "The one who stays calm until everything quietly overflows.",
+    "tagline": "You look easygoing on the outside, but inside, everything keeps accumulating.",
+    "traits": [
+      "ADAPTIVE",
+      "CONNECTING",
+      "HARMONIOUS"
+    ]
+  },
+  "profile_scores": {
+    "drive": 1,
+    "expression": 1,
+    "pride": 1,
+    "warmth": 4,
+    "stability": 2,
+    "caption": "High Care · High Openness, Low Drive · Low Expression — You stay unshaken on the surface even when uncomfortable, while it keeps piling up inside."
+  },
+  "free_result": {
+    "short_summary": [
+      "You come across as someone who doesn't get rattled.",
+      "That whole time you weren't visibly shaken — it wasn't because you were okay. You were just enduring it the entire time.",
+      "That reaction is your answer."
+    ]
+  },
+  "full_report": {
+    "headline": "THE VINE",
+    "intro": "You come across as someone who doesn't get rattled. People say being with you is comfortable. You rarely get angry, rarely show displeasure. The person you're with ends up relaxing, not you. But here's the thing.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You come across as someone who doesn't get rattled.",
+          "People say being with you is comfortable. You rarely get angry, rarely show displeasure. The person you're with ends up relaxing, not you.",
+          "But here's the thing.",
+          "It's not because you're actually fine.",
+          "When something bothers you. When something hurts. When there's something you want to say.",
+          "You swallow it first.",
+          "And it's so habitual that even you forget you swallowed it.",
+          "On the outside, nothing looks wrong.",
+          "But inside, something is quietly accumulating every time."
+        ],
+        "highlight": null,
+        "profile_note": "High Care · High Openness, Low Drive · Low Expression — You stay unshaken on the surface even when uncomfortable, while it keeps piling up inside."
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating — THE QUIET OVERFLOW CURVE",
+        "body": [
+          "You've probably noticed this feels strange too.",
+          "Early in a relationship, you barely waver.",
+          "You let small mismatches slide.",
+          "You go along even when you disagree.",
+          "You don't show it when you're hurt.",
+          "So being with you feels easy for them.",
+          "The problem is this keeps growing without limit.",
+          "It piles up and up.",
+          "Until one moment, you end it suddenly — even surprising yourself.",
+          "To them, it looks sudden.",
+          "But for you, it wasn't sudden at all.",
+          "The surface you show versus the weight you carry inside.",
+          "You stay outwardly steady while pressure rises inside, until at some point it all overflows at once."
+        ],
+        "highlight": "That whole time you weren't visibly shaken — it wasn't because you were okay. You were just enduring it the entire time.",
+        "pattern_name": "THE QUIET OVERFLOW CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE QUIET OVERFLOW CURVE",
+          "description": "You stay outwardly steady while pressure rises inside, until at some point it all overflows at once."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I'm just naturally easygoing.",
+            "truth": "No. You're not naturally easygoing — you're someone who learned that accommodating others is safer. Being easygoing is a trait. What you have is a learned safety mechanism.",
+            "truth_short": "No. You're not naturally easygoing — you're someone who learned that accommodating others is safer. Being easygoing is a trait. What you have is a learned safety mechanism."
+          },
+          {
+            "belief": "Enduring it is the mature thing to do.",
+            "truth": "Well, that's partly true. But what you've actually been doing isn't enduring — it's postponing. Saying it now would ruin the mood, so you push it back. And push it back again. What's piled up isn't maturity — it's unpaid debt.",
+            "truth_short": "Well, that's partly true. But what you've actually been doing isn't enduring — it's postponing. Saying it now would ruin the mood, so you push it back. And push it back again. What's piled up isn't maturity — it's unpaid debt."
+          },
+          {
+            "belief": "It's because I'm just less sensitive than others.",
+            "truth": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened.",
+            "truth_short": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened."
+          },
+          {
+            "belief": "That fast smoothing-over isn't insensitivity — it's a trained reflex.",
+            "truth": "No. That reflex once helped you keep the peace, but it also taught you to erase your own signal before anyone could notice it. What looked like calm was often a feeling being hidden too quickly.",
+            "truth_short": "No. That reflex once helped you keep the peace, but it also taught you to erase your own signal before anyone could notice it. What looked like calm was often a feeling being hidden too quickly."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "They're all different people. But the same emotional patterns keep showing up.",
+          "The Person With Big Emotions\n\nWhen they're struggling, you automatically become the calm one. Someone has to hold things together. So it becomes you.\n\nThe problem is this: Their feelings always come out. Yours always wait their turn. You tell yourself, \"I can handle this for now.\" And little by little, your own heart gets pushed to the back.",
+          "The Person With Strong Convictions\n\nThey know exactly what they want. They say it immediately. At first, it's comfortable. You don't have to decide much. But over time, you stop asking what you want. You simply sort it out alone.",
+          "The Person Who Doesn't Notice\n\nIf you say you're fine, they believe you. They never ask again. But you don't explain either. You tell yourself, \"There's no need to ruin the mood.\" Everything you let go of stays with you instead.",
+          "The Person Who Handles Everything Alone\n\nBefore an argument even happens, they've already processed it inside themselves. Just like you. So both of you stay quiet. The relationship looks peaceful. But nothing actually gets resolved.",
+          "A quiet relationship and a relationship where nobody speaks are not the same thing."
+        ],
+        "highlight": "A quiet relationship and a relationship where nobody speaks are not the same thing.",
+        "bar_chart": {
+          "give_percent": 80,
+          "get_percent": 20
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't learning to endure better.",
+          "You're already far too good at that.",
+          "It's actually the opposite.",
+          "The practice of saying small discomforts out loud while they're still small.",
+          "Not the big things. The truly small ones first.",
+          "If today's menu doesn't suit you, say \"I'd rather eat something else\" right then and there.",
+          "Sounds like nothing, right?",
+          "But for you, this is the hardest line to say.",
+          "If you can't say the small things, the big things eventually go unsaid too, and pile up.",
+          "In the right relationship, a small discomfort isn't a big incident."
+        ],
+        "action_sentence": "In the right relationship, a small discomfort isn't a big incident."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You know very well how to endure.",
+          "For a long time, quietly, without showing it.",
+          "But what you're still learning is",
+          "how to trust that the relationship won't break just because you show that you're shaken.",
+          "This isn't about suddenly expressing everything.",
+          "It's actually the opposite.",
+          "It's about bringing things up little by little, starting small, before they pile up.",
+          "That's the only thing that prevents it all from accumulating and bursting at once."
+        ],
+        "transition_note": "You’ve spent a long time learning how to stay steady on the outside. Now you’re learning how to speak before everything quietly piles up inside."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "The Person Who Never Shows They're Hurt",
+            "description": "They always say they're fine. They move on quickly. At first, it feels mature. But when both people keep enduring, you slowly lose track of what the problem was in the first place."
+          },
+          {
+            "type_title": "The Person Who Says \"It's Fine\" All The Time",
+            "description": "You do that too. That's why it feels comfortable. But comfort isn't always honesty. Sometimes it's just two people postponing the real conversation."
+          },
+          {
+            "type_title": "The Person Who Hates Ruining The Mood",
+            "description": "They'd rather wait until tomorrow. Then tomorrow becomes next week. And nothing gets said. The relationship stays calm. The problem stays too."
+          },
+          {
+            "type_title": "The Person Who Processes Everything Alone",
+            "description": "When something hurts, they think first, understand it alone, and come back acting normal. Just like you. And somehow, both of you end up feeling deeply misunderstood without ever having a real fight."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "These signs actually showed up quite early. You just brushed them off as \"no big deal\" every time.",
+        "signal_strength": [
+          {
+            "label": "Even when you disagree, you almost always say \"I'm totally fine with it\"",
+            "percent": 60
+          },
+          {
+            "label": "Your discomfort barely shows on your face — even you can hardly notice it",
+            "percent": 72
+          },
+          {
+            "label": "When something hurts, you don't say it in the moment — you think it over alone later",
+            "percent": 85
+          },
+          {
+            "label": "They genuinely believe you've almost never been angry",
+            "percent": 95
+          }
+        ],
+        "core_signal": "Inside, it keeps piling up. On the outside, you look like nothing's wrong at all."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "Saying something small doesn't ruin the mood.",
+            "description": "This matters most to you. A relationship where, even when you say something's off, they don't get defensive."
+          },
+          {
+            "title": "They notice when you're upset.",
+            "description": "Someone who knows you don't show it easily, and asks first anyway."
+          },
+          {
+            "title": "They don't mistake silence for peace.",
+            "description": "Someone who understands that quiet doesn't mean everything's fine."
+          },
+          {
+            "title": "They check in before things pile up.",
+            "description": "This matters most. With the right person, there's less you have to endure. Because there's nothing left to pile up."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You’re good at enduring, and that endurance is so quiet that no one notices. The type that doesn’t work for you is someone who takes your “I’m fine” at face value, never asks again, and lets everything keep piling up inside you.",
+          "who_steadies_you": "A surprisingly good fit is someone who asks again after you say “I’m fine.” Someone who follows with, “but what do you actually want?” With them, you don’t have to fold your opinion away.",
+          "same_pattern_repeats": "You may be drawn again to someone who misses cues or avoids conflict. That can’t be stopped. The issue is how long you keep piling things up alone afterward.",
+          "next_signs": "The signs from Chapter 8 will appear sooner and smaller. Watch the half-second right before “I’m fine” comes out during a small disagreement. That is where the pattern starts.",
+          "try_this": "Normally you’d say “I’m fine.” This time, hold it back once and say, “actually, that wasn’t great for me.” Keep it small and watch their reaction. The right person hears it calmly; the wrong person tries to quiet you again.",
+          "final_line": "That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "What you need isn't learning to endure better. You're already far too good at that.",
+      "action_items": [
+        "In the right relationship, a small discomfort isn't a big incident.",
+        "Instead of saying \"I'm fine,\" say one small discomfort out loud while it is still small.",
+        "When disagreement starts, notice the half-second before you swallow your real answer."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning not to be shaken. The next report covers why you've always piled things up only on the inside — and how you learn to bring them out sooner.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}

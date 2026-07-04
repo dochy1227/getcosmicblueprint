@@ -1,0 +1,230 @@
+{
+  "report_id": "type_03_a",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "병화",
+      "day_pillar": "병자",
+      "orientation_raw": "내향",
+      "element_name_en": "Yang Fire"
+    },
+    "public_key": "type_03_a",
+    "display_label": "The Sun",
+    "orientation_display": "introvert",
+    "archetype_name": "THE SUN",
+    "visual_key": "type_03_a"
+  },
+  "cover": {
+    "title": "THE SUN",
+    "subtitle": "The one everyone calls good — and no one thinks to ask about.",
+    "tagline": "You make everyone comfortable. You're still learning how to let someone do that for you.",
+    "traits": [
+      "RADIANT",
+      "ENERGETIC",
+      "INSPIRING"
+    ]
+  },
+  "profile_scores": {
+    "drive": 3,
+    "expression": 2,
+    "pride": 2,
+    "warmth": 5,
+    "stability": 3,
+    "caption": "High care, low expression and pride — reaching out and taking care of others first, your own self always considered last."
+  },
+  "free_result": {
+    "short_summary": [
+      "You make people comfortable without even trying — and the closer someone gets, the more you wonder how much they actually know about you.",
+      "You're not exhausted from a lack of love. You're exhausted because you were always the one who moved first.",
+      "What's missing isn't more warmth. It's asking yourself the same question you keep asking everyone else: how am I doing right now?"
+    ]
+  },
+  "full_report": {
+    "headline": "THE SUN",
+    "intro": "You're someone who makes people comfortable — so naturally that most people never notice you're doing it at all. This report follows what that costs you: why the people you love know everything about you, while you quietly know less and less about yourself, and what actually changes it.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You're someone who makes people comfortable. In an awkward room, you're the one who speaks first. When the mood dips, you slip in a joke. When someone feels left out, you naturally make room for them. Here's the strange part — people barely notice you doing it. It comes so naturally that it disappears into the background.",
+          "You're the same way when you love someone. You don't make them feel like a burden. You notice what they need before they ask. When they look down, you act before you even ask why. So a lot of people remember you as a good person.",
+          "But the closer you get to someone, a certain thought starts to creep in. \"I know so much about them. How much do they actually know about me?\""
+        ],
+        "highlight": null,
+        "profile_note": "High Care, Low Expression · Low Pride — Reaching out and taking care of others first, your own self always considered last."
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating",
+        "body": [
+          "You're easy to love at the start of a relationship. Being together is comfortable. Conversation flows easily. The mood is good. The problem starts after that.",
+          "When they're struggling, you're the first to notice. When they're worn out, you're the first to act. When they're upset, you're the first to smooth it over. And then, at some point, something strange happens — the relationship keeps deepening, but you keep becoming less visible inside it. Your own feelings get pushed back. Their feelings come first. And one day you find yourself wondering, \"When was the last time anyone took care of me?\""
+        ],
+        "highlight": "You're not exhausted because there wasn't enough love. You're exhausted because you were always the one moving first.",
+        "pattern_name": "THE INVISIBLE CARE CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE INVISIBLE CARE CURVE",
+          "description": "As the relationship deepens, your attention toward them keeps growing — while your own state keeps getting pushed further back."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I'm just naturally more comfortable giving than receiving.",
+            "truth": "No, that's not it. It's not that giving is comfortable. It's that receiving feels awkward. Think about it — hasn't there been a time when someone tried to take care of you, and you reflexively said \"I'm fine\"? You weren't fine. You just weren't used to it.",
+            "truth_short": "Giving isn't more comfortable — receiving just feels unfamiliar to you."
+          },
+          {
+            "belief": "If I just understand them a little more, it'll be fine.",
+            "truth": "Hmm, maybe not. A relationship doesn't get better just because one more person is doing all the understanding. It gets better when both people try to understand each other. You being the only one who keeps understanding doesn't make the relationship healthier — it just makes it more bearable.",
+            "truth_short": "One person understanding harder doesn't heal a relationship — both people trying to understand each other does."
+          },
+          {
+            "belief": "If I say I'm struggling, it'll be a burden.",
+            "truth": "You've told yourself that more than once, haven't you? But here's the thing — someone who actually likes you wants to know before they feel burdened. Saying you're struggling doesn't ruin a relationship. Hiding it constantly is what pulls people apart.",
+            "truth_short": "Saying you're struggling doesn't ruin a relationship — hiding it constantly does."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "You're particularly drawn to people who aren't great at expressing themselves. Someone who likes you but can't quite say it. Someone with feelings they rarely show. Because you can fill in that blank — reading their expression, their voice, the situation, you can usually figure it out well enough on your own.",
+          "But the more comfortable you get doing that, the more of a problem it becomes. They get to say even less. You have to read even more."
+        ],
+        "highlight": "Someone who likes you receives your care. Someone who loves you gives that care back.",
+        "bar_chart": {
+          "give_percent": 80,
+          "get_percent": 20
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't to get even warmer. You already have that covered.",
+          "What you actually need is to check in with yourself. \"How am I doing right now?\" As much as you ask about their mood, as much as you ask about their day — ask yourself too. Whether you're tired today. Whether something's bothering you. Whether you're holding something in."
+        ],
+        "action_sentence": "This isn't selfish — it's the act of keeping yourself present inside the relationship."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You already know how to give love. You already know how to make someone comfortable. You already know how to make a relationship feel warm.",
+          "What you're going to learn next is something else: how to receive love without feeling uncomfortable about it. How to not push it away with \"I'm fine\" when someone's trying to take care of you."
+        ],
+        "transition_note": "This might honestly be harder than it sounds. But given everything you've already managed to do, you can definitely learn this too."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "Someone Who Barely Expresses Themselves",
+            "description": "They don't say much, but every once in a while a small gesture lands big. At first it feels special. Eventually, you're the one always interpreting it."
+          },
+          {
+            "type_title": "Someone a Little Worn Down",
+            "description": "Something hard going on, some old wound. You naturally start taking care of them. At some point, the relationship has more caretaking in it than romance."
+          },
+          {
+            "type_title": "Someone Who Rarely Says Thank You",
+            "description": "They're not a bad person — just used to it. But being used to something is no substitute for being grateful."
+          },
+          {
+            "type_title": "Someone Everyone Calls \"a Good Person\"",
+            "description": "Everyone agrees they're good. But being good and being right for you are two different things. Miss that difference and you end up taking the long way around."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "These signs showed up faster than you'd think. It's just that you understood them away before they could register.",
+        "signal_strength": [
+          {
+            "label": "You know their day in detail; they barely know yours",
+            "percent": 60
+          },
+          {
+            "label": "You're reaching out first far more often than they are",
+            "percent": 72
+          },
+          {
+            "label": "You don't say it when something's hard, afraid it'll bring the mood down",
+            "percent": 85
+          },
+          {
+            "label": "You stay tuned in to their mood while putting your own on hold",
+            "percent": 95
+          }
+        ],
+        "core_signal": "They've started taking your attention for granted, while you keep explaining it to yourself as love."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "They ask first.",
+            "description": "Before you have to say anything. Whether you're okay today. Whether something's going on. Their attention moves first."
+          },
+          {
+            "title": "They don't leave when you're weak.",
+            "description": "You don't have to be cheerful all the time. You don't have to be okay all the time. They stay exactly where they are."
+          },
+          {
+            "title": "They express gratitude.",
+            "description": "They don't take it for granted. They remember the small things, and they say so."
+          },
+          {
+            "title": "Being together makes you less lonely.",
+            "description": "Someone being present and someone actually being with you are two different things."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You're vulnerable to someone who's slow to respond — little emotional expression, little gratitude, someone who only moves when they really have to. Because you're able to fill that empty space. But that kind of relationship wears you down, eventually.",
+          "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who takes care of you back, in proportion to how much you take care of them. Someone who reaches out first like it's no big deal, checks in like it's no big deal, and says thank you like it's no big deal. This kind of person is rarer than you'd think — but for you, they're exactly what you need.",
+          "same_pattern_repeats": "",
+          "next_signs": "It used to take months. This time it'll show up within weeks. You keep reaching out first, and they just receive it. You keep setting the mood, and they just go along with it. It'll show up in small moments, first.",
+          "try_this": "Normally you'd have already done it first. This time, don't — just for a week. Don't reach out first. Don't suggest plans first. Don't smooth over the mood first. And watch: do they walk toward the relationship on their own, or did the relationship only ever move when you moved it?",
+          "final_line": "That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "You already know how to take care of someone. What's left is learning to let yourself be taken care of too.",
+      "action_items": [
+        "Ask yourself the same question you ask them — \"How am I doing right now?\" — at least once today.",
+        "Next time someone offers to help, resist saying \"I'm fine.\" Let them actually help.",
+        "For one week, don't reach out first, and notice who moves toward the relationship on their own."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to take care of other people. This report covered why you always ended up being the one to move first — and how that pattern starts to change.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}

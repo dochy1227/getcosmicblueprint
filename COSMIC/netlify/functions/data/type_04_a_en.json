@@ -1,0 +1,253 @@
+{
+  "report_id": "type_04_a",
+  "language": "en",
+  "schema_version": "v2",
+  "identity": {
+    "_internal": {
+      "stem": "정화",
+      "day_pillar": "정축",
+      "orientation_raw": "내향",
+      "element_name_en": "Yin Fire"
+    },
+    "public_key": "type_04_a",
+    "display_label": "The Candle",
+    "orientation_display": "introvert",
+    "archetype_name": "THE CANDLE",
+    "visual_key": "type_04_a"
+  },
+  "cover": {
+    "title": "THE CANDLE",
+    "subtitle": "The one who loves in the dark, through action instead of words.",
+    "tagline": "You were clearly, genuinely in love. They just never knew.",
+    "traits": [
+      "WARM",
+      "NURTURING",
+      "INTUITIVE"
+    ]
+  },
+  "profile_scores": {
+    "drive": 2,
+    "expression": 1,
+    "pride": 2,
+    "warmth": 4,
+    "stability": 2,
+    "caption": "High Care, Low Expression — Loving quietly, with expression always arriving last"
+  },
+  "free_result": {
+    "short_summary": [
+      "You're not someone who makes a big show of love.",
+      "Once you give your heart to someone, you go in deep. Very deep.",
+      "You were clearly, genuinely in love. They just never knew."
+    ]
+  },
+  "full_report": {
+    "headline": "THE CANDLE",
+    "intro": "You're not someone who makes a big show of love. Rather than saying \"I like you\" a hundred times, you're more the type to remember their favorite coffee order, remember their hard days, and take care of them without saying much at all. But here's the thing — that's not indifference.",
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "page_map": "chapter_01",
+        "title": "When You Love",
+        "subtitle": null,
+        "body": [
+          "You're not someone who makes a big show of love.",
+          "Rather than saying \"I like you\" a hundred times, you're more the type to remember their favorite coffee order, remember their hard days, and take care of them without saying much at all.",
+          "So at first, people sometimes get the wrong impression. They think you seem more indifferent than expected. They think your emotional expression is thinner than expected.",
+          "But here's the thing — that's not who you really are.",
+          "Once you give your heart to someone, you go in deep. Very deep. You just do it through action, not words.",
+          "So this happens, more often than you'd think.",
+          "You were clearly, genuinely in love.",
+          "They just never knew."
+        ],
+        "highlight": null,
+        "profile_note": "High Care, Low Expression — Loving quietly, with expression always arriving last"
+      },
+      {
+        "chapter_number": 2,
+        "page_map": "chapter_02",
+        "title": "The Pattern You Keep Repeating — THE SILENT BUILD-UP CURVE",
+        "body": [
+          "Early in a relationship, there isn't much of a problem.",
+          "If anything, you're the steady one. Not easily shaken. Not easily disappointed.",
+          "The trouble starts the moment something upsets you.",
+          "You don't say it right away. It might be nothing, you think. You try to understand once more. You try to think it through from their side.",
+          "So you let it go.",
+          "Once. Then again. Then again.",
+          "But the feeling doesn't disappear. It accumulates.",
+          "And then one day, they have no idea why you're suddenly upset.",
+          "Because it started months ago — but the expression only just came out today."
+        ],
+        "highlight": "You're not struggling because you're too sensitive. You're struggling because you've been carrying it alone for far too long.",
+        "pattern_name": "THE SILENT BUILD-UP CURVE",
+        "chart": {
+          "chart_type": "curve",
+          "title": "THE SILENT BUILD-UP CURVE",
+          "description": "Hurt keeps quietly accumulating, while expression always arrives last."
+        }
+      },
+      {
+        "chapter_number": 3,
+        "page_map": "chapter_03",
+        "title": "What You've Gotten Wrong About Yourself",
+        "items": [
+          {
+            "belief": "I don't really get angry.",
+            "truth": "No, that's not it. It's not that you don't get angry. You get angry late. That difference matters a lot. They think nothing was wrong. You've actually been holding it in for a long time already.",
+            "truth_short": "No, that's not it. It's not that you don't get angry. You get angry late. That difference matters a lot. They think nothing was wrong. You've actually been holding it in for a long time already."
+          },
+          {
+            "belief": "I thought you'd know without me saying it.",
+            "truth": "Hmm. That's not love. That's an expectation. You expect them to remember what you remember. You expect them to notice what you notice. But people are far more different from each other than you'd think.",
+            "truth_short": "Hmm. That's not love. That's an expectation. You expect them to remember what you remember. You expect them to notice what you notice. But people are far more different from each other than you'd think."
+          },
+          {
+            "belief": "Holding it in is the mature thing to do.",
+            "truth": "No. Holding it in isn't resolving anything. It's just postponing the problem. A relationship doesn't improve because you held it in. It improves when you actually say it, so you can work it out.",
+            "truth_short": "No. Holding it in isn't resolving anything. It's just postponing the problem. A relationship doesn't improve because you held it in. It improves when you actually say it, so you can work it out."
+          }
+        ]
+      },
+      {
+        "chapter_number": 4,
+        "page_map": "chapter_04",
+        "title": "The Person You Keep Choosing",
+        "body": [
+          "You're drawn to people who don't show much emotion.",
+          "At first they seem calm. They feel steady. They seem dependable.",
+          "But over time you realize that expressing little and caring little aren't actually different things.",
+          "You end up stuck in the role of constantly interpreting them."
+        ],
+        "highlight": "Someone who likes you watches your actions. Someone who loves you also watches your silence.",
+        "bar_chart": {
+          "give_percent": 70,
+          "get_percent": 30
+        }
+      },
+      {
+        "chapter_number": 5,
+        "page_map": "chapter_05",
+        "title": "What Actually Changes Something",
+        "body": [
+          "What you need isn't to understand them more. You've already got that covered.",
+          "What you need is to say it a little sooner.",
+          "When you're upset. When something's hard. When you expected something.",
+          "This doesn't mean making a big speech out of it.",
+          "Just say it the day it happens.",
+          "Not months later.",
+          "That day."
+        ],
+        "action_sentence": "Just say it the day it happens. Not months later. That day."
+      },
+      {
+        "chapter_number": 6,
+        "page_map": "chapter_06",
+        "title": "Where You Go From Here",
+        "body": [
+          "You already know how to love deeply. You don't fall for someone halfway. You don't leave someone halfway either.",
+          "That's also why the hurt lasts so long.",
+          "What you're going to learn next is how to stop hiding love.",
+          "Saying you like someone when you like them. Saying you're upset when you're upset.",
+          "Learning to say it in the moment.",
+          "That, more than you'd think, is what makes a relationship safer."
+        ],
+        "transition_note": "Learning to say it in the moment. That, more than you'd think, is what makes a relationship safer."
+      },
+      {
+        "chapter_number": 7,
+        "page_map": "chapter_07",
+        "title": "The Types You Keep Falling For",
+        "items": [
+          {
+            "type_title": "Someone Who Doesn't Talk Much",
+            "description": "At first, it feels peaceful. You enjoy discovering them little by little. But after a while, every unanswered question becomes something you answer alone in your own head."
+          },
+          {
+            "type_title": "Someone Who Barely Shows Emotion",
+            "description": "You keep asking, \"Are you okay?\" and always hear the same answer. They seem mature at first, yet a relationship without expression creates more uncertainty than stability."
+          },
+          {
+            "type_title": "Someone Who Takes Gratitude For Granted",
+            "description": "They never mean harm. They're simply accustomed to being cared for. But when your small acts of love become invisible, affection slowly turns into exhaustion."
+          },
+          {
+            "type_title": "Someone Who's Sweet At First",
+            "description": "The first month is full of warmth and attention. Then everyday life arrives. In the end, their attitude six months later matters far more than how sweet they were at the beginning."
+          }
+        ]
+      },
+      {
+        "chapter_number": 8,
+        "page_map": "chapter_08",
+        "title": "The Warning Signs You've Missed",
+        "intro_note": "These signs were always there. It's just that you understood them away for far too long.",
+        "signal_strength": [
+          {
+            "label": "You let it go even when something upsets you",
+            "percent": 60
+          },
+          {
+            "label": "You explain their behavior on their behalf",
+            "percent": 72
+          },
+          {
+            "label": "There's more and more you want to say, and you don't say any of it",
+            "percent": 85
+          },
+          {
+            "label": "It takes longer and longer to sort through your feelings just to keep the relationship going",
+            "percent": 95
+          }
+        ],
+        "core_signal": "They think there's no problem at all. You've already been fighting this alone, more than once."
+      },
+      {
+        "chapter_number": 9,
+        "page_map": "chapter_09",
+        "title": "What a Healthy Relationship Looks Like for You",
+        "checklist": [
+          {
+            "title": "You don't try to read minds before anyone speaks.",
+            "description": "This might sound strange to hear. But a healthy relationship isn't a mind-reading game."
+          },
+          {
+            "title": "It's safe to say how you feel.",
+            "description": "Even if you say you're upset. Even if you say it's hard. The relationship doesn't shake."
+          },
+          {
+            "title": "They notice the small changes too.",
+            "description": "How your expression looks today. Whether you're quieter than usual. Attention shows up in the details."
+          },
+          {
+            "title": "There's less you have to hold in alone.",
+            "description": "This is the important one. A good relationship is closer to one where there's nothing to hold in, in the first place."
+          }
+        ]
+      },
+      {
+        "chapter_number": 10,
+        "page_map": "chapter_10",
+        "title": "What Happens In Your Next Relationship",
+        "sections": {
+          "who_breaks_you": "You're vulnerable to someone who's slow to pick up on things. Not out of malice. Just someone who isn't great at reading emotional cues. Because you don't say much to begin with. Meet someone like that, and you just end up holding things in more and more.",
+          "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who notices the small changes. Someone who asks when your reply is shorter than usual. Someone who notices when you're quieter than usual. Someone who reads the mood before the words. This kind of person doesn't miss your love.",
+          "same_pattern_repeats": "",
+          "next_signs": "This time it'll show up earlier. In how interested they actually are in your feelings. In how much they try to see what you didn't say out loud. It'll show up in smaller moments than you'd expect.",
+          "try_this": "Normally you'd have held it in, again. This time, don't. Say one small thing that upset you. Something really small. A meeting time. A reply. A tone of voice. Anything works. Then watch how they react. The right person tries to understand the problem, instead of defending against it. The wrong person explains their own position before they even hear the problem out. That reaction is your answer.",
+          "final_line": "That reaction is your answer."
+        }
+      }
+    ],
+    "action_plan": {
+      "summary": "What you need isn't to understand them more. You've already got that covered. What you need is to say it a little sooner.",
+      "action_items": [
+        "Just say it the day it happens. Not months later. That day.",
+        "Normally you'd have held it in, again. This time, don't. Say one small thing that upset you — something really small — and watch how they react.",
+        "This time it'll show up earlier and smaller: watch how much they try to see what you didn't say out loud."
+      ]
+    },
+    "closing": {
+      "message": "You've spent a long time learning how to show love through action. The next report covers why your love kept getting misread — and how it gets across more clearly going forward.",
+      "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
+    }
+  }
+}
