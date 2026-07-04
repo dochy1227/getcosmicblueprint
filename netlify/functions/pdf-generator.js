@@ -27,22 +27,33 @@
 const FONT_STACK =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Malgun Gothic', sans-serif";
 
-// 2026.06.28 추가: 표지 배경 이미지 매핑.
-// 원래 설계는 'cover-bg/{visual_key}.jpg' 단순 매핑이었으나,
-// 실제 업로드된 파일명이 'coverbg_NN_archetype_png.png' 형식(저장소 업로드 과정에서
-// 확정됨)이라 이 매핑 테이블로 visual_key → 실제 파일명을 연결함.
+// 2026.06.28 추가, 2026.07.04 재구성: 표지 배경 이미지 매핑.
+// 원래는 원소 단위(10장, 외향/내향 공유) 매핑이었으나, 인계노트 v54에서
+// 아키타입 단위(20장, type_XX_a/b 개별) 매핑으로 확정됨.
+// 키는 identity.visual_key(=report_id와 동일 형식, 예: "type_01_a")를 그대로 사용.
+// a = 내향(introvert), b = 외향(extrovert) — 20개 파일 전부 orientation_display로 검증됨.
 // 새 표지 이미지로 교체 시 이 테이블만 수정하면 됨.
 const COVER_BG_FILES = {
-  tree: 'coverbg_01_pioneer_png.png',
-  vine: 'coverbg_02_vine_png.png',
-  sun: 'coverbg_03_sun_png.png',
-  candle: 'coverbg_04_candle_png.png',
-  mountain: 'coverbg_05_mountain_png.png',
-  soil: 'coverbg_06_soil_png.png',
-  blade: 'coverbg_07_blade_png.png',
-  gem: 'coverbg_08_gem_png.png',
-  ocean: 'coverbg_09_ocean_png.png',
-  mist: 'coverbg_10_mist_png.png',
+  type_01_a: 'coverbg_01_pioneer_png.png',   // 갑목 내향 (기존)
+  type_01_b: 'coverbg_01_pioneer_b.png',     // 갑목 외향 (신규)
+  type_02_a: 'coverbg_02_vine_png.png',      // 을목 내향 (기존)
+  type_02_b: 'coverbg_02_vine_b.png',        // 을목 외향 (신규)
+  type_03_a: 'coverbg_03_sun_a.png',         // 병화 내향 (신규)
+  type_03_b: 'coverbg_03_sun_png.png',       // 병화 외향 (기존)
+  type_04_a: 'coverbg_04_candle_png.png',    // 정화 내향 (기존)
+  type_04_b: 'coverbg_04_candle_b.png',      // 정화 외향 (신규)
+  type_05_a: 'coverbg_05_mountain_png.png',  // 무토 내향 (기존)
+  type_05_b: 'coverbg_05_mountain_b.png',    // 무토 외향 (신규)
+  type_06_a: 'coverbg_06_soil_a.png',        // 기토 내향 (신규)
+  type_06_b: 'coverbg_06_soil_png.png',      // 기토 외향 (기존)
+  type_07_a: 'coverbg_07_blade_a.png',       // 경금 내향 (신규)
+  type_07_b: 'coverbg_07_blade_png.png',     // 경금 외향 (기존)
+  type_08_a: 'coverbg_08_gem_png.png',       // 신금 내향 (기존)
+  type_08_b: 'coverbg_08_gem_b.png',         // 신금 외향 (신규)
+  type_09_a: 'coverbg_09_ocean_a.png',       // 임수 내향 (신규)
+  type_09_b: 'coverbg_09_ocean_png.png',     // 임수 외향 (기존)
+  type_10_a: 'coverbg_10_mist_png.png',      // 계수 내향 (기존)
+  type_10_b: 'coverbg_10_mist_b.png',        // 계수 외향 (신규)
 };
 
 // 2026.06.29 수정: 상대경로 → 절대 URL로 변경.
@@ -106,7 +117,11 @@ function generateReportHTML(data) {
 
   const pages = [];
   function page(num, name, innerHtml) {
-    pages.push(`<section class="pdf-page">${innerHtml}</section>`);
+    pages.push(
+      `<section class="pdf-page"><div class="page-number">PAGE ${num} · ${escapeHtml(
+        name || ''
+      )}</div>${innerHtml}</section>`
+    );
   }
 
   // ---------- PAGE 1: Cover ----------
@@ -133,6 +148,7 @@ function generateReportHTML(data) {
         <div class="cover-quote">&ldquo;${need('cover.subtitle', cover.subtitle)}&rdquo;</div>
         <div class="cover-mood">${need('cover.tagline', cover.tagline)}</div>
       </div>
+      <div class="cover-icon" data-visual-key="${escapeHtml(id.visual_key)}"></div>
     </div>
   `
   );
@@ -472,6 +488,8 @@ function generateReportHTML(data) {
     background-color: #0d0b18; color: #ffffff; width: 480px; min-height: 854px;
     padding: 32px 28px; position: relative; page-break-after: always;
   }
+  .page-number { position: absolute; top: 8px; right: 12px; font-size: 10px; color: #5a5670; }
+  .pdf-page:has(.cover-page) .page-number { display: none; }
   /* ---------- Cover (Page 1) — 재치님 레퍼런스 디자인 기준 ---------- */
   .cover-page {
     position: absolute; inset: 0; background-size: cover; background-position: center;
@@ -483,18 +501,28 @@ function generateReportHTML(data) {
     background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.05) 55%, rgba(0,0,0,0.55) 100%);
     z-index: 0;
   }
-  .cover-topbar, .cover-body { position: relative; z-index: 1; }
+  .cover-topbar, .cover-body, .cover-icon { position: relative; z-index: 1; }
   .cover-topbar { display: flex; justify-content: space-between; align-items: flex-start; }
-  .cover-brand { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  .cover-brand { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
   .cover-brand span { display: block; font-size: 8px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; margin-top: 2px; }
-  .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; }
+  .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
   .cover-pagenum span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; }
-  .cover-body { text-align: center; padding: 0 6px; }
-  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; margin-bottom: 10px; }
-  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; }
-  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; margin-bottom: 18px; }
-  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; }
-  .cover-mood { font-size: 12px; font-style: italic; opacity: 0.7; line-height: 1.6; max-width: 260px; margin: 0 auto; }
+  /* 2026.07.04 추가: 표지 이미지 20장이 밝기/구도가 제각각이라(예: 흰 다이아몬드, 흰 눈산),
+     사진 밝기와 무관하게 텍스트 가독성을 보장해야 함.
+     처음엔 radial-gradient 페이드 방식을 시도했으나, 가장 밝은 두 장(GEM/MOUNTAIN)
+     기준으로 명도대비를 실측한 결과 alpha를 아무리 올려도(240까지) 대비 2.5~3.0에서
+     막혀 WCAG 큰글자 기준(3:1)을 넘기지 못함 — 가장자리로 갈수록 알파가 빠지는 구조라
+     중심부만 진해지고 텍스트 전체를 못 덮는 게 원인.
+     → "가장자리까지 알파 고정된 카드형 배경"으로 전환. 동일 조건 실측 결과
+     alpha 0.72에서 GEM 대비 4.24 / MOUNTAIN 대비 3.53으로 전부 3:1 통과 확인.
+     사진 자체는 건드리지 않고 CSS만으로 20장 전체에 공통 적용되는 안전장치. */
+  .cover-body { position: relative; text-align: center; padding: 26px 20px; background: rgba(0,0,0,0.72); border-radius: 24px; }
+  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; text-shadow: 0 2px 14px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.8); }
+  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 18px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; text-shadow: 0 1px 8px rgba(0,0,0,0.6); }
+  .cover-mood { font-size: 12px; font-style: italic; opacity: 0.8; line-height: 1.6; max-width: 260px; margin: 0 auto; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .cover-icon { width: 36px; height: 36px; margin: 18px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
   .badge { font-size: 13px; font-weight: 700; color: #00f0ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
   .archetype-title { font-size: 26px; font-weight: 800; line-height: 1.3; background: linear-gradient(45deg, #00f0ff, #b600ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 4px; }
   .archetype-title.small { font-size: 20px; }
