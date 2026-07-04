@@ -521,7 +521,7 @@ function generateReportHTML(data, options) {
      또치님 실사용 피드백: "카드가 커서 사진이 가려지는 느낌" (예: GEM 다이아몬드,
      MOUNTAIN 설산이 카드에 가려 상품성이 떨어짐).
      2차: 텍스트 "줄" 단위로만 딱 붙는 캡션바(pill) 방식으로 교체.
-     `box-decoration-break: clone`을 이용해 한 줄짜리 텍스트든(title/traits/eyebrow/mood)
+     "box-decoration-break: clone"을 이용해 한 줄짜리 텍스트든(title/traits/eyebrow/mood)
      자동 줄바꿈되는 인용구(quote)든 상관없이, 실제 글자가 있는 부분만 어둡게 깔림 —
      줄과 줄 사이 여백은 사진이 그대로 보여서 카드 방식보다 사진 노출 면적이 훨씬 넓음.
      알파값은 1차 카드에서 실측 검증한 값(0.72~0.80 사이)을 그대로 재사용해
