@@ -68,6 +68,22 @@ function coverBgUrl(visualKey) {
   return file ? `${SITE_ORIGIN}/cover-bg/${file}` : `${SITE_ORIGIN}/cover-bg/${visualKey || 'default'}.jpg`;
 }
 
+// 2026.07.04 재구성(인계노트 v55 반영): 박스/카드 배경을 전부 제거하고 텍스트 색상만으로
+// 대비를 처리하기로 하면서, 밝은 사진 위에서는 흰 글자가 아니라 어두운 글자가 필요함.
+// 이전 세션에서 실측(밝기 임계값 140 기준)으로 이미 검증된 5장을 그대로 하드코딩.
+// (재측정 불필요 — 로컬 렌더링으로 20장 전체 육안 재확인만 하면 됨)
+const COVER_TEXT_THEME = {
+  type_04_a: 'dark', // 정화 내향 — 밝은 사진
+  type_05_a: 'dark', // 무토 내향 — 밝은 사진
+  type_05_b: 'dark', // 무토 외향 — 밝은 사진
+  type_08_b: 'dark', // 신금 외향 — 밝은 사진(다이아몬드)
+  type_10_b: 'dark', // 계수 외향 — 밝은 사진
+};
+
+function coverTextTheme(visualKey) {
+  return COVER_TEXT_THEME[visualKey] || 'light'; // 'light' = 흰색 글자, 'dark' = 어두운 글자
+}
+
 // 5축 레이더차트 각도 (5각형, POC와 동일 — 변경 금지)
 const RADAR_AXES = ['drive', 'expression', 'pride', 'warmth', 'stability'];
 const RADAR_ANGLES = [-90, -18, 54, 126, 198];
@@ -142,7 +158,7 @@ function generateReportHTML(data, options) {
     1,
     'cover',
     `
-    <div class="cover-page" style="background-image:url('${coverBgUrl(id.visual_key)}');">
+    <div class="cover-page theme-${coverTextTheme(id.visual_key)}" style="background-image:url('${coverBgUrl(id.visual_key)}');">
       <div class="cover-topbar">
         <div class="cover-brand">COSMIC BLUEPRINT<br><span>YOUR RELATIONSHIP ARCHETYPE REPORT</span></div>
         <div class="cover-pagenum">01<br><span>/16</span></div>
@@ -515,33 +531,27 @@ function generateReportHTML(data, options) {
   .cover-brand span { display: block; font-size: 8px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; margin-top: 2px; }
   .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
   .cover-pagenum span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; }
-  /* 2026.07.04 추가 → 07.04 2차 수정: 표지 이미지 20장이 밝기/구도가 제각각이라
-     (예: 흰 다이아몬드, 흰 눈산) 사진 밝기와 무관한 가독성이 필요함.
-     1차: 텍스트 블록 전체를 감싸는 큰 카드(alpha 0.72) — 대비는 확실히 해결됐으나
-     또치님 실사용 피드백: "카드가 커서 사진이 가려지는 느낌" (예: GEM 다이아몬드,
-     MOUNTAIN 설산이 카드에 가려 상품성이 떨어짐).
-     2차: 텍스트 "줄" 단위로만 딱 붙는 캡션바(pill) 방식으로 교체.
-     "box-decoration-break: clone"을 이용해 한 줄짜리 텍스트든(title/traits/eyebrow/mood)
-     자동 줄바꿈되는 인용구(quote)든 상관없이, 실제 글자가 있는 부분만 어둡게 깔림 —
-     줄과 줄 사이 여백은 사진이 그대로 보여서 카드 방식보다 사진 노출 면적이 훨씬 넓음.
-     알파값은 1차 카드에서 실측 검증한 값(0.72~0.80 사이)을 그대로 재사용해
-     대비 기준(WCAG 큰글자 3:1) 은 동일하게 보장됨. */
-  .cover-body { position: relative; text-align: center; padding: 24px 14px; margin-top: -60px; }
-  .cover-body span {
-    display: inline;
-    -webkit-box-decoration-break: clone; box-decoration-break: clone;
-    border-radius: 999px;
-  }
-  .cover-eyebrow span { background: rgba(0,0,0,0.62); padding: 3px 12px; }
-  .cover-title span { background: rgba(0,0,0,0.78); padding: 4px 16px; }
-  .cover-traits span { background: rgba(0,0,0,0.62); padding: 3px 12px; }
-  .cover-quote span { background: rgba(0,0,0,0.72); padding: 3px 12px; line-height: 1.9; }
-  .cover-mood span { background: rgba(0,0,0,0.55); padding: 2px 10px; line-height: 1.9; }
-  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
-  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; text-shadow: 0 2px 14px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.8); }
-  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 18px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
-  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; text-shadow: 0 1px 8px rgba(0,0,0,0.6); }
-  .cover-mood { font-size: 12px; font-style: italic; opacity: 0.8; line-height: 1.6; max-width: 260px; margin: 0 auto; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  /* 2026.07.04 3차 수정(인계노트 v55 최종 결론 반영): 박스/카드/필 전부 제거.
+     1차(큰 카드) → "사진이 가려진다", 2차(줄단위 캡션바) → "더 산만하다",
+     3차(카드+상단이동+반전) → "표지 수준이 낮아 보인다"는 피드백을 거쳐,
+     최종적으로 배경 없이 텍스트 색상 자체 + text-shadow(halo)만으로 대비 처리하기로 함.
+     대비 수치(WCAG)보다 사진의 프리미엄한 느낌을 우선한다는 원칙 — 완벽한 대비 보장은 아님.
+     위치도 원래대로 하단 복귀: margin-top:auto로 cover-topbar/cover-icon과의
+     flex space-between 관계 안에서 자연스럽게 아래쪽에 붙도록 함(고정 음수 margin 제거). */
+  .cover-body { position: relative; text-align: center; padding: 0 14px; margin-top: auto; }
+  .cover-body span { display: inline; }
+  /* 기본(theme-light): 어두운 사진 위 흰 글자 — 검은 halo로 대비 보강 */
+  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
+  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.85), 0 0 22px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.9); }
+  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
+  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; text-shadow: 0 1px 5px rgba(0,0,0,0.85), 0 0 12px rgba(0,0,0,0.6); }
+  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
+  /* theme-dark: 밝은 사진(다이아몬드/설산 등) 위 어두운 글자 — 흰 halo로 대비 보강 */
+  .cover-page.theme-dark .cover-eyebrow,
+  .cover-page.theme-dark .cover-traits { color: #17151f; text-shadow: 0 1px 4px rgba(255,255,255,0.85), 0 0 10px rgba(255,255,255,0.6); }
+  .cover-page.theme-dark .cover-title { color: #17151f; text-shadow: 0 2px 10px rgba(255,255,255,0.85), 0 0 22px rgba(255,255,255,0.7), 0 1px 3px rgba(255,255,255,0.9); }
+  .cover-page.theme-dark .cover-quote { color: #17151f; text-shadow: 0 1px 5px rgba(255,255,255,0.85), 0 0 12px rgba(255,255,255,0.6); }
+  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); text-shadow: 0 1px 4px rgba(255,255,255,0.85), 0 0 10px rgba(255,255,255,0.6); }
   .cover-icon { width: 36px; height: 36px; margin: 18px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
   .badge { font-size: 13px; font-weight: 700; color: #00f0ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
   .archetype-title { font-size: 26px; font-weight: 800; line-height: 1.3; background: linear-gradient(45deg, #00f0ff, #b600ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 4px; }
