@@ -15,6 +15,11 @@
 //   body: { "data": { ...JSON v2 리포트 객체 전체... } }
 //     → 전달받은 JSON을 바로 사용 (실제 운영 시 결제 완료 후 흐름에서 사용 예정)
 //
+//   2026.07.04 추가: body에 "coverOnly": true 를 같이 보내면 16페이지 전체가 아니라
+//   표지(1페이지)만 렌더링함. 표지 디자인(텍스트 위치, 카드 스타일 등) 반복 확인할 때
+//   Doppio가 1페이지만 그리면 되니 훨씬 빠름.
+//   예: body: { "reportId": "type_08_b", "coverOnly": true }
+//
 // 사전 준비물 (둘 다 또치님이 직접 등록):
 //   1. Netlify 환경변수 DOPPIO_API_KEY = 도삐오 대시보드에서 발급한 API 키
 //   2. ./data/ 폴더에 type_XX_*.json 파일들 (저장소에 있는 샘플 3개부터 시작 가능)
@@ -88,7 +93,7 @@ exports.handler = async (event) => {
   // ---------- 2) HTML 생성 ----------
   let html, missingFields;
   try {
-    const result = generateReportHTML(reportData);
+    const result = generateReportHTML(reportData, { coverOnly: !!body.coverOnly });
     html = result.html;
     missingFields = result.missingFields;
   } catch (e) {

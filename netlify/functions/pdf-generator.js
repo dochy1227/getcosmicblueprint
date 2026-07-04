@@ -89,9 +89,15 @@ function radarPoint(value, angleDeg) {
 /**
  * JSON v2 report 객체 → 16페이지 PDF HTML 문자열 생성.
  * @param {object} data - report_id 단위 JSON v2 객체
+ * @param {object} [options]
+ * @param {boolean} [options.coverOnly] - true면 1페이지(표지)만 렌더링.
+ *   2026.07.04 추가: 표지 디자인(텍스트 위치/카드 스타일 등) 반복 확인 시
+ *   Doppio에 16페이지 전체를 매번 그리게 하지 않고 표지 1장만 빠르게
+ *   뽑아보기 위한 옵션. CSS는 그대로 전체 포함(용량 차이 미미, 로직 단순화 목적).
  * @returns {{ html: string, missingFields: string[] }}
  */
-function generateReportHTML(data) {
+function generateReportHTML(data, options) {
+  const opts = options || {};
   const missing = [];
   function need(label, value) {
     if (value === undefined || value === null || value === '') {
@@ -142,11 +148,11 @@ function generateReportHTML(data) {
         <div class="cover-pagenum">01<br><span>/16</span></div>
       </div>
       <div class="cover-body">
-        <div class="cover-eyebrow">YOUR ARCHETYPE</div>
-        <div class="cover-title">${need('cover.title', cover.title)}</div>
-        ${traits ? `<div class="cover-traits">${traits}</div>` : ''}
-        <div class="cover-quote">&ldquo;${need('cover.subtitle', cover.subtitle)}&rdquo;</div>
-        <div class="cover-mood">${need('cover.tagline', cover.tagline)}</div>
+        <div class="cover-eyebrow"><span>YOUR ARCHETYPE</span></div>
+        <div class="cover-title"><span>${need('cover.title', cover.title)}</span></div>
+        ${traits ? `<div class="cover-traits"><span>${traits}</span></div>` : ''}
+        <div class="cover-quote"><span>&ldquo;${need('cover.subtitle', cover.subtitle)}&rdquo;</span></div>
+        <div class="cover-mood"><span>${need('cover.tagline', cover.tagline)}</span></div>
       </div>
       <div class="cover-icon" data-visual-key="${escapeHtml(id.visual_key)}"></div>
     </div>
@@ -473,11 +479,13 @@ function generateReportHTML(data) {
   `
   );
 
+  const pagesToRender = opts.coverOnly ? pages.slice(0, 1) : pages;
+
   const html = `<!DOCTYPE html>
 <html lang="${escapeHtml(data.language) || 'en'}">
 <head>
 <meta charset="UTF-8">
-<title>Cosmic Blueprint — ${escapeHtml(data.report_id)}</title>
+<title>Cosmic Blueprint — ${escapeHtml(data.report_id)}${opts.coverOnly ? ' (cover only)' : ''}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
@@ -507,16 +515,28 @@ function generateReportHTML(data) {
   .cover-brand span { display: block; font-size: 8px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; margin-top: 2px; }
   .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
   .cover-pagenum span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; }
-  /* 2026.07.04 추가: 표지 이미지 20장이 밝기/구도가 제각각이라(예: 흰 다이아몬드, 흰 눈산),
-     사진 밝기와 무관하게 텍스트 가독성을 보장해야 함.
-     처음엔 radial-gradient 페이드 방식을 시도했으나, 가장 밝은 두 장(GEM/MOUNTAIN)
-     기준으로 명도대비를 실측한 결과 alpha를 아무리 올려도(240까지) 대비 2.5~3.0에서
-     막혀 WCAG 큰글자 기준(3:1)을 넘기지 못함 — 가장자리로 갈수록 알파가 빠지는 구조라
-     중심부만 진해지고 텍스트 전체를 못 덮는 게 원인.
-     → "가장자리까지 알파 고정된 카드형 배경"으로 전환. 동일 조건 실측 결과
-     alpha 0.72에서 GEM 대비 4.24 / MOUNTAIN 대비 3.53으로 전부 3:1 통과 확인.
-     사진 자체는 건드리지 않고 CSS만으로 20장 전체에 공통 적용되는 안전장치. */
-  .cover-body { position: relative; text-align: center; padding: 26px 20px; background: rgba(0,0,0,0.72); border-radius: 24px; }
+  /* 2026.07.04 추가 → 07.04 2차 수정: 표지 이미지 20장이 밝기/구도가 제각각이라
+     (예: 흰 다이아몬드, 흰 눈산) 사진 밝기와 무관한 가독성이 필요함.
+     1차: 텍스트 블록 전체를 감싸는 큰 카드(alpha 0.72) — 대비는 확실히 해결됐으나
+     또치님 실사용 피드백: "카드가 커서 사진이 가려지는 느낌" (예: GEM 다이아몬드,
+     MOUNTAIN 설산이 카드에 가려 상품성이 떨어짐).
+     2차: 텍스트 "줄" 단위로만 딱 붙는 캡션바(pill) 방식으로 교체.
+     `box-decoration-break: clone`을 이용해 한 줄짜리 텍스트든(title/traits/eyebrow/mood)
+     자동 줄바꿈되는 인용구(quote)든 상관없이, 실제 글자가 있는 부분만 어둡게 깔림 —
+     줄과 줄 사이 여백은 사진이 그대로 보여서 카드 방식보다 사진 노출 면적이 훨씬 넓음.
+     알파값은 1차 카드에서 실측 검증한 값(0.72~0.80 사이)을 그대로 재사용해
+     대비 기준(WCAG 큰글자 3:1) 은 동일하게 보장됨. */
+  .cover-body { position: relative; text-align: center; padding: 24px 14px; margin-top: -60px; }
+  .cover-body span {
+    display: inline;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    border-radius: 999px;
+  }
+  .cover-eyebrow span { background: rgba(0,0,0,0.62); padding: 3px 12px; }
+  .cover-title span { background: rgba(0,0,0,0.78); padding: 4px 16px; }
+  .cover-traits span { background: rgba(0,0,0,0.62); padding: 3px 12px; }
+  .cover-quote span { background: rgba(0,0,0,0.72); padding: 3px 12px; line-height: 1.9; }
+  .cover-mood span { background: rgba(0,0,0,0.55); padding: 2px 10px; line-height: 1.9; }
   .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
   .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; text-shadow: 0 2px 14px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.8); }
   .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; margin-bottom: 18px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
@@ -571,7 +591,7 @@ function generateReportHTML(data) {
 </style>
 </head>
 <body>
-${pages.join('\n')}
+${pagesToRender.join('\n')}
 </body>
 </html>`;
 
