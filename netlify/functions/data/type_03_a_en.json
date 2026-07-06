@@ -100,10 +100,11 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You're particularly drawn to people who aren't great at expressing themselves. Someone who likes you but can't quite say it. Someone with feelings they rarely show. Because you can fill in that blank — reading their expression, their voice, the situation, you can usually figure it out well enough on your own.",
-          "But the more comfortable you get doing that, the more of a problem it becomes. They get to say even less. You have to read even more."
+          "You're especially drawn to people who don't express much. People who care, but rarely say it. People who have feelings, but expect you to notice them first.",
+          "At first, it feels special. You notice things other people miss. A change in their voice. A longer pause. A different expression. You fill in the blanks.",
+          "But the more you do that, the less they have to say. And the more responsibility you quietly take on."
         ],
-        "highlight": "Someone who likes you receives your care. Someone who loves you gives that care back.",
+        "highlight": "Someone who likes you receives your warmth. Someone who loves you learns to give warmth back.",
         "bar_chart": {
           "give_percent": 80,
           "get_percent": 20
@@ -135,20 +136,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone Who Barely Expresses Themselves",
-            "description": "They don't say much, but every once in a while a small gesture lands big. At first it feels special. Eventually, you're the one always interpreting it."
+            "type_title": "The Person Who Rarely Expresses Anything",
+            "description": "They don't say much. But once in a while, they show a tiny sign that means everything to you. At first, it feels romantic. Eventually, you're doing all the interpreting."
           },
           {
-            "type_title": "Someone a Little Worn Down",
-            "description": "Something hard going on, some old wound. You naturally start taking care of them. At some point, the relationship has more caretaking in it than romance."
+            "type_title": "The Person Who's Going Through A Hard Time",
+            "description": "They're exhausted. Something happened. They need support. And before you realize it, you're taking care of them. One day, the relationship feels more like healing work than love."
           },
           {
-            "type_title": "Someone Who Rarely Says Thank You",
-            "description": "They're not a bad person — just used to it. But being used to something is no substitute for being grateful."
+            "type_title": "The Person Who Never Says Thank You",
+            "description": "They're not cruel. They're just used to receiving. But being used to something isn't the same as appreciating it. And you quietly carry that disappointment alone."
           },
           {
-            "type_title": "Someone Everyone Calls \"a Good Person\"",
-            "description": "Everyone agrees they're good. But being good and being right for you are two different things. Miss that difference and you end up taking the long way around."
+            "type_title": "The Person Everyone Calls Good",
+            "description": "Everyone likes them. They have lots of friends. People always speak well of them. So when something hurts you, you start wondering if you're the difficult one. Before disappointment even settles in, you begin doubting yourself."
           }
         ]
       },
@@ -156,7 +157,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs showed up faster than you'd think. It's just that you understood them away before they could register.",
+        "intro_note": "These signs showed up faster than you'd think. It's just that you explained them away before they could register.",
         "signal_strength": [
           {
             "label": "You know their day in detail; they barely know yours",

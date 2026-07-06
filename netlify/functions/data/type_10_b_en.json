@@ -62,15 +62,15 @@
           "Oh — this person was so much deeper than I thought."
         ],
         "highlight": null,
-        "profile_note": "High Pride · High Drive, Low Stability — You look hazy like mist, but underneath you're clear, and once things build up, they erupt all at once."
+        "profile_note": "High Competitiveness · High Pride, Low Stability — You look hazy like mist, but underneath you're clear, and once things build up, they erupt all at once."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat",
+        "title": "The Pattern You Repeat — THE SUDDEN FLOOD CURVE",
         "body": [
           "This has probably repeated quite often.",
-          "At first, something hurts a little. But you just let it pass. It happens, you tell yourself.",
+          "At first, something hurts a little. But you just let it pass. \"It happens,\" you tell yourself.",
           "It happens again. You let it pass again. The surface stays calm. To anyone watching, you look fine.",
           "But underneath, it's actually piling up the whole time. Drop by drop. Invisibly.",
           "Then one day, something small suddenly makes you collapse. You get angry, or you sort your feelings out, or you end the relationship altogether.",
@@ -81,7 +81,7 @@
         "chart": {
           "chart_type": "curve",
           "title": "THE SUDDEN FLOOD CURVE",
-          "description": "The pattern of hurt feelings piling up beneath a calm surface, until they erupt all at once."
+          "description": "The pattern of hurt feelings piling up beneath a calm surface, until they erupt all at once"
         }
       },
       {
@@ -136,7 +136,7 @@
           "Hmm, that kind of hurt. That's enough.",
           "A feeling that doesn't pile up never erupts all at once later."
         ],
-        "action_sentence": "For you, change begins when a small feeling comes out before it becomes a flood."
+        "action_sentence": "A feeling that doesn't pile up never erupts all at once later."
       },
       {
         "chapter_number": 6,
@@ -150,7 +150,7 @@
           "Showing it bit by bit, as it happens, safely.",
           "Once you have that, your relationships become far less precarious."
         ],
-        "transition_note": "You've spent a long time learning how to hold things inside. Now you're learning how to let them out safely before everything fills up."
+        "transition_note": "You've spent a long time learning how to hold things inside. The next report covers why your calm sometimes collapses all at once, and how you can learn to let things out safely before that happens."
       },
       {
         "chapter_number": 7,
@@ -171,7 +171,7 @@
           },
           {
             "type_title": "Someone with strong pride",
-            "description": "Dinner ends with both of you saying, \"It's fine.\" Neither person apologizes first. Neither person asks one more question. The relationship stays quiet — until someone finally breaks the silence with an explosion."
+            "description": "Dinner ends with both of you saying, \"It's fine.\" Neither person apologizes first. Neither person asks one more question. The relationship stays quiet—until someone finally breaks the silence with an explosion."
           }
         ]
       },
@@ -230,10 +230,10 @@
         "sections": {
           "who_breaks_you": "You're weak to people who only look at the surface. You assume things are fine because they look fine. You assume nothing's wrong because it's quiet. So your own heart ends up staying on the surface too — because no one ever asks what's underneath the mist.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who asks one more time, even when things look calm. Someone who says, \"you look fine today, but are you really okay?\" In front of someone like that, you no longer have to let things pile up. You can let them out as they happen.",
-          "same_pattern_repeats": "This time, you'll notice the buildup happening faster. The moment something hurts, you'll catch it sooner than before. And at the same time, the usual urge to just let it pass will rise up too. Because it's familiar.",
-          "next_signs": "The sign will be the moment something small hurts, and you feel the urge to say nothing again.",
-          "try_this": "This time, don't let it pile up. Just once. Before it fills up completely, let a small thing out right there. Try: \"Actually, that kind of hurt.\" That's enough. You don't need a long explanation. Then watch their reaction.",
-          "final_line": "Someone who receives it well actually comes closer. Someone who's uncomfortable finds your emotion itself burdensome. That reaction is the answer."
+          "same_pattern_repeats": "",
+          "next_signs": "This time, you'll notice the buildup happening faster. The moment something hurts, you'll catch it sooner than before. And at the same time, the usual urge to just let it pass will rise up too. Because it's familiar.",
+          "try_this": "This time, don't let it pile up. Just once. Before it fills up completely, let a small thing out right there. \"Actually, that kind of hurt.\" That's enough. You don't need a long explanation. Then watch their reaction. Someone who receives it well actually comes closer. Someone who's uncomfortable finds your emotion itself burdensome.",
+          "final_line": "The Mist's lifelong task isn't an inability to feel. It's not showing things for far too long, far too much. This time, show it bit by bit, before it fills up completely. That reaction is the answer."
         }
       }
     ],

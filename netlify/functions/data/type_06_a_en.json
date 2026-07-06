@@ -31,7 +31,7 @@
     "pride": 3,
     "warmth": 4,
     "stability": 4,
-    "caption": "High stability and warmth, low drive and expression — you walk your own path, while always holding someone within it."
+    "caption": "High Stability · High Care, Low Drive · Low Expression — Walking your own path, while always holding someone within it"
   },
   "free_result": {
     "short_summary": [
@@ -87,17 +87,17 @@
           {
             "belief": "I take care of people too much.",
             "truth": "No, you don't. You actually take care of people less than you think. If anything, you're living life your own way. The real problem is that people mistake your stability for being taken care of.",
-            "truth_short": "You don't over-care as much as you think — people mistake your stability for care."
+            "truth_short": "You don't take care of people as much as you think. People mistake your stability for being taken care of."
           },
           {
             "belief": "I can't say no.",
             "truth": "Hmm. You can say no. It's that you understand why they need it, and that's why you can't. You get why they're asking. You get why it's hard for them. So you keep making exceptions.",
-            "truth_short": "You can say no — but once you understand their need, you keep making exceptions."
+            "truth_short": "You can say no. But once you understand why they need it, you keep making exceptions."
           },
           {
             "belief": "I need to get stronger.",
             "truth": "No. You don't need to get any stronger. You're already strong enough. What you need isn't strength — it's boundaries.",
-            "truth_short": "You don't need more strength. You need clearer boundaries."
+            "truth_short": "You don't need to get any stronger. What you need isn't strength — it's boundaries."
           }
         ]
       },
@@ -129,7 +129,7 @@
           "The worry that's theirs to carry. The decision that's theirs to make. The responsibility that's theirs to take.",
           "Handing that back is also a form of love."
         ],
-        "action_sentence": "In the right relationship, you don't carry what was never yours to hold."
+        "action_sentence": "Handing that back is also a form of love."
       },
       {
         "chapter_number": 6,
@@ -141,7 +141,7 @@
           "Love and responsibility. Care and self-sacrifice. Helping and solving it for them.",
           "Once that line exists, the relationship will get a lot lighter."
         ],
-        "transition_note": "This isn't about becoming less caring. It's about knowing where your care ends and their responsibility begins."
+        "transition_note": "Once that line exists, the relationship will get a lot lighter."
       },
       {
         "chapter_number": 7,
@@ -221,9 +221,9 @@
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow-through. Because you're capable of follow-through. So you keep stepping in to help.",
           "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who handles their own things. Someone who moves when a problem comes up. Someone who admits it when they're wrong. Someone who learns when they need to. This kind of person doesn't drain your energy. They build with you.",
-          "same_pattern_repeats": "You'll be drawn again to someone whose life isn't quite put together. That can't be stopped — that's just who you are. The issue was never the attraction itself, it's what you do after.",
+          "same_pattern_repeats": "",
           "next_signs": "This time it'll show up sooner. In how they handle problems — whether they look for an excuse, or look for a way through. You'll see it within a few weeks. More precisely than you'd expect.",
-          "try_this": "This time, don't solve it for them. Just once. When they bring you a problem, don't give the answer. Ask instead: \"What do you want to do?\" Then watch. Do they try to find their own answer? Or do they just wait for yours again?",
+          "try_this": "This time, don't solve it for them. Just once. When they bring you a problem, don't give the answer. Ask instead. \"What do you want to do?\" Then watch. Do they try to find their own answer? Or do they just wait for yours again?",
           "final_line": "That reaction is your answer."
         }
       }
@@ -237,7 +237,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to hold someone within your own life. This report covered why people keep leaning on you — and how that relationship finds its balance again.",
+      "message": "You've spent a long time learning how to hold someone within your own life. The next report covers why people always end up leaning on you — and how that relationship finds its balance again.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

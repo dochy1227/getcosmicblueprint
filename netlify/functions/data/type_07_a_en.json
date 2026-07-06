@@ -31,7 +31,7 @@
     "pride": 2,
     "warmth": 3,
     "stability": 3,
-    "caption": "Low expression with steady warmth and stability — you see accurately, but apply that standard only to yourself, and stay silent."
+    "caption": "High stability and warmth, low expression — you see accurately, but apply that standard only to yourself, and stay silent."
   },
   "free_result": {
     "short_summary": [
@@ -62,12 +62,12 @@
           "The standard didn't disappear — it just all moved over to you."
         ],
         "highlight": null,
-        "profile_note": "High Stability · High Warmth, Low Expression — You see accurately, but apply that standard only to yourself, and stay silent."
+        "profile_note": "High stability and warmth, low expression — You see accurately, but apply that standard only to yourself, and stay silent."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Keep Repeating",
+        "title": "The Pattern You Repeat — THE RE-EXAMINATION CURVE",
         "body": [
           "This has probably repeated quite often.",
           "A relationship ends. Or falls apart.",
@@ -143,7 +143,7 @@
       {
         "chapter_number": 6,
         "page_map": "chapter_06",
-        "title": "Where You Go From Here",
+        "title": "Where to Go From Here",
         "body": [
           "You know how to refine your own behavior.",
           "You know how to go back over things. You know how to get better.",
@@ -151,12 +151,12 @@
           "Not every blank space needs to be filled in by your own guess. Explaining is partly the other person's job too.",
           "Once you start applying the same review to both sides equally, relationships become far less lonely."
         ],
-        "transition_note": "This isn't about lowering your standards. It's about applying them in both directions."
+        "transition_note": "You've spent a long time learning how to examine yourself. The next report covers why you always look for the cause in yourself, and how you can start sharing that examination fairly."
       },
       {
         "chapter_number": 7,
         "page_map": "chapter_07",
-        "title": "The Types You Keep Falling For",
+        "title": "The Type You Keep Falling For",
         "items": [
           {
             "type_title": "Someone who keeps quiet",
@@ -204,7 +204,7 @@
       {
         "chapter_number": 9,
         "page_map": "chapter_09",
-        "title": "What a Healthy Relationship Looks Like for You",
+        "title": "What a Healthy Relationship Looks Like to You",
         "checklist": [
           {
             "title": "The other person tells you the reason themselves.",
@@ -231,10 +231,10 @@
         "sections": {
           "who_breaks_you": "You're weak to people who don't explain themselves. Because they don't tell you the reason, you make one up for them. Since it sounds plausible, they end up talking even less.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who gives the reason before you ask, whose words and actions don't drift apart, who doesn't leave things vague. In front of someone like that, you no longer have to fill the blanks with guesses.",
-          "same_pattern_repeats": "You'll be drawn again to someone who leaves blanks for you to fill. That can't be stopped entirely — that's just where your mind goes. The issue was never that you noticed too much. It's what you do with what remains unsaid.",
-          "next_signs": "This time, you'll notice faster. Right before you start building a reason for them, you'll catch yourself in that exact moment. Is this something I actually heard, or something I guessed? That question will come to you sooner than before.",
-          "try_this": "This time, before reviewing your own behavior, just once, look back at the evidence you've gathered. Which of these did I actually hear, and which did I make up on my own? Then review your evidence by the same standard — not just on yourself.",
-          "final_line": "That reaction is your answer."
+          "same_pattern_repeats": "",
+          "next_signs": "This time, you'll notice faster. Right before you start building a reason for them, you'll catch yourself in that exact moment. \"Is this something I actually heard, or something I guessed?\" That question will come to you sooner than before.",
+          "try_this": "This time, before reviewing your own behavior, just once, look back at the evidence you've gathered. \"Which of these did I actually hear, and which did I make up on my own?\" Then review your evidence by the same standard — not just on yourself. If you heard little, that's not because you fell short. It's because the other person didn't say it. The Blade's problem isn't that your standards are too low. It's that the blade has only ever pointed at yourself. This time, point that same blade and examine the other person too, in the same place.",
+          "final_line": "That reaction is the answer."
         }
       }
     ],
@@ -247,7 +247,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to examine yourself. This report covered why you keep looking for the cause in yourself — and how that examination can become fairer.",
+      "message": "You've spent a long time learning how to examine yourself. The next report covers why you always look for the cause in yourself, and how you can start sharing that examination fairly.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

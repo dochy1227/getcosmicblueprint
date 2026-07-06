@@ -69,7 +69,7 @@
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Keep Repeating",
+        "title": "The Pattern You Repeat",
         "body": [
           "This might feel strange.",
           "You're pretty good at reading relationships.",
@@ -92,7 +92,7 @@
       {
         "chapter_number": 3,
         "page_map": "chapter_03",
-        "title": "What You've Gotten Wrong About Yourself",
+        "title": "What You Got Wrong About Yourself",
         "items": [
           {
             "belief": "I have no eye for people.",
@@ -142,12 +142,12 @@
           "You can trust that more.",
           "It's been right more often than you think."
         ],
-        "action_sentence": "Before you give the relationship one more chance, trust the first thing your judgment already caught."
+        "action_sentence": "You can trust that more. It's been right more often than you think."
       },
       {
         "chapter_number": 6,
         "page_map": "chapter_06",
-        "title": "Where You Go From Here",
+        "title": "Where to Go From Here",
         "body": [
           "You know how to understand a relationship.",
           "You know how to read a situation.",
@@ -157,12 +157,12 @@
           "But not everyone actually changes.",
           "Once you start seeing that difference, relationships become much simpler."
         ],
-        "transition_note": "This isn't about becoming colder. It's about letting behavior weigh more than explanation."
+        "transition_note": "You've spent a long time learning how to understand people. The next report covers why you keep passing over signs you already recognize, and how you can start trusting that judgment."
       },
       {
         "chapter_number": 7,
         "page_map": "chapter_07",
-        "title": "The Types You Keep Falling For",
+        "title": "The Type You Keep Falling For",
         "items": [
           {
             "type_title": "Someone with a lot of backstory",
@@ -210,7 +210,7 @@
       {
         "chapter_number": 9,
         "page_map": "chapter_09",
-        "title": "What a Healthy Relationship Looks Like for You",
+        "title": "What a Healthy Relationship Looks Like to You",
         "checklist": [
           {
             "title": "Action comes before words.",
@@ -233,13 +233,13 @@
       {
         "chapter_number": 10,
         "page_map": "chapter_10",
-        "title": "What Happens In Your Next Relationship",
+        "title": "What Happens in Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're weak to people who explain a lot. There's a reason. There's logic. There's a backstory. So it makes sense to you. But in the end, what actually matters is whether their behavior changes. Or doesn't. That's it.",
+          "who_breaks_you": "You're weak to people who explain a lot. There's a reason. There's logic. There's a backstory. So it makes sense to you. But in the end, what actually matters isn't that. It's whether their behavior changes. Or doesn't. That's it.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who fixes their mistakes. Someone who keeps their promises. Someone who shows they're sorry through action, not words. This kind of person doesn't wear out your mind.",
-          "same_pattern_repeats": "You'll be drawn again to someone who gives a reason that makes sense. That can't be stopped entirely — that's how you understand people. The issue was never understanding them. It's whether understanding becomes an excuse to stay.",
-          "next_signs": "This time, they'll show up faster. What used to take months before will show up within weeks: the gap between words and actions, how they handle responsibility, and your own gut feeling from the very start.",
-          "try_this": "This time, don't listen to the explanation. Just once. Wait before hearing the reason, and watch the behavior instead. Whether they actually change, or just explain again.",
+          "same_pattern_repeats": "",
+          "next_signs": "This time, they'll show up faster. What used to take months before. This time it'll show up within weeks. The gap between words and actions. How they handle responsibility. And your own gut feeling. From the very start.",
+          "try_this": "This time, don't listen to the explanation. Just once. Just this one time. Wait before hearing the reason. And watch the behavior instead. Whether they actually change. Or just explain again. The Blade's problem isn't that you can't see people. You already saw it — you just gave them one more chance to be believed. This time, before you trust the other person, trust your own judgment first.",
           "final_line": "That reaction is the answer."
         }
       }
@@ -253,7 +253,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to understand people. This report covered why you keep passing over signs you already recognize — and how you can start trusting that judgment.",
+      "message": "You've spent a long time learning how to understand people. The next report covers why you keep passing over signs you already recognize, and how you can start trusting that judgment.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

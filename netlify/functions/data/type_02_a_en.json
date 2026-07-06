@@ -98,22 +98,17 @@
           {
             "belief": "I'm just naturally easygoing.",
             "truth": "No. You're not naturally easygoing — you're someone who learned that accommodating others is safer. Being easygoing is a trait. What you have is a learned safety mechanism.",
-            "truth_short": "No. You're not naturally easygoing — you're someone who learned that accommodating others is safer. Being easygoing is a trait. What you have is a learned safety mechanism."
+            "truth_short": "You're not naturally easygoing — you're someone who learned that accommodating others is safer."
           },
           {
             "belief": "Enduring it is the mature thing to do.",
             "truth": "Well, that's partly true. But what you've actually been doing isn't enduring — it's postponing. Saying it now would ruin the mood, so you push it back. And push it back again. What's piled up isn't maturity — it's unpaid debt.",
-            "truth_short": "Well, that's partly true. But what you've actually been doing isn't enduring — it's postponing. Saying it now would ruin the mood, so you push it back. And push it back again. What's piled up isn't maturity — it's unpaid debt."
+            "truth_short": "What you've actually been doing isn't enduring — it's postponing."
           },
           {
             "belief": "It's because I'm just less sensitive than others.",
-            "truth": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened.",
-            "truth_short": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened."
-          },
-          {
-            "belief": "That fast smoothing-over isn't insensitivity — it's a trained reflex.",
-            "truth": "No. That reflex once helped you keep the peace, but it also taught you to erase your own signal before anyone could notice it. What looked like calm was often a feeling being hidden too quickly.",
-            "truth_short": "No. That reflex once helped you keep the peace, but it also taught you to erase your own signal before anyone could notice it. What looked like calm was often a feeling being hidden too quickly."
+            "truth": "No. You're not insensitive. You actually feel things faster and more accurately than others. But you smooth your expression over so fast right after feeling it, that neither they nor you can see it happened. That fast smoothing-over isn't insensitivity — it's a trained reflex.",
+            "truth_short": "You're not insensitive. You feel things fast, then smooth your expression over even faster."
           }
         ]
       },
@@ -122,12 +117,12 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "They're all different people. But the same emotional patterns keep showing up.",
-          "The Person With Big Emotions\n\nWhen they're struggling, you automatically become the calm one. Someone has to hold things together. So it becomes you.\n\nThe problem is this: Their feelings always come out. Yours always wait their turn. You tell yourself, \"I can handle this for now.\" And little by little, your own heart gets pushed to the back.",
-          "The Person With Strong Convictions\n\nThey know exactly what they want. They say it immediately. At first, it's comfortable. You don't have to decide much. But over time, you stop asking what you want. You simply sort it out alone.",
-          "The Person Who Doesn't Notice\n\nIf you say you're fine, they believe you. They never ask again. But you don't explain either. You tell yourself, \"There's no need to ruin the mood.\" Everything you let go of stays with you instead.",
-          "The Person Who Handles Everything Alone\n\nBefore an argument even happens, they've already processed it inside themselves. Just like you. So both of you stay quiet. The relationship looks peaceful. But nothing actually gets resolved.",
-          "A quiet relationship and a relationship where nobody speaks are not the same thing."
+          "They're all different people.",
+          "But the same emotional patterns keep showing up.",
+          "The Person With Big Emotions\n\nWhen they're struggling, you automatically become the calm one.\n\nSomeone has to hold things together.\n\nSo it becomes you.\n\nThe problem is this:\n\nTheir feelings always come out.\n\nYours always wait their turn.\n\nYou tell yourself,\n\n\"I can handle this for now.\"\n\nAnd little by little, your own heart gets pushed to the back.",
+          "The Person With Strong Convictions\n\nThey know exactly what they want.\n\nThey say it immediately.\n\nAt first, it's comfortable.\n\nYou don't have to decide much.\n\nBut over time,\n\nyou stop asking what you want.\n\nYou simply sort it out alone.",
+          "The Person Who Doesn't Notice\n\nIf you say you're fine, they believe you.\n\nThey never ask again.\n\nBut you don't explain either.\n\nYou tell yourself,\n\n\"There's no need to ruin the mood.\"\n\nEverything you let go of stays with you instead.",
+          "The Person Who Handles Everything Alone\n\nBefore an argument even happens, they've already processed it inside themselves.\n\nJust like you.\n\nSo both of you stay quiet.\n\nThe relationship looks peaceful.\n\nBut nothing actually gets resolved."
         ],
         "highlight": "A quiet relationship and a relationship where nobody speaks are not the same thing.",
         "bar_chart": {
@@ -245,11 +240,11 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You’re good at enduring, and that endurance is so quiet that no one notices. The type that doesn’t work for you is someone who takes your “I’m fine” at face value, never asks again, and lets everything keep piling up inside you.",
-          "who_steadies_you": "A surprisingly good fit is someone who asks again after you say “I’m fine.” Someone who follows with, “but what do you actually want?” With them, you don’t have to fold your opinion away.",
-          "same_pattern_repeats": "You may be drawn again to someone who misses cues or avoids conflict. That can’t be stopped. The issue is how long you keep piling things up alone afterward.",
-          "next_signs": "The signs from Chapter 8 will appear sooner and smaller. Watch the half-second right before “I’m fine” comes out during a small disagreement. That is where the pattern starts.",
-          "try_this": "Normally you’d say “I’m fine.” This time, hold it back once and say, “actually, that wasn’t great for me.” Keep it small and watch their reaction. The right person hears it calmly; the wrong person tries to quiet you again.",
+          "who_breaks_you": "You're good at enduring. The problem is it's so quiet that no one notices. So there's a type that doesn't work for you: someone who takes your \"I'm fine\" at pure face value. Say it once, and they never ask again. So you keep piling things up, and they keep passing through, none the wiser.",
+          "who_steadies_you": "There's also a surprisingly good fit: someone who asks again even after you say \"I'm fine.\" Someone who follows up with, \"but what do you actually want?\" In front of someone like this, you don't have to fold your own opinion.",
+          "same_pattern_repeats": "You might be drawn again to someone who doesn't pick up on cues. You might lean toward someone who avoids conflict. That can't be stopped. That's just who you are. The issue was never the attraction itself — it's how long you keep piling things up alone afterward.",
+          "next_signs": "Remember the signs from Chapter 8? They usually took months to show. This time they'll appear sooner, and smaller. When a small disagreement comes up, the moment \"I'm fine\" is about to come out faster than usual. That half-second of hesitation right before you say it. That's the start.",
+          "try_this": "Normally you'd say \"I'm fine.\" This time, just once, hold that back. Instead, say \"actually, that wasn't great for me\" — small, right then and there. Not something big. Just one truly small thing. And watch how they react. Someone who's right for you hears it like it's nothing, and moves on. Someone who isn't will say \"why are you making a thing of this\" and try to quiet you back down.",
           "final_line": "That reaction is your answer."
         }
       }

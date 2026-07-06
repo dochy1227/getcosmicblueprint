@@ -61,12 +61,12 @@
           "But it's actually the opposite. You're being careful because it's become more important."
         ],
         "highlight": null,
-        "profile_note": "High Warmth · High Caution, Low Expression — You want something real, but the closer you get, the less you say."
+        "profile_note": "High warmth and caution, low expression — you want something real, but the closer you get, the less you say."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat",
+        "title": "The Pattern You Repeat — THE RETREAT CURVE",
         "body": [
           "At first it goes well. You slowly get to know each other. Slowly get closer. Trust builds between you too.",
           "But a certain point comes. The moment the other person wants to get even closer. Meet more often. Share more. Connect more deeply.",
@@ -81,7 +81,7 @@
         "chart": {
           "chart_type": "curve",
           "title": "THE RETREAT CURVE",
-          "description": "The pattern of taking a step back the deeper the relationship gets."
+          "description": "The pattern of taking a step back the deeper the relationship gets"
         }
       },
       {
@@ -134,7 +134,7 @@
           "So this time, try saying it first, even just a little. That you were hurt. That you missed them. That you were anxious.",
           "That's not weakness. It's connection."
         ],
-        "action_sentence": "This time, connection begins when you say what you usually carry alone."
+        "action_sentence": "That's not weakness. It's connection."
       },
       {
         "chapter_number": 6,
@@ -146,7 +146,7 @@
           "Relationships aren't a matter of proof. There's a stretch where, at some point, you just have to trust and go.",
           "Once you learn that, love becomes far less lonely."
         ],
-        "transition_note": "You've spent a long time learning how to protect yourself. Now you're learning how to stay in the relationship longer."
+        "transition_note": "You've spent a long time learning how to protect yourself. The next report covers why you take a step back at the very moment you want it most, and how you can learn to stay in the relationship longer."
       },
       {
         "chapter_number": 7,
@@ -226,10 +226,10 @@
         "sections": {
           "who_breaks_you": "You're weak to people who rarely say how they feel. Because you can interpret for them instead. Understand for them. Wait for them. Endure for them. But the longer that goes on, the more the whole relationship turns into guesswork.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who says what they think, says when they're hurt, says when they like something. This kind of person doesn't pressure you. They reassure you. So you don't have to keep checking.",
-          "same_pattern_repeats": "This time, you'll feel it faster. The fondness will build. And at the same time, the urge to take a step back will rise too. If this were before, you'd have read that as a warning. This time, it might not be one. It might just be a reaction to the relationship mattering.",
-          "next_signs": "The sign will be the moment you want to retreat right when you actually care more. That is where the old pattern usually begins.",
-          "try_this": "This time, don't retreat — say it. Just once. Not after everything's sorted out. Not after you feel certain. In that exact moment. Try: \"I've been a little anxious lately.\" or \"I've been thinking a lot.\" Then watch how they respond.",
-          "final_line": "A healthy person moves closer. An unhealthy person finds your vulnerability burdensome. That reaction is the answer."
+          "same_pattern_repeats": "",
+          "next_signs": "This time, you'll feel it faster. The fondness will build. And at the same time, the urge to take a step back will rise too. If this were before, you'd have read that as a warning. This time, it might not be one. It might not be a sign the relationship is dangerous — it might just be a reaction to the relationship mattering.",
+          "try_this": "This time, don't retreat — say it. Just once. Not after everything's sorted out. Not after you feel certain. In that exact moment. \"I've been a little anxious lately.\" \"I've been thinking a lot.\" That's enough. Then watch how they respond. A healthy person moves closer. An unhealthy person finds your vulnerability burdensome. The Ocean's problem isn't a lack of love. It's that you take something too seriously and try to carry it alone. This time, don't do it alone.",
+          "final_line": "That reaction is the answer."
         }
       }
     ],
@@ -242,7 +242,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to protect yourself. This report covered why you take a step back at the very moment you want it most — and how that pattern begins to change.",
+      "message": "You've spent a long time learning how to protect yourself. The next report covers why you take a step back at the very moment you want it most, and how you can learn to stay in the relationship longer.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

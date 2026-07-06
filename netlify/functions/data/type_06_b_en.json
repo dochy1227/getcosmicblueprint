@@ -88,18 +88,23 @@
         "items": [
           {
             "belief": "I just like harmony.",
-            "truth": "It's true that you like harmony. But often, what you can't stand is the uncomfortable atmosphere. When conflict shows up, you step in fast — less from love of harmony than from the need to end the awkwardness.",
-            "truth_short": "You like harmony, but often you're trying to end the awkwardness."
+            "truth": "It's true that you like harmony, but the real thing is that you can't stand an uncomfortable atmosphere. When conflict shows up, you're the one who can't hold back and steps in to resolve it. More often than it's affection for harmony, it's an inability to tolerate awkwardness.",
+            "truth_short": "You like harmony, but the real thing is that you can't stand an uncomfortable atmosphere."
           },
           {
             "belief": "I can't say no.",
-            "truth": "It's not that you can't say no. It's that saying no would leave a visible gap, and you rush to fill it before it opens. You see gaps between other people clearly — just not the gap between yourself and everyone else.",
-            "truth_short": "You can say no — but you rush to fill the gap it might create."
+            "truth": "It's not that you can't say no. It's that saying no would leave a visible gap between two people, and you're rushing to fill that gap before it even opens. You're good at seeing the gaps between other people. You just never apply that same eye to the gap between yourself and everyone else.",
+            "truth_short": "You can say no — but you rush to fill the gap before it even opens."
           },
           {
             "belief": "I always have to be the one keeping the balance in the middle.",
             "truth": "No. Sometimes you're allowed to stand on one side too. What you need isn't balance. It's a position of your own.",
             "truth_short": "You don't always need balance. Sometimes you need a position of your own."
+          },
+          {
+            "belief": "I'm just good at mediating.",
+            "truth": "You are good at mediating, but that's not the whole story. When someone's struggling, it somehow feels like your responsibility. If you don't fix it, you can't settle. So you step in — not because you're good at it, but because not doing it makes you more uncomfortable than doing it does.",
+            "truth_short": "You're good at mediating, but sometimes you step in because not doing it feels even more uncomfortable."
           }
         ]
       },
@@ -130,7 +135,7 @@
           "The friction between them and other people. The conflict between you and them.",
           "Letting the two of you work it out on your own — that's also a form of love."
         ],
-        "action_sentence": "In the right relationship, you don't have to stand in the middle every time something gets uncomfortable."
+        "action_sentence": "Letting the two of you work it out on your own — that's also a form of love."
       },
       {
         "chapter_number": 6,
@@ -142,7 +147,7 @@
           "Even when friction shows up. Even when it gets awkward.",
           "The skill of letting people work it out with their own strength, instead of stepping in first."
         ],
-        "transition_note": "This isn't about caring less. It's about letting other people build the strength to meet conflict without using you as the bridge every time."
+        "transition_note": "The skill of letting people work it out with their own strength, instead of stepping in first."
       },
       {
         "chapter_number": 7,
@@ -150,20 +155,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "The Dependent",
-            "description": "Someone who can't decide things on their own. They always ask you what to do. At first you assume it's because they trust you. But over time, they turn into someone who can't decide anything without you."
+            "type_title": "The Dependent — someone who can't decide things on their own",
+            "description": "They always ask you what to do. At first you assume it's because they trust you. But over time, they turn into someone who can't decide anything without you."
           },
           {
-            "type_title": "The Emotionally Confused",
-            "description": "Someone who doesn't know their own feelings. They get confused about what they're even feeling. You have to read it for them. You're always the one who has to say first, \"aren't you upset about this?\""
+            "type_title": "The Emotionally Confused — someone who doesn't know their own feelings",
+            "description": "They get confused about what they're even feeling. You have to read it for them. You're always the one who has to say first, \"aren't you upset about this?\""
           },
           {
-            "type_title": "The Responsibility-Dodger",
-            "description": "Someone who disappears when problems show up. When something goes wrong, they quietly slip their share onto you. They say \"I don't know what to do,\" when really, they're just not doing it."
+            "type_title": "The Responsibility-Dodger — someone who disappears when problems show up",
+            "description": "When something goes wrong, they quietly slip their share onto you. They say \"I don't know what to do,\" when really, they're just not doing it."
           },
           {
-            "type_title": "The Relationship-Anxious",
-            "description": "Someone who keeps demanding emotional reassurance. \"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\" — these questions come often. It's not that they can't decide things — it's that they constantly need confirmation that the relationship itself is safe. You become the one who fills that need, every time. But that anxiety doesn't go away just because you keep reassuring them."
+            "type_title": "The Relationship-Anxious — someone who keeps demanding emotional reassurance",
+            "description": "\"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\" — these questions come often. It's not that they can't decide things — it's that they constantly need confirmation that the relationship itself is safe. You become the one who fills that need, every time. But that anxiety doesn't go away just because you keep reassuring them."
           }
         ]
       },
@@ -220,11 +225,11 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You can't stand unresolved conflict. The moment things get awkward, you step in. So you keep standing in the middle, but when conflict happens between you and someone else, no one steps in for you. The wrong fit is someone who pushes every conflict onto you.",
-          "who_steadies_you": "There's also a surprisingly good fit: someone who tries to work things out themselves, even without you stepping in. With them, the relationship runs fine even when you're not always in the middle.",
-          "same_pattern_repeats": "You'll be drawn again to someone who can't handle conflict and pushes it onto you. That can't be stopped. The issue isn't the attraction — it's what you do after.",
-          "next_signs": "Remember Chapter 8? This time the signs show up faster, smaller. When a small disagreement comes up, they wait for you to mediate instead of working it out directly. That's the start.",
-          "try_this": "Normally you'd hand them a solution. This time, don't. Just listen. If they're trying, they'll sort their thoughts as they talk. If they're offloading responsibility, they'll keep asking, \"so what should I do?\"",
+          "who_breaks_you": "You can't stand unresolved conflict. The moment someone feels awkward, you step in automatically. So — you keep standing in the middle, but the moment conflict arises between you and someone else, no one steps in for you. So there's a type that doesn't work for you: someone who can't tolerate conflict and always pushes it onto you, with no conflict-resolving ability of their own. If you don't step in, it just gets left awkward.",
+          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who tries to work it out themselves, even without you stepping in. With someone like this, the relationship runs fine even when you're not always standing in the middle.",
+          "same_pattern_repeats": "You'll be drawn again to someone who can't handle conflict and pushes it onto you. That can't be stopped. That's just who you are. The issue was never the attraction itself — it's what you do after.",
+          "next_signs": "Remember the signs from Chapter 8? They usually showed up months in. This time they'll show up faster, smaller. When a small disagreement comes up, they just wait for you to mediate. They never try to work it out directly. If you see this within the first few weeks, that's the start.",
+          "try_this": "Normally you'd hand them a solution. This time, do the opposite — just once, don't give one. Just listen. When they bring you a problem, don't give the answer — just sit and listen. Then watch. Someone who's trying to find their own answer will start sorting out their own thoughts as they talk. Someone who's offloading responsibility will keep demanding, \"so what should I do?\"",
           "final_line": "That reaction is your answer."
         }
       }

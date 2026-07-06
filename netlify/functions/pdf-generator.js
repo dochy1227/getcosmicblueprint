@@ -34,26 +34,26 @@ const FONT_STACK =
 // a = 내향(introvert), b = 외향(extrovert) — 20개 파일 전부 orientation_display로 검증됨.
 // 새 표지 이미지로 교체 시 이 테이블만 수정하면 됨.
 const COVER_BG_FILES = {
-  type_01_a: 'coverbg_01_pioneer_png.jpg',   // 갑목 내향 (기존)
-  type_01_b: 'coverbg_01_pioneer_b.jpg',     // 갑목 외향 (신규)
-  type_02_a: 'coverbg_02_vine_png.jpg',      // 을목 내향 (기존)
-  type_02_b: 'coverbg_02_vine_b.jpg',        // 을목 외향 (신규)
-  type_03_a: 'coverbg_03_sun_a.jpg',         // 병화 내향 (신규)
-  type_03_b: 'coverbg_03_sun_png.jpg',       // 병화 외향 (기존)
-  type_04_a: 'coverbg_04_candle_png.jpg',    // 정화 내향 (기존)
-  type_04_b: 'coverbg_04_candle_b.jpg',      // 정화 외향 (신규)
-  type_05_a: 'coverbg_05_mountain_png.jpg',  // 무토 내향 (기존)
-  type_05_b: 'coverbg_05_mountain_b.jpg',    // 무토 외향 (신규)
-  type_06_a: 'coverbg_06_soil_a.jpg',        // 기토 내향 (신규)
-  type_06_b: 'coverbg_06_soil_png.jpg',      // 기토 외향 (기존)
-  type_07_a: 'coverbg_07_blade_a.jpg',       // 경금 내향 (신규)
-  type_07_b: 'coverbg_07_blade_png.jpg',     // 경금 외향 (기존)
-  type_08_a: 'coverbg_08_gem_png.jpg',       // 신금 내향 (기존)
-  type_08_b: 'coverbg_08_gem_b.jpg',         // 신금 외향 (신규)
-  type_09_a: 'coverbg_09_ocean_a.jpg',       // 임수 내향 (신규)
-  type_09_b: 'coverbg_09_ocean_png.jpg',     // 임수 외향 (기존)
-  type_10_a: 'coverbg_10_mist_png.jpg',      // 계수 내향 (기존)
-  type_10_b: 'coverbg_10_mist_b.jpg',        // 계수 외향 (신규)
+  type_01_a: 'coverbg_01_pioneer_png.png',   // 갑목 내향 (기존)
+  type_01_b: 'coverbg_01_pioneer_b.png',     // 갑목 외향 (신규)
+  type_02_a: 'coverbg_02_vine_png.png',      // 을목 내향 (기존)
+  type_02_b: 'coverbg_02_vine_b.png',        // 을목 외향 (신규)
+  type_03_a: 'coverbg_03_sun_a.png',         // 병화 내향 (신규)
+  type_03_b: 'coverbg_03_sun_png.png',       // 병화 외향 (기존)
+  type_04_a: 'coverbg_04_candle_png.png',    // 정화 내향 (기존)
+  type_04_b: 'coverbg_04_candle_b.png',      // 정화 외향 (신규)
+  type_05_a: 'coverbg_05_mountain_png.png',  // 무토 내향 (기존)
+  type_05_b: 'coverbg_05_mountain_b.png',    // 무토 외향 (신규)
+  type_06_a: 'coverbg_06_soil_a.png',        // 기토 내향 (신규)
+  type_06_b: 'coverbg_06_soil_png.png',      // 기토 외향 (기존)
+  type_07_a: 'coverbg_07_blade_a.png',       // 경금 내향 (신규)
+  type_07_b: 'coverbg_07_blade_png.png',     // 경금 외향 (기존)
+  type_08_a: 'coverbg_08_gem_png.png',       // 신금 내향 (기존)
+  type_08_b: 'coverbg_08_gem_b.png',         // 신금 외향 (신규)
+  type_09_a: 'coverbg_09_ocean_a.png',       // 임수 내향 (신규)
+  type_09_b: 'coverbg_09_ocean_png.png',     // 임수 외향 (기존)
+  type_10_a: 'coverbg_10_mist_png.png',      // 계수 내향 (기존)
+  type_10_b: 'coverbg_10_mist_b.png',        // 계수 외향 (신규)
 };
 
 // 2026.06.29 수정: 상대경로 → 절대 URL로 변경.
@@ -510,7 +510,7 @@ function generateReportHTML(data, options) {
   body { background: #0d0b18; font-family: ${FONT_STACK}; }
   .pdf-page {
     background-color: #0d0b18; color: #ffffff; width: 480px; min-height: 854px;
-    padding: 32px 28px; position: relative; page-break-after: always;
+    padding: 26px 28px; position: relative; page-break-after: always;
   }
   .page-number { position: absolute; top: 8px; right: 12px; font-size: 10px; color: #5a5670; }
   .pdf-page:has(.cover-page) .page-number { display: none; }
@@ -559,9 +559,9 @@ function generateReportHTML(data, options) {
   .subtitle { color: #8a85a0; font-size: 13px; margin-bottom: 28px; }
   .tagline { font-style: italic; color: #8a85a0; }
   .visual-placeholder { height: 200px; display: flex; align-items: center; justify-content: center; color: #5a5670; border: 1px dashed #333; border-radius: 12px; margin: 20px 0; }
-  h2 { font-size: 17px; color: #00f0ff; margin: 30px 0 12px 0; border-left: 3px solid #b600ff; padding-left: 10px; }
+  h2 { font-size: 17px; color: #00f0ff; margin: 20px 0 10px 0; border-left: 3px solid #b600ff; padding-left: 10px; }
   h3 { font-size: 15px; color: #ffffff; margin: 18px 0 8px 0; font-weight: 700; }
-  p { font-size: 14px; line-height: 1.75; color: #d1ceda; margin-bottom: 12px; }
+  p { font-size: 14px; line-height: 1.65; color: #d1ceda; margin-bottom: 10px; }
   .quote-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 10px 14px; margin: 6px 0 4px 0; font-style: italic; font-size: 14px; color: #fff; }
   .truth-label { color: #ff6b9d; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 2px 0 4px 0; }
   .punch { font-weight: 700; color: #fff; font-size: 15px; line-height: 1.6; }
@@ -573,7 +573,7 @@ function generateReportHTML(data, options) {
      divider가 3개(기존 가정 2개보다 많음)로 늘어나면서 7→8페이지 문제가 재발함이 실제 PDF로 확인됨.
      항목 개수(3개/4개)에 관계없이 안전하도록 마진을 한 단계 더 축소. */
   .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 8px 0; }
-  .chart-wrap { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 18px; margin: 16px 0; text-align: center; }
+  .chart-wrap { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 14px; margin: 10px 0; text-align: center; }
   .chart-caption { font-size: 12px; color: #8a85a0; margin-top: 8px; }
   .pattern-name { color: #00f0ff; font-weight: 700; margin-bottom: 8px; }
   .checklist-item { display: flex; gap: 10px; margin-bottom: 14px; }
@@ -596,8 +596,10 @@ function generateReportHTML(data, options) {
   /* 2026.06.29 추가: 14페이지(챕터10)는 h3 4개+p 5개로 다른 챕터보다 섹션 수가 많아
      마지막 한두 문장이 15페이지로 밀리는 문제가 발생(type_08_b에서 확인됨).
      이 클래스 범위 내에서만 여백을 축소 — 다른 페이지의 전역 h3/p 스타일은 그대로 유지됨. */
-  .ch10-tight h3 { margin: 10px 0 6px 0; }
-  .ch10-tight p { margin-bottom: 8px; }
+  .ch10-tight h2 { margin: 0 0 10px 0; }
+  .ch10-tight h3 { margin: 6px 0 4px 0; font-size: 14px; }
+  .ch10-tight p { margin-bottom: 6px; font-size: 13px; line-height: 1.55; }
+  .ch10-tight .punch { font-size: 14px; line-height: 1.5; }
 </style>
 </head>
 <body>
