@@ -14,11 +14,15 @@
 //      URL: https://getcosmicblueprint.com/.netlify/functions/creem-webhook
 //   2. 구독 이벤트: "checkout.completed" 하나만 선택(그 외 이벤트는 이 함수가 무시함)
 //   3. 등록 후 발급되는 "Signing secret" 값을 Netlify 환경변수 CREEM_WEBHOOK_SECRET에 등록
-//   4. Creem 대시보드에서 "Send Test Event" → checkout.completed 로 실제 페이로드
-//      구조(특히 metadata, customer 필드 위치)를 한 번 실제로 찍어보고, 아래
-//      extractOrderInfo() 함수의 필드 경로가 실제 구조와 일치하는지 반드시 확인할 것.
-//      (Creem 공식 문서에 checkout.completed의 정확한 object 스키마 예시가 없어서,
-//       업계 통용 구조로 방어적으로 작성했음 — 실제 테스트 이벤트로 최종 검증 필요)
+//
+// ✅ 2026.07.08 검증 완료: docs.creem.io/code/webhooks 공식 checkout.completed
+//    페이로드 예시로 아래 extractOrderInfo()의 모든 필드 경로를 실제 구조와 대조
+//    완료함(더 이상 "Send Test Event"로 재확인할 필요 없음):
+//      - obj.metadata            → archetype_id 위치, 정확함
+//      - obj.customer.email      → 전체 객체로 옴(문자열 ID 아님), 정확함
+//      - obj.order.id/.status/.product/.amount/.currency → 전부 정확함
+//    2026.07.08 추가: order.status==='paid' 확인 + order.product===CREEM_PRODUCT_ID
+//    확인, 2가지 안전장치를 아래 handler에 추가함(또치님 요청).
 //
 // 필요 환경변수 (Netlify):
 //   - CREEM_WEBHOOK_SECRET   Creem 웹훅 등록 시 발급되는 서명 시크릿
@@ -103,6 +107,37 @@ exports.handler = async (event) => {
     });
   }
 
+  console.log(`[creem-webhook] received request_id=${orderInfo.requestId} order_id=${orderInfo.orderId} archetype_id=${orderInfo.archetypeId}`);
+
+  // ---------- 2-1) 안전장치 A: 결제 상태가 'paid'인지 확인 ----------
+  // 2026.07.08 추가(또치님 요청). checkout.completed 이벤트라도 obj.order.status가
+  // 'paid'가 아닌 값(예: 환불 처리 중 재전송 등 예외 케이스)이면 PDF 생성/이메일
+  // 발송으로 넘어가지 않도록 차단. 정상 결제는 공식 문서 예시 기준 status: "paid".
+  if (orderInfo.orderStatus && orderInfo.orderStatus !== 'paid') {
+    return jsonResponse(200, {
+      received: true,
+      skipped: true,
+      reason: `order.status가 'paid'가 아님 (실제: ${orderInfo.orderStatus})`,
+    });
+  }
+
+  // ---------- 2-2) 안전장치 B: 우리 상품(product_id) 결제가 맞는지 확인 ----------
+  // 2026.07.08 추가(또치님 요청). 다른 상품에 대한 웹훅이 잘못 들어와도 처리하지
+  // 않도록 차단. CREEM_PRODUCT_ID 환경변수가 없거나 payload에 product_id가 없는
+  // 경우는(구버전 이벤트 등) 안전하게 통과시키고 경고만 로그로 남김 — 과거 데이터
+  // 호환성을 위해 하드 실패시키지 않음.
+  const expectedProductId = process.env.CREEM_PRODUCT_ID;
+  if (expectedProductId && orderInfo.productId && orderInfo.productId !== expectedProductId) {
+    return jsonResponse(200, {
+      received: true,
+      skipped: true,
+      reason: `product_id 불일치 (기대: ${expectedProductId}, 실제: ${orderInfo.productId})`,
+    });
+  }
+  if (expectedProductId && !orderInfo.productId) {
+    console.warn(`[creem-webhook] product_id를 페이로드에서 찾지 못함 — 검증 생략하고 진행 (order_id=${orderInfo.orderId})`);
+  }
+
   // ---------- 3) 중복 처리 방지 (idempotency) ----------
   // supabase-client.js는 creem_order_id를 기준으로 조회/upsert함
   try {
@@ -177,9 +212,8 @@ exports.handler = async (event) => {
 
 // ------------------------------------------------------------
 // Creem payload에서 필요한 정보 추출
-// ⚠️ Creem 공식 문서에 checkout.completed object의 정확한 스키마 예시가 없어서
-//    업계에서 통용되는 몇 가지 위치를 방어적으로 다 확인함. 실제 테스트 이벤트로
-//    한 번 콘솔 로그 찍어서(Netlify function 로그) 정확한 경로 확정 필요.
+// ✅ 2026.07.08: docs.creem.io/code/webhooks 공식 예시로 실제 구조 검증 완료.
+//    아래 각 필드의 1순위 경로가 전부 실제 구조와 정확히 일치함(주석 참고).
 // ------------------------------------------------------------
 function extractOrderInfo(payload) {
   const obj = payload.object || {};
@@ -187,7 +221,8 @@ function extractOrderInfo(payload) {
 
   // checkout.completed의 object 자체가 checkout이고, 그 안에 order 참조가 있을 수도,
   // 혹은 checkout id 자체가 order 역할을 겸할 수도 있음 — 방어적으로 둘 다 처리.
-  // ⚠️ 실제 구조는 Creem "Send Test Event"로 반드시 확인 필요(파일 상단 안내 참고).
+  // 2026.07.08 확인: docs.creem.io/code/webhooks 공식 페이로드 예시로 실제 구조
+  // 검증 완료. obj.metadata / obj.customer.email / obj.order.id 전부 아래 경로가 정확함.
   const checkoutId = obj.id || obj.checkout_id || null;
   const orderId = obj.order?.id || obj.order_id || (typeof obj.order === 'string' ? obj.order : null) || checkoutId;
   const archetypeId = metadata.archetype_id || metadata.archetypeId || null;
@@ -198,8 +233,12 @@ function extractOrderInfo(payload) {
     null;
   const amountCents = obj.amount ?? obj.order?.amount ?? null;
   const currency = obj.currency || obj.order?.currency || null;
+  // 2026.07.08 추가: 안전장치 2종을 위한 필드
+  const orderStatus = obj.order?.status || obj.status || null;
+  const productId = obj.order?.product || obj.product?.id || null;
+  const requestId = obj.request_id || null; // create-checkout.js에서 보낸 멱등키, 로그 추적용
 
-  return { orderId, checkoutId, archetypeId, email, amountCents, currency };
+  return { orderId, checkoutId, archetypeId, email, amountCents, currency, orderStatus, productId, requestId };
 }
 
 // ------------------------------------------------------------

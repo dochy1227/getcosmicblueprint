@@ -3,126 +3,174 @@
 // ============================================================
 // Cosmic Blueprint — Creem 체크아웃 세션 생성
 //
-// 작성: 2026.07.01
-// 역할: report.html의 "구매하기" 버튼이 이 함수를 호출하면,
-//       Creem에 체크아웃 세션을 만들어서 checkout_url을 돌려준다.
-//       사용자는 이 URL로 리다이렉트되어 Creem 호스팅 결제 페이지에서 결제.
+// 작성: 2026.07.08
+// 역할: report.html의 구매 버튼이 이 함수를 호출하면, 방문자가 보고 있던
+//       리포트(archetypeId)를 metadata에 실어서 Creem 체크아웃 세션을
+//       동적으로 생성하고, 그 결제 페이지 URL을 돌려준다.
 //
-// 호출 방법:
-//   POST /.netlify/functions/create-checkout
-//   body: { "archetypeId": "type_01_a" }
-//     → archetypeId는 generate-pdf.js의 reportId와 동일한 값 체계
-//       (예: type_01_a = 갑목 내향). report.html이 이미 세션스토리지에
-//       들고 있는 elementKey/orientation 조합으로 만들면 됨.
+// 왜 고정 결제 링크(Payment Link)를 안 쓰는가:
+//   우리 상품은 20종(천간×내향/외향)인데 Creem에는 상품이 1개
+//   ("Cosmic Blueprint Full Love Report", $4.99)만 등록되어 있음.
+//   어떤 방문자가 어떤 리포트(type_03_a 등)를 결제했는지는 metadata로만
+//   구분 가능하고, 고정 링크는 요청마다 다른 metadata를 실을 수 없음.
+//   → 반드시 체크아웃 세션을 "그때그때" 만들어야 함(Checkout Session API).
+//   → creem-webhook.js의 extractOrderInfo()가 metadata.archetype_id를
+//      필수로 요구하므로, 여기서 반드시 넣어줘야 웹훅→PDF생성→이메일
+//      발송까지 끊기지 않고 이어짐.
 //
-// 사전 준비물 (또치님이 Netlify 환경변수에 등록):
-//   - CREEM_API_KEY       Creem 대시보드 "개발자 > API & Webhooks"에서 발급받은 키
-//                          (creem_test_... 형태 = 테스트 모드)
-//   - CREEM_PRODUCT_ID    Creem 대시보드에서 만든 상품의 ID (prod_...)
-//   - CREEM_TEST_MODE     'true' 또는 'false' (기본값 true — 아직 실제 결제 전이므로)
+// 참고 문서: https://docs.creem.io/features/checkout/checkout-api
+//           https://docs.creem.io/getting-started/test-mode
 //
-// 참고: Creem 공식 API 스펙(2026.07 기준, docs.creem.io 검색 확인)
-//   - 테스트 모드 엔드포인트: https://test-api.creem.io/v1/checkouts
-//   - 프로덕션 엔드포인트:   https://api.creem.io/v1/checkouts
-//   - 인증 헤더: x-api-key (Bearer 아님 — SDK 예제와 REST 직접 호출 방식이 다름)
-//   - 아키타입 20종을 상품 20개로 나누지 않고, 상품은 1개로 통일하고
-//     metadata.archetype_id로 어떤 리포트인지 구분하는 방식 채택
-//     (또치님과 합의된 설계 — Creem 대시보드 상품 관리 부담을 줄이기 위함)
+// 필요 환경변수 (Netlify):
+//   - CREEM_API_KEY       Creem 대시보드 Developers 메뉴에서 발급.
+//                          키 접두사로 테스트/실전 자동 판별함:
+//                            creem_test_... → 테스트 모드 (test-api.creem.io)
+//                            creem_...      → 실전 모드 (api.creem.io)
+//                          (Test/Live는 서로 다른 키이며 절대 혼용 불가)
+//   - CREEM_PRODUCT_ID    Creem 대시보드 Products 탭에서 "Copy ID"로 확보한
+//                          상품 ID. 현재 값: prod_4pH6mAvpHZC0u5jnFG2a4Y
+//                          (상품명: Cosmic Blueprint Full Love Report, $4.99)
+//   - SITE_URL            기본값 https://getcosmicblueprint.com
+//                          (결제 완료 후 리다이렉트될 success_url 조합용)
+//   - CREEM_TEST_MODE     (선택) 'true'/'false'. 실제 분기 기준은 CREEM_API_KEY
+//                          접두사이고, 이 값은 설정 실수를 잡는 교차검증용으로만 씀.
 //
-// ⚠️ 2026.07.03 확인: 이 파일이 실제 사이트에 배포되어 정상 작동 중인 버전입니다.
-//    (Netlify 환경변수 CREEM_API_KEY/CREEM_PRODUCT_ID가 이미 이 버전 기준으로 등록되어 있고,
-//     브라우저 콘솔 테스트로 checkout_url이 정상 반환되는 것까지 확인됨)
-//    metadata.archetype_id 값은 creem-webhook.js가 그대로 읽어서 PDF 생성에 사용하므로,
-//    이 파일과 creem-webhook.js는 항상 짝을 맞춰서 함께 배포할 것.
+// 프런트(report.html) 쪽 계약 — 이미 작성되어 있음, 수정 불필요:
+//   POST body: { archetypeId: "type_03_a" }
+//   기대 응답: { checkoutUrl: "...", testMode: boolean }
+//   실패 시(4xx/5xx) report.html이 자동으로 waitlist 폼으로 폴백함.
 // ============================================================
 
-const CREEM_TEST_ENDPOINT = 'https://test-api.creem.io/v1/checkouts';
-const CREEM_LIVE_ENDPOINT = 'https://api.creem.io/v1/checkouts';
-const SITE_ORIGIN = 'https://getcosmicblueprint.com';
+const SITE_URL = process.env.SITE_URL || 'https://getcosmicblueprint.com';
+
+// public_key 형식 검증용 — 20개 아키타입 외 값이 metadata에 실리는 것을 방지
+// (blueprint-engine.js의 buildPublicIdentity()가 만드는 형식과 동일: type_01_a ~ type_10_b)
+const VALID_ARCHETYPE_ID = /^type_(0[1-9]|10)_[ab]$/;
 
 exports.handler = async (event) => {
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  };
+
   if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 204,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type',
-      },
-      body: '',
-    };
+    return { statusCode: 200, headers, body: '' };
   }
 
   if (event.httpMethod !== 'POST') {
-    return jsonResponse(405, { error: 'POST 요청만 허용됩니다.' });
+    return jsonResponse(405, { error: 'POST 요청만 허용됩니다.' }, headers);
   }
 
+  // ---------- 1) 환경변수 확인 ----------
   const apiKey = process.env.CREEM_API_KEY;
   const productId = process.env.CREEM_PRODUCT_ID;
 
   if (!apiKey || !productId) {
-    return jsonResponse(500, {
-      error: 'CREEM_API_KEY 또는 CREEM_PRODUCT_ID 환경변수가 설정되지 않았습니다.',
-    });
+    return jsonResponse(
+      500,
+      { error: 'CREEM_API_KEY 또는 CREEM_PRODUCT_ID 환경변수가 설정되지 않았습니다.' },
+      headers
+    );
   }
 
-  let body;
+  // ---------- 2) archetypeId 파싱 및 검증 ----------
+  let archetypeId;
   try {
-    body = JSON.parse(event.body || '{}');
+    const body = JSON.parse(event.body || '{}');
+    archetypeId = body.archetypeId;
   } catch (e) {
-    return jsonResponse(400, { error: '요청 body가 올바른 JSON이 아닙니다.' });
+    return jsonResponse(400, { error: '요청 body가 올바른 JSON이 아닙니다.' }, headers);
   }
 
-  const archetypeId = body.archetypeId;
-  if (!archetypeId) {
-    return jsonResponse(400, { error: 'body에 archetypeId가 필요합니다. 예: "type_01_a"' });
+  if (!archetypeId || !VALID_ARCHETYPE_ID.test(archetypeId)) {
+    return jsonResponse(
+      400,
+      { error: `archetypeId가 올바르지 않습니다: ${archetypeId} (예상 형식: type_01_a ~ type_10_b)` },
+      headers
+    );
   }
-  // 경로 조작 등 방지 (generate-pdf.js와 동일한 안전장치)
-  const safeArchetypeId = String(archetypeId).replace(/[^a-zA-Z0-9_]/g, '');
 
-  const isTestMode = process.env.CREEM_TEST_MODE !== 'false'; // 기본값: 테스트 모드
-  const endpoint = isTestMode ? CREEM_TEST_ENDPOINT : CREEM_LIVE_ENDPOINT;
+  // ---------- 3) 테스트/실전 모드 판별 (키 접두사 기준) + CREEM_TEST_MODE 교차검증 ----------
+  // Creem CLI와 동일한 판별 규칙: creem_test_ 로 시작하면 테스트 모드.
+  const isTestMode = apiKey.startsWith('creem_test_');
+  const apiBase = isTestMode ? 'https://test-api.creem.io/v1' : 'https://api.creem.io/v1';
+
+  // 2026.07.09 추가: 또치님이 Netlify에 CREEM_TEST_MODE(true/false)를 별도로
+  // 설정해두심. 실제 API 호출 분기는 키 접두사 기준(더 신뢰도 높음)을 그대로 쓰고,
+  // 이 값은 "키는 실전인데 CREEM_TEST_MODE=true로 남아있음" 같은 설정 불일치를
+  // 잡아내는 교차검증 용도로만 사용. 불일치해도 결제 자체는 막지 않고 경고만 로그.
+  const testModeFlag = process.env.CREEM_TEST_MODE;
+  if (testModeFlag !== undefined) {
+    const flagIsTest = testModeFlag === 'true';
+    if (flagIsTest !== isTestMode) {
+      console.warn(
+        `[create-checkout] 설정 불일치 경고: CREEM_TEST_MODE=${testModeFlag} 이지만 ` +
+        `CREEM_API_KEY는 ${isTestMode ? '테스트' : '실전'} 모드 키입니다. 환경변수를 다시 확인해주세요.`
+      );
+    }
+  }
+
+  // ---------- 4) 체크아웃 세션 생성 ----------
+  // request_id: Creem 측 멱등성(idempotency) 키. 같은 값으로 재요청해도 중복 세션이
+  // 안 생기게 해줌 — 방문자가 버튼을 여러 번 눌러도 안전하도록 매 요청 고유값 생성.
+  const requestId = `checkout_${archetypeId}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
 
   let creemRes;
   try {
-    creemRes = await fetch(endpoint, {
+    creemRes = await fetch(`${apiBase}/checkouts`, {
       method: 'POST',
       headers: {
         'x-api-key': apiKey,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        request_id: requestId,
         product_id: productId,
-        success_url: `${SITE_ORIGIN}/success.html`,
+        success_url: `${SITE_URL}/success.html`,
         metadata: {
-          archetype_id: safeArchetypeId,
+          archetype_id: archetypeId,
         },
       }),
     });
   } catch (e) {
-    return jsonResponse(502, { error: 'Creem API 호출 자체가 실패했습니다: ' + e.message });
+    return jsonResponse(502, { error: 'Creem API 호출 자체가 실패했습니다: ' + e.message }, headers);
   }
 
   if (!creemRes.ok) {
     const errText = await creemRes.text().catch(() => '');
-    return jsonResponse(creemRes.status, {
-      error: 'Creem이 에러를 반환했습니다.',
-      creemStatus: creemRes.status,
-      creemBody: errText,
-    });
+    return jsonResponse(
+      creemRes.status,
+      { error: `Creem 체크아웃 생성 실패 (${creemRes.status}): ${errText}` },
+      headers
+    );
   }
 
-  const creemData = await creemRes.json();
+  let data;
+  try {
+    data = await creemRes.json();
+  } catch (e) {
+    return jsonResponse(502, { error: 'Creem 응답을 파싱할 수 없습니다.' }, headers);
+  }
 
-  return jsonResponse(200, {
-    checkoutUrl: creemData.checkout_url,
-  });
+  // Creem REST 응답은 snake_case(checkout_url)이지만, 혹시 모를 SDK 스타일
+  // 응답(camelCase)도 방어적으로 같이 확인.
+  const checkoutUrl = data.checkout_url || data.checkoutUrl;
+  if (!checkoutUrl) {
+    return jsonResponse(
+      502,
+      { error: '응답에 checkout_url이 없습니다.', debug_keys: Object.keys(data) },
+      headers
+    );
+  }
+
+  return jsonResponse(200, { checkoutUrl, testMode: isTestMode }, headers);
 };
 
-function jsonResponse(statusCode, obj) {
+function jsonResponse(statusCode, obj, extraHeaders) {
   return {
     statusCode,
-    headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+    headers: { 'Content-Type': 'application/json', ...(extraHeaders || {}) },
     body: JSON.stringify(obj),
   };
 }
