@@ -28,7 +28,7 @@
 //                            creem_...      → 실전 모드 (api.creem.io)
 //                          (Test/Live는 서로 다른 키이며 절대 혼용 불가)
 //   - CREEM_PRODUCT_ID    Creem 대시보드 Products 탭에서 "Copy ID"로 확보한
-//                          상품 ID. 현재 값: prod_4pH6mAvpHZC0u5jnFG2a4Y
+//                          상품 ID. 현재 값: (실제 값은 Netlify 환경변수에서 관리)
 //                          (상품명: Cosmic Blueprint Full Love Report, $4.99)
 //   - SITE_URL            기본값 https://getcosmicblueprint.com
 //                          (결제 완료 후 리다이렉트될 success_url 조합용)
