@@ -12,161 +12,280 @@
         gtag('js', new Date());
         gtag('config', 'G-S5PQGM126Y');
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
     <style>
+        * { box-sizing: border-box; }
         body {
-            background-color: #111424;
-            color: #e2e5f3;
+            background-color: #14121c;
+            color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0 0 56px;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-x: hidden;
         }
-        .container {
-            max-width: 600px;
+
+        .hero-banner {
+            position: relative;
             width: 100%;
-            background: #1a1e36;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-            box-sizing: border-box;
+            max-width: 480px;
+            aspect-ratio: 1 / 1.05;
+            max-height: 640px;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
         }
-        h1 {
-            color: #ffd700;
-            text-align: center;
-            font-size: 20pt;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+        .hero-banner.compact {
+            max-height: 130px;
         }
-        p.subtitle {
-            text-align: center;
-            color: #7a82a6;
-            font-size: 10pt;
-            margin-bottom: 30px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
             display: block;
-            margin-bottom: 8px;
-            color: #ffd700;
-            font-size: 10.5pt;
-            font-weight: bold;
+            object-fit: cover;
+            object-position: center 22%;
         }
-        input, select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #3a3f58;
-            background-color: #111424;
-            color: #fff;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 10.5pt;
+        .hero-scrim {
+            position: absolute;
+            top: 4%;
+            left: 10%; right: 10%;
+            height: 66%;
+            background: radial-gradient(ellipse 70% 60% at 50% 45%, rgba(10,8,16,0.42), transparent 72%);
+            pointer-events: none;
+            transition: height 0.3s ease, top 0.3s ease;
         }
-        input:focus, select:focus {
-            outline: none;
-            border-color: #00ffff;
+        .hero-fade {
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, rgba(20,18,28,0), #14121c);
         }
-        .btn-submit {
-            width: 100%;
-            padding: 15px;
-            background: #ff4500;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            font-size: 12pt;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: background 0.2s;
-        }
-        .btn-submit:hover {
-            background: #e03e00;
-        }
-        .hero-stage {
+        .hero-overlay {
+            position: absolute;
+            top: 10%;
+            left: 0; right: 0;
             text-align: center;
+            padding: 0 34px;
+            transition: top 0.3s ease;
         }
-        .hero-line {
-            color: #e2e5f3;
-            font-size: 13pt;
+        .hero-overlay h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 2.1rem;
+            letter-spacing: 1px;
+            margin: 0;
+            color: #f3e6c8;
+            text-shadow: 0 2px 18px rgba(0,0,0,0.5);
+            transition: font-size 0.3s ease;
+        }
+        .hero-overlay p {
+            font-size: 0.68rem;
+            color: #cbb98a;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin: 10px 0 0 0;
+            transition: font-size 0.3s ease;
+        }
+        .hero-line-overlay {
+            position: absolute;
+            top: 48%;
+            left: 0; right: 0;
+            text-align: center;
+            padding: 0 40px;
+        }
+        .hero-line-overlay p {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.28rem;
             line-height: 1.5;
-            margin: 0 0 6px 0;
+            font-weight: 500;
+            color: #f1eef0;
+            text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+            margin: 0;
         }
-        .hero-cta-line {
-            color: #00ffff;
-            font-size: 11pt;
-            margin: 22px 0 26px 0;
+
+        .hero-banner.compact .hero-line-overlay { display: none; }
+        .hero-banner.compact .hero-overlay {
+            top: 50%;
+            transform: translateY(-50%);
         }
+        .hero-banner.compact .hero-overlay h1 { font-size: 1.25rem; }
+        .hero-banner.compact .hero-overlay p { font-size: 0.58rem; margin-top: 6px; }
+        .hero-banner.compact .hero-scrim { height: 100%; top: 0; }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin-top: -40px;
+            padding: 0 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ornament {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 20px 0;
+        }
+        .ornament .line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(230,200,140,0.5));
+        }
+        .ornament .line.right {
+            background: linear-gradient(90deg, rgba(230,200,140,0.5), transparent);
+        }
+        .ornament .diamond {
+            width: 6px; height: 6px;
+            background: #f3d78e;
+            transform: rotate(45deg);
+            flex: 0 0 auto;
+            box-shadow: 0 0 8px 2px rgba(243, 215, 142, 0.55);
+        }
+
+        .hero-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-style: italic;
+            line-height: 1.65;
+            color: #cbc4b0;
+            text-align: center;
+            margin: 0 0 22px 0;
+        }
+
         .btn-cta {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(90deg, #00ffff, #ff4500);
-            color: #111424;
+            background: linear-gradient(90deg, #f0c766, #ffa93d);
+            color: #251a06;
             border: none;
-            border-radius: 6px;
-            font-size: 12pt;
-            font-weight: bold;
+            border-radius: 3px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
             cursor: pointer;
+            box-shadow: 0 0 22px 2px rgba(240, 190, 100, 0.35), 0 4px 14px rgba(240, 180, 90, 0.2);
             transition: opacity 0.2s;
         }
-        .btn-cta:hover {
-            opacity: 0.9;
-        }
+        .btn-cta:hover { opacity: 0.9; }
+        .btn-cta:active { transform: scale(0.99); }
+
         .form-hint {
             text-align: center;
-            color: #a9aecb;
-            font-size: 10pt;
-            margin-bottom: 24px;
-            line-height: 1.4;
+            color: #a39d8e;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
         }
-        .hidden {
-            display: none;
+
+        .form-group { margin-bottom: 22px; }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #cbb98a;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
         }
+        input, select {
+            width: 100%;
+            padding: 8px 2px 10px;
+            border: none;
+            border-bottom: 1px solid rgba(230, 200, 140, 0.3);
+            background-color: transparent;
+            color: #fff;
+            font-size: 0.98rem;
+            border-radius: 0;
+            appearance: none;
+        }
+        input::placeholder { color: #5a5768; }
+        input:focus, select:focus {
+            outline: none;
+            border-bottom-color: #e6c88c;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #f0c766, #ffa93d);
+            color: #251a06;
+            border: none;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            box-shadow: 0 0 22px 2px rgba(240, 190, 100, 0.32), 0 4px 14px rgba(240, 180, 90, 0.18);
+        }
+
+        .hidden { display: none; }
+
         #resultArea {
-            max-width: 600px;
+            max-width: 400px;
+            width: 100%;
+            padding: 0 30px;
+            margin-top: 12px;
+        }
+
+        .legal-footer {
+            max-width: 440px;
             width: 100%;
             margin-top: 30px;
-        }
-        .legal-footer {
-            max-width: 600px;
-            width: 100%;
-            margin-top: 22px;
             text-align: center;
-            color: #7a82a6;
-            font-size: 9pt;
-            line-height: 1.7;
+            color: #5a5768;
+            font-size: 0.72rem;
+            line-height: 1.8;
         }
         .legal-footer a {
-            color: #7a82a6;
+            color: #5a5768;
             text-decoration: none;
             margin: 0 6px;
         }
-        .legal-footer a:hover {
-            color: #00ffff;
-        }
+        .legal-footer a:hover { color: #e6c88c; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>COSMIC BLUEPRINT</h1>
-        <p class="subtitle">A New Way to Understand How You Love</p>
+    <div class="hero-banner" id="heroBanner">
+        <img src="/cover-bg/hero_night.jpg" alt="Cosmic Blueprint">
+        <div class="hero-scrim"></div>
+        <div class="hero-overlay">
+            <h1>Cosmic Blueprint</h1>
+            <p>a new way to understand how you love</p>
+        </div>
+        <div class="hero-line-overlay">
+            <p>"Why do you keep attracting<br>the same kind of person?"</p>
+        </div>
+        <div class="hero-fade"></div>
+    </div>
 
+    <div class="container">
         <div class="hero-stage" id="heroStage">
-            <p class="hero-line">Why do you keep attracting<br>the same kind of person?</p>
-            <p class="hero-line">Why do the same relationship patterns<br>keep repeating?</p>
-            <p class="hero-cta-line">Discover your relationship blueprint.</p>
+            <div class="ornament"><div class="line"></div><div class="diamond"></div><div class="line right"></div></div>
+            <p class="hero-sub">Your birth chart holds a pattern in how you love — one of ten. Uncover yours.</p>
             <button class="btn-cta" onclick="showBirthForm()">Discover My Relationship Pattern</button>
         </div>
 
         <div class="form-stage hidden" id="formStage">
+            <div class="ornament"><div class="line"></div><div class="diamond"></div><div class="line right"></div></div>
             <p class="form-hint">Enter your birth details to reveal your personalized relationship pattern.</p>
 
-
             <div class="form-group">
-                <label for="birthYear">Birth Year</label>
+                <label for="birthYear">Birth year</label>
                 <input type="number" id="birthYear" placeholder="ex: 1995">
             </div>
 
@@ -194,7 +313,7 @@
             </div>
 
             <div class="form-group">
-                <label for="birthTime">Birth Time</label>
+                <label for="birthTime">Birth time</label>
                 <select id="birthTime">
                     <option value="00">00:00 - 02:59</option>
                     <option value="03">03:00 - 05:59</option>
@@ -228,7 +347,8 @@
         }
         document.getElementById('heroStage').classList.add('hidden');
         document.getElementById('formStage').classList.remove('hidden');
-        document.getElementById('formStage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.getElementById('heroBanner').classList.add('compact');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     async function getCosmicBlueprint() {
@@ -246,7 +366,7 @@
             gtag('event', 'submit_birth_details');
         }
 
-        document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#00ffff;">Calculating your archetype...</p>';
+        document.getElementById('resultArea').innerHTML = '<p style="text-align:center; color:#e6c88c; font-family:\'Cormorant Garamond\',serif; font-style:italic;">Calculating your archetype...</p>';
 
         try {
             const response = await fetch('/.netlify/functions/blueprint-engine', {
