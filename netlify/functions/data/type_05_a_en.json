@@ -31,11 +31,11 @@
     "pride": 3,
     "warmth": 4,
     "stability": 4,
-    "caption": "High Stability · High Care, Low Expression — Always holding others up, rarely leaning on anyone or showing it"
+    "caption": "High Stability · High Care, Low Expression. Always holding others up, rarely leaning on anyone or showing it"
   },
   "free_result": {
     "short_summary": [
-      "You love by becoming someone others can lean on — steady, quiet, and hard to shake.",
+      "You love by becoming someone others can lean on. Steady, quiet, and hard to shake.",
       "The loneliness you've felt before wasn't because you were alone. It was because you were always the one holding on.",
       "What you're still learning isn't how to be stronger. It's how to let someone support you too."
     ]
@@ -53,13 +53,13 @@
           "You're not someone who leans on others easily.",
           "When something hard happens, you handle it yourself first. When a problem comes up, you think it through alone before saying a word. You try not to bother people if you can help it.",
           "So people think you're strong. They think you're dependable. They think you're the mature one.",
-          "But here's the thing — that's only half true. You need someone too. You've just forgotten how to say it, for a long time now.",
+          "But here's the thing. That's only half true. You need someone too. You've just forgotten how to say it, for a long time now.",
           "It's the same when you love someone. When they're struggling, you stay close. When they're shaking, you hold them steady. When they're falling apart, you catch them.",
-          "But when you're the one who's shaking — you say nothing.",
+          "But when you're the one who's shaking. You say nothing.",
           "So this happens: people have no idea how much you're actually carrying."
         ],
         "highlight": null,
-        "profile_note": "High Stability · High Care, Low Expression — Always holding others up, rarely leaning on anyone or showing it"
+        "profile_note": "High Stability · High Care, Low Expression. Always holding others up, rarely leaning on anyone or showing it"
       },
       {
         "chapter_number": 2,
@@ -67,7 +67,7 @@
         "title": "The Pattern You Keep Repeating",
         "body": [
           "This pattern is probably older than you think.",
-          "Someone struggles. You're naturally there beside them. They never even asked. It just happens. And slowly, they get more comfortable — while you get more used to it.",
+          "Someone struggles. You're naturally there beside them. They never even asked. It just happens. And slowly, they get more comfortable, while you get more used to it.",
           "That's where the problem starts. They start to think you're \"fine.\" But you were just acting fine. That gap is huge.",
           "They think you don't need anything. You never say that you do.",
           "So the longer the relationship goes on, the lonelier you get."
@@ -77,7 +77,7 @@
         "chart": {
           "chart_type": "curve",
           "title": "THE UNSEEN WEIGHT CURVE",
-          "description": "As the relationship goes on, responsibility keeps growing — while asking for help keeps shrinking."
+          "description": "As the relationship goes on, responsibility keeps growing, while asking for help keeps shrinking."
         }
       },
       {
@@ -92,13 +92,13 @@
           },
           {
             "belief": "My problems are mine to solve.",
-            "truth": "Why? Who decided that?\n\nThink about it — if someone you cared about told you they were struggling, you'd help them. So why are you the exception?",
+            "truth": "Why? Who decided that?\n\nThink about it. If someone you cared about told you they were struggling, you'd help them. So why are you the exception?",
             "truth_short": "You would help someone you cared about. You don't have to be the exception."
           },
           {
             "belief": "Showing that I'm struggling is a burden to others.",
             "truth": "No, it isn't.\n\nThe burden isn't asking for help. The burden is never giving the other person a chance to show up for you in the first place. If someone's going to care about you, they at least need to know how you're actually doing.",
-            "truth_short": "Asking for help isn't the burden — never letting someone show up for you is."
+            "truth_short": "Asking for help isn't the burden. Never letting someone show up for you is."
           }
         ]
       },
@@ -109,7 +109,7 @@
         "body": [
           "You're drawn, again and again, to people who clearly need something to lean on. Someone a little unsteady. Someone a little shaky. Someone who wants to lean on you.",
           "Because you're good at that role. Taking them in, listening, holding steady.",
-          "But over time, something gets strange. They're receiving help from you — and you're not receiving help from anyone."
+          "But over time, something gets strange. They're receiving help from you, and you're not receiving help from anyone."
         ],
         "highlight": "Someone who trusts you uses your shoulder. Someone who loves you also checks whether that shoulder is getting heavy.",
         "bar_chart": {
@@ -123,7 +123,7 @@
         "title": "What Actually Changes Something",
         "body": [
           "What you need isn't to get even stronger. You're already strong enough.",
-          "What you need is the opposite. A little weaker. More precisely — to show the weaker parts.",
+          "What you need is the opposite. A little weaker. More precisely, to show the weaker parts.",
           "Say it when something's hard. Ask for things. Let yourself receive help.",
           "It takes more courage than it sounds like it should.",
           "But that's what actually changes a relationship."
@@ -137,7 +137,7 @@
         "body": [
           "You already know how to take responsibility. You already know how to protect someone. You already know how to stay until the end.",
           "What you're going to learn next is how to hold on together.",
-          "Not holding on alone — but letting the other person be part of holding on too.",
+          "Not holding on alone, but letting the other person be part of holding on too.",
           "The best relationships, it turns out, are carried by two people at once."
         ],
         "transition_note": "The best relationships, it turns out, are carried by two people at once."
@@ -169,7 +169,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs were there every time. You just kept explaining them away — on the other person's behalf.",
+        "intro_note": "These signs were there every time. You just kept explaining them away. On the other person's behalf.",
         "signal_strength": [
           {
             "label": "You hear about their problems often, but you barely mention your own",
@@ -236,7 +236,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to be someone else's support. The next report covers why you keep ending up in the role of the one who holds on — and how you relearn what it means to lean on someone.",
+      "message": "You've spent a long time learning how to be someone else's support. The next report covers why you keep ending up in the role of the one who holds on, and how you relearn what it means to lean on someone.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

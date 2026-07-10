@@ -31,18 +31,18 @@
     "pride": 4,
     "warmth": 4,
     "stability": 4,
-    "caption": "High Drive · High Stability, Low Expression — Always stepping up first to fix things, rarely showing any sign of shaking"
+    "caption": "High Drive · High Stability, Low Expression. Always stepping up first to fix things, rarely showing any sign of shaking"
   },
   "free_result": {
     "short_summary": [
-      "You're the one who steps up first when something needs to be fixed — and people quickly learn to rely on that.",
+      "You're the one who steps up first when something needs to be fixed, and people quickly learn to rely on that.",
       "The loneliness you've felt wasn't because no one refused to help you. It was because you seemed too capable to need it.",
       "What changes next is learning to pause, let someone else step up, and see who stays beside you when you don't have the answer."
     ]
   },
   "full_report": {
     "headline": "THE MOUNTAIN",
-    "intro": "You step up quickly, solve problems naturally, and make people feel safe because you seem so steady. This report follows how that competence can quietly block help from reaching you — and what changes when you let someone lead sometimes.",
+    "intro": "You step up quickly, solve problems naturally, and make people feel safe because you seem so steady. This report follows how that competence can quietly block help from reaching you, and what changes when you let someone lead sometimes.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -53,24 +53,24 @@
           "You're the one who steps up first when a problem shows up.",
           "When someone's struggling, you naturally step in. You decide. You sort things out. You set the direction.",
           "So people think you're reliable. They think you're a leader. They think you can handle anything.",
-          "But here's the thing — you do it so well that no one ever imagines you might need help too.",
+          "But here's the thing. You do it so well that no one ever imagines you might need help too.",
           "It's the same when you love someone. When a problem comes up, you're the one who steps in and sorts it out first. When they're shaking, you're the one who sets the direction.",
-          "But when you're the one who's shaking — people can't even picture the possibility.",
+          "But when you're the one who's shaking: people can't even picture the possibility.",
           "You just look too steady for that."
         ],
         "highlight": null,
-        "profile_note": "High Drive · High Stability, Low Expression — Always stepping up first to fix things, rarely showing any sign of shaking"
+        "profile_note": "High Drive · High Stability, Low Expression. Always stepping up first to fix things, rarely showing any sign of shaking"
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Keep Repeating — THE TOO CAPABLE CURVE",
+        "title": "The Pattern You Keep Repeating: THE TOO CAPABLE CURVE",
         "body": [
           "You're the most dependable person in the room, right from the start of a relationship.",
           "A problem shows up, you step in immediately. You make the decision. So they relax fast.",
           "And slowly, they stop imagining a version of things without you in it. They start assuming that if a problem comes up, you'll solve it. That if a plan falls apart, you'll fix it. That if the relationship shakes, you'll hold it together.",
           "That's where the real problem starts. You're so capable that they quietly settle into thinking \"this person always handles it on their own.\"",
-          "So when the moment finally comes where you're the one shaking, they can't even read it as a sign. It's just too different from how you normally are — it doesn't seem believable.",
+          "So when the moment finally comes where you're the one shaking, they can't even read it as a sign. It's just too different from how you normally are. It doesn't seem believable.",
           "Even when you do ask for help, you rarely get the experience of having it actually land. So slowly, you stop asking at all."
         ],
         "highlight": "You're not lonely because anyone refused to help you. You're lonely because you seem so capable that the idea you might need help doesn't even register as believable.",
@@ -78,7 +78,7 @@
         "chart": {
           "chart_type": "curve",
           "title": "THE TOO CAPABLE CURVE",
-          "description": "As the relationship deepens, you take on more responsibility, more eagerly — and the more capably you handle it, the less anyone offers a hand."
+          "description": "As the relationship deepens, you take on more responsibility, more eagerly, and the more capably you handle it, the less anyone offers a hand."
         }
       },
       {
@@ -88,12 +88,12 @@
         "items": [
           {
             "belief": "I'm just naturally comfortable in the leader role.",
-            "truth": "No. You're not comfortable being the leader — you step up because you're afraid things will get worse if no one does. Leadership is a trait. This compulsion is a learned sense of responsibility.",
-            "truth_short": "You don't only lead because it feels natural — you lead because it feels unsafe when no one else does."
+            "truth": "No. You're not comfortable being the leader. You step up because you're afraid things will get worse if no one does. Leadership is a trait. This compulsion is a learned sense of responsibility.",
+            "truth_short": "You don't only lead because it feels natural. You lead because it feels unsafe when no one else does."
           },
           {
             "belief": "If I push harder, everything gets solved.",
-            "truth": "To some extent, that's true. But solving things alone doesn't make a relationship safer — it makes the other person dependent. They slowly settle into watching and waiting for you to do it.",
+            "truth": "To some extent, that's true. But solving things alone doesn't make a relationship safer. It makes the other person dependent. They slowly settle into watching and waiting for you to do it.",
             "truth_short": "Solving everything alone can make someone dependent, not closer."
           },
           {
@@ -132,11 +132,11 @@
         "title": "What Actually Changes Something",
         "body": [
           "What you need isn't to get more decisive. You're already plenty decisive.",
-          "What you actually need is to occasionally not decide — to say, \"I don't know.\"",
+          "What you actually need is to occasionally not decide. To say, \"I don't know.\"",
           "That one sentence will probably be the hardest thing you ever say.",
-          "But it's what draws people closer. Not when you hand over the perfect answer — but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
+          "But it's what draws people closer. Not when you hand over the perfect answer, but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
         ],
-        "action_sentence": "But it's what draws people closer. Not when you hand over the perfect answer — but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
+        "action_sentence": "But it's what draws people closer. Not when you hand over the perfect answer, but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
       },
       {
         "chapter_number": 6,
@@ -145,7 +145,7 @@
         "body": [
           "You already know how to step up and solve things. You already know how to set the direction. You already know how to carry responsibility.",
           "What you're going to learn next is how to let yourself be led, sometimes.",
-          "Not always leading — but leaving room for someone else to lead you.",
+          "Not always leading, but leaving room for someone else to lead you.",
           "That, more than you'd think, is what makes a relationship sturdier."
         ],
         "transition_note": "That, more than you'd think, is what makes a relationship sturdier."
@@ -226,10 +226,10 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You almost never fail to solve a problem. The issue is that it becomes too natural — too much of a given. So there's a type that doesn't work for you: someone who just accepts your competence as the default. They think \"this person always handles it\" and leave it there. When you're the one shaking, they can't even read the sign.",
-          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who notices when you're different from usual. When you put off a decision or go quiet, they ask first — \"you seem a bit off today, is something going on?\" Around someone like this, you don't have to keep performing solidity.",
-          "same_pattern_repeats": "You might be drawn again to someone who just follows your decisions. You might also be drawn to someone who only reaches for you during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself — it's how long you end up carrying everything alone afterward.",
-          "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment you pause for half a second in front of a small problem you'd normally have already solved — that's the start.",
+          "who_breaks_you": "You almost never fail to solve a problem. The issue is that it becomes too natural. Too much of a given. So there's a type that doesn't work for you: someone who just accepts your competence as the default. They think \"this person always handles it\" and leave it there. When you're the one shaking, they can't even read the sign.",
+          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who notices when you're different from usual. When you put off a decision or go quiet, they ask first. \"you seem a bit off today, is something going on?\" Around someone like this, you don't have to keep performing solidity.",
+          "same_pattern_repeats": "You might be drawn again to someone who just follows your decisions. You might also be drawn to someone who only reaches for you during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself. It's how long you end up carrying everything alone afterward.",
+          "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment you pause for half a second in front of a small problem you'd normally have already solved. That's the start.",
           "try_this": "Normally you'd already be stepping in to fix it. This time, don't. Just once. When a problem comes up, hold still. And watch how they react. Someone who's with you will step up and try to work through it together. Someone who isn't will just keep waiting for you to step in again.",
           "final_line": "That reaction is your answer."
         }
@@ -244,7 +244,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to step up and solve things first. The next report covers why your own competence has been quietly blocking help from reaching you — and how you relearn what it means to be led sometimes.",
+      "message": "You've spent a long time learning how to step up and solve things first. The next report covers why your own competence has been quietly blocking help from reaching you, and how you relearn what it means to be led sometimes.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

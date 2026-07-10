@@ -18,7 +18,7 @@
   "cover": {
     "title": "THE GEM",
     "subtitle": "The one who feels the truth early, then questions themselves in silence.",
-    "tagline": "You sense what others miss — but certainty comes only after you've doubted yourself first.",
+    "tagline": "You sense what others miss, but certainty comes only after you've doubted yourself first.",
     "traits": [
       "PERCEPTIVE",
       "PRECISE",
@@ -31,11 +31,11 @@
     "pride": 2,
     "warmth": 3,
     "stability": 2,
-    "caption": "High warmth and perceptiveness, low drive and expression — you sense things accurately, but in the end doubt yourself and stay silent."
+    "caption": "High warmth and perceptiveness, low drive and expression. You sense things accurately, but in the end doubt yourself and stay silent."
   },
   "free_result": {
     "short_summary": [
-      "You notice the smallest shifts in tone, timing, and mood — but you often question yourself before trusting what you felt.",
+      "You notice the smallest shifts in tone, timing, and mood, but you often question yourself before trusting what you felt.",
       "The pattern wasn't that you were too sensitive. It was that you kept believing someone else's explanation more than your own senses.",
       "What changes next is not seeing people better. It's trusting yourself sooner."
     ]
@@ -51,22 +51,22 @@
         "subtitle": null,
         "body": [
           "You're someone who notices more than people think. The other person's expression. Their tone. How fast they reply. A mood that's different from usual.",
-          "Things other people just pass by, you pick up on pretty accurately. But here's the funny part — even while you feel it, you don't really trust yourself.",
+          "Things other people just pass by, you pick up on pretty accurately. But here's the funny part. Even while you feel it, you don't really trust yourself.",
           "\"Am I being too sensitive?\" \"Am I overreacting?\" \"Maybe it's nothing.\" You think it over one more time.",
           "So people find you unexpected. Your instincts are quick. But your judgment comes late.",
           "And love is the same way. The feeling of liking someone shows up faster than almost anyone. But certainty shows up the latest of all."
         ],
         "highlight": null,
-        "profile_note": "High warmth and perceptiveness, low drive and expression — you sense things accurately, but in the end doubt yourself and stay silent."
+        "profile_note": "High warmth and perceptiveness, low drive and expression. You sense things accurately, but in the end doubt yourself and stay silent."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat — THE SELF-DOUBT CURVE",
+        "title": "The Pattern You Repeat: THE SELF DOUBT CURVE",
         "body": [
           "This has probably repeated quite often. Something felt off from the start. Something snagged. Something felt uncomfortable. Something didn't quite add up.",
           "But you let it go. Because there's no proof. Then time passes. And eventually you find out that what you felt at first was right.",
-          "The thought that comes every time is similar: \"I knew it — that feeling back then was right.\"",
+          "The thought that comes every time is similar: \"I knew it. That feeling back then was right.\"",
           "But strangely, when the next relationship comes, you repeat it again. Once again, you trust the other person more than your own senses."
         ],
         "highlight": "The reason you get hurt isn't that you're sensitive. It's that you keep trusting the other person's explanation more than your own senses.",
@@ -84,7 +84,7 @@
         "items": [
           {
             "belief": "I'm too sensitive.",
-            "truth": "No. You're actually more accurate than you think. The problem isn't sensing things wrong — it's sensing them right and then ignoring it.",
+            "truth": "No. You're actually more accurate than you think. The problem isn't sensing things wrong. It's sensing them right and then ignoring it.",
             "truth_short": "You're not too sensitive. You're often accurate, then you ignore what you felt."
           },
           {
@@ -94,8 +94,8 @@
           },
           {
             "belief": "Let's just wait a little longer.",
-            "truth": "Hmm. Sometimes that's not waiting — it's avoiding. You're putting off an answer you don't want to confirm.",
-            "truth_short": "Sometimes waiting is avoidance — postponing an answer you already feel."
+            "truth": "Hmm. Sometimes that's not waiting. It's avoiding. You're putting off an answer you don't want to confirm.",
+            "truth_short": "Sometimes waiting is avoidance. Postponing an answer you already feel."
           }
         ]
       },
@@ -217,8 +217,8 @@
           "who_breaks_you": "You're weak to people who react little. Whether they like it. Dislike it. Are grateful. Aren't. It's hard to tell. So you watch more. Worry more. Interpret more.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who says they like it when they like it, says thanks when they're grateful, says it hurts when it hurts. Nothing dramatic. Just someone who doesn't hide things. This kind of person puts you at ease.",
           "same_pattern_repeats": "",
-          "next_signs": "This time, you'll sense it faster than before. Awkwardness. Discomfort. A small distance. And here's the interesting part — there's a good chance that feeling will be right again this time too. The issue isn't sensing it — it's whether you ignore it again.",
-          "try_this": "This time, don't interpret it alone. Just once. Ask right there in the moment. \"I might be reading this wrong, but —\" \"Does this mean—?\" And watch how they respond. A healthy person explains. An uncomfortable person makes an issue out of your question itself. The thing The Gem learns last in life isn't how to read people. You're already good at that. It's how to trust yourself.",
+          "next_signs": "This time, you'll sense it faster than before. Awkwardness. Discomfort. A small distance. And here's the interesting part. There's a good chance that feeling will be right again this time too. The issue isn't sensing it. It's whether you ignore it again.",
+          "try_this": "This time, don't interpret it alone. Just once. Ask right there in the moment. \"I might be reading this wrong, but , \" \"Does this mean?\" And watch how they respond. A healthy person explains. An uncomfortable person makes an issue out of your question itself. The thing The Gem learns last in life isn't how to read people. You're already good at that. It's how to trust yourself.",
           "final_line": "That reaction is the answer."
         }
       }

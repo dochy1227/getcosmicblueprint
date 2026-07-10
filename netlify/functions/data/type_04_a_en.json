@@ -31,7 +31,7 @@
     "pride": 2,
     "warmth": 4,
     "stability": 2,
-    "caption": "High Care, Low Expression — Loving quietly, with expression always arriving last"
+    "caption": "High Care, Low Expression. Loving quietly, with expression always arriving last"
   },
   "free_result": {
     "short_summary": [
@@ -42,7 +42,7 @@
   },
   "full_report": {
     "headline": "THE CANDLE",
-    "intro": "You're not someone who makes a big show of love. Rather than saying \"I like you\" a hundred times, you're more the type to remember their favorite coffee order, remember their hard days, and take care of them without saying much at all. But here's the thing — that's not indifference.",
+    "intro": "You're not someone who makes a big show of love. Rather than saying \"I like you\" a hundred times, you're more the type to remember their favorite coffee order, remember their hard days, and take care of them without saying much at all. But here's the thing. That's not indifference.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -53,19 +53,19 @@
           "You're not someone who makes a big show of love.",
           "Rather than saying \"I like you\" a hundred times, you're more the type to remember their favorite coffee order, remember their hard days, and take care of them without saying much at all.",
           "So at first, people sometimes get the wrong impression. They think you seem more indifferent than expected. They think your emotional expression is thinner than expected.",
-          "But here's the thing — that's not who you really are.",
+          "But here's the thing. That's not who you really are.",
           "Once you give your heart to someone, you go in deep. Very deep. You just do it through action, not words.",
           "So this happens, more often than you'd think.",
           "You were clearly, genuinely in love.",
           "They just never knew."
         ],
         "highlight": null,
-        "profile_note": "High Care, Low Expression — Loving quietly, with expression always arriving last"
+        "profile_note": "High Care, Low Expression. Loving quietly, with expression always arriving last"
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Keep Repeating — THE SILENT BUILD-UP CURVE",
+        "title": "The Pattern You Keep Repeating: THE SILENT BUILDUP CURVE",
         "body": [
           "Early in a relationship, there isn't much of a problem.",
           "If anything, you're the steady one. Not easily shaken. Not easily disappointed.",
@@ -75,7 +75,7 @@
           "Once. Then again. Then again.",
           "But the feeling doesn't disappear. It accumulates.",
           "And then one day, they have no idea why you're suddenly upset.",
-          "Because it started months ago — but the expression only just came out today."
+          "Because it started months ago, but the expression only just came out today."
         ],
         "highlight": "You're not struggling because you're too sensitive. You're struggling because you've been carrying it alone for far too long.",
         "pattern_name": "THE SILENT BUILD-UP CURVE",
@@ -241,12 +241,12 @@
       "summary": "What you need isn't to understand them more. You've already got that covered. What you need is to say it a little sooner.",
       "action_items": [
         "Just say it the day it happens. Not months later. That day.",
-        "Normally you'd have held it in, again. This time, don't. Say one small thing that upset you — something really small — and watch how they react.",
+        "Normally you'd have held it in, again. This time, don't. Say one small thing that upset you. Something really small, and watch how they react.",
         "This time it'll show up earlier and smaller: watch how much they try to see what you didn't say out loud."
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to show love through action. The next report covers why your love kept getting misread — and how it gets across more clearly going forward.",
+      "message": "You've spent a long time learning how to show love through action. The next report covers why your love kept getting misread, and how it gets across more clearly going forward.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

@@ -18,7 +18,7 @@
   "cover": {
     "title": "THE OCEAN",
     "subtitle": "The one who opens the surface easily, while keeping the deepest room locked.",
-    "tagline": "You can get close to anyone — but depth is the door you rarely open.",
+    "tagline": "You can get close to anyone, but depth is the door you rarely open.",
     "traits": [
       "INTUITIVE",
       "DEEP",
@@ -31,11 +31,11 @@
     "pride": 2,
     "warmth": 3,
     "stability": 4,
-    "caption": "High drive and stability, low competitiveness and pride — you get close to anyone easily, but the deepest part stays locked separately."
+    "caption": "High drive and stability, low competitiveness and pride. You get close to anyone easily, but the deepest part stays locked separately."
   },
   "free_result": {
     "short_summary": [
-      "You can get close quickly, warmly, and naturally — but that doesn't mean you've let someone all the way in.",
+      "You can get close quickly, warmly, and naturally, but that doesn't mean you've let someone all the way in.",
       "Your loneliness doesn't come from having too few people. It comes from keeping the deepest room untouched.",
       "What changes love for you is not opening wider, but opening one place deeply."
     ]
@@ -58,20 +58,20 @@
           "You stay close with a lot of people, but almost no one has ever actually made it all the way in.",
           "It's the same when you love.",
           "At first, you click, you're comfortable, and you get close fast.",
-          "But the moment a relationship is about to go deeper, you still look like you're getting along fine — you just never open the innermost room."
+          "But the moment a relationship is about to go deeper, you still look like you're getting along fine. You just never open the innermost room."
         ],
         "highlight": null,
-        "profile_note": "High Drive · High Stability, Low Competitiveness · Low Pride — You get close to anyone easily, but the deepest part stays locked separately."
+        "profile_note": "High Drive · High Stability, Low Competitiveness · Low Pride. You get close to anyone easily, but the deepest part stays locked separately."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat — THE SURFACE OCEAN CURVE",
+        "title": "The Pattern You Repeat: THE SURFACE OCEAN CURVE",
         "body": [
           "You're someone who gets close faster than almost anyone, early in a relationship.",
           "Conversation flows, the vibe feels natural, the other person gets comfortable fast.",
           "The problem starts after that.",
-          "The deeper the relationship gets, the more it feels like you're showing more — but in fact there's one core part you never touch.",
+          "The deeper the relationship gets, the more it feels like you're showing more, but in fact there's one core part you never touch.",
           "The other person expects, \"we've gotten this close, so surely they'll show me the real inside now.\"",
           "But you always stop right at that line.",
           "On the surface it keeps looking more and more intimate, but the distance to the core stays exactly the same as it was at the start."
@@ -101,7 +101,7 @@
           },
           {
             "belief": "I meet so many people, so I'm not lonely.",
-            "truth": "No. Meeting a lot of people and not being lonely are different things. Your loneliness doesn't come from a lack of people — it comes from a lack of depth.",
+            "truth": "No. Meeting a lot of people and not being lonely are different things. Your loneliness doesn't come from a lack of people. It comes from a lack of depth.",
             "truth_short": "People can be everywhere, and depth can still be missing."
           }
         ]
@@ -144,7 +144,7 @@
           "You already know how to be comfortable with anyone.",
           "You know it very well.",
           "But what you'll learn next is how to go past the surface for one person.",
-          "Not opening wide — opening one place deeply.",
+          "Not opening wide. Opening one place deeply.",
           "That might actually feel scarier than you'd think.",
           "But considering all the wide relationships you've already built, you can absolutely learn this."
         ],
@@ -228,8 +228,8 @@
         "sections": {
           "who_breaks_you": "You almost never fail at getting close on the surface. The problem is you never go further than that. So there's someone who doesn't fit you well: someone satisfied with surface-level intimacy who doesn't want any more depth. They think the current level is fine. If so, the relationship stays on the surface forever.",
           "who_steadies_you": "On the other hand, there's someone who unexpectedly fits you well. Someone who notices what's beyond the surface, and waits without pushing. Someone who says \"I want to know more\" without forcing you. In front of someone like that, you can open the locked room more safely.",
-          "same_pattern_repeats": "You might be drawn again to someone who doesn't ask about depth. You might fall for someone who only likes your popularity. That can't really be stopped. That's just who you are. The problem isn't being drawn to them — it's how long you stay only on the surface, after that.",
-          "next_signs": "Remember the signs from chapter 08? They usually didn't show up until months in. This time, they'll show up faster, and smaller. The moment a deep question comes up — normally you'd subtly change the subject. Right before that, there's a brief pause. That's where it starts.",
+          "same_pattern_repeats": "You might be drawn again to someone who doesn't ask about depth. You might fall for someone who only likes your popularity. That can't really be stopped. That's just who you are. The problem isn't being drawn to them. It's how long you stay only on the surface, after that.",
+          "next_signs": "Remember the signs from chapter 08? They usually didn't show up until months in. This time, they'll show up faster, and smaller. The moment a deep question comes up. Normally you'd subtly change the subject. Right before that, there's a brief pause. That's where it starts.",
           "try_this": "Normally, you would've changed the subject. This time, don't. Just once. Bring up one thing you've never said before, just as it is. Then watch their reaction. Someone who can take it listens quietly, without brushing it off. Someone who can't treats it like it's nothing, or changes the subject again.",
           "final_line": "That reaction is the answer."
         }
@@ -244,7 +244,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to be comfortable with anyone. This report covered why you've always stopped at the surface — and how you can learn to go deeper with one person.",
+      "message": "You've spent a long time learning how to be comfortable with anyone. This report covered why you've always stopped at the surface, and how you can learn to go deeper with one person.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

@@ -18,7 +18,7 @@
   "cover": {
     "title": "THE MIST",
     "subtitle": "The one who believes in people to the end, even when the evidence has already arrived.",
-    "tagline": "You understand too much — and sometimes protect yourself too late.",
+    "tagline": "You understand too much, and sometimes protect yourself too late.",
     "traits": [
       "SUBTLE",
       "ADAPTIVE",
@@ -31,11 +31,11 @@
     "pride": 1,
     "warmth": 5,
     "stability": 3,
-    "caption": "High warmth and tolerance, low drive and expression — understanding to the end, believing to the end."
+    "caption": "High warmth and tolerance, low drive and expression. Understanding to the end, believing to the end."
   },
   "free_result": {
     "short_summary": [
-      "You don't give up on people easily — once you trust someone, you keep believing in the good side you once saw.",
+      "You don't give up on people easily. Once you trust someone, you keep believing in the good side you once saw.",
       "Your pain often comes from knowing something is wrong, but waiting too long anyway.",
       "What changes love for you is learning to include yourself in the relationship, not only the other person's story."
     ]
@@ -64,12 +64,12 @@
           "So you're slow to leave. Because you understand too much."
         ],
         "highlight": null,
-        "profile_note": "High Warmth · High Tolerance, Low Drive · Low Expression — Understanding to the end, believing to the end."
+        "profile_note": "High Warmth · High Tolerance, Low Drive · Low Expression. Understanding to the end, believing to the end."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat — THE BENEFIT OF THE DOUBT CURVE",
+        "title": "The Pattern You Repeat: THE BENEFIT OF THE DOUBT CURVE",
         "body": [
           "At first there's a small discomfort. Something's slightly off. Something snags. Something feels a little hurt.",
           "But you let it go. Because it could happen.",
@@ -98,13 +98,13 @@
           },
           {
             "belief": "Let's just wait a little longer.",
-            "truth": "Hmm. In most cases, you've already waited plenty. This isn't waiting — you're putting off a decision.",
+            "truth": "Hmm. In most cases, you've already waited plenty. This isn't waiting. You're putting off a decision.",
             "truth_short": "Waiting can become delayed decision-making."
           },
           {
             "belief": "I'm not someone with much desire.",
             "truth": "No, you are. You want to be loved. You want to be treated as precious. You want to be a priority. You just endure it for far too long.",
-            "truth_short": "You do want to be loved — you just endure too long."
+            "truth_short": "You do want to be loved. You just endure too long."
           }
         ]
       },
@@ -229,7 +229,7 @@
           "who_breaks_you": "You're weak to people who need explaining. You feel like you understand why they're like that, why they're struggling, why they're not ready yet. So you keep waiting. But a relationship isn't a test of how well you can understand someone.",
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who doesn't complicate things. Someone who shows it when they like you, fixes it when they're sorry, and keeps their promises. This kind of person doesn't drain your energy. They reassure you.",
           "same_pattern_repeats": "",
-          "next_signs": "This time, you'll see it sooner. Things you might have only admitted months later before — this time you'll see within weeks. Hurt. Repetition. Disappointment. And a familiar voice will rise up inside you. \"Still, let's wait just a little longer.\" That voice will come again this time too. For sure.",
+          "next_signs": "This time, you'll see it sooner. Things you might have only admitted months later before. This time you'll see within weeks. Hurt. Repetition. Disappointment. And a familiar voice will rise up inside you. \"Still, let's wait just a little longer.\" That voice will come again this time too. For sure.",
           "try_this": "This time, don't look at the other person. Look at yourself. Just once. Ask this question: \"If my friend went through exactly the same thing, what would I tell them?\" Then write down the answer. No excuses. No explanations. Exactly as it is. The Mist isn't someone who can't see people. You actually see far too much. The problem is that your speed at protecting yourself is slower than your speed at understanding the other person. This time, take your own side first, not theirs.",
           "final_line": "That answer is the answer."
         }

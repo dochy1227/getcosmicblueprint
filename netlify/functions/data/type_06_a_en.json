@@ -31,18 +31,18 @@
     "pride": 3,
     "warmth": 4,
     "stability": 4,
-    "caption": "High Stability · High Care, Low Drive · Low Expression — Walking your own path, while always holding someone within it"
+    "caption": "High Stability · High Care, Low Drive · Low Expression. Walking your own path, while always holding someone within it"
   },
   "free_result": {
     "short_summary": [
       "You're more independent than people think, but people still keep leaning on you because your steadiness feels comfortable.",
       "The exhaustion you've felt wasn't weakness. It came from always looking like someone who could hold steady, no matter what.",
-      "What changes love for you is learning what is actually yours to carry — and what belongs back with them."
+      "What changes love for you is learning what is actually yours to carry, and what belongs back with them."
     ]
   },
   "full_report": {
     "headline": "THE SOIL",
-    "intro": "You're more independent than people think. You have your own life, your own plans, and your own way of doing things — but somehow, people keep leaning on you anyway. This report follows the pattern underneath that: why you become the center of gravity, what it costs you, and how your relationships get lighter.",
+    "intro": "You're more independent than people think. You have your own life, your own plans, and your own way of doing things, but somehow, people keep leaning on you anyway. This report follows the pattern underneath that: why you become the center of gravity, what it costs you, and how your relationships get lighter.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -53,12 +53,12 @@
           "You're more independent than people think.",
           "Even when you fall for someone, you don't suddenly change everything. You still have your own life. Your own plans. Your own way of doing things.",
           "So people often get the wrong idea. They assume you'd never get swept up by anyone.",
-          "But here's the thing — strangely, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
+          "But here's the thing. Strangely, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
           "You never went out of your way to accommodate them. You never put on an act of being especially nice. They just say being near you feels comfortable.",
           "So love starts the same way. At first it's two people. At some point, you become the center of gravity."
         ],
         "highlight": null,
-        "profile_note": "High Stability · High Care, Low Drive · Low Expression — Walking your own path, while always holding someone within it"
+        "profile_note": "High Stability · High Care, Low Drive · Low Expression. Walking your own path, while always holding someone within it"
       },
       {
         "chapter_number": 2,
@@ -96,8 +96,8 @@
           },
           {
             "belief": "I need to get stronger.",
-            "truth": "No. You don't need to get any stronger. You're already strong enough. What you need isn't strength — it's boundaries.",
-            "truth_short": "You don't need to get any stronger. What you need isn't strength — it's boundaries."
+            "truth": "No. You don't need to get any stronger. You're already strong enough. What you need isn't strength. It's boundaries.",
+            "truth_short": "You don't need to get any stronger. What you need isn't strength. It's boundaries."
           }
         ]
       },
@@ -189,7 +189,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "The better their life gets, the bigger your role grows — and your own life stays exactly the same."
+        "core_signal": "The better their life gets, the bigger your role grows, and your own life stays exactly the same."
       },
       {
         "chapter_number": 9,
@@ -222,14 +222,14 @@
           "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow-through. Because you're capable of follow-through. So you keep stepping in to help.",
           "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who handles their own things. Someone who moves when a problem comes up. Someone who admits it when they're wrong. Someone who learns when they need to. This kind of person doesn't drain your energy. They build with you.",
           "same_pattern_repeats": "",
-          "next_signs": "This time it'll show up sooner. In how they handle problems — whether they look for an excuse, or look for a way through. You'll see it within a few weeks. More precisely than you'd expect.",
+          "next_signs": "This time it'll show up sooner. In how they handle problems. Whether they look for an excuse, or look for a way through. You'll see it within a few weeks. More precisely than you'd expect.",
           "try_this": "This time, don't solve it for them. Just once. When they bring you a problem, don't give the answer. Ask instead. \"What do you want to do?\" Then watch. Do they try to find their own answer? Or do they just wait for yours again?",
           "final_line": "That reaction is your answer."
         }
       }
     ],
     "action_plan": {
-      "summary": "You already know how to hold someone within your own life. What's left is learning which responsibilities are yours — and which ones belong back with them.",
+      "summary": "You already know how to hold someone within your own life. What's left is learning which responsibilities are yours, and which ones belong back with them.",
       "action_items": [
         "This week, pause before solving one problem and ask, \"Is this actually mine to do?\"",
         "When someone brings you a problem, ask what they want to do before offering an answer.",
@@ -237,7 +237,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to hold someone within your own life. The next report covers why people always end up leaning on you — and how that relationship finds its balance again.",
+      "message": "You've spent a long time learning how to hold someone within your own life. The next report covers why people always end up leaning on you, and how that relationship finds its balance again.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

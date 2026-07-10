@@ -18,7 +18,7 @@
   "cover": {
     "title": "THE BLADE",
     "subtitle": "The one who sees the evidence clearly, then turns the verdict inward.",
-    "tagline": "You notice what others miss — but too often, you use that precision against yourself.",
+    "tagline": "You notice what others miss, but too often, you use that precision against yourself.",
     "traits": [
       "PRINCIPLED",
       "CLEAR",
@@ -31,7 +31,7 @@
     "pride": 2,
     "warmth": 3,
     "stability": 3,
-    "caption": "High stability and warmth, low expression — you see accurately, but apply that standard only to yourself, and stay silent."
+    "caption": "High stability and warmth, low expression. You see accurately, but apply that standard only to yourself, and stay silent."
   },
   "free_result": {
     "short_summary": [
@@ -54,20 +54,20 @@
           "You watch behavior. Whether what they said yesterday matches what they said today. Whether what they said matches what they did. Whether they're the same now as they were at the start.",
           "So you notice problems pretty early. You see what others miss.",
           "But here's where you take a different path.",
-          "Your eye for other people is precise — but you never speak that precise standard out loud.",
+          "Your eye for other people is precise, but you never speak that precise standard out loud.",
           "Instead, you turn it on yourself.",
           "If I'd just paid a little more attention, would it have turned out differently? If I'd done better, would things have changed?",
           "You don't say a word to the other person, but toward yourself, you become the judge who collects evidence most meticulously.",
           "So people think you're generous. But that's not actually true.",
-          "The standard didn't disappear — it just all moved over to you."
+          "The standard didn't disappear. It just all moved over to you."
         ],
         "highlight": null,
-        "profile_note": "High stability and warmth, low expression — You see accurately, but apply that standard only to yourself, and stay silent."
+        "profile_note": "High stability and warmth, low expression. You see accurately, but apply that standard only to yourself, and stay silent."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Repeat — THE RE-EXAMINATION CURVE",
+        "title": "The Pattern You Repeat: THE REEXAMINATION CURVE",
         "body": [
           "This has probably repeated quite often.",
           "A relationship ends. Or falls apart.",
@@ -136,7 +136,7 @@
           "What you need is to apply that same scrutiny to the other person, just once.",
           "When there's no explanation, before you make up a reason for them, ask first: What was the real reason this time? Did I guess this, or did I actually hear it?",
           "A guessed-in blank is never as accurate as evidence you actually heard.",
-          "Your standard is already accurate enough. Just point it the other way — before you grade yourself, check whether there's even enough evidence."
+          "Your standard is already accurate enough. Just point it the other way. Before you grade yourself, check whether there's even enough evidence."
         ],
         "action_sentence": "Before you grade yourself, check whether the other person gave you enough evidence in the first place."
       },
@@ -195,7 +195,7 @@
             "percent": 85
           },
           {
-            "label": "The other person never explains directly — only you keep analyzing",
+            "label": "The other person never explains directly. Only you keep analyzing",
             "percent": 95
           }
         ],
@@ -233,7 +233,7 @@
           "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who gives the reason before you ask, whose words and actions don't drift apart, who doesn't leave things vague. In front of someone like that, you no longer have to fill the blanks with guesses.",
           "same_pattern_repeats": "",
           "next_signs": "This time, you'll notice faster. Right before you start building a reason for them, you'll catch yourself in that exact moment. \"Is this something I actually heard, or something I guessed?\" That question will come to you sooner than before.",
-          "try_this": "This time, before reviewing your own behavior, just once, look back at the evidence you've gathered. \"Which of these did I actually hear, and which did I make up on my own?\" Then review your evidence by the same standard — not just on yourself. If you heard little, that's not because you fell short. It's because the other person didn't say it. The Blade's problem isn't that your standards are too low. It's that the blade has only ever pointed at yourself. This time, point that same blade and examine the other person too, in the same place.",
+          "try_this": "This time, before reviewing your own behavior, just once, look back at the evidence you've gathered. \"Which of these did I actually hear, and which did I make up on my own?\" Then review your evidence by the same standard, not just on yourself. If you heard little, that's not because you fell short. It's because the other person didn't say it. The Blade's problem isn't that your standards are too low. It's that the blade has only ever pointed at yourself. This time, point that same blade and examine the other person too, in the same place.",
           "final_line": "That reaction is the answer."
         }
       }
