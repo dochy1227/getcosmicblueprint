@@ -390,7 +390,16 @@
                 sessionStorage.setItem('cosmic_element_key', result.elementKey);
                 sessionStorage.setItem('cosmic_orientation', result.orientation);
 
+                // 2026.07.11 추가: Firefox 등 일부 브라우저 환경(엄격한 개인정보 보호
+                // 설정, 뒤로가기 캐시 등)에서 sessionStorage가 report.html 진입 시점에
+                // 비어있는 사례가 실사용자 테스트에서 확인됨(Prolific 참가자 리포트).
+                // sessionStorage가 비어도 report.html이 자체 복구할 수 있도록,
+                // 생년월일 파라미터를 URL에도 함께 실어서 넘김(개인식별정보 아님).
                 const currentUrlParams = new URLSearchParams(window.location.search);
+                currentUrlParams.set('by', birthYear);
+                currentUrlParams.set('bm', birthMonth);
+                currentUrlParams.set('bd', birthDay);
+                currentUrlParams.set('bt', birthTime);
                 window.location.href = `/report.html?${currentUrlParams.toString()}`;
             } else {
                 alert('Engine communication error occurred.');

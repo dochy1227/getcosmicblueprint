@@ -140,6 +140,34 @@
             padding: 0 6px;
         }
 
+        /* ---------- WHAT YOUR FULL BLUEPRINT REVEALS (2026.07.11 CTA 재설계) ---------- */
+        .reveal-item {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .reveal-item:last-child { margin-bottom: 0; }
+        .reveal-icon {
+            flex: 0 0 auto;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.12);
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            color: #ffd700;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .reveal-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #d1ceda;
+            font-weight: 600;
+        }
+
         /* ---------- 감정 버튼 (구매 무관) ---------- */
         .emotion-btn {
             width: 100%;
@@ -460,6 +488,33 @@
             <div id="questions-list"></div>
         </section>
 
+        <!-- WHAT YOUR FULL BLUEPRINT REVEALS (2026.07.11 CTA 재설계) -->
+        <section class="card">
+            <p class="card-label">What Your Full Blueprint Reveals</p>
+            <div class="reveal-list">
+                <div class="reveal-item">
+                    <div class="reveal-icon">&#128274;</div>
+                    <div class="reveal-text">Why this pattern keeps repeating</div>
+                </div>
+                <div class="reveal-item">
+                    <div class="reveal-icon">&#128274;</div>
+                    <div class="reveal-text">The type of partner you keep choosing</div>
+                </div>
+                <div class="reveal-item">
+                    <div class="reveal-icon">&#128274;</div>
+                    <div class="reveal-text">Your emotional blind spot</div>
+                </div>
+                <div class="reveal-item">
+                    <div class="reveal-icon">&#128274;</div>
+                    <div class="reveal-text">Early warning signs you've missed</div>
+                </div>
+                <div class="reveal-item">
+                    <div class="reveal-icon">&#128274;</div>
+                    <div class="reveal-text">Your roadmap for what comes next</div>
+                </div>
+            </div>
+        </section>
+
         <!-- CTA 한 줄 -->
         <p class="cta-line" id="cta-text"></p>
 
@@ -471,7 +526,7 @@
 
         <!-- 구매 버튼 / waitlist 폼 영역 -->
         <div id="paywall-area">
-            <button class="buy-btn" id="paywall-secure-button">&#128274; Unlock Your Full Blueprint — $4.99</button>
+            <button class="buy-btn" id="paywall-secure-button">&#128274; GET MY FULL BLUEPRINT &middot; $4.99</button>
         </div>
 
         <!-- 하단 3버튼줄 -->
@@ -490,14 +545,57 @@
     </footer>
 
     <script>
-        // 2026.06.30 추가: report.html에 직접 진입(공유 링크, 인앱 브라우저의
-        // sessionStorage 유실 등)해 cosmic_name이 없는 경우, 깨진 "UNKNOWN
-        // ARCHETYPE" 화면을 보여주는 대신 즉시 index.html로 돌려보냄.
+      (async function() {
+        // 2026.06.30 추가, 2026.07.11 보강: report.html에 직접 진입(공유 링크,
+        // 인앱 브라우저의 sessionStorage 유실 등)해 cosmic_name이 없는 경우,
+        // 깨진 "UNKNOWN ARCHETYPE" 화면을 보여주는 대신 index.html로 돌려보냄.
         // 트래픽 실험 중 신규 방문자가 깨진 페이지를 보는 최악의 시나리오 방지.
-        if (!sessionStorage.getItem('cosmic_name')) {
+        //
+        // 2026.07.11 보강 이유: Firefox 실사용자 테스트(Prolific)에서 정상 흐름
+        // (양식 입력 → 결과 확인)임에도 sessionStorage가 report.html 진입 시점에
+        // 비어있어 index.html로 튕겨나가는 버그 확인됨(엄격한 개인정보 보호 설정,
+        // 뒤로가기 캐시 등 브라우저별 sessionStorage 정책 차이로 추정).
+        // 즉시 리다이렉트하기 전에, URL에 생년월일 파라미터(by/bm/bd/bt)가 남아있으면
+        // 블루프린트를 서버에 재요청해서 sessionStorage를 복구할 기회를 한 번 더 준다.
+        async function ensureReportData() {
+            if (sessionStorage.getItem('cosmic_name')) return true;
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const by = urlParams.get('by');
+            const bm = urlParams.get('bm');
+            const bd = urlParams.get('bd');
+            const bt = urlParams.get('bt');
+
+            if (by && bd) {
+                try {
+                    const res = await fetch('/.netlify/functions/blueprint-engine', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: 'Guest', birthYear: by, birthMonth: bm, birthDay: bd, birthTime: bt })
+                    });
+                    const result = await res.json();
+                    if (result.success) {
+                        sessionStorage.setItem('cosmic_name', result.elementName);
+                        sessionStorage.setItem('cosmic_hook', result.hook);
+                        sessionStorage.setItem('cosmic_body', result.body);
+                        sessionStorage.setItem('cosmic_questions', JSON.stringify(result.questions));
+                        sessionStorage.setItem('cosmic_cta', result.cta);
+                        sessionStorage.setItem('cosmic_element_key', result.elementKey);
+                        sessionStorage.setItem('cosmic_orientation', result.orientation);
+                        return true;
+                    }
+                } catch (e) {
+                    console.warn('[report] 세션 복구용 재계산 실패:', e.message);
+                }
+            }
+            return false;
+        }
+
+        const reportDataReady = await ensureReportData();
+        if (!reportDataReady) {
             const currentUrlParams = new URLSearchParams(window.location.search);
             window.location.replace(`/index.html?${currentUrlParams.toString()}`);
-            throw new Error('Redirecting: no report data in sessionStorage');
+            throw new Error('Redirecting: no report data in sessionStorage or URL');
         }
 
         const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
@@ -713,6 +811,7 @@
                 showWaitlistForm();
             }
         });
+      })();
     </script>
 
     <!-- 미리보기 모듈 (2026.07.03, v48 확정 구조 8요소) -->
