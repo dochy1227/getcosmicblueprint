@@ -42,7 +42,7 @@
   },
   "full_report": {
     "headline": "THE MOUNTAIN",
-    "intro": "You step up quickly, solve problems naturally, and make people feel safe because you seem so steady. This report follows how that competence can quietly block help from reaching you, and what changes when you let someone lead sometimes.",
+    "intro": "You step up quickly, solve problems naturally, and make people feel safe because you seem so steady. This report follows how that competence can gradually block help from reaching you, and what changes when you let someone lead sometimes.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -53,7 +53,7 @@
           "You're the one who steps up first when a problem shows up.",
           "When someone's struggling, you naturally step in. You decide. You sort things out. You set the direction.",
           "So people think you're reliable. They think you're a leader. They think you can handle anything.",
-          "But here's the thing. You do it so well that no one ever imagines you might need help too.",
+          "The problem is how convincing your strength looks. You do it so well that no one ever imagines you might need help too.",
           "It's the same when you love someone. When a problem comes up, you're the one who steps in and sorts it out first. When they're shaking, you're the one who sets the direction.",
           "But when you're the one who's shaking: people can't even picture the possibility.",
           "You just look too steady for that."
@@ -69,7 +69,7 @@
           "You're the most dependable person in the room, right from the start of a relationship.",
           "A problem shows up, you step in immediately. You make the decision. So they relax fast.",
           "And slowly, they stop imagining a version of things without you in it. They start assuming that if a problem comes up, you'll solve it. That if a plan falls apart, you'll fix it. That if the relationship shakes, you'll hold it together.",
-          "That's where the real problem starts. You're so capable that they quietly settle into thinking \"this person always handles it on their own.\"",
+          "That's where the real problem starts. You're so capable that they gradually come to assume, \"this person always handles it on their own.\"",
           "So when the moment finally comes where you're the one shaking, they can't even read it as a sign. It's just too different from how you normally are. It doesn't seem believable.",
           "Even when you do ask for help, you rarely get the experience of having it actually land. So slowly, you stop asking at all."
         ],
@@ -244,7 +244,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to step up and solve things first. The next report covers why your own competence has been quietly blocking help from reaching you, and how you relearn what it means to be led sometimes.",
+      "message": "You've spent a long time learning how to step up and solve things first. The next report covers why your own competence has been gradually blocking help from reaching you, and how you relearn what it means to be led sometimes.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

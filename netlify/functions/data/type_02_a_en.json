@@ -42,7 +42,7 @@
   },
   "full_report": {
     "headline": "THE VINE",
-    "intro": "You come across as someone who doesn't get rattled. People say being with you is comfortable. You rarely get angry, rarely show displeasure. The person you're with ends up relaxing, not you. But here's the thing.",
+    "intro": "You come across as someone who doesn't get rattled. People say being with you is comfortable. You rarely get angry, rarely show displeasure. The person you're with ends up relaxing, not you. And that is where the imbalance begins.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -52,13 +52,13 @@
         "body": [
           "You come across as someone who doesn't get rattled.",
           "People say being with you is comfortable. You rarely get angry, rarely show displeasure. The person you're with ends up relaxing, not you.",
-          "But here's the thing.",
-          "It's not because you're actually fine.",
+          "What looks like calm is not always comfort.",
+          "You are not actually fine.",
           "When something bothers you. When something hurts. When there's something you want to say.",
           "You swallow it first.",
           "And it's so habitual that even you forget you swallowed it.",
           "On the outside, nothing looks wrong.",
-          "But inside, something is quietly accumulating every time."
+          "But inside, something keeps building out of sight every time."
         ],
         "highlight": null,
         "profile_note": "High Care · High Openness, Low Drive · Low Expression. You stay unshaken on the surface even when uncomfortable, while it keeps piling up inside."
@@ -66,7 +66,7 @@
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
-        "title": "The Pattern You Keep Repeating: THE QUIET OVERFLOW CURVE",
+        "title": "The Pattern You Keep Repeating: THE UNSPOKEN OVERFLOW CURVE",
         "body": [
           "You've probably noticed this feels strange too.",
           "Early in a relationship, you barely waver.",
@@ -83,10 +83,10 @@
           "You stay outwardly steady while pressure rises inside, until at some point it all overflows at once."
         ],
         "highlight": "That whole time you weren't visibly shaken. It wasn't because you were okay. You were just enduring it the entire time.",
-        "pattern_name": "THE QUIET OVERFLOW CURVE",
+        "pattern_name": "THE UNSPOKEN OVERFLOW CURVE",
         "chart": {
           "chart_type": "curve",
-          "title": "THE QUIET OVERFLOW CURVE",
+          "title": "THE UNSPOKEN OVERFLOW CURVE",
           "description": "You stay outwardly steady while pressure rises inside, until at some point it all overflows at once."
         }
       },
@@ -122,7 +122,7 @@
           "The Person With Big Emotions\n\nWhen they're struggling, you automatically become the calm one.\n\nSomeone has to hold things together.\n\nSo it becomes you.\n\nThe problem is this:\n\nTheir feelings always come out.\n\nYours always wait their turn.\n\nYou tell yourself,\n\n\"I can handle this for now.\"\n\nAnd little by little, your own heart gets pushed to the back.",
           "The Person With Strong Convictions\n\nThey know exactly what they want.\n\nThey say it immediately.\n\nAt first, it's comfortable.\n\nYou don't have to decide much.\n\nBut over time,\n\nyou stop asking what you want.\n\nYou simply sort it out alone.",
           "The Person Who Doesn't Notice\n\nIf you say you're fine, they believe you.\n\nThey never ask again.\n\nBut you don't explain either.\n\nYou tell yourself,\n\n\"There's no need to ruin the mood.\"\n\nEverything you let go of stays with you instead.",
-          "The Person Who Handles Everything Alone\n\nBefore an argument even happens, they've already processed it inside themselves.\n\nJust like you.\n\nSo both of you stay quiet.\n\nThe relationship looks peaceful.\n\nBut nothing actually gets resolved."
+          "The Person Who Handles Everything Alone\n\nBefore an argument even happens, they've already processed it inside themselves.\n\nJust like you.\n\nSo neither of you says anything.\n\nThe relationship looks peaceful.\n\nBut nothing actually gets resolved."
         ],
         "highlight": "A quiet relationship and a relationship where nobody speaks are not the same thing.",
         "bar_chart": {
@@ -154,7 +154,7 @@
         "title": "Where You Go From Here",
         "body": [
           "You know very well how to endure.",
-          "For a long time, quietly, without showing it.",
+          "For a long time, without complaint, without showing it.",
           "But what you're still learning is",
           "how to trust that the relationship won't break just because you show that you're shaken.",
           "This isn't about suddenly expressing everything.",
@@ -162,7 +162,7 @@
           "It's about bringing things up little by little, starting small, before they pile up.",
           "That's the only thing that prevents it all from accumulating and bursting at once."
         ],
-        "transition_note": "You’ve spent a long time learning how to stay steady on the outside. Now you’re learning how to speak before everything quietly piles up inside."
+        "transition_note": "You’ve spent a long time learning how to stay steady on the outside. Now you’re learning how to speak before everything piles up inside."
       },
       {
         "chapter_number": 7,

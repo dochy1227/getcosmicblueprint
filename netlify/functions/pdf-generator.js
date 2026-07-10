@@ -541,17 +541,17 @@ function generateReportHTML(data, options) {
   .cover-body { position: relative; text-align: center; padding: 0 14px; margin-top: auto; }
   .cover-body span { display: inline; }
   /* 기본(theme-light): 어두운 사진 위 흰 글자 — 검은 halo로 대비 보강 */
-  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
-  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 10px rgba(0,0,0,0.85), 0 0 22px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.9); }
-  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
-  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; text-shadow: 0 1px 5px rgba(0,0,0,0.85), 0 0 12px rgba(0,0,0,0.6); }
-  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); text-shadow: 0 1px 4px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.6); }
+  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
+  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 14px rgba(0,0,0,0.9); }
+  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
+  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; text-shadow: 0 1px 9px rgba(0,0,0,0.85); }
+  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
   /* theme-dark: 밝은 사진(다이아몬드/설산 등) 위 어두운 글자 — 흰 halo로 대비 보강 */
   .cover-page.theme-dark .cover-eyebrow,
-  .cover-page.theme-dark .cover-traits { color: #17151f; text-shadow: 0 1px 4px rgba(255,255,255,0.85), 0 0 10px rgba(255,255,255,0.6); }
-  .cover-page.theme-dark .cover-title { color: #17151f; text-shadow: 0 2px 10px rgba(255,255,255,0.85), 0 0 22px rgba(255,255,255,0.7), 0 1px 3px rgba(255,255,255,0.9); }
-  .cover-page.theme-dark .cover-quote { color: #17151f; text-shadow: 0 1px 5px rgba(255,255,255,0.85), 0 0 12px rgba(255,255,255,0.6); }
-  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); text-shadow: 0 1px 4px rgba(255,255,255,0.85), 0 0 10px rgba(255,255,255,0.6); }
+  .cover-page.theme-dark .cover-traits { color: #17151f; text-shadow: 0 1px 8px rgba(255,255,255,0.85); }
+  .cover-page.theme-dark .cover-title { color: #17151f; text-shadow: 0 2px 14px rgba(255,255,255,0.9); }
+  .cover-page.theme-dark .cover-quote { color: #17151f; text-shadow: 0 1px 9px rgba(255,255,255,0.85); }
+  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); text-shadow: 0 1px 8px rgba(255,255,255,0.85); }
   .cover-icon { width: 36px; height: 36px; margin: 18px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
   .badge { font-size: 13px; font-weight: 700; color: #00f0ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
   .archetype-title { font-size: 26px; font-weight: 800; line-height: 1.3; background: linear-gradient(45deg, #00f0ff, #b600ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 4px; }

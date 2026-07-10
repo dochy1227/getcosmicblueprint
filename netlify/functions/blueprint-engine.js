@@ -317,7 +317,7 @@ const ARCHETYPE_DISPLAY_NAME = {
   "계수": "THE MIST"
 };
 
-const FREE_REPORT_CTA = "Your Full Blueprint goes further. It's where you'll discover why you love this way—and what patterns may keep repeating if nothing changes.";
+const FREE_REPORT_CTA = "Your free result shows the pattern. Your Full Blueprint explains where it comes from, who tends to trigger it, what to notice early, and how to respond differently next time.";
 
 // ============================================================
 // 외부 응답용 public_key / orientation_display 변환
@@ -340,7 +340,7 @@ function buildPublicIdentity(elementKey, orientation) {
 const FREE_REPORT_V2 = {
   "갑목_외향": {
     hook: "The moment I feel like a passenger in my own relationship, I'm already halfway out the door.",
-    body: "Okay, can I tell you something?\n\nYou were never meant to sit quietly in the backseat of your own life.\n\nYou need to feel like you're building something with someone—not simply following along because keeping the peace feels easier.\n\nAnd honestly?\n\nThe moment you stop recognizing yourself in a relationship, your heart starts packing its bags long before your body ever leaves.\n\nPeople call you independent.\n\nSometimes they even say you're hard to commit to.",
+    body: "Okay, can I tell you something?\n\nYou were never meant to sit quietly in the backseat of your own life.\n\nYou need to feel like you're building something with someone—not simply following along because keeping the peace feels easier.\n\nThe moment you stop recognizing yourself in a relationship, your heart starts packing its bags long before your body ever leaves.\n\nPeople call you independent.\n\nSometimes they even say you're hard to commit to.",
     questions: [
       "Why do I lose interest the moment I feel like I'm no longer growing?",
       "Why do people mistake my need for partnership as a need for control?",
@@ -358,7 +358,7 @@ const FREE_REPORT_V2 = {
   },
   "을목_외향": {
     hook: "I can see exactly how good we could be. I just need you to try.",
-    body: "Oh, I know.\n\nYou've been called \"too hopeful\" more than once.\n\nBut that's because you don't walk into relationships looking for what already exists.\n\nYou walk in looking for what two people could create together.\n\nYou notice tiny changes.\n\nTiny efforts.\n\nTiny signs that someone is trying.\n\nAnd honestly?\n\nYou can forgive almost anything except indifference.\n\nThe moment you realize you're the only one watering the garden, something inside you quietly breaks.",
+    body: "Oh, I know.\n\nYou've been called \"too hopeful\" more than once.\n\nBut that's because you don't walk into relationships looking for what already exists.\n\nYou walk in looking for what two people could create together.\n\nYou notice tiny changes.\n\nTiny efforts.\n\nTiny signs that someone is trying.\n\nYou can forgive almost anything except indifference.\n\nThe moment you realize you're the only one watering the garden, something inside you begins to break.",
     questions: [
       "Why do I keep believing in relationships that haven't fully become real yet?",
       "Why do people think I ask for too much when I'm only asking them to meet me halfway?",
@@ -376,7 +376,7 @@ const FREE_REPORT_V2 = {
   },
   "병화_외향": {
     hook: "I light up every room I walk into. I just wish someone would notice when I start to dim.",
-    body: "Oh, sweetheart.\n\nEveryone knows how to find you when you're shining.\n\nYou're the person who makes plans happen, keeps the energy alive, and somehow turns ordinary moments into memories.\n\nPeople think confidence comes naturally to you.\n\nBut honestly?\n\nThe hardest thing for you isn't giving warmth.\n\nIt's admitting that sometimes you need warmth too.",
+    body: "Oh, sweetheart.\n\nEveryone knows how to find you when you're shining.\n\nYou're the person who makes plans happen, keeps the energy alive, and somehow turns ordinary moments into memories.\n\nPeople think confidence comes naturally to you.\n\nThe hardest thing for you isn't giving warmth.\n\nIt's admitting that sometimes you need warmth too.",
     questions: [
       "Why do I always become the source of energy in every relationship?",
       "Why do people assume I'm okay even when I'm exhausted?",
@@ -385,7 +385,7 @@ const FREE_REPORT_V2 = {
   },
   "병화_내향": {
     hook: "I thought I was still giving love. I looked up and realized I was just lost.",
-    body: "Honestly, you're the kind of person who simply can't walk past someone who's struggling.\n\nOther people's pain catches your attention before your own does.\n\nYou want to hold things together.\n\nYou want to help.\n\nYou want everyone to make it through safely.\n\nAnd somehow, that means you're always the last person to realize how exhausted you've become.\n\nPeople remember you as bright. Strong. Reliable.\n\nBut deep down, there are moments when even you wonder whether you're truly as strong as everyone thinks—or whether, somewhere along the way, you quietly lost track of who you were before you started holding everyone else together.\n\nMaybe you've asked yourself questions like these:",
+    body: "You're the kind of person who simply can't walk past someone who's struggling.\n\nOther people's pain catches your attention before your own does.\n\nYou want to hold things together.\n\nYou want to help.\n\nYou want everyone to make it through safely.\n\nAnd somehow, that means you're always the last person to realize how exhausted you've become.\n\nPeople remember you as bright. Strong. Reliable.\n\nBut deep down, there are moments when even you wonder whether you're truly as strong as everyone thinks—or whether, somewhere along the way, you gradually lost track of who you were before you started holding everyone else together.\n\nMaybe you've asked yourself questions like these:",
     questions: [
       "Why am I always the one who gets tired first?",
       "Why do people rarely notice when I'm struggling?",
@@ -412,7 +412,7 @@ const FREE_REPORT_V2 = {
   },
   "무토_외향": {
     hook: "My love language is showing up. Every single time. Without being asked. Without being thanked.",
-    body: "Sweetheart, you don't really believe love is something people talk about.\n\nYou believe it's something people do.\n\nYou show up.\n\nYou remember.\n\nYou carry things that nobody asked you to carry because, honestly, that's what love has always meant to you.\n\nAnd the strange thing is, you rarely keep score.\n\nUntil one day, you realize you've been standing in the same place for a very long time while everyone else kept moving.\n\nPeople admire how dependable you are.\n\nBut very few people ever ask what it costs you to be that dependable.",
+    body: "Sweetheart, you don't really believe love is something people talk about.\n\nYou believe it's something people do.\n\nYou show up.\n\nYou remember.\n\nYou carry things that nobody asked you to carry because that's what love has always meant to you.\n\nAnd the strange thing is, you rarely keep score.\n\nUntil one day, you realize you've been standing in the same place for a very long time while everyone else kept moving.\n\nPeople admire how dependable you are.\n\nBut very few people ever ask what it costs you to be that dependable.",
     questions: [
       "Why do I always become the person others rely on?",
       "Why do people notice what I do only after I stop doing it?",
@@ -421,7 +421,7 @@ const FREE_REPORT_V2 = {
   },
   "무토_내향": {
     hook: "I feel everything. I just never let it become your problem.",
-    body: "Oh, sweetheart.\n\nPeople think you're calm because you don't react to everything.\n\nBut that's not the truth.\n\nYou feel deeply.\n\nYou simply learned, a long time ago, that not every burden needs to be handed to someone else.\n\nSo you carry it.\n\nQuietly.\n\nGracefully.\n\nAnd most of the time, nobody even notices.\n\nThe difficult part is that you've become so good at being strong that people forget you're human too.\n\nYou listen.\n\nYou support.\n\nYou stay.\n\nEven when your own heart feels heavy.\n\nAnd honestly? Sometimes you wish someone would notice your silence before you have to explain your pain.",
+    body: "Oh, sweetheart.\n\nPeople think you're calm because you don't react to everything.\n\nBut that's not the truth.\n\nYou feel deeply.\n\nYou simply learned, a long time ago, that not every burden needs to be handed to someone else.\n\nSo you carry it.\n\nQuietly.\n\nGracefully.\n\nAnd most of the time, nobody even notices.\n\nThe difficult part is that you've become so good at being strong that people forget you're human too.\n\nYou listen.\n\nYou support.\n\nYou stay.\n\nEven when your own heart feels heavy.\n\nSometimes you wish someone would notice your silence before you have to explain your pain.",
     questions: [
       "Why do I always choose to handle things alone?",
       "Why do people assume I'm fine just because I'm not complaining?",
@@ -430,7 +430,7 @@ const FREE_REPORT_V2 = {
   },
   "기토_외향": {
     hook: "I don't know how to watch someone I love struggle.",
-    body: "Honestly, you're not someone who can just sit back and watch someone you love struggle.\n\nThe second you sense they're hurting, you're already trying to fix it—sometimes before they even ask.\n\nYou end up taking on problems that were never really yours to solve in the first place.\n\nIt's not about control. You just can't stand watching someone you care about suffer.\n\nAnd the thing is, people get used to it. They start expecting it without really thanking you for it anymore.",
+    body: "You're not someone who can just sit back and watch someone you love struggle.\n\nThe second you sense they're hurting, you're already trying to fix it—sometimes before they even ask.\n\nYou end up taking on problems that were never really yours to solve in the first place.\n\nIt's not about control. You just can't stand watching someone you care about suffer.\n\nAnd the thing is, people get used to it. They start expecting it without really thanking you for it anymore.",
     questions: [
       "Why do I feel responsible for the happiness of the people I love?",
       "Why do people sometimes depend on me more than they truly connect with me?",
@@ -439,7 +439,7 @@ const FREE_REPORT_V2 = {
   },
   "기토_내향": {
     hook: "I know exactly what everyone around me needs. I just have no idea what I need.",
-    body: "Honey, you're not the person who makes big romantic gestures.\n\nYou're the person who remembers how someone takes their coffee, notices when they've gone a little quiet, and quietly fixes small things before they ever become big ones.\n\nYou don't ask for credit.\n\nYou just want things to feel steady.\n\nSo you keep doing the work nobody sees.\n\nYou smooth things over before they turn into arguments.\n\nYou remember the date they were nervous about.\n\nYou make space for their bad days without turning it into a whole conversation.\n\nAnd somehow, the relationship just feels calm. Solid. Like nothing's wrong.\n\nPeople assume that means everything is fine.\n\nThey rarely ask what it takes to keep it that way.\n\nLately, you've even started to wonder if you'd know what to say—if someone actually asked what you needed.",
+    body: "Honey, you're not the person who makes big romantic gestures.\n\nYou're the person who remembers how someone takes their coffee, notices when they've gone a little quiet, and takes care of small things before they ever become big ones.\n\nYou don't ask for credit.\n\nYou just want things to feel steady.\n\nSo you keep doing the work nobody sees.\n\nYou smooth things over before they turn into arguments.\n\nYou remember the date they were nervous about.\n\nYou make space for their bad days without turning it into a whole conversation.\n\nAnd somehow, the relationship just feels calm. Solid. Like nothing's wrong.\n\nPeople assume that means everything is fine.\n\nThey rarely ask what it takes to keep it that way.\n\nLately, you've even started to wonder if you'd know what to say—if someone actually asked what you needed.",
     questions: [
       "Why do I do so much of the work that holds a relationship together without ever naming it?",
       "Why do people assume everything is fine just because nothing looks broken?",
@@ -448,7 +448,7 @@ const FREE_REPORT_V2 = {
   },
   "경금_외향": {
     hook: "I'm not hard to love. I'm hard to deceive. There's a difference.",
-    body: "Sweetheart, people often mistake your standards for distance.\n\nBut honestly?\n\nYou just pay attention.\n\nYou notice inconsistencies.\n\nYou remember things people thought you'd forget.\n\nAnd the moment words stop matching actions, something inside you immediately becomes quiet.\n\nYou don't expect perfection.\n\nYou expect honesty.\n\nThe problem is, many people prefer being liked over being truthful.\n\nYou'd rather hear an uncomfortable truth than a beautiful lie.\n\nAnd maybe that's why you've been called intimidating by people who were never prepared to be fully seen.",
+    body: "Sweetheart, people often mistake your standards for distance.\n\nYou just pay attention.\n\nYou notice inconsistencies.\n\nYou remember things people thought you'd forget.\n\nAnd the moment words stop matching actions, something inside you shuts down.\n\nYou don't expect perfection.\n\nYou expect honesty.\n\nThe problem is, many people prefer being liked over being truthful.\n\nYou'd rather hear an uncomfortable truth than a beautiful lie.\n\nAnd maybe that's why you've been called intimidating by people who were never prepared to be fully seen.",
     questions: [
       "Why do I notice small inconsistencies that other people seem to ignore?",
       "Why do people mistake my honesty for harshness or distance?",
@@ -466,7 +466,7 @@ const FREE_REPORT_V2 = {
   },
   "신금_외향": {
     hook: "Almost isn't enough. I'm sorry it took you so long to figure that out.",
-    body: "Honey, can I tell you what actually breaks your heart?\n\nIt's not when someone leaves.\n\nIt's when they stop being careful with you.\n\nThe forgotten promises.\n\nThe small jokes that go a little too far.\n\nThe feeling that they loved having you around more than they loved understanding who you are.\n\nPeople think you're sensitive.\n\nBut honestly?\n\nWhen you give someone your trust, you're handing them something precious.\n\nOf course it hurts when they treat it like something ordinary.\n\nYou've never wanted grand gestures.\n\nYou just wanted to feel chosen on purpose, not simply kept around because it was convenient.",
+    body: "Honey, can I tell you what actually breaks your heart?\n\nIt's not when someone leaves.\n\nIt's when they stop being careful with you.\n\nThe forgotten promises.\n\nThe small jokes that go a little too far.\n\nThe feeling that they loved having you around more than they loved understanding who you are.\n\nPeople think you're sensitive.\n\nWhen you give someone your trust, you're handing them something precious.\n\nOf course it hurts when they treat it like something ordinary.\n\nYou've never wanted grand gestures.\n\nYou just wanted to feel chosen on purpose, not simply kept around because it was convenient.",
     questions: [
       "Why do small moments of carelessness stay with me for so long?",
       "Why do people mistake my need to be valued for being difficult?",
@@ -484,7 +484,7 @@ const FREE_REPORT_V2 = {
   },
   "임수_외향": {
     hook: "I am not commitment-phobic. I am depth-seeking.",
-    body: "Honey, people think you're complicated.\n\nBut honestly?\n\nYou're just bigger on the inside than most people expect.\n\nYou change.\n\nYou grow.\n\nYou wake up with new questions about yourself all the time.\n\nAnd love, for you, has never been about finding someone who understands everything immediately.\n\nIt's about finding someone curious enough to stay.\n\nSomeone who doesn't panic when you evolve.\n\nSomeone who asks, \"Tell me what's changing,\" instead of, \"Why aren't you the same person I met?\"\n\nMaybe that's why people sometimes call you hard to commit to—when really, you'd commit completely, if only someone could keep up with how much you keep becoming.",
+    body: "Honey, people think you're complicated.\n\nYou're just bigger on the inside than most people expect.\n\nYou change.\n\nYou grow.\n\nYou wake up with new questions about yourself all the time.\n\nAnd love, for you, has never been about finding someone who understands everything immediately.\n\nIt's about finding someone curious enough to stay.\n\nSomeone who doesn't panic when you evolve.\n\nSomeone who asks, \"Tell me what's changing,\" instead of, \"Why aren't you the same person I met?\"\n\nMaybe that's why people sometimes call you hard to commit to—when really, you'd commit completely, if only someone could keep up with how much you keep becoming.",
     questions: [
       "Why do I keep changing in ways that even surprise me?",
       "Why do people mistake my complexity for inconsistency?",
@@ -493,7 +493,7 @@ const FREE_REPORT_V2 = {
   },
   "임수_내향": {
     hook: "I don't fear love. I fear losing myself inside it.",
-    body: "Honey, people think you're afraid of commitment.\n\nBut honestly?\n\nThat's never been the problem.\n\nYou love deeply.\n\nYou stay longer than most people realize.\n\nYou try to understand.\n\nYou try to adapt.\n\nThe scary part isn't loving someone.\n\nIt's looking in the mirror one day and realizing you've slowly stopped becoming yourself.\n\nMaybe you've done this before.\n\nYou start listening to their needs more than your own.\n\nYou stop bringing up the dreams that are hard to explain.\n\nYou become easier to live with, but harder to recognize.\n\nAnd somewhere in there, something inside you quietly starts to pull away—even though nothing's actually gone wrong.",
+    body: "Honey, people think you're afraid of commitment.\n\nThat's never been the problem.\n\nYou love deeply.\n\nYou stay longer than most people realize.\n\nYou try to understand.\n\nYou try to adapt.\n\nThe scary part isn't loving someone.\n\nIt's looking in the mirror one day and realizing you've slowly stopped becoming yourself.\n\nMaybe you've done this before.\n\nYou start listening to their needs more than your own.\n\nYou stop bringing up the dreams that are hard to explain.\n\nYou become easier to live with, but harder to recognize.\n\nAnd somewhere in there, something inside you starts to pull away before anything has actually gone wrong.",
     questions: [
       "Why do I sometimes lose sight of myself while trying to love someone well?",
       "Why do people mistake my adaptability for having no needs of my own?",
@@ -511,7 +511,7 @@ const FREE_REPORT_V2 = {
   },
   "계수_내향": {
     hook: "I have never once been in a relationship without wondering whether I am too much to be loved or too little to be worth staying for.",
-    body: "Honey, people think you're patient.\n\nAnd you are.\n\nBut what they don't see is how much hope that patience is carrying.\n\nYou wait.\n\nYou understand.\n\nYou give people time to grow into the love you already know how to give.\n\nAnd honestly?\n\nYou've always believed that if you stayed gentle long enough, someone would eventually notice the depth of what you were offering.\n\nThe painful part is this: sometimes you keep waiting long after you've stopped feeling seen.\n\nYou tell yourself they're trying.\n\nYou tell yourself tomorrow will be different.\n\nYou keep choosing understanding over disappointment.\n\nUntil one day, you realize you've been standing in the same emotional place, quietly hoping someone would walk toward you—and quietly wondering whether you were asking for too much, or simply easy enough to leave waiting.",
+    body: "Honey, people think you're patient.\n\nAnd you are.\n\nBut what they don't see is how much hope that patience is carrying.\n\nYou wait.\n\nYou understand.\n\nYou give people time to grow into the love you already know how to give.\n\nYou've always believed that if you stayed gentle long enough, someone would eventually notice the depth of what you were offering.\n\nThe painful part is this: sometimes you keep waiting long after you've stopped feeling seen.\n\nYou tell yourself they're trying.\n\nYou tell yourself tomorrow will be different.\n\nYou keep choosing understanding over disappointment.\n\nUntil one day, you realize you've been standing in the same emotional place, still hoping someone would walk toward you, and wondering whether you were asking for too much, or simply easy enough to leave waiting.",
     questions: [
       "Why do I keep waiting for people to understand what I never clearly ask for?",
       "Why do I choose patience even when my needs remain unseen?",

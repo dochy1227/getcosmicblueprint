@@ -115,7 +115,7 @@
         "body": [
           "You're drawn to people who don't explain themselves.",
           "That might sound strange. But it's exactly right.",
-          "They don't say why they did what they did. Why they were late. Why they went quiet. Why they said it that way.",
+          "They don't say why they did what they did. Why they were late. Why they withdrew. Why they said it that way.",
           "And you don't just sit there. You start looking for the reason yourself.",
           "They're probably just busy. They're probably just not the expressive type. Something must have happened.",
           "You stay up at night building the explanation that's actually their job to give.",
@@ -164,7 +164,7 @@
           },
           {
             "type_title": "Someone whose story keeps changing",
-            "description": "Last month they told it one way. Today the details are different. Late at night, you replay old conversations and quietly compare which version felt true."
+            "description": "Last month they told it one way. Today the details are different. Late at night, you replay old conversations and compare which version felt true."
           },
           {
             "type_title": "Someone who's vague",

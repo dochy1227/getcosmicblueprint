@@ -18,7 +18,7 @@
   "cover": {
     "title": "THE SUN",
     "subtitle": "The one who keeps the lights on, even when they're tired.",
-    "tagline": "You brighten the room first. Then quietly wonder who sees you when the light goes out.",
+    "tagline": "You brighten the room first. Then wonder who still sees you when the light goes out.",
     "traits": [
       "RADIANT",
       "ENERGETIC",
@@ -37,7 +37,7 @@
     "short_summary": [
       "You change the mood the moment you enter a room, but people often notice your energy before they notice you.",
       "The loneliness you've felt before wasn't from being unpopular. It was from only showing the version of yourself that's onstage.",
-      "What you're learning is how to trust that the right person stays even when your light goes quiet."
+      "What you're learning is how to trust that the right person stays even when your light grows dim."
     ]
   },
   "full_report": {
@@ -55,8 +55,8 @@
           "People take that completely for granted.",
           "It comes so naturally that no one stops to notice it.",
           "You're the same way when you love someone. You make them laugh. You light up the mood. You hear \"it's fun being with you\" a lot.",
-          "But here's the thing.",
-          "The truth is, setting the mood isn't actually your priority. Checking whether people are watching you comes first.",
+          "The real need sits underneath all that brightness.",
+          "Setting the mood is not actually your first priority. Checking whether people are watching you comes first.",
           "You're not trying to be funny. You're trying to see if they laugh.",
           "And when you're alone. No one asks you anything.",
           "Because you always look fine.",
@@ -169,7 +169,7 @@
         "items": [
           {
             "type_title": "The Person Who Reacts To Everything",
-            "description": "They laugh loudly. They get excited. They make you feel interesting. And honestly? You shine even brighter around people like that. The problem starts when that reaction becomes quieter. Because without realizing it, you start working to get it back."
+            "description": "They laugh loudly. They get excited. They make you feel interesting. You shine even brighter around people like that. The problem starts when that reaction becomes quieter. Because without realizing it, you start working to get it back."
           },
           {
             "type_title": "The Person Who Makes You Feel Special",
@@ -242,7 +242,7 @@
           "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who doesn't leave even on your quiet days. On a low tension day, they ask first. \"what's up with you today?\" Someone like this comes to see you, not your stage.",
           "same_pattern_repeats": "You might be drawn again to someone who only enjoys your energy. You might also be drawn to someone who only shows up during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself. It's how long you keep hiding what's backstage afterward.",
           "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment your tension dips slightly. Right before you'd normally pull it right back up. There's a brief pause. That's the start.",
-          "try_this": "Normally you'd already be lifting the mood back up. This time, don't. Just once. Don't pull the tension back up. Just stay quiet. And watch how they react. Someone who's with you stays put even when you're not shining. Someone who isn't loses interest the moment your light's off.",
+          "try_this": "Normally you'd already be lifting the mood back up. This time, don't. Just once. Don't pull the tension back up. Let the moment sit. And watch how they react. Someone who's with you stays put even when you're not shining. Someone who isn't loses interest the moment your light's off.",
           "final_line": "That reaction is your answer."
         }
       }
@@ -251,7 +251,7 @@
       "summary": "You don't need to dim your light. You need to let someone see what exists behind it.",
       "action_items": [
         "Tell one trusted person when today was actually rough.",
-        "Let one quiet moment stay quiet instead of immediately lifting the mood.",
+        "Let one still moment remain as it is instead of immediately lifting the mood.",
         "Watch whether they stay close when you're not performing."
       ]
     },
