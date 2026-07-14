@@ -522,14 +522,14 @@ function generateReportHTML(data, options) {
   }
   .cover-page::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.05) 55%, rgba(0,0,0,0.55) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.08) 30%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.7) 100%);
     z-index: 0;
   }
   .cover-topbar, .cover-body, .cover-icon { position: relative; z-index: 1; }
   .cover-topbar { display: flex; justify-content: space-between; align-items: flex-start; }
-  .cover-brand { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .cover-brand { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
   .cover-brand span { display: block; font-size: 8px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; margin-top: 2px; }
-  .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; }
   .cover-pagenum span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; }
   /* 2026.07.04 3차 수정(인계노트 v55 최종 결론 반영): 박스/카드/필 전부 제거.
      1차(큰 카드) → "사진이 가려진다", 2차(줄단위 캡션바) → "더 산만하다",
@@ -537,21 +537,28 @@ function generateReportHTML(data, options) {
      최종적으로 배경 없이 텍스트 색상 자체 + text-shadow(halo)만으로 대비 처리하기로 함.
      대비 수치(WCAG)보다 사진의 프리미엄한 느낌을 우선한다는 원칙 — 완벽한 대비 보장은 아님.
      위치도 원래대로 하단 복귀: margin-top:auto로 cover-topbar/cover-icon과의
-     flex space-between 관계 안에서 자연스럽게 아래쪽에 붙도록 함(고정 음수 margin 제거). */
+     flex space-between 관계 안에서 자연스럽게 아래쪽에 붙도록 함(고정 음수 margin 제거).
+     2026.07.11 4차 수정(인계노트 v72+ 대응): PDF 텍스트 복사 시 중복 추출되는 버그의
+     원인이 "text-shadow 레이어 수"가 아니라 text-shadow 자체(Doppio/Chromium 계열
+     렌더러가 그림자를 글자 사본을 한 벌 더 그리는 방식으로 처리, 1겹이어도 중복 발생)로
+     재진단됨에 따라, text-shadow를 전부 제거하고 ::before 그라디언트 오버레이의
+     투명도를 올려(0.45→0.5 상단, 0.55→0.7 하단) 대비를 대신 확보함. */
   .cover-body { position: relative; text-align: center; padding: 0 14px; margin-top: auto; }
   .cover-body span { display: inline; }
-  /* 기본(theme-light): 어두운 사진 위 흰 글자 — 검은 halo로 대비 보강 */
-  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
-  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; text-shadow: 0 2px 14px rgba(0,0,0,0.9); }
-  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
-  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; text-shadow: 0 1px 9px rgba(0,0,0,0.85); }
-  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); text-shadow: 0 1px 8px rgba(0,0,0,0.85); }
-  /* theme-dark: 밝은 사진(다이아몬드/설산 등) 위 어두운 글자 — 흰 halo로 대비 보강 */
+  /* 기본(theme-light): 어두운 사진 위 흰 글자 — 오버레이 그라디언트로 대비 확보 */
+  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; }
+  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; }
+  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; }
+  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; }
+  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); }
+  /* theme-dark: 밝은 사진(다이아몬드/설산 등) 위 어두운 글자.
+     검은 오버레이는 밝은 배경 사진을 한 단계 눌러줘서 어두운 글자와의 대비를 보강하는
+     역할을 겸함(사진이 아주 밝을 때는 그래도 부족할 수 있어 배포 후 재검수 필요). */
   .cover-page.theme-dark .cover-eyebrow,
-  .cover-page.theme-dark .cover-traits { color: #17151f; text-shadow: 0 1px 8px rgba(255,255,255,0.85); }
-  .cover-page.theme-dark .cover-title { color: #17151f; text-shadow: 0 2px 14px rgba(255,255,255,0.9); }
-  .cover-page.theme-dark .cover-quote { color: #17151f; text-shadow: 0 1px 9px rgba(255,255,255,0.85); }
-  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); text-shadow: 0 1px 8px rgba(255,255,255,0.85); }
+  .cover-page.theme-dark .cover-traits { color: #17151f; }
+  .cover-page.theme-dark .cover-title { color: #17151f; }
+  .cover-page.theme-dark .cover-quote { color: #17151f; }
+  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); }
   .cover-icon { width: 36px; height: 36px; margin: 18px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
   .badge { font-size: 13px; font-weight: 700; color: #00f0ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
   .archetype-title { font-size: 26px; font-weight: 800; line-height: 1.3; background: linear-gradient(45deg, #00f0ff, #b600ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 4px; }

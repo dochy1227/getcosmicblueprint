@@ -546,6 +546,27 @@
 
     <script>
       (async function() {
+        // 2026.07.11 추가: Firefox 엄격 개인정보 보호 설정 등 일부 브라우저 환경에서는
+        // sessionStorage 접근 자체가 SecurityError를 던질 수 있음. 이 경우 캐치 없이
+        // 두면 스크립트 전체가 죽어버리므로, 모든 sessionStorage 접근을 안전하게 감싼다.
+        function safeGetItem(key) {
+            try {
+                return sessionStorage.getItem(key);
+            } catch (e) {
+                console.warn('[report] sessionStorage 읽기 차단:', key, e.message);
+                return null;
+            }
+        }
+        function safeSetItem(key, value) {
+            try {
+                sessionStorage.setItem(key, value);
+                return true;
+            } catch (e) {
+                console.warn('[report] sessionStorage 쓰기 차단:', key, e.message);
+                return false;
+            }
+        }
+
         // 2026.06.30 추가, 2026.07.11 보강: report.html에 직접 진입(공유 링크,
         // 인앱 브라우저의 sessionStorage 유실 등)해 cosmic_name이 없는 경우,
         // 깨진 "UNKNOWN ARCHETYPE" 화면을 보여주는 대신 index.html로 돌려보냄.
@@ -558,7 +579,7 @@
         // 즉시 리다이렉트하기 전에, URL에 생년월일 파라미터(by/bm/bd/bt)가 남아있으면
         // 블루프린트를 서버에 재요청해서 sessionStorage를 복구할 기회를 한 번 더 준다.
         async function ensureReportData() {
-            if (sessionStorage.getItem('cosmic_name')) return true;
+            if (safeGetItem('cosmic_name')) return true;
 
             const urlParams = new URLSearchParams(window.location.search);
             const by = urlParams.get('by');
@@ -575,13 +596,13 @@
                     });
                     const result = await res.json();
                     if (result.success) {
-                        sessionStorage.setItem('cosmic_name', result.elementName);
-                        sessionStorage.setItem('cosmic_hook', result.hook);
-                        sessionStorage.setItem('cosmic_body', result.body);
-                        sessionStorage.setItem('cosmic_questions', JSON.stringify(result.questions));
-                        sessionStorage.setItem('cosmic_cta', result.cta);
-                        sessionStorage.setItem('cosmic_element_key', result.elementKey);
-                        sessionStorage.setItem('cosmic_orientation', result.orientation);
+                        safeSetItem('cosmic_name', result.elementName);
+                        safeSetItem('cosmic_hook', result.hook);
+                        safeSetItem('cosmic_body', result.body);
+                        safeSetItem('cosmic_questions', JSON.stringify(result.questions));
+                        safeSetItem('cosmic_cta', result.cta);
+                        safeSetItem('cosmic_element_key', result.elementKey);
+                        safeSetItem('cosmic_orientation', result.orientation);
                         return true;
                     }
                 } catch (e) {
@@ -598,20 +619,20 @@
             throw new Error('Redirecting: no report data in sessionStorage or URL');
         }
 
-        const currentElement = sessionStorage.getItem('cosmic_element_key') || 'unknown';
-        const orientation = sessionStorage.getItem('cosmic_orientation') || 'unknown';
+        const currentElement = safeGetItem('cosmic_element_key') || 'unknown';
+        const orientation = safeGetItem('cosmic_orientation') || 'unknown';
 
         // 2026.06.28 재수정: "Yang Wood" 같은 오행 영문 표기도 사주 용어 노출에
         // 해당한다는 또치님 지적으로, elementName 자체를 오행 표기 없는 순수
         // 아키타입명("THE PIONEER")만 반환하도록 변경. 더 이상 "·" 분리 불필요 —
         // archetype-element 줄도 표시할 내용이 없어져 제거함.
-        const archetypePart = sessionStorage.getItem('cosmic_name') || 'UNKNOWN ARCHETYPE';
+        const archetypePart = safeGetItem('cosmic_name') || 'UNKNOWN ARCHETYPE';
 
         document.getElementById('archetype-name').innerText = archetypePart;
-        document.getElementById('hook-text').innerText = sessionStorage.getItem('cosmic_hook') || '';
+        document.getElementById('hook-text').innerText = safeGetItem('cosmic_hook') || '';
 
         // 본문 — \n\n 기준 단락 분리
-        const bodyRaw = sessionStorage.getItem('cosmic_body') || '';
+        const bodyRaw = safeGetItem('cosmic_body') || '';
         const bodyContainer = document.getElementById('report-body');
         bodyRaw.split(/\n\n+/).filter(Boolean).forEach(paragraph => {
             const p = document.createElement('p');
@@ -622,7 +643,7 @@
         // 질문 3개 — JSON 배열 파싱
         let questions = [];
         try {
-            questions = JSON.parse(sessionStorage.getItem('cosmic_questions') || '[]');
+            questions = JSON.parse(safeGetItem('cosmic_questions') || '[]');
         } catch (e) {
             questions = [];
         }
@@ -635,7 +656,7 @@
             questionsList.appendChild(item);
         });
 
-        document.getElementById('cta-text').innerText = sessionStorage.getItem('cosmic_cta') || '';
+        document.getElementById('cta-text').innerText = safeGetItem('cosmic_cta') || '';
 
         gtag('event', 'view_free_report', {
             'element_type': currentElement,
