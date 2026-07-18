@@ -26,6 +26,46 @@
 //      ⚠ 이 폴더는 netlify/functions/ 안에 있어야 함. 루트(정적 영역)에 두면
 //      유료 리포트 내용이 누구나 직접 URL로 열어볼 수 있게 되므로 절대 금지.
 //
+// ============================================================
+// [2026.07.17 보안 수정] 내부 비밀키(INTERNAL_PDF_SECRET) 검증 추가
+// ------------------------------------------------------------
+// 배경: 이 함수는 결제 여부와 무관하게 누구나 URL만 알면 직접 호출해서
+//       20개 유료 리포트를 전부 무료로 받아갈 수 있는 상태였음(인증 없음).
+//       Creem 승인 후 실결제가 발생하는 지금 시점에 반드시 막아야 하는 문제.
+//
+// 적용한 방식: 공유 비밀키(shared secret) 헤더 검증.
+//   - creem-webhook.js가 이 함수를 내부 호출할 때 헤더에
+//     'x-internal-secret': process.env.INTERNAL_PDF_SECRET 값을 실어 보냄.
+//   - 이 함수는 그 헤더 값이 자기 자신의 INTERNAL_PDF_SECRET 환경변수와
+//     일치할 때만 실행되고, 없거나 틀리면 401을 반환함.
+//
+// 또치님이 해야 할 일 (Netlify 환경변수 등록, 아직 안 하셨다면 필수):
+//   1. Netlify 대시보드 > Site settings > Environment variables에서
+//      INTERNAL_PDF_SECRET 이라는 이름으로 새 환경변수 추가.
+//   2. 값은 아무 긴 임의 문자열이면 됨. 예시로 아래 값을 그대로 써도 됨:
+//        LCBT66UiBY3ASRx8hY3gKtL7oNgC6sM2MWm0_0PIufc
+//      (이 값은 이번 세션에서 무작위로 생성한 것이며, 원하면 다른 값으로
+//       바꿔도 무방함. 다만 creem-webhook.js 쪽 환경변수와 반드시 동일해야 함.)
+//   3. 이 함수(generate-pdf)와 creem-webhook.js 양쪽 모두에 같은 이름
+//      (INTERNAL_PDF_SECRET), 같은 값으로 등록해야 정상 작동함.
+//
+// 수동 테스트 방법 (콘솔에서 PDF 텍스트 복사 테스트 등 직접 호출이 필요할 때):
+//   fetch('https://getcosmicblueprint.com/.netlify/functions/generate-pdf', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'x-internal-secret': '<INTERNAL_PDF_SECRET 값>'
+//     },
+//     body: JSON.stringify({ reportId: 'type_01_a' })
+//   }).then(r => r.blob()).then(b => window.open(URL.createObjectURL(b)));
+//   → 비밀키를 모르면 위 방식으로도 더 이상 호출이 안 됨(401 반환).
+//
+// ⚠ 다음 세션 인계 필수 사항: 이 비밀키 존재 자체를 잊으면, 향후 세션에서
+//   "테스트 출력이 갑자기 401로 막힌다"고 오인할 수 있음. 인계노트에
+//   "INTERNAL_PDF_SECRET 환경변수 필요, 값은 Netlify 대시보드에서 확인"
+//   이라고 반드시 남길 것.
+// ============================================================
+//
 // 참고: 도삐오 공식 API 스펙(2026.06 기준, doc.doppio.sh 검색 확인)
 //   - POST https://api.doppio.sh/v1/render/pdf/direct
 //   - Authorization: Bearer <API_KEY>
@@ -56,6 +96,24 @@ exports.handler = async (event) => {
 
   if (event.httpMethod !== 'POST') {
     return jsonResponse(405, { error: 'POST 요청만 허용됩니다.' });
+  }
+
+  // ---------- 0) 내부 비밀키 검증 (2026.07.17 추가) ----------
+  // 이 검증이 없으면 결제 없이 누구나 유료 리포트 PDF를 받아갈 수 있으므로
+  // 반드시 가장 먼저 확인한다.
+  const expectedSecret = process.env.INTERNAL_PDF_SECRET;
+  if (!expectedSecret) {
+    // 환경변수 자체가 없으면 "막혔는지 안 막혔는지도 모르는" 상태가 더 위험하므로
+    // 조용히 통과시키지 않고 명확한 에러로 알림.
+    return jsonResponse(500, {
+      error: 'INTERNAL_PDF_SECRET 환경변수가 설정되지 않았습니다. Netlify 환경변수 등록이 필요합니다 (보안 수정, 2026.07.17).',
+    });
+  }
+  const providedSecret = event.headers['x-internal-secret'] || event.headers['X-Internal-Secret'];
+  if (providedSecret !== expectedSecret) {
+    return jsonResponse(401, {
+      error: '인증되지 않은 요청입니다. 결제 완료 후 자동으로 생성되는 리포트만 발급됩니다.',
+    });
   }
 
   const apiKey = process.env.DOPPIO_API_KEY;

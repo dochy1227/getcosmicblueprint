@@ -33,6 +33,9 @@
 //   - RESEND_FROM_EMAIL      발신 주소. 예: "Cosmic Blueprint <hello@getcosmicblueprint.com>"
 //                             (Resend에 도메인 인증 완료된 주소여야 함)
 //   - SITE_URL               기본값 https://getcosmicblueprint.com (내부 generate-pdf 호출용)
+//   - INTERNAL_PDF_SECRET    [2026.07.17 추가] generate-pdf.js 호출 시 인증용 공유 비밀키.
+//                            generate-pdf.js 환경변수와 반드시 동일한 값이어야 함.
+//                            없으면 PDF 생성이 401로 실패함(정상 결제 흐름도 막힘 — 필수 등록).
 //
 // ⚠️ 2026.07.03 수정: Supabase 호출은 이 파일에서 직접 하지 않고, 이미 존재하던
 //    supabase-client.js(2026.07.01 작성, upsertOrder/getOrderByCreemOrderId/updateOrder)를
@@ -169,9 +172,17 @@ exports.handler = async (event) => {
   // ---------- 5) PDF 생성 (기존 generate-pdf.js 내부 호출로 재사용) ----------
   let pdfBase64;
   try {
+    // 2026.07.17 보안 수정: generate-pdf가 이제 내부 비밀키 헤더를 요구함.
+    // 이 값이 없거나 generate-pdf 쪽 환경변수와 다르면 401로 실패하므로,
+    // Netlify에 INTERNAL_PDF_SECRET 환경변수가 양쪽 함수 모두 동일하게
+    // 등록되어 있어야 함 (generate-pdf.js 상단 주석 참고).
+    const internalSecret = process.env.INTERNAL_PDF_SECRET;
     const pdfRes = await fetch(`${SITE_URL}/.netlify/functions/generate-pdf`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-internal-secret': internalSecret || '',
+      },
       body: JSON.stringify({ reportId: orderInfo.archetypeId }),
     });
     if (!pdfRes.ok) {
