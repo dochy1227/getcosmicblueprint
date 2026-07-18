@@ -17,8 +17,8 @@
   },
   "cover": {
     "title": "THE CANDLE",
-    "subtitle": "The one whose warmth never changes. Even when their heart does.",
-    "tagline": "You treat everyone the same way. The one you love needs to feel that you don't.",
+    "subtitle": "The one whose warmth stays steady, even when their feelings grow deeper.",
+    "tagline": "You're warm with everyone. The hard part is helping one person feel the difference.",
     "traits": [
       "WARM",
       "NURTURING",
@@ -31,18 +31,18 @@
     "pride": 2,
     "warmth": 5,
     "stability": 3,
-    "caption": "High Care · High Expression, Low Pride. Warm to everyone, but the deepening of your heart never quite shows up in how you express it"
+    "caption": "High Care and Expression, Low Pride. You're warm with everyone, while deeper feelings can be harder to show clearly."
   },
   "free_result": {
     "short_summary": [
       "You're warm with everyone.",
-      "For certain people, that warmth gradually turns into something else. Genuine feeling.",
-      "You're clearly deeper in than before. But they still think, \"they're just like that with everyone.\""
+      "For one person, that warmth can slowly turn into something deeper.",
+      "You're feeling more than before. They just may not know what changed."
     ]
   },
   "full_report": {
     "headline": "THE CANDLE",
-    "intro": "You're warm with everyone, including friends, coworkers, even people you just met. This report follows what happens when that same warmth gradually turns into something deeper for one person: why the outside never changes even as the inside does, and what it takes for them to finally see the difference.",
+    "intro": "You're warm with everyone, including friends, coworkers, and people you just met. That warmth is real. The problem starts when your feelings grow deeper for one person, but the way you show them stays almost the same. This report is about how that difference gets lost, and how to make it clearer without becoming someone you're not.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -52,38 +52,37 @@
         "body": [
           "You're warm with everyone.",
           "Friends, coworkers, even people you just met.",
-          "You take care of them well. You speak warmly. You stay close.",
-          "So people watch you being warm and don't think much of it. \"That's just who they are.\"",
-          "But with one person, that same warmth gradually becomes something deeper. Genuine feeling.",
-          "The problem is, what shows on the outside looks exactly the same.",
+          "You take care of people. You speak gently. You make them feel welcome.",
+          "So when your feelings deepen for one person, the outside can still look exactly the same.",
+          "Inside, something has changed.",
+          "You think about them more. You care more. You want the relationship to mean more.",
+          "But from their side, it can still look like ordinary kindness.",
           "You're clearly deeper in than before.",
-          "But they still think, \"they're just like that with everyone.\""
+          "They just may not know what changed."
         ],
         "highlight": null,
-        "profile_note": "High Care · High Expression, Low Pride. Warm to everyone, but the deepening of your heart never quite shows up in how you express it"
+        "profile_note": "High Care and Expression, Low Pride. You're warm with everyone, while deeper feelings can be harder to show clearly."
       },
       {
         "chapter_number": 2,
         "page_map": "chapter_02",
         "title": "The Pattern You Keep Repeating: THE SAME TEMPERATURE CURVE",
         "body": [
-          "You're an attractive person at the start of a relationship.",
-          "Warm. Kind. Easy to be around.",
-          "They get drawn to you fast because of it.",
-          "The problem starts after that.",
-          "The \"temperature\" of your warmth stays nearly identical from the beginning to wherever you are now.",
-          "From their side, it just registers as \"they're being just as good to me as always.\"",
-          "But your feelings keep getting deeper.",
-          "That gap keeps widening, until at some point you start wanting more.",
-          "You want to feel more serious. You want to become someone more special to them.",
-          "But because your way of expressing it never changed, they react with \"what's gotten into you, suddenly?\""
+          "At the start of a relationship, your warmth draws people in fast.",
+          "You're kind. Easy to be around. Easy to trust.",
+          "Then your feelings grow, but your way of showing them barely changes.",
+          "You still check in. You still care. You still sound warm.",
+          "From their side, it can feel like nothing is different.",
+          "But inside, the difference is getting bigger.",
+          "You start wanting more closeness, more certainty, and a clearer place in their life.",
+          "Then when you finally show how much it matters, they may feel like it came out of nowhere."
         ],
-        "highlight": "You're not hurt because there wasn't enough love. You're hurt because you showed the exact same temperature the entire time.",
+        "highlight": "You're not hurt because you cared too little. You're hurt because the depth changed before the signal did.",
         "pattern_name": "THE SAME TEMPERATURE CURVE",
         "chart": {
           "chart_type": "curve",
           "title": "THE SAME TEMPERATURE CURVE",
-          "description": "The warmth you express stays at the same temperature from start to finish, while your real feelings keep deepening underneath, until the gap finally breaks open at its widest point."
+          "description": "Your warmth stays steady on the outside while your feelings keep growing underneath."
         }
       },
       {
@@ -92,19 +91,19 @@
         "title": "What You've Gotten Wrong About Yourself",
         "items": [
           {
-            "belief": "I'm warm to everyone, it's just my personality.",
-            "truth": "That's true, to some extent. But not showing through expression that the intensity has changed behind that warmth isn't personality. It's habit. Your personality is warmth. Not distinguishing it is a learned pattern.",
-            "truth_short": "That's true, to some extent. But not showing through expression that the intensity has changed behind that warmth isn't personality. It's habit. Your personality is warmth. Not distinguishing it is a learned pattern."
+            "belief": "I'm warm to everyone. That's just my personality.",
+            "truth": "That's true. Warmth is part of who you are. But when your feelings change, the other person still needs something they can actually notice. Your personality can stay the same while your signal becomes clearer.",
+            "truth_short": "Your warmth is real. Deeper feelings still need a clearer signal."
           },
           {
             "belief": "If it's real, they'll figure it out eventually.",
-            "truth": "No. Your baseline level of warmth is already so high that they have nothing to compare it against. You can't just wait to be figured out. You need to give a different kind of signal.",
-            "truth_short": "No. Your baseline level of warmth is already so high that they have nothing to compare it against. You can't just wait to be figured out. You need to give a different kind of signal."
+            "truth": "They may sense something, but guessing isn't the same as knowing. Your usual level of warmth is already high, so they may not have much to compare it with. If the feeling matters, help them see what's different.",
+            "truth_short": "Real feelings can still be missed when the signal looks familiar."
           },
           {
-            "belief": "If I treat them specially, they'll feel pressured.",
-            "truth": "No. It's actually the opposite, not distinguishing at all is what confuses people more. Showing someone they're special isn't pressure. It's clarity.",
-            "truth_short": "No. It's actually the opposite, not distinguishing at all is what confuses people more. Showing someone they're special isn't pressure. It's clarity."
+            "belief": "If I treat them differently, they'll feel pressured.",
+            "truth": "A small difference doesn't have to feel heavy. It can be as simple as saying, \"I wanted to do this for you,\" or \"You matter to me in a different way.\" Clarity is not the same as pressure.",
+            "truth_short": "Showing a difference can be clear without becoming intense."
           }
         ]
       },
@@ -113,12 +112,15 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "Every face is different. But strangely, the people who come into your life have a similar texture.",
-          "People who just take your warmth as personality. No matter how well you treat them, it ends with \"that's just how they are.\"",
-          "They never try to notice the feeling that's deepened underneath.",
-          "People who suspect you treat everyone else the same way too. They judge you by your usual behavior patterns rather than trusting your real feelings."
+          "You're often drawn to people who enjoy your warmth but don't look very closely at where it comes from.",
+          "They like how comfortable you make them feel.",
+          "They may even notice that you care, but still assume you treat everyone the same way.",
+          "That can leave you doing more and more, hoping the difference will become obvious.",
+          "But effort doesn't always explain itself.",
+          "At some point, you need more than someone who receives your warmth.",
+          "You need someone who asks what it means, and you need to be willing to answer."
         ],
-        "highlight": "Someone who likes you receives the warmth. Someone who loves you notices that the temperature of that warmth has changed.",
+        "highlight": "Warmth can open the door. Clarity is what tells someone they've been invited in.",
         "bar_chart": {
           "give_percent": 80,
           "get_percent": 20
@@ -129,29 +131,29 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need isn't to get warmer. You've already got that covered.",
-          "What you actually need is to create one different behavior for just one person.",
-          "One small thing you don't do for anyone else, that you do only for them.",
-          "It doesn't need to be big.",
-          "A check-in you send only to them. A small habit you only do in front of them.",
-          "This isn't favoritism.",
-          "It's the signal that shows your feelings have actually deepened."
+          "What you need isn't to become warmer. You've already got that covered.",
+          "What you need is one clear difference.",
+          "Not a grand gesture. Not a secret test.",
+          "Just something that helps them understand this isn't how you feel about everyone.",
+          "You can say, \"I wanted to do this just for you.\"",
+          "You can ask for time alone together.",
+          "You can tell them, \"I've started thinking about you differently.\"",
+          "The point isn't to perform more. It's to make the meaning easier to see."
         ],
-        "action_sentence": "It's the signal that shows your feelings have actually deepened."
+        "action_sentence": "The point isn't to perform more. It's to make the meaning easier to see."
       },
       {
         "chapter_number": 6,
         "page_map": "chapter_06",
         "title": "Where You Go From Here",
         "body": [
-          "You already know how to be warm to everyone. You know that very well.",
-          "What you're going to learn next is how to put levels into your warmth.",
-          "How to stay warm to everyone while showing a different temperature to one specific person.",
-          "This isn't about giving less warmth.",
-          "It's the opposite, actually.",
-          "It's about your real feelings getting across more accurately."
+          "You already know how to be warm. You know how to make people feel included.",
+          "What you're learning next is how to let one person feel the difference without pulling your warmth away from everyone else.",
+          "That doesn't mean becoming colder.",
+          "It means letting your words catch up with what your heart already knows.",
+          "You can stay kind to everyone and still be clear with the person who matters more."
         ],
-        "transition_note": "This isn't about giving less warmth. It's about your real feelings getting across more accurately."
+        "transition_note": "You don't need less warmth. You need a clearer way to show where your heart has gone deeper."
       },
       {
         "chapter_number": 7,
@@ -159,20 +161,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "The Non-Distinguisher",
-            "description": "No matter how well you treat them, it's \"that's just how they are.\" They never try to read the feeling that's deepened underneath."
+            "type_title": "The Person Who Assumes You're Like This With Everyone",
+            "description": "They enjoy your warmth, but they never stop to ask whether something has changed. You can end up trying harder instead of saying what the difference means."
           },
           {
-            "type_title": "The Suspicious One",
-            "description": "They often ask, \"you treat other people this well too, right?\" They trust your usual pattern more than they trust your actual feelings."
+            "type_title": "The Person Who Compares",
+            "description": "They keep asking whether you treat everyone else the same way. That doubt can make you shrink your feelings instead of explaining them."
           },
           {
-            "type_title": "The One Who Takes It for Granted",
-            "description": "Barely says thank you. They assume your warmth will always just be there."
+            "type_title": "The Person Who Gets Used to Your Kindness",
+            "description": "They can grow so familiar with your kindness that they stop noticing the choice behind it. Once that happens, the meaning can fade even while the care stays the same."
           },
           {
-            "type_title": "The One Who Ignores the Difference",
-            "description": "You're taking care of them more than usual. But this person just reads it as \"I guess they're in a good mood.\" They notice the signal, but they don't read what it means."
+            "type_title": "The Person Who Notices but Never Asks",
+            "description": "They can tell something feels different, but they don't bring it into the open. Then both of you wait, and the relationship stays stuck in guesswork."
           }
         ]
       },
@@ -180,7 +182,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs actually showed up pretty early. It's just that you brushed them off with \"that's just who I am.\"",
+        "intro_note": "These signs can show up early. You may just keep brushing them off as part of your usual warmth.",
         "signal_strength": [
           {
             "label": "They often ask, \"you treat other people this well too, right?\"",
@@ -199,7 +201,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "You already feel like this one person is special. They still see you as one of \"the people who's warm to everyone.\""
+        "core_signal": "You already feel the difference. They still don't know what the difference means."
       },
       {
         "chapter_number": 9,
@@ -207,20 +209,20 @@
         "title": "What a Healthy Relationship Looks Like for You",
         "checklist": [
           {
-            "title": "They notice the difference in your warmth.",
-            "description": "They feel it without you having to say it. That you're taking care of them more than usual."
+            "title": "You don't have to rely on hints.",
+            "description": "You can show the difference and say what it means without turning the moment into a big confession."
           },
           {
-            "title": "They don't compare.",
-            "description": "They don't ask \"do you do this with other people too.\" They just trust what they feel."
+            "title": "They ask instead of comparing.",
+            "description": "They stay curious about your feelings instead of measuring themselves against everyone else."
           },
           {
-            "title": "They don't take your kindness for granted.",
-            "description": "They say thank you for the small things too."
+            "title": "Your kindness isn't taken for granted.",
+            "description": "They notice the small things and understand that care still deserves care in return."
           },
           {
-            "title": "Being together makes you feel special too.",
-            "description": "This is the important one. Not just always giving the warmth. Being on the receiving end of it too, in this relationship."
+            "title": "You feel special too.",
+            "description": "The relationship doesn't leave you doing all the showing. Their feelings become clear to you as well."
           }
         ]
       },
@@ -229,25 +231,25 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You almost never fail to express warmth. The problem is, it's always the same temperature. So there's a type that doesn't work for you: someone who just takes your warmth as \"that's how they naturally are.\" They don't even try to distinguish it. So you keep showing the same temperature, and they never once notice.",
-          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who notices the subtle shifts in your warmth. Someone who says first, \"I know you've been treating me a little differently lately.\" With someone like this, you don't have to spell everything out.",
-          "same_pattern_repeats": "You might be drawn again to someone who compares and doubts you. You might also be drawn to someone who takes your warmth for granted. That can't be stopped. That's just who you are. The issue was never the attraction itself. It's how long you keep showing the exact same temperature afterward.",
-          "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment you want to do something different just for them. Right after that, there's an urge to lower it back down to your usual tone. That's the start.",
-          "try_this": "Normally you'd suppress that urge and go back to the same temperature. This time, don't. Just once. Go ahead and do that small thing you only do for them. And watch how they react. Someone who notices takes the difference naturally and gets closer. Someone who isn't right for you asks, \"do you do that with other people too?\" and tries to flatten it back to the same.",
-          "final_line": "That reaction is your answer."
+          "who_breaks_you": "A hard match for you is someone who enjoys your warmth but never gets curious about what makes it different. They keep receiving, while you keep hoping the meaning will become obvious on its own.",
+          "who_steadies_you": "A steadier partner notices small changes and asks about them. They don't expect you to prove anything, and they don't leave you guessing about their feelings either.",
+          "same_pattern_repeats": "You may still feel drawn to people who compare, doubt, or take kindness for granted. That attraction isn't the part you need to fight. The real shift happens when both of you stop guessing and start saying what the relationship means.",
+          "next_signs": "The signs may show up when you want to do something a little different for them, then pull back because you're worried it will feel too obvious. Notice that moment. It may be the point where your feelings need words, not another hint.",
+          "try_this": "Choose one small difference and name it. Say, \"I wanted to do this just for you,\" or \"You've started to matter to me in a different way.\" Don't use it to test them. Just let the meaning be clear. Then notice whether the two of you can talk more openly about what is changing.",
+          "final_line": "What matters isn't one reaction. It's whether the difference between kindness and deeper feeling becomes easier to talk about."
         }
       }
     ],
     "action_plan": {
-      "summary": "What you need isn't to get warmer. You need to create one different behavior for just one person.",
+      "summary": "You don't need to become warmer. You need one clearer way to show when your feelings have changed.",
       "action_items": [
-        "Do one small thing you only do for them. A check in, a habit, something you don't do for anyone else.",
-        "This time, don't lower it back down to your usual tone right after you feel the urge to make them special.",
-        "Watch whether they naturally notice the difference or try to flatten it back to the same."
+        "Do one small thing that feels personal, then say why you chose it for them.",
+        "Use one clear sentence instead of hoping the difference will explain itself.",
+        "Notice whether both of you become more open about what the relationship means."
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to be warm to everyone. The next report covers why your real feelings kept getting mistaken for ordinary kindness, and how to show the distinction more clearly.",
+      "message": "You've spent a long time being warm to everyone. This report looked at why deeper feelings could still be mistaken for ordinary kindness, and how one clear difference can help the relationship understand what changed.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }
