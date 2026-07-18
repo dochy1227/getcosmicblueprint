@@ -42,10 +42,8 @@
 // 또치님이 해야 할 일 (Netlify 환경변수 등록, 아직 안 하셨다면 필수):
 //   1. Netlify 대시보드 > Site settings > Environment variables에서
 //      INTERNAL_PDF_SECRET 이라는 이름으로 새 환경변수 추가.
-//   2. 값은 아무 긴 임의 문자열이면 됨. 예시로 아래 값을 그대로 써도 됨:
-//        LCBT66UiBY3ASRx8hY3gKtL7oNgC6sM2MWm0_0PIufc
-//      (이 값은 이번 세션에서 무작위로 생성한 것이며, 원하면 다른 값으로
-//       바꿔도 무방함. 다만 creem-webhook.js 쪽 환경변수와 반드시 동일해야 함.)
+//   2. 값은 아무 긴 임의 문자열이면 됨(예: openssl rand -base64 32 등으로 생성).
+//      다만 creem-webhook.js 쪽 환경변수와 반드시 동일해야 함.
 //   3. 이 함수(generate-pdf)와 creem-webhook.js 양쪽 모두에 같은 이름
 //      (INTERNAL_PDF_SECRET), 같은 값으로 등록해야 정상 작동함.
 //
