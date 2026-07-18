@@ -88,8 +88,8 @@
         "items": [
           {
             "belief": "I'm just naturally comfortable in the leader role.",
-            "truth": "No. You're not comfortable being the leader. You step up because you're afraid things will get worse if no one does. Leadership is a trait. This compulsion is a learned sense of responsibility.",
-            "truth_short": "You don't only lead because it feels natural. You lead because it feels unsafe when no one else does."
+            "truth": "Maybe the leader role does feel natural to you. But sometimes you step up because waiting feels risky, especially when no one else seems ready to move. That sense of responsibility can make leading feel less like a choice.",
+            "truth_short": "Leading may come naturally, but responsibility can make it feel like you have no other choice."
           },
           {
             "belief": "If I push harder, everything gets solved.",
@@ -98,8 +98,8 @@
           },
           {
             "belief": "If I show any weakness, trust will break.",
-            "truth": "No. It's actually the opposite. People end up trusting someone less, eventually, if that person never once shows a crack. Real trust comes from the experience of someone staying close even when you're falling apart.",
-            "truth_short": "Real trust grows when someone stays close even when you're not solid."
+            "truth": "Showing a difficult moment doesn't erase trust. It gives someone a chance to stay close when you don't have everything handled. That experience can make trust feel more real, not less.",
+            "truth_short": "Trust can deepen when someone stays close even when you don't have everything handled."
           }
         ]
       },
@@ -133,7 +133,7 @@
         "body": [
           "What you need isn't to get more decisive. You're already plenty decisive.",
           "What you actually need is to occasionally not decide. To say, \"I don't know.\"",
-          "That one sentence will probably be the hardest thing you ever say.",
+          "That one sentence may feel much harder than it sounds.",
           "But it's what draws people closer. Not when you hand over the perfect answer, but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
         ],
         "action_sentence": "But it's what draws people closer. Not when you hand over the perfect answer, but when there isn't one, and someone stays beside you anyway. That's when people actually see you."
@@ -226,12 +226,12 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You almost never fail to solve a problem. The issue is that it becomes too natural. Too much of a given. So there's a type that doesn't work for you: someone who just accepts your competence as the default. They think \"this person always handles it\" and leave it there. When you're the one shaking, they can't even read the sign.",
+          "who_breaks_you": "You solve problems so naturally that your effort can start to look like the default. That's where a difficult match can form: someone who accepts your competence without noticing what it costs you. They may assume you'll always handle things and miss the moments when you need support too.",
           "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who notices when you're different from usual. When you put off a decision or go quiet, they ask first. \"you seem a bit off today, is something going on?\" Around someone like this, you don't have to keep performing solidity.",
-          "same_pattern_repeats": "You might be drawn again to someone who just follows your decisions. You might also be drawn to someone who only reaches for you during a crisis. That can't be stopped. That's just who you are. The issue was never the attraction itself. It's how long you end up carrying everything alone afterward.",
+          "same_pattern_repeats": "You may still feel drawn to someone who trusts your decisions or reaches for you during a crisis. That attraction isn't the whole problem. What matters is whether responsibility begins to move both ways, or keeps settling on your side.",
           "next_signs": "Remember the signs from Chapter 8? They usually took months to show up. This time they'll show up faster, smaller. The moment you pause for half a second in front of a small problem you'd normally have already solved. That's the start.",
-          "try_this": "Normally you'd already be stepping in to fix it. This time, don't. Just once. When a problem comes up, hold still. And watch how they react. Someone who's with you will step up and try to work through it together. Someone who isn't will just keep waiting for you to step in again.",
-          "final_line": "That reaction is your answer."
+          "try_this": "Normally you'd already be stepping in to fix it. This time, say what feels difficult and ask how the two of you can handle it together. Notice what happens across more than one moment. Do they join the conversation, take some responsibility, and follow through? You don't need to stop being capable. You need room to see whether their care has weight too.",
+          "final_line": "What matters is whether shared effort becomes part of the relationship, not just something you ask for once."
         }
       }
     ],
@@ -239,7 +239,7 @@
       "summary": "You already know how to step up, solve things, and carry responsibility. What's left is learning to pause long enough to see whether someone else can carry part of it with you.",
       "action_items": [
         "This week, say \"I don't know\" once instead of immediately giving an answer.",
-        "When a small problem appears, pause before fixing it and watch whether the other person steps in too.",
+        "When a small problem appears, ask the other person to work through one part of it with you.",
         "If you feel off, say it plainly once instead of performing steadiness."
       ]
     },

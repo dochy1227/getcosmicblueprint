@@ -317,7 +317,7 @@ const ARCHETYPE_DISPLAY_NAME = {
   "계수": "THE MIST"
 };
 
-const FREE_REPORT_CTA = "Your free result shows the pattern. Your Full Blueprint explains where it comes from, who tends to trigger it, what to notice early, and how to respond differently next time.";
+const FREE_REPORT_CTA = "Your Full Blueprint goes further. It's where you'll discover why you love this way, and what patterns may keep repeating if nothing changes.";
 
 // ============================================================
 // 외부 응답용 public_key / orientation_display 변환
@@ -340,182 +340,182 @@ function buildPublicIdentity(elementKey, orientation) {
 const FREE_REPORT_V2 = {
   "갑목_외향": {
     hook: "The moment I feel like a passenger in my own relationship, I'm already halfway out the door.",
-    body: "Okay, can I tell you something?\n\nYou were never meant to sit quietly in the backseat of your own life.\n\nYou need to feel like you're building something with someone—not simply following along because keeping the peace feels easier.\n\nThe moment you stop recognizing yourself in a relationship, your heart starts packing its bags long before your body ever leaves.\n\nPeople call you independent.\n\nSometimes they even say you're hard to commit to.",
+    body: "You need to feel that a relationship is moving because both people are shaping it together.\n\nFollowing along just to avoid conflict may work for a while, but it slowly makes you feel absent from your own life.\n\nOnce that happens, your heart begins to detach before anyone around you notices.\n\nYour independence is easy to see. What is harder to see is how quickly you lose connection when there is no shared direction.",
     questions: [
-      "Why do I lose interest the moment I feel like I'm no longer growing?",
-      "Why do people mistake my need for partnership as a need for control?",
-      "In my next relationship, how can I lead without feeling responsible for everything?"
+          "What changes inside me when a relationship stops feeling mutual?",
+          "When does leadership become carrying too much alone?",
+          "How could I build a partnership where direction is shared rather than assigned?"
     ]
   },
   "갑목_내향": {
     hook: "I fall in love with who you could be. I keep forgetting that's not who you are.",
-    body: "Oh, sweetheart.\n\nYou don't just see people as they are.\n\nYou see who they could become if someone finally understood them, stayed with them, and believed in them long enough.\n\nAnd somehow, that someone always ends up being you.\n\nThe hard part?\n\nYou keep falling in love with potential and calling it reality.\n\nThen one day, you look around and realize you've been carrying a relationship that only existed in your imagination.",
+    body: "You notice possibility before most people do.\n\nWhen someone is struggling, you can picture the person they might become with enough time, trust, and support.\n\nThat vision can feel so real that you begin relating to the future version of them instead of the person standing in front of you.\n\nBy the time you recognize the difference, you may already be carrying a relationship that never fully existed outside your hope.",
     questions: [
-      "Why do I always believe in who someone could become instead of who they are today?",
-      "Why do people think I expect too much when I'm actually trying to understand them?",
-      "In my next relationship, how can I love someone deeply without becoming responsible for their growth?"
+          "Which part of a person do I fall for first, who they are or who they might become?",
+          "How do I know when belief has turned into responsibility?",
+          "What would it look like to love someone without managing their growth?"
     ]
   },
   "을목_외향": {
     hook: "I can see exactly how good we could be. I just need you to try.",
-    body: "Oh, I know.\n\nYou've been called \"too hopeful\" more than once.\n\nBut that's because you don't walk into relationships looking for what already exists.\n\nYou walk in looking for what two people could create together.\n\nYou notice tiny changes.\n\nTiny efforts.\n\nTiny signs that someone is trying.\n\nYou can forgive almost anything except indifference.\n\nThe moment you realize you're the only one watering the garden, something inside you begins to break.",
+    body: "You enter relationships thinking about what two people could build together.\n\nSmall efforts matter to you because they show that the future is not yours to create alone.\n\nYou can forgive mistakes, uncertainty, and slow progress. What wears you down is indifference.\n\nThe turning point comes when you realize you are the only person still investing in what the relationship could become.",
     questions: [
-      "Why do I keep believing in relationships that haven't fully become real yet?",
-      "Why do people think I ask for too much when I'm only asking them to meet me halfway?",
-      "In my next relationship, how can I stop nurturing a future that only I can see?"
+          "What makes possibility feel more convincing to me than the present?",
+          "Which signs tell me that effort is truly being shared?",
+          "How can I stop nurturing a future that exists only in my imagination?"
     ]
   },
   "을목_내향": {
     hook: "I've been so busy becoming you that I forgot who I was.",
-    body: "Oh, honey.\n\nYou don't love people from a distance.\n\nYou slowly move closer and closer until their happiness starts feeling more important than your own.\n\nYou notice what they need before they even say it.\n\nYou adjust.\n\nYou soften.\n\nYou become easier to love.\n\nAnd one day, you wake up wondering why nobody seems to know the real you anymore.",
+    body: "Closeness changes you gradually.\n\nYou pick up what someone needs, adjust your tone, and make yourself easier to live with before you fully notice it happening.\n\nAt first, each change feels small and reasonable.\n\nLater, you may realize that the relationship knows the adapted version of you better than the person you were before it began.",
     questions: [
-      "Why do I keep changing myself without even realizing it?",
-      "Why do people think I'm easygoing when I spend so much energy adapting?",
-      "In my next relationship, how can I stay connected without disappearing into someone else's world?"
+          "Which parts of myself change first when I become close to someone?",
+          "What do I keep adjusting even when nobody asks me to?",
+          "How can I stay connected without disappearing into someone else's world?"
     ]
   },
   "병화_외향": {
     hook: "I light up every room I walk into. I just wish someone would notice when I start to dim.",
-    body: "Oh, sweetheart.\n\nEveryone knows how to find you when you're shining.\n\nYou're the person who makes plans happen, keeps the energy alive, and somehow turns ordinary moments into memories.\n\nPeople think confidence comes naturally to you.\n\nThe hardest thing for you isn't giving warmth.\n\nIt's admitting that sometimes you need warmth too.",
+    body: "You are often the person who brings movement and warmth into a relationship.\n\nYou make plans happen, keep conversations alive, and turn ordinary time together into something memorable.\n\nBecause that energy looks natural, people may not notice when it starts costing you more than usual.\n\nReceiving care can feel harder than giving it, especially when everyone has already decided that you are the strong one.",
     questions: [
-      "Why do I always become the source of energy in every relationship?",
-      "Why do people assume I'm okay even when I'm exhausted?",
-      "In my next relationship, how can I let someone take care of me without feeling guilty?"
+          "What happens when I no longer have the energy to keep everything bright?",
+          "Who notices the difference before I have to explain it?",
+          "How could I receive care without feeling that I have failed someone?"
     ]
   },
   "병화_내향": {
     hook: "I thought I was still giving love. I looked up and realized I was just lost.",
-    body: "You're the kind of person who simply can't walk past someone who's struggling.\n\nOther people's pain catches your attention before your own does.\n\nYou want to hold things together.\n\nYou want to help.\n\nYou want everyone to make it through safely.\n\nAnd somehow, that means you're always the last person to realize how exhausted you've become.\n\nPeople remember you as bright. Strong. Reliable.\n\nBut deep down, there are moments when even you wonder whether you're truly as strong as everyone thinks—or whether, somewhere along the way, you gradually lost track of who you were before you started holding everyone else together.\n\nMaybe you've asked yourself questions like these:",
+    body: "Other people's pain catches your attention quickly.\n\nYou step in, hold things together, and try to make sure everyone gets through the difficult part safely.\n\nWhile you are focused on helping, your own exhaustion can remain unnoticed until it has already become heavy.\n\nPeople remember your strength and reliability. You may remember the moment you realized that caring for everyone else had made it harder to recognize yourself.",
     questions: [
-      "Why am I always the one who gets tired first?",
-      "Why do people rarely notice when I'm struggling?",
-      "What would I need to do differently for my next relationship to feel healthier?"
+          "At what point does helping someone begin to erase my own limits?",
+          "What signs of exhaustion do I usually notice too late?",
+          "What would a healthier kind of care look like in my next relationship?"
     ]
   },
   "정화_외향": {
-    hook: "I don't open easily. But once I do, I'll burn everything down to love you. That's not romance. That's a warning.",
-    body: "Can I be honest with you?\n\nPeople think you're quiet at first because you're mysterious.\n\nThat's not really it.\n\nYou're careful.\n\nYou watch.\n\nYou wait.\n\nYou need to know someone will handle your heart gently before you hand it over.\n\nAnd once you finally open up?\n\nYou love with an intensity that surprises even you.\n\nThe problem is, you don't really know how to do anything halfway.\n\nYou either keep your light completely sealed off, or you let someone into every corner of it.",
+    hook: "I don't open easily. But once I do, I love with everything I have. That is not always romantic. Sometimes it is a warning.",
+    body: "Trust takes time for you.\n\nBefore opening up, you watch how someone handles small disclosures, difficult moments, and the parts of you that need care.\n\nOnce you feel safe, your restraint can change into complete emotional investment.\n\nThe risk is not that you feel too little. It is that your heart often moves from guarded to fully exposed without much space in between.",
     questions: [
-      "Why does it take me so long to trust someone, yet I love so deeply once I do?",
-      "Why do people mistake my caution for emotional distance?",
-      "In my next relationship, how can I open up without giving away all of myself at once?"
+          "What do I need to see before trust begins to feel safe?",
+          "Why is gradual openness so difficult once I decide to let someone in?",
+          "How can I love deeply without giving away every part of myself at once?"
     ]
   },
   "정화_내향": {
     hook: "I don't leave loud. I leave after I've already grieved the relationship while I was still in it.",
-    body: "Oh, honey.\n\nPeople think breakups happen all at once.\n\nBut for you?\n\nThey happen quietly.\n\nSlowly.\n\nLong before anyone notices.\n\nYou keep trying.\n\nYou keep understanding.\n\nYou keep protecting what once felt precious.\n\nAnd somewhere along the way, you begin mourning a relationship that technically hasn't ended yet.\n\nThe truth is, by the time you finally walk away, you've already cried the tears, asked the questions, and said goodbye a hundred times inside your own heart.",
+    body: "For you, a breakup often begins before the relationship officially ends.\n\nYou continue trying, explaining things to yourself, and protecting what once felt valuable.\n\nOver time, sadness becomes part of the relationship itself.\n\nWhen you finally leave, the decision may look sudden to the other person. For you, it is the last step in a goodbye that has been unfolding for a long time.",
     questions: [
-      "Why do I stay long after I know something has changed?",
-      "Why do people think my decision to leave came out of nowhere?",
-      "In my next relationship, how can I speak up before my sadness turns into silence?"
+          "When did I first notice that I was grieving instead of repairing?",
+          "What kept me in the relationship after that moment?",
+          "How can I speak before sadness turns into a private decision?"
     ]
   },
   "무토_외향": {
     hook: "My love language is showing up. Every single time. Without being asked. Without being thanked.",
-    body: "Sweetheart, you don't really believe love is something people talk about.\n\nYou believe it's something people do.\n\nYou show up.\n\nYou remember.\n\nYou carry things that nobody asked you to carry because that's what love has always meant to you.\n\nAnd the strange thing is, you rarely keep score.\n\nUntil one day, you realize you've been standing in the same place for a very long time while everyone else kept moving.\n\nPeople admire how dependable you are.\n\nBut very few people ever ask what it costs you to be that dependable.",
+    body: "To you, love becomes believable through action.\n\nYou keep promises, remember what matters, and take responsibility for things that help the relationship stay steady.\n\nYou rarely measure who has done more.\n\nThat changes when you realize you have been maintaining the same ground while the other person has stopped moving toward you.\n\nYour dependability is easy to appreciate. Its cost is much easier to overlook.",
     questions: [
-      "Why do I always become the person others rely on?",
-      "Why do people notice what I do only after I stop doing it?",
-      "In my next relationship, how can I support someone without carrying everything alone?"
+          "Which responsibilities do I take on before anyone asks?",
+          "How do I recognize the difference between support and carrying?",
+          "What would shared effort look like in my next relationship?"
     ]
   },
   "무토_내향": {
     hook: "I feel everything. I just never let it become your problem.",
-    body: "Oh, sweetheart.\n\nPeople think you're calm because you don't react to everything.\n\nBut that's not the truth.\n\nYou feel deeply.\n\nYou simply learned, a long time ago, that not every burden needs to be handed to someone else.\n\nSo you carry it.\n\nQuietly.\n\nGracefully.\n\nAnd most of the time, nobody even notices.\n\nThe difficult part is that you've become so good at being strong that people forget you're human too.\n\nYou listen.\n\nYou support.\n\nYou stay.\n\nEven when your own heart feels heavy.\n\nSometimes you wish someone would notice your silence before you have to explain your pain.",
+    body: "You often process difficult feelings on your own.\n\nNot reacting immediately does not mean that nothing has affected you. It usually means you are trying to understand the weight of it before sharing it with someone else.\n\nOver time, this can make your strength look effortless.\n\nYou continue listening, supporting, and staying present even when your own heart feels heavy. The people closest to you may not realize that silence is sometimes the only sign you give them.",
     questions: [
-      "Why do I always choose to handle things alone?",
-      "Why do people assume I'm fine just because I'm not complaining?",
-      "In my next relationship, how can I share my struggles without feeling like a burden?"
+          "What makes sharing pain feel heavier than carrying it alone?",
+          "Which part of my silence do I wish someone would notice?",
+          "How could I ask for support before I reach my limit?"
     ]
   },
   "기토_외향": {
     hook: "I don't know how to watch someone I love struggle.",
-    body: "You're not someone who can just sit back and watch someone you love struggle.\n\nThe second you sense they're hurting, you're already trying to fix it—sometimes before they even ask.\n\nYou end up taking on problems that were never really yours to solve in the first place.\n\nIt's not about control. You just can't stand watching someone you care about suffer.\n\nAnd the thing is, people get used to it. They start expecting it without really thanking you for it anymore.",
+    body: "When someone you love is hurting, standing back rarely feels possible.\n\nYou notice the problem quickly and begin looking for ways to make it easier, often before they have asked for help.\n\nThat instinct can pull you into responsibilities that were never fully yours.\n\nWhat begins as care can slowly become an expectation, especially when the other person stops recognizing how much you are carrying.",
     questions: [
-      "Why do I feel responsible for the happiness of the people I love?",
-      "Why do people sometimes depend on me more than they truly connect with me?",
-      "In my next relationship, how can I help without becoming someone's entire support system?"
+          "What makes another person's pain feel like something I must solve?",
+          "When does helping become taking over?",
+          "How can I care without becoming someone's entire support system?"
     ]
   },
   "기토_내향": {
     hook: "I know exactly what everyone around me needs. I just have no idea what I need.",
-    body: "Honey, you're not the person who makes big romantic gestures.\n\nYou're the person who remembers how someone takes their coffee, notices when they've gone a little quiet, and takes care of small things before they ever become big ones.\n\nYou don't ask for credit.\n\nYou just want things to feel steady.\n\nSo you keep doing the work nobody sees.\n\nYou smooth things over before they turn into arguments.\n\nYou remember the date they were nervous about.\n\nYou make space for their bad days without turning it into a whole conversation.\n\nAnd somehow, the relationship just feels calm. Solid. Like nothing's wrong.\n\nPeople assume that means everything is fine.\n\nThey rarely ask what it takes to keep it that way.\n\nLately, you've even started to wonder if you'd know what to say—if someone actually asked what you needed.",
+    body: "Your care often appears in details that are easy to miss.\n\nYou remember how someone takes their coffee, notice a shift in their mood, and handle small problems before they become larger ones.\n\nYou do not need praise for every effort. You want the relationship to feel steady.\n\nThat steadiness takes work, even when nobody sees it.\n\nOver time, people may assume everything is fine simply because nothing looks broken. You may also begin to wonder what you would say if someone finally asked what you needed.",
     questions: [
-      "Why do I do so much of the work that holds a relationship together without ever naming it?",
-      "Why do people assume everything is fine just because nothing looks broken?",
-      "In my next relationship, how can I let my efforts be seen without having to announce them?"
+          "Which invisible tasks do I keep taking responsibility for?",
+          "Why does calm make my effort so easy to overlook?",
+          "What would it take for me to name a need before someone has to guess?"
     ]
   },
   "경금_외향": {
     hook: "I'm not hard to love. I'm hard to deceive. There's a difference.",
-    body: "Sweetheart, people often mistake your standards for distance.\n\nYou just pay attention.\n\nYou notice inconsistencies.\n\nYou remember things people thought you'd forget.\n\nAnd the moment words stop matching actions, something inside you shuts down.\n\nYou don't expect perfection.\n\nYou expect honesty.\n\nThe problem is, many people prefer being liked over being truthful.\n\nYou'd rather hear an uncomfortable truth than a beautiful lie.\n\nAnd maybe that's why you've been called intimidating by people who were never prepared to be fully seen.",
+    body: "You pay close attention to whether words and actions continue to match.\n\nSmall inconsistencies stay with you because they change how safe the relationship feels.\n\nYou do not need perfection. You need honesty that remains present even when the truth is uncomfortable.\n\nThis can feel intense to people who would rather preserve a good impression than explain what is really happening.\n\nYour standards are not only about what someone says. They are about whether you can trust the pattern behind it.",
     questions: [
-      "Why do I notice small inconsistencies that other people seem to ignore?",
-      "Why do people mistake my honesty for harshness or distance?",
-      "In my next relationship, how can I trust someone without ignoring what I already know?"
+          "Which inconsistencies change my trust most quickly?",
+          "What makes honesty feel more important to me than reassurance?",
+          "How can I stay open without ignoring what I have already noticed?"
     ]
   },
   "경금_내향": {
     hook: "I have never once left a relationship without knowing exactly where it broke.",
-    body: "Honey, people think you move on because you're strong.\n\nBut that's not really true.\n\nYou move on because you've already spent months trying to understand what happened.\n\nYou replay conversations.\n\nYou notice the moment trust shifted.\n\nYou remember the sentence that changed everything.\n\nAnd by the time you finally leave, you know exactly where the crack first appeared.\n\nThe difficult part?\n\nYou rarely give up too early.\n\nYou stay.\n\nYou analyze.\n\nYou try to be fair.\n\nBut once you've reached your conclusion, there's almost nothing anyone can do to pull you back.",
+    body: "Leaving is rarely the first decision you make.\n\nBefore you reach that point, you revisit conversations, track where trust changed, and try to understand whether the relationship can still be repaired.\n\nYou stay longer than people may realize because you want your conclusion to feel fair.\n\nOnce you know where the break began and why it continued, returning becomes difficult.\n\nTo someone else, your departure may look sudden. For you, it follows a long period of observation and thought.",
     questions: [
-      "Why do I remember the exact moment something changed in a relationship?",
-      "Why do people think my decision to leave was sudden when I've been thinking about it for so long?",
-      "In my next relationship, how can I speak up before certainty turns into distance?"
+          "Which moment usually marks the beginning of the end for me?",
+          "Why do I need certainty before I leave?",
+          "How can I speak while there is still room to repair what changed?"
     ]
   },
   "신금_외향": {
     hook: "Almost isn't enough. I'm sorry it took you so long to figure that out.",
-    body: "Honey, can I tell you what actually breaks your heart?\n\nIt's not when someone leaves.\n\nIt's when they stop being careful with you.\n\nThe forgotten promises.\n\nThe small jokes that go a little too far.\n\nThe feeling that they loved having you around more than they loved understanding who you are.\n\nPeople think you're sensitive.\n\nWhen you give someone your trust, you're handing them something precious.\n\nOf course it hurts when they treat it like something ordinary.\n\nYou've never wanted grand gestures.\n\nYou just wanted to feel chosen on purpose, not simply kept around because it was convenient.",
+    body: "What hurts most is often not the ending itself.\n\nIt is the moment someone stops treating your trust with care.\n\nA forgotten promise, a joke that crosses a line, or a pattern of convenience can stay with you because each one changes what the relationship seems to mean.\n\nYou have never needed constant grand gestures.\n\nYou want to know that being chosen is still intentional, not simply the easiest option available.",
     questions: [
-      "Why do small moments of carelessness stay with me for so long?",
-      "Why do people mistake my need to be valued for being difficult?",
-      "In my next relationship, how can I ask to be treated gently without apologizing for it?"
+          "Which small moments make me feel least valued?",
+          "What does careful love look like in everyday behavior?",
+          "How can I ask for gentleness without feeling that I am asking for too much?"
     ]
   },
   "신금_내향": {
     hook: "I don't get over things quickly. I get over them completely.",
-    body: "Honey, can I be honest? You're not the type who bounces back fast.\n\nWhen something ends, you don't pretend it's fine three days later just because everyone else has moved on.\n\nYou go through every layer of it—the anger, the missing them, the relief, sometimes all in the same hour.\n\nYou replay things.\n\nYou let yourself actually feel it instead of rushing past it.\n\nThe thing is, you do all of this alone.\n\nYou don't really let anyone sit with you in the middle of it.\n\nPeople only see you again once you've already come out the other side—calm, clear, done.\n\nThey never see what it took to get there.",
+    body: "When something ends, you need time to experience every part of it.\n\nAnger, longing, relief, and confusion may arrive together rather than in a neat order.\n\nYou replay what happened because understanding the whole experience matters more than appearing recovered.\n\nMost of this processing happens alone.\n\nBy the time people see you again, you may already look calm and certain. They rarely witness the unfinished middle where you were still trying to make sense of it.",
     questions: [
-      "Why do I need to fully process everything before I can really move on?",
-      "Why do people think I bounce back quickly when really I just process alone, out of sight?",
-      "In my next relationship, how can I let someone be there with me while I'm still in it—not just after?"
+          "What do I need to understand before I can truly move forward?",
+          "Why is it easier to process pain alone than let someone sit beside me?",
+          "How could I allow support before the story feels complete?"
     ]
   },
   "임수_외향": {
-    hook: "I am not commitment-phobic. I am depth-seeking.",
-    body: "Honey, people think you're complicated.\n\nYou're just bigger on the inside than most people expect.\n\nYou change.\n\nYou grow.\n\nYou wake up with new questions about yourself all the time.\n\nAnd love, for you, has never been about finding someone who understands everything immediately.\n\nIt's about finding someone curious enough to stay.\n\nSomeone who doesn't panic when you evolve.\n\nSomeone who asks, \"Tell me what's changing,\" instead of, \"Why aren't you the same person I met?\"\n\nMaybe that's why people sometimes call you hard to commit to—when really, you'd commit completely, if only someone could keep up with how much you keep becoming.",
+    hook: "I am not commitment phobic. I am depth seeking.",
+    body: "You continue changing, even inside relationships that already feel familiar.\n\nNew questions, interests, and versions of yourself appear over time.\n\nFor you, lasting love is not about being understood perfectly from the beginning.\n\nIt is about being with someone who remains curious as you grow and who can respond to change without treating it as rejection.\n\nCommitment becomes possible when the relationship has enough depth to hold more than one version of you.",
     questions: [
-      "Why do I keep changing in ways that even surprise me?",
-      "Why do people mistake my complexity for inconsistency?",
-      "In my next relationship, how can I keep growing without feeling guilty for changing?"
+          "What kind of change makes me feel most alive?",
+          "How do I know whether someone is curious about who I am becoming?",
+          "What would commitment look like if growth were part of it rather than a threat to it?"
     ]
   },
   "임수_내향": {
     hook: "I don't fear love. I fear losing myself inside it.",
-    body: "Honey, people think you're afraid of commitment.\n\nThat's never been the problem.\n\nYou love deeply.\n\nYou stay longer than most people realize.\n\nYou try to understand.\n\nYou try to adapt.\n\nThe scary part isn't loving someone.\n\nIt's looking in the mirror one day and realizing you've slowly stopped becoming yourself.\n\nMaybe you've done this before.\n\nYou start listening to their needs more than your own.\n\nYou stop bringing up the dreams that are hard to explain.\n\nYou become easier to live with, but harder to recognize.\n\nAnd somewhere in there, something inside you starts to pull away before anything has actually gone wrong.",
+    body: "You can love someone deeply and still become uneasy about what the relationship is changing inside you.\n\nAdapting begins with small choices.\n\nYou listen to their needs first, set aside dreams that are difficult to explain, and become easier to live with.\n\nNothing may appear obviously wrong.\n\nThe distance begins when you can no longer recognize which parts of your life still belong to you and which parts were shaped only to keep the relationship comfortable.",
     questions: [
-      "Why do I sometimes lose sight of myself while trying to love someone well?",
-      "Why do people mistake my adaptability for having no needs of my own?",
-      "In my next relationship, how can I stay connected without abandoning the parts of myself that matter most?"
+          "Which parts of myself disappear first when I begin adapting?",
+          "What do I stop saying because it feels difficult to explain?",
+          "How can closeness grow without requiring me to become less recognizable to myself?"
     ]
   },
   "계수_외향": {
     hook: "I don't just love you. I become a little bit of you.",
-    body: "Okay, can I tell you something? You don't really love people from a careful distance.\n\nThe moment you care about someone, their music starts showing up in your playlist.\n\nTheir opinions start sneaking into your sentences.\n\nYou catch yourself liking the things they like, saying things the way they'd say them.\n\nIt's not that you're losing yourself on purpose.\n\nYou just love by absorbing—taking in a little of whoever you're close to until it's hard to tell where they end and you begin.\n\nPeople call it adaptable. Easy to be around.\n\nBut some days you catch your own reflection and pause for a second, like you're checking who's actually in there.",
+    body: "Closeness leaves visible traces on you.\n\nSomeone's music appears in your playlist, their expressions enter your speech, and their preferences begin to feel familiar.\n\nThis does not happen because you intend to erase yourself.\n\nYou connect by taking in pieces of the people you care about.\n\nThe difficulty appears when adaptation becomes so natural that you can no longer tell which choices are yours and which ones arrived through the relationship.",
     questions: [
-      "Why do I start picking up someone's habits and opinions without even meaning to?",
-      "Why do people think I'm just easy to be around, when really I'm quietly becoming them?",
-      "In my next relationship, how can I stay close to someone without losing track of where I end and they begin?"
+          "Which habits do I absorb most easily from someone I love?",
+          "When does connection begin to change my sense of identity?",
+          "How can I remain close while keeping track of what is still mine?"
     ]
   },
   "계수_내향": {
     hook: "I have never once been in a relationship without wondering whether I am too much to be loved or too little to be worth staying for.",
-    body: "Honey, people think you're patient.\n\nAnd you are.\n\nBut what they don't see is how much hope that patience is carrying.\n\nYou wait.\n\nYou understand.\n\nYou give people time to grow into the love you already know how to give.\n\nYou've always believed that if you stayed gentle long enough, someone would eventually notice the depth of what you were offering.\n\nThe painful part is this: sometimes you keep waiting long after you've stopped feeling seen.\n\nYou tell yourself they're trying.\n\nYou tell yourself tomorrow will be different.\n\nYou keep choosing understanding over disappointment.\n\nUntil one day, you realize you've been standing in the same emotional place, still hoping someone would walk toward you, and wondering whether you were asking for too much, or simply easy enough to leave waiting.",
+    body: "Your patience carries more hope than people may realize.\n\nYou give someone time to understand what you feel and to grow toward the kind of love you are already prepared to offer.\n\nWaiting begins to hurt when you no longer feel seen but continue believing that tomorrow may be different.\n\nYou choose understanding again and again, even when your own needs remain unnamed.\n\nEventually, the question changes. You stop wondering when they will move toward you and begin wondering whether you asked for too much or made waiting too easy for them.",
     questions: [
-      "Why do I keep waiting for people to understand what I never clearly ask for?",
-      "Why do I choose patience even when my needs remain unseen?",
-      "In my next relationship, how can I express my heart before silence turns into resignation?"
+          "What keeps me waiting after I no longer feel understood?",
+          "Which needs do I expect someone to recognize without hearing them clearly?",
+          "How can I speak before patience turns into resignation?"
     ]
   }
 };

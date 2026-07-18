@@ -82,6 +82,21 @@ exports.handler = async (event) => {
   const ch2 = chapters[1] || {};
   const ch4 = chapters[3] || {};
 
+  // 2026.07.18 보안 수정: 02장 발췌를 "화면에서만 블러 처리"하던 방식은
+  // API 응답 자체에 5문단 전문이 평문으로 그대로 실려 있어, 네트워크 탭만
+  // 열어보면 결제 없이 잠긴 챕터 전체를 읽을 수 있는 구멍이었음(또치님 발견).
+  // 문단 수 제한(slice(0,5))만으로는 "보내는 만큼은 그대로 읽힌다"는
+  // 근본 문제가 남으므로, 각 문단 자체를 앞부분 단어 수 기준으로 잘라서
+  // 서버가 애초에 완성된 문장을 내려주지 않도록 함.
+  const PREVIEW_WORD_LIMIT = 14; // 문단당 노출 단어 수 (조정 가능)
+
+  function truncateWords(text, maxWords) {
+    if (typeof text !== 'string') return '';
+    const words = text.trim().split(/\s+/);
+    if (words.length <= maxWords) return text; // 원래 짧은 문단은 그대로(과도한 잘림 방지)
+    return words.slice(0, maxWords).join(' ') + '…';
+  }
+
   const preview = {
     // 1. 아키타입 배지
     archetype_name: (data.identity && data.identity.archetype_name) || null,
@@ -102,11 +117,15 @@ exports.handler = async (event) => {
     // 3. 핵심 요약 (기존 필드 그대로 재사용 — 신규 카피 없음)
     short_summary: (data.free_result && data.free_result.short_summary) || [],
 
-    // 4. 02장 발췌 — 최대 5문단 제한 (흐림 잠금 처리는 프론트에서)
+    // 4. 02장 발췌 — 최대 5문단, 문단마다 앞부분만 전송 (서버 단계에서 자름)
+    //    화면의 흐림(블러)은 이제 "이미 다 받은 텍스트를 가리는 장식"이 아니라
+    //    "실제로 일부만 전송된 데이터"를 그대로 보여주는 정직한 처리가 됨.
     chapter2: {
       title: ch2.title || null,
       pattern_name: ch2.pattern_name || null,
-      body: Array.isArray(ch2.body) ? ch2.body.slice(0, 5) : [],
+      body: Array.isArray(ch2.body)
+        ? ch2.body.slice(0, 5).map((p) => truncateWords(p, PREVIEW_WORD_LIMIT))
+        : [],
     },
 
     // 5. GIVE/GET 차트

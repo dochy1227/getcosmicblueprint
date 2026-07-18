@@ -36,13 +36,13 @@
   "free_result": {
     "short_summary": [
       "You have a gift for making people comfortable.",
-      "That emptiness you felt wasn't from not being loved enough. It was from putting yourself last for too long.",
-      "That reaction is your answer."
+      "The emptiness was not only about receiving too little love. It also came from leaving your own needs out for too long.",
+      "What changes love for you is staying visible while care moves in both directions."
     ]
   },
   "full_report": {
     "headline": "THE VINE",
-    "intro": "You have a gift for making people comfortable. Even people who just met you start talking more around you. They say they feel at ease, that there's no pressure with you. But that ease can turn into one-sided effort.",
+    "intro": "You have a gift for making people comfortable. Even people who just met you start talking more around you. They say they feel at ease, that there's no pressure with you. But that ease can turn into uneven effort.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -51,15 +51,13 @@
         "subtitle": null,
         "body": [
           "You have a gift for making people comfortable.",
-          "Even people who just met you start talking more around you. They say they feel at ease, that there's no pressure with you.",
-          "What people often miss is this.",
-          "You think of it as just your personality, but it actually takes a lot of effort.",
-          "You watch what they like.",
-          "You watch what they don't want to hear.",
-          "You watch how close is comfortable.",
-          "And at some point, you've become exactly the person they need.",
-          "The problem comes after.",
-          "You've become the right fit for them, but who you actually are starts to blur."
+          "Even people who just met you may start talking more around you. They feel at ease because you notice what helps the connection flow.",
+          "What people may not see is how much attention that takes.",
+          "You notice what they like.",
+          "You notice what makes them uncomfortable.",
+          "You notice how much closeness feels right.",
+          "Over time, you may become very good at fitting what they need.",
+          "The difficulty begins when your own shape becomes harder to see inside the relationship."
         ],
         "highlight": null,
         "profile_note": "High Care · High Openness, Low Drive · Low Expression. Once love begins, you move toward them first, and your own opinions gradually shrink."
@@ -69,22 +67,20 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Keep Repeating",
         "body": [
-          "This has repeated in a strangely consistent way, hasn't it?",
-          "At first it doesn't seem like a problem.",
-          "You match what they like.",
-          "You match their schedule.",
-          "When they struggle, you move first.",
-          "You think that's love.",
-          "But a few months in, something feels off.",
-          "You can't quite remember what you used to like.",
-          "You're not sure what you wanted anymore.",
-          "It's not that they forced this on you.",
-          "More precisely,",
-          "you started adapting before you'd even started being loved.",
-          "What you give to the relationship versus what you keep for yourself.",
-          "You drift toward them as the relationship deepens, and only at the end do you rediscover your own feelings."
+          "You may recognize this pattern.",
+          "At first, it does not seem like a problem.",
+          "You learn what they like.",
+          "You adjust to their schedule.",
+          "When they struggle, you may move first.",
+          "That can feel like love.",
+          "But after a while, something may begin to feel off.",
+          "You may have trouble remembering what you preferred before the relationship.",
+          "You may become less certain about what you want now.",
+          "It does not mean the other person forced you to change.",
+          "You may have started adapting before there was enough room for you to be known.",
+          "As the relationship deepens, more of your attention moves toward them while your own feelings wait in the background."
         ],
-        "highlight": "That emptiness you felt wasn't from not being loved enough. It was from putting yourself last for too long.",
+        "highlight": "The emptiness was not only about receiving too little love. It also came from placing yourself last for too long.",
         "pattern_name": "THE DISAPPEARING SELF CURVE",
         "chart": {
           "chart_type": "curve",
@@ -99,18 +95,18 @@
         "items": [
           {
             "belief": "I'm just naturally the type who accommodates.",
-            "truth": "No. You're not someone who accommodates by nature. You're someone who's afraid of losing the relationship. That difference matters. Accommodating is a choice. Not wanting to lose someone is fear. That's why you end up seeing what they want before you see what you want.",
-            "truth_short": "No. You're not someone who accommodates by nature. You're someone who's afraid of losing the relationship. That difference matters. Accommodating is a choice. Not wanting to lose someone is fear. That's why you end up seeing what they want before you see what you want."
+            "truth": "You may naturally care about other people's comfort. But sometimes adapting also protects you from the risk of disagreement or rejection.",
+            "truth_short": "You may be caring by nature, while also using adaptation to keep the relationship safe."
           },
           {
             "belief": "A good person has to understand a lot.",
-            "truth": "Well, that's partly true. But what you've been doing isn't understanding. It's substituting. You've been doing even the parts they couldn't, on their behalf. Consideration keeps a relationship healthy. Living someone's life for them tips it off balance.",
-            "truth_short": "Well, that's partly true. But what you've been doing isn't understanding. It's substituting. You've been doing even the parts they couldn't, on their behalf. Consideration keeps a relationship healthy. Living someone's life for them tips it off balance."
+            "truth": "Understanding matters. But understanding someone does not require taking over the parts they need to handle themselves.",
+            "truth_short": "Care can support someone without replacing their responsibility."
           },
           {
             "belief": "The relationship ended because I wasn't enough.",
-            "truth": "No. A relationship can't be ruined by one person alone. But once it ends, you always start with self-blame. Should I have endured more? Should I have understood more? But here's the thing. If you were always the one who tried hardest in that relationship, the answer is more likely imbalance than insufficiency.",
-            "truth_short": "No. A relationship can't be ruined by one person alone. But once it ends, you always start with self-blame. Should I have endured more? Should I have understood more? But here's the thing. If you were always the one who tried hardest in that relationship, the answer is more likely imbalance than insufficiency."
+            "truth": "A relationship rarely ends because one person was simply not enough. If you were doing most of the adjusting, the deeper issue may have been imbalance rather than insufficiency.",
+            "truth_short": "The issue may have been imbalance, not a lack in you."
           }
         ]
       },
@@ -119,14 +115,13 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "The faces are different.",
-          "The situations are different too.",
-          "But strangely similar people keep showing up.",
-          "The Person Who Always Knows What They Want\n\nThey know exactly what they want.\n\nWhere to go. What to eat. How to live.\n\nBarely any hesitation.\n\nAt first, that's such a relief. You don't even have to think it through yourself.\n\nBut over time, something strange happens.\n\nTheir preferences get clearer and clearer. Yours get harder and harder to explain.\n\n\"I'm fine with anything.\"\n\nThe more you say it, the easier the relationship gets, and the blurrier you get.",
-          "Someone who leads you and someone who takes your place are not the same.",
-          "Miss that difference, and you'll adapt the same way again."
+          "Different people can bring out the same pattern.",
+          "You may feel drawn to someone who knows exactly what they want.",
+          "At first, their certainty can feel relieving. You do not have to decide everything.",
+          "But over time, their preferences may become clearer while yours become harder to name.",
+          "The more often you say, \"I'm fine with anything,\" the easier the relationship may feel and the less visible you become."
         ],
-        "highlight": "Someone who leads you and someone who takes your place are not the same.",
+        "highlight": "Someone can offer direction without taking your place. A healthier relationship still leaves room for your preferences.",
         "bar_chart": {
           "give_percent": 80,
           "get_percent": 20
@@ -137,20 +132,17 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need isn't learning to be more considerate.",
-          "You're already plenty good at that.",
-          "It's actually the opposite.",
-          "The practice of not forgetting what you want.",
-          "Sounds small, right?",
-          "But for you, it's the hardest thing.",
+          "What you need is not to become more considerate.",
+          "You already know how to notice and adjust.",
+          "What may help is remembering what you want before the other person's preference fills the whole space.",
+          "Start with small choices.",
           "Where you want to go.",
           "What you want to eat.",
-          "How you're actually feeling today.",
-          "Start with this.",
-          "Keep handing off small choices, and eventually you hand off the big ones too.",
-          "In the right relationship, you're not the only one adapting."
+          "How you actually feel today.",
+          "When small choices keep getting handed away, larger ones can become harder to claim too.",
+          "In a healthier relationship, adaptation does not belong to only one person."
         ],
-        "action_sentence": "In the right relationship, you're not the only one adapting."
+        "action_sentence": "Let your own preference stay present while the relationship adjusts."
       },
       {
         "chapter_number": 6,
@@ -158,15 +150,11 @@
         "title": "Where You Go From Here",
         "body": [
           "You know how to make someone comfortable.",
-          "You know it very well.",
-          "But what you're still learning is",
-          "how to make someone comfortable without losing yourself in the process.",
-          "This isn't about becoming selfish.",
-          "It's actually the opposite.",
-          "It's about not continuing to disappear.",
-          "About you staying present inside the relationship."
+          "What you may be learning next is how to do that without losing your place in the relationship.",
+          "This is not about becoming selfish.",
+          "It is about staying visible while care and adjustment move both ways."
         ],
-        "transition_note": "You’ve spent a long time learning how to adapt beautifully to others. Now you’re learning how to stay visible inside the relationship too."
+        "transition_note": "You've spent a long time adapting beautifully to others. The next step is learning how to remain visible inside the relationship too."
       },
       {
         "chapter_number": 7,
@@ -174,20 +162,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "The Person Who Decides Everything Right Away",
-            "description": "They pick the menu instantly. They lock in plans instantly. At first, it's such a relief. You don't even have to think about it. But at some point, it stops being strange that they never ask your opinion anymore. Without noticing, \"I'm fine with anything\" becomes a habit."
+            "type_title": "Someone Who Decides Everything Quickly",
+            "description": "They choose the menu and make the plans quickly. At first, that can feel like a relief. Later, you may notice they rarely ask what you want because \"anything is fine\" has become the usual answer."
           },
           {
-            "type_title": "The Person Whose Words Are Sweet, But Whose Actions Aren't",
-            "description": "They're good with \"thank you.\" But in practice, they're always the one receiving. You keep understanding one more time, and they keep taking that care more and more for granted. Eventually, you start to wonder whether you're dating someone or taking care of them."
+            "type_title": "Someone Whose Words Are Warmer Than Their Actions",
+            "description": "They may say thank you easily, while receiving far more care than they return. Over time, appreciation can start replacing participation."
           },
           {
-            "type_title": "The Person You Keep Wanting to Help",
-            "description": "A little unsteady. A little clumsy. Always someone who needs a hand. You've never been able to just walk past someone like that. But at some point, you find yourself not their partner, but their guardian."
+            "type_title": "Someone You Keep Wanting to Help",
+            "description": "They may seem unsteady or in need of help. You naturally move toward them. The question is whether you remain their partner or slowly become responsible for their life."
           },
           {
-            "type_title": "The Person Who's Just Easy to Be Around",
-            "description": "No pressure being together. Barely any fights. Always comfortable. But every so often, you try to think of a reason to leave, and nothing comes to mind, so you just stay. More often than not, that's not love. It's just not having a reason to change."
+            "type_title": "Someone Who Is Simply Easy to Be Around",
+            "description": "The relationship feels comfortable and rarely becomes difficult. But comfort alone does not always mean the connection is helping both people grow."
           }
         ]
       },
@@ -195,26 +183,26 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs appear sooner than you'd think. You've just always explained them away.",
+        "intro_note": "Some of these signs may appear early. Because adjusting feels natural, they can be easy to overlook.",
         "signal_strength": [
           {
-            "label": "You're mostly the one deciding where, when, and what to eat, based on them",
+            "label": "Most plans begin with what works best for them",
             "percent": 60
           },
           {
-            "label": "You quickly memorize their preferences; they barely know yours",
+            "label": "You learn their preferences quickly, while they know little about yours",
             "percent": 72
           },
           {
-            "label": "You frequently say \"I'm fine with anything\"",
+            "label": "You often say that anything is fine before checking what you want",
             "percent": 85
           },
           {
-            "label": "Most of what's changed for the relationship has come from your side",
+            "label": "Most of the changes made for the relationship come from your side",
             "percent": 95
           }
         ],
-        "core_signal": "They act more and more like themselves over time. You act less and less like yourself."
+        "core_signal": "They may become more fully themselves while you become less visible over time."
       },
       {
         "chapter_number": 9,
@@ -223,19 +211,19 @@
         "checklist": [
           {
             "title": "They wait for your opinion.",
-            "description": "They don't push you to decide quickly. They ask what you like, what you want, and they wait."
+            "description": "They ask what you want and leave enough room for an honest answer."
           },
           {
             "title": "The relationship doesn't shake when they hear \"no.\"",
-            "description": "This matters to you. Even if you decline. Even if you disagree. Someone with whom the mood doesn't sour."
+            "description": "A difference of opinion does not automatically threaten the mood or the relationship."
           },
           {
             "title": "Care moves in both directions.",
-            "description": "It's not always you doing the noticing first. They watch you too. And they act on it."
+            "description": "They notice your needs and make adjustments too."
           },
           {
             "title": "Being together makes you more yourself, not less.",
-            "description": "This matters most. With the right person, you don't shrink. You come into sharper focus instead."
+            "description": "The relationship helps your preferences and personality become clearer, not smaller."
           }
         ]
       },
@@ -244,21 +232,21 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're good at matching people. The problem is that it's too natural. So there's a type that doesn't work for you. Someone who takes your care too easily for granted. At first it's good. No friction, good mood, smooth relationship. But over time you realize you're the only one still moving.",
-          "who_steadies_you": "There's also a surprisingly good fit. Someone who doesn't just pass over your opinion. They ask even when it's just about a meal. They ask about weekend plans too. If you say \"I'm not sure,\" they don't just decide for you. They ask again. This kind of person isn't being a bother. They're the one who keeps you from disappearing inside the relationship.",
-          "same_pattern_repeats": "You'll be drawn again to someone comfortable. You might also be drawn to someone who needs help. That's natural. The issue isn't who you're drawn to. It's how quickly you give up your own place after being drawn in.",
-          "next_signs": "Remember the signs from Chapter 8? This time they'll show up sooner. You'll quickly know what they want. But weeks later, they still don't know what you like. That's the start. It shows up in smaller moments than you'd expect.",
-          "try_this": "Normally you'd say \"anything's fine.\" This time, don't. One restaurant. One movie. One weekend plan. Pick just one small thing yourself. And watch how they react. Someone who's right for you accepts the choice naturally. Someone who isn't will try to steer it back to their own way.",
-          "final_line": "That reaction is your answer."
+          "who_breaks_you": "You're vulnerable to someone who accepts your care without noticing how much adjustment it requires. The relationship may feel smooth because you keep moving, while they become used to receiving.",
+          "who_steadies_you": "A steadier match is someone who asks what you want, remembers your preferences, and does not treat uncertainty as permission to decide for you. They help you stay visible instead of disappearing into ease.",
+          "same_pattern_repeats": "You may still feel drawn to someone comfortable, decisive, or in need of support. One attraction will not settle where this goes. What matters is how quickly both people begin adjusting, asking, and making room for each other.",
+          "next_signs": "This time, the pattern may show up in small choices. You already know what they like, but weeks later they still know very little about you. Notice whether curiosity and adjustment begin moving back toward you.",
+          "try_this": "Choose one small thing clearly. A meal, a film, or a weekend plan. Say what you prefer without turning it into a test. Then look over time for whether your preferences are welcomed, remembered, and included.",
+          "final_line": "What matters is whether both people remain visible while care and adjustment move in both directions."
         }
       }
     ],
     "action_plan": {
-      "summary": "What you need isn't learning to be more considerate. You're already plenty good at that.",
+      "summary": "You already know how to adapt. What comes next is keeping your own preferences visible while the relationship adjusts.",
       "action_items": [
-        "In the right relationship, you're not the only one adapting.",
-        "Choose one small thing yourself this week: a restaurant, a movie, or a weekend plan.",
-        "When you say \"anything's fine,\" pause and name what you actually want once."
+        "This week, choose one small plan and say what you prefer.",
+        "When you are about to say anything is fine, pause and check what you actually want.",
+        "Notice whether the other person learns your preferences and makes adjustments too."
       ]
     },
     "closing": {

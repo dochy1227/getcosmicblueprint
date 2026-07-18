@@ -56,7 +56,7 @@
           "What goes unnoticed is your own discomfort.",
           "You are quick to make everyone else comfortable. No one knows when you are uncomfortable.",
           "Because you're the one who steps right in and smooths everything over, there's never any room left for your own position to even come up.",
-          "And there's one more thing. When someone's struggling, it somehow starts to feel like your responsibility. No one asked you to take it on. At some point, it just looks like a problem that's yours to solve.",
+          "And something else can happen. When someone is struggling, their problem can start to feel like yours. No one asked you to take it on. You just notice the gap and move toward it.",
           "So love starts the same way. At first, things between you and them, and between them and the people around you, all flow naturally, because you're managing both sides.",
           "But in the middle of all that, you're not actually standing anywhere yourself."
         ],
@@ -71,8 +71,8 @@
           "The early stage of a relationship is good.",
           "You're managing both sides. Them and you, them and the people around you. So everything connects naturally.",
           "But as time goes on, something strange happens. You slowly become the middle of the relationship. You smooth over the friction between them and other people, and you don't even let them deal with conflict between you and them. You step in and resolve it first, yourself.",
-          "One day you look and realize. You've been absorbing every bit of friction in the relationship in advance.",
-          "You never asked for this role. It just happens naturally. When they're struggling, that problem somehow becomes your problem too."
+          "One day, you look up and realize you've been absorbing most of the friction before anyone else has to face it.",
+          "You never chose that role outright. It grew each time you stepped in before the other person had to."
         ],
         "highlight": "You're not exhausted because there's too much conflict. You're exhausted because every conflict has always disappeared by passing through you.",
         "pattern_name": "THE GRAVITY CURVE",
@@ -89,23 +89,23 @@
         "items": [
           {
             "belief": "I just like harmony.",
-            "truth": "It's true that you like harmony, but the real thing is that you can't stand an uncomfortable atmosphere. When conflict shows up, you're the one who can't hold back and steps in to resolve it. More often than it's affection for harmony, it's an inability to tolerate awkwardness.",
-            "truth_short": "You like harmony, but the real thing is that you can't stand an uncomfortable atmosphere."
+            "truth": "You do like harmony. But awkwardness can pull you into action before you have time to ask what you actually want. Sometimes you're protecting the connection. Sometimes you're just trying to make the tension disappear.",
+            "truth_short": "You like harmony, but awkwardness can make you step in before checking what you want."
           },
           {
             "belief": "I can't say no.",
-            "truth": "It's not that you can't say no. It's that saying no would leave a visible gap between two people, and you're rushing to fill that gap before it even opens. You're good at seeing the gaps between other people. You just never apply that same eye to the gap between yourself and everyone else.",
-            "truth_short": "You can say no, but you rush to fill the gap before it even opens."
+            "truth": "You can say no. It just gets harder when you can already see the gap your answer might leave. You're quick to notice what other people need from each other. The part you miss is what you need from them.",
+            "truth_short": "You can say no, but you often notice everyone else's gap before your own."
           },
           {
             "belief": "I always have to be the one keeping the balance in the middle.",
-            "truth": "No. Sometimes you're allowed to stand on one side too. What you need isn't balance. It's a position of your own.",
-            "truth_short": "You don't always need balance. Sometimes you need a position of your own."
+            "truth": "You don't always have to stay in the middle. Sometimes the honest thing is to stand on your own side and let that be visible.",
+            "truth_short": "You don't always need to stay in the middle. Sometimes you need a position of your own."
           },
           {
             "belief": "I'm just good at mediating.",
-            "truth": "You are good at mediating, but that's not the whole story. When someone's struggling, it somehow feels like your responsibility. If you don't fix it, you can't settle. So you step in, not because you're good at it, but because not doing it makes you more uncomfortable than doing it does.",
-            "truth_short": "You're good at mediating, but sometimes you step in because not doing it feels even more uncomfortable."
+            "truth": "You are good at mediating. But being good at it can make stepping back feel wrong. You may move in because leaving the problem untouched feels harder than carrying it yourself.",
+            "truth_short": "You're good at mediating, but stepping back can feel harder than taking the problem on."
           }
         ]
       },
@@ -114,10 +114,10 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You're particularly drawn to people who can't tolerate conflict and push it onto you to resolve.",
+          "You're particularly drawn to people who struggle with conflict and feel relieved when you step in.",
           "At first it feels like you're helping by sorting things out from the middle.",
           "But the longer the relationship goes on, you become the shock absorber for every conflict in it.",
-          "You're vulnerable to people who need help. Someone struggling. Someone who can't find direction. Someone who needs you nearby.",
+          "You can also be drawn to people who need extra support. Someone overwhelmed. Someone unsure of the next step. Someone who feels safer when you're nearby.",
           "The problem is, even after you've fallen for them, you still can't put down the caretaker role."
         ],
         "highlight": "Someone who finds you comfortable uses your mediation. Someone who loves you tries to work it out themselves, even without your stepping in.",
@@ -134,9 +134,9 @@
           "What you need isn't to get even better at mediating. You're already plenty good at it.",
           "What you need is to occasionally not mediate.",
           "The friction between them and other people. The conflict between you and them.",
-          "Letting the two of you work it out on your own. That's also a form of love."
+          "Letting both people stay in the conversation and work through it together can also be a form of love."
         ],
-        "action_sentence": "Letting the two of you work it out on your own. That's also a form of love."
+        "action_sentence": "Letting both people stay in the conversation and work through it together can also be a form of love."
       },
       {
         "chapter_number": 6,
@@ -144,11 +144,11 @@
         "title": "Where You Go From Here",
         "body": [
           "You already know how to connect people. You already know how to keep the balance. You already know how to make everyone comfortable.",
-          "What you're going to learn next is how to watch without stepping in.",
+          "What you're going to learn next is how to stay present without always stepping in.",
           "Even when friction shows up. Even when it gets awkward.",
-          "The skill of letting people work it out with their own strength, instead of stepping in first."
+          "Giving people room to work through their own part, while still letting your own position be heard."
         ],
-        "transition_note": "The skill of letting people work it out with their own strength, instead of stepping in first."
+        "transition_note": "Giving people room to work through their own part, while still letting your own position be heard."
       },
       {
         "chapter_number": 7,
@@ -156,20 +156,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "The Dependent: someone who can't decide things on their own",
+            "type_title": "Someone Who Keeps Handing You the Decision",
             "description": "They always ask you what to do. At first you assume it's because they trust you. But over time, they turn into someone who can't decide anything without you."
           },
           {
-            "type_title": "The Emotionally Confused: someone who doesn't know their own feelings",
-            "description": "They get confused about what they're even feeling. You have to read it for them. You're always the one who has to say first, \"aren't you upset about this?\""
+            "type_title": "Someone Who Struggles to Name Their Feelings",
+            "description": "They get tangled in what they're feeling, and you end up helping them name it. You may be the first one to ask, \"Are you upset about this?\""
           },
           {
-            "type_title": "The Responsibility Dodger: someone who disappears when problems show up",
-            "description": "When something goes wrong, they quietly slip their share onto you. They say \"I don't know what to do,\" when really, they're just not doing it."
+            "type_title": "Someone Who Steps Back When Problems Show Up",
+            "description": "When something goes wrong, their share can quietly land with you. They say, \"I don't know what to do,\" and wait for you to move first."
           },
           {
-            "type_title": "The Relationship Anxious: someone who keeps demanding emotional reassurance",
-            "description": "\"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\". These questions come often. It's not that they can't decide things. It's that they constantly need confirmation that the relationship itself is safe. You become the one who fills that need, every time. But that anxiety doesn't go away just because you keep reassuring them."
+            "type_title": "Someone Who Needs Constant Reassurance",
+            "description": "\"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\" These questions may come often. Reassurance can help for a moment, but it cannot carry the whole relationship by itself."
           }
         ]
       },
@@ -177,7 +177,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "This one showed up pretty early. You just thought it was simply your role.",
+        "intro_note": "This often showed up early. You may have simply treated it as your role.",
         "signal_strength": [
           {
             "label": "When conflict comes up, you're the one who steps in first to smooth it over",
@@ -196,7 +196,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "Every bit of friction in the relationship disappears by passing through you, as a given. It's so taken for granted that no one even realizes it's work for you."
+        "core_signal": "Friction keeps passing through you until your effort starts to look like background noise instead of work."
       },
       {
         "chapter_number": 9,
@@ -213,11 +213,11 @@
           },
           {
             "title": "The relationship doesn't break just because you don't mediate.",
-            "description": "It's good to occasionally confirm that people can work things out even without you."
+            "description": "People can work through their own part without waiting for you to take over."
           },
           {
             "title": "Your mediation isn't taken for granted.",
-            "description": "This matters. You stepping into the middle should always be something to be thankful for, not invisible background noise."
+            "description": "This matters. Stepping into the middle should be appreciated, not treated as something that will always happen."
           }
         ]
       },
@@ -226,20 +226,20 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You can't stand unresolved conflict. The moment someone feels awkward, you step in automatically. So you keep standing in the middle, but the moment conflict arises between you and someone else, no one steps in for you. So there's a type that doesn't work for you: someone who can't tolerate conflict and always pushes it onto you, with no conflict resolving ability of their own. If you don't step in, it just gets left awkward.",
-          "who_steadies_you": "There's also someone who's a surprisingly good fit: someone who tries to work it out themselves, even without you stepping in. With someone like this, the relationship runs fine even when you're not always standing in the middle.",
-          "same_pattern_repeats": "You'll be drawn again to someone who can't handle conflict and pushes it onto you. That can't be stopped. That's just who you are. The issue was never the attraction itself. It's what you do after.",
-          "next_signs": "Remember the signs from Chapter 8? They usually showed up months in. This time they'll show up faster, smaller. When a small disagreement comes up, they just wait for you to mediate. They never try to work it out directly. If you see this within the first few weeks, that's the start.",
-          "try_this": "Normally you'd hand them a solution. This time, do the opposite. Just once, don't give one. Just listen. When they bring you a problem, don't give the answer. Just sit and listen. Then watch. Someone who's trying to find their own answer will start sorting out their own thoughts as they talk. Someone who's offloading responsibility will keep demanding, \"so what should I do?\"",
-          "final_line": "That reaction is your answer."
+          "who_breaks_you": "You're vulnerable to someone who avoids direct conflict and relies on you to make every awkward moment disappear. You keep standing in the middle, but when the conflict is between you and them, no one takes that role for you. Over time, the relationship can leave you doing all the emotional coordination alone.",
+          "who_steadies_you": "A steadier match is someone who tries to work things out directly, even when you don't step in first. With someone like this, you can have your own position without the whole relationship depending on you to restore the balance.",
+          "same_pattern_repeats": "You may still be drawn to someone who feels safer when you take over the difficult parts. That attraction does not decide the ending. What matters is whether they learn to face discomfort with you, instead of leaving you to absorb it.",
+          "next_signs": "This time, the pattern may show up in smaller moments. A minor disagreement happens, and they wait for you to smooth it over instead of speaking directly. Notice whether that changes as the two of you get to know each other.",
+          "try_this": "When someone brings you a conflict, listen before offering a solution. Ask what they want to say or do next. Stay present, but leave enough room for them to take part in working it through.",
+          "final_line": "The real change is whether conflict can be shared, instead of always disappearing through you."
         }
       }
     ],
     "action_plan": {
       "summary": "You already know how to connect people and smooth over conflict. What's left is learning when to let others meet the friction themselves.",
       "action_items": [
-        "This week, let one small awkward moment exist without immediately fixing it.",
-        "When someone brings you conflict, listen first and wait before offering a solution.",
+        "This week, let one small awkward moment exist long enough for both people to speak.",
+        "When someone brings you conflict, listen first and ask what they want to do next.",
         "Say your own position once before trying to balance everyone else's."
       ]
     },
