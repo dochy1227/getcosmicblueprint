@@ -55,9 +55,9 @@
           "You don't say everything from the start, either.",
           "Instead, you watch.",
           "How they act. What they keep repeating. Whether they keep their promises. Or don't.",
-          "People sometimes think you're cold.",
-          "But that's wrong.",
-          "You're not cold. You're checking.",
+          "People sometimes read that as coldness.",
+          "But that isn't the whole picture.",
+          "You're not shutting people out. You're checking whether their actions hold up.",
           "Because you know. Actions matter more than nice words.",
           "So you're careful about who you choose.",
           "But once you choose, you stay. You don't give up easily. You don't leave easily.",
@@ -71,17 +71,17 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Repeat",
         "body": [
-          "This might feel strange.",
+          "This pattern may feel strange.",
           "You're pretty good at reading relationships.",
           "You know where the problem is. You know what the other person is avoiding. You roughly know where this relationship is headed.",
           "But even knowing that, you stay.",
-          "It feels like things might change if you watch a little longer. It feels like things might get better if you wait a little longer. It feels like you might understand if you talk a little more.",
+          "You may think things could change if you watch a little longer. Maybe one more conversation will make it clearer. Maybe one more chance will show something different.",
           "So time passes.",
-          "And in the end you confirm that the problem you saw at the start was right all along.",
+          "And sometimes, the problem you noticed early is still there when you finally look again.",
           "That moment is the emptiest.",
           "Not because you didn't know. But because you knew from the beginning."
         ],
-        "highlight": "The reason you repeat this isn't that you're oblivious. It's that your wish to double-check is too strong.",
+        "highlight": "The pattern isn't that you miss the sign. It's that hope keeps asking for one more confirmation.",
         "pattern_name": "THE SECOND CHANCE CURVE",
         "chart": {
           "chart_type": "curve",
@@ -96,18 +96,18 @@
         "items": [
           {
             "belief": "I have no eye for people.",
-            "truth": "No. It's the opposite. You see things too early. The problem isn't that you can't see. It's that you ignore what you saw.",
-            "truth_short": "You don't miss the sign. You often see it early, then ignore it."
+            "truth": "You may see the sign earlier than you think. The harder part is deciding when what you saw is enough to matter.",
+            "truth_short": "You may see the sign early. The harder part is trusting that it matters."
           },
           {
             "belief": "This time I really didn't know.",
-            "truth": "Think about it. The moment you first felt something was off. It was there, wasn't it? You already knew then. You just didn't want to believe it.",
-            "truth_short": "The first uneasy moment was already information. You just didn't want to believe it yet."
+            "truth": "Think back to the first moment something felt off. That feeling was information, even if you were not ready to decide what it meant yet.",
+            "truth_short": "The first uneasy moment was information, even before you knew what it meant."
           },
           {
             "belief": "Why do I keep making the same mistake?",
-            "truth": "You're not repeating a mistake. You're repeating the checking. The hope that this time might be the exception. That's what pulls you back in.",
-            "truth_short": "You're not repeating the mistake. You're repeating the need to check one more time."
+            "truth": "You may not be repeating the exact same mistake. You may be repeating the need to check whether this time will be different.",
+            "truth_short": "The repeated part may be the need to check one more time."
           }
         ]
       },
@@ -120,10 +120,10 @@
           "You're drawn to someone who needs understanding.",
           "Someone with a reason. A cause. An explanation that makes sense.",
           "Because you're someone who sees context.",
-          "But here's the problem.",
-          "A behavior that can be explained and a behavior that's okay are two different things."
+          "The part to watch is this.",
+          "A behavior can make sense and still leave you hurt. Understanding the reason does not automatically make the behavior okay."
         ],
-        "highlight": "Someone who tries to convince you gives a reason. Someone who loves you changes their behavior.",
+        "highlight": "Someone who wants another chance gives a reason. Someone who values the relationship also changes what they do.",
         "bar_chart": {
           "give_percent": 30,
           "get_percent": 70
@@ -136,13 +136,13 @@
         "body": [
           "What you need isn't more analysis.",
           "You already do plenty of that.",
-          "What you need is trust.",
+          "What you need is more trust in your own judgment.",
           "Trust in your own judgment.",
-          "The moment something first felt off. The moment something first felt wrong. That first snag.",
-          "You can trust that more.",
-          "It's been right more often than you think."
+          "The first moment something felt off. The first repeated gap. The first time the behavior and the explanation did not match.",
+          "You can treat those moments as information instead of talking yourself out of them.",
+          "They may not tell you everything, but they can still show you where a closer look is needed."
         ],
-        "action_sentence": "You can trust that more. It's been right more often than you think."
+        "action_sentence": "Treat the first repeated gap as information, then look for what happens next."
       },
       {
         "chapter_number": 6,
@@ -155,9 +155,9 @@
           "But what you'll learn next is how to tell the difference between an explanation and a change.",
           "Anyone can give a reason.",
           "But not everyone actually changes.",
-          "Once you start seeing that difference, relationships become much simpler."
+          "Once you keep that difference in view, the relationship becomes easier to read."
         ],
-        "transition_note": "You've spent a long time learning how to understand people. The next report covers why you keep passing over signs you already recognize, and how you can start trusting that judgment."
+        "transition_note": "You've spent a long time learning how to understand people. The next step is trusting what repeated behavior shows you."
       },
       {
         "chapter_number": 7,
@@ -165,20 +165,20 @@
         "title": "The Type You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone with a lot of backstory",
-            "description": "You hear about everything they've survived before you really know who they are now. Their pain makes sense. Their behavior makes sense too. But making sense of it doesn't automatically make it okay."
+            "type_title": "Someone With a Complicated Backstory",
+            "description": "You hear about what they've survived before you fully know who they are now. Their pain may explain some of their behavior, but it does not decide what you have to accept."
           },
           {
-            "type_title": "Someone who talks well",
-            "description": "The conversations last for hours. Every decision has a reason. Every problem has an explanation. But when the same issue returns again, you realize a relationship isn't a presentation."
+            "type_title": "Someone Who Explains Everything Well",
+            "description": "The conversations can last for hours. Every decision has a reason. But when the same issue returns, a clear explanation still needs to be followed by something different."
           },
           {
-            "type_title": "Someone who shows potential",
-            "description": "You see who they could become more clearly than who they are today. The future feels bright enough to justify the present. But the future hasn't arrived yet."
+            "type_title": "Someone Whose Potential Is Easy to See",
+            "description": "You can see who they might become more clearly than who they are today. The future feels hopeful, but the relationship still has to be lived in the present."
           },
           {
-            "type_title": "Someone who admits their mistakes",
-            "description": "They look sincere. They know exactly what went wrong. It's a good start. But admitting and changing are still two different things."
+            "type_title": "Someone Who Knows How to Apologize",
+            "description": "They may sound sincere and understand what went wrong. That matters, but repair also needs to show up in what happens next."
           }
         ]
       },
@@ -186,7 +186,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "Most of these showed up early. You just kept finding reasons for them.",
+        "intro_note": "Many of these signs may show up early. A convincing reason can make them easier to overlook.",
         "signal_strength": [
           {
             "label": "There's a small gap between what they say and what they do",
@@ -205,7 +205,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "You. The one who already understands the problem. Keep explaining it to yourself, over and over."
+        "core_signal": "You already understand the problem, but the explanation keeps getting more attention than the repeated behavior."
       },
       {
         "chapter_number": 9,
@@ -214,19 +214,19 @@
         "checklist": [
           {
             "title": "Action comes before words.",
-            "description": "They move before they explain."
+            "description": "Their actions begin to support what they say."
           },
           {
             "title": "Mistakes don't repeat.",
-            "description": "Once can be a mistake. Twice is a pattern."
+            "description": "A mistake can happen. What matters is whether the same pattern keeps returning without repair."
           },
           {
             "title": "They don't have to prove trust.",
-            "description": "They're already showing it through action."
+            "description": "Trust grows through consistent action, not constant persuasion."
           },
           {
             "title": "Your mind feels at ease.",
-            "description": "This matters more than you think. If you're still analyzing constantly, something's probably already off."
+            "description": "This matters. Your mind does not have to stay busy explaining the same gap again and again."
           }
         ]
       },
@@ -235,21 +235,21 @@
         "page_map": "chapter_10",
         "title": "What Happens in Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're weak to people who explain a lot. There's a reason. There's logic. There's a backstory. So it makes sense to you. But in the end, what actually matters isn't that. It's whether their behavior changes. Or doesn't. That's it.",
-          "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who fixes their mistakes. Someone who keeps their promises. Someone who shows they're sorry through action, not words. This kind of person doesn't wear out your mind.",
-          "same_pattern_repeats": "",
-          "next_signs": "This time, they'll show up faster. What used to take months before. This time it'll show up within weeks. The gap between words and actions. How they handle responsibility. And your own gut feeling. From the very start.",
-          "try_this": "This time, don't listen to the explanation. Just once. Just this one time. Wait before hearing the reason. And watch the behavior instead. Whether they actually change. Or just explain again. The Blade's problem isn't that you can't see people. You already saw it. You just gave them one more chance to be believed. This time, before you trust the other person, trust your own judgment first.",
-          "final_line": "That reaction is the answer."
+          "who_breaks_you": "You're vulnerable to someone whose explanations are easier to trust than their repeated behavior. The reason may be thoughtful. The backstory may make sense. But when nothing changes, understanding can keep you in a relationship that still hurts.",
+          "who_steadies_you": "A steadier match is someone who repairs what they can, keeps promises more often than not, and lets their actions carry the apology. Around someone like this, your mind does not have to keep checking the same issue.",
+          "same_pattern_repeats": "You may still feel drawn to someone whose story makes you want to give one more chance. That attraction does not decide what happens next. The difference is whether the new chance comes with new behavior, not only a better explanation.",
+          "next_signs": "This time, the pattern may show up in smaller gaps. A promise is treated lightly. The same issue returns. The explanation sounds familiar. Notice whether the behavior begins to move too.",
+          "try_this": "When something feels off, write down what happened before listening to the explanation. Then give both pieces equal weight. Over time, look for whether the behavior changes, not whether the reason becomes more convincing.",
+          "final_line": "What matters is not one reaction. It is whether words and behavior start moving closer together."
         }
       }
     ],
     "action_plan": {
       "summary": "You already know how to read people. What's left is learning to trust what you saw before the explanation talks you out of it.",
       "action_items": [
-        "When something feels off, write down the behavior before listening to the reason.",
-        "Treat repeated explanations without changed behavior as information, not as progress.",
-        "Before giving one more chance, ask whether this is new evidence or the same pattern again."
+        "When something feels off, write down the behavior before deciding what the explanation means.",
+        "Treat repeated explanations without changed behavior as information.",
+        "Before giving another chance, ask whether anything has actually changed."
       ]
     },
     "closing": {

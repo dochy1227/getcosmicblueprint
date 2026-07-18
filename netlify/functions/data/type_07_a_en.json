@@ -42,7 +42,7 @@
   },
   "full_report": {
     "headline": "THE BLADE",
-    "intro": "You're not someone who trusts people quickly. You watch behavior, notice what doesn't line up, and see problems early. But instead of speaking that standard out loud, you often turn it inward. This report follows that pattern: why you keep re-examining yourself, why vague people pull you in, and how to review the evidence more fairly.",
+    "intro": "You're not someone who trusts people quickly. You watch behavior, notice what doesn't line up, and see problems early. But instead of speaking that standard out loud, you often turn it inward. This report follows that pattern: why you keep reexamining yourself, why vague people pull you in, and how to review the evidence more fairly.",
     "chapters": [
       {
         "chapter_number": 1,
@@ -50,15 +50,15 @@
         "title": "When You Love",
         "subtitle": null,
         "body": [
-          "You're not someone who trusts people quickly.",
+          "Trust takes time for you.",
           "You watch behavior. Whether what they said yesterday matches what they said today. Whether what they said matches what they did. Whether they're the same now as they were at the start.",
           "So you notice problems pretty early. You see what others miss.",
           "But here's where you take a different path.",
           "Your eye for other people is precise, but you never speak that precise standard out loud.",
           "Instead, you turn it on yourself.",
           "If I'd just paid a little more attention, would it have turned out differently? If I'd done better, would things have changed?",
-          "You don't say a word to the other person, but toward yourself, you become the judge who collects evidence most meticulously.",
-          "So people think you're generous. But that's not actually true.",
+          "You may say nothing to the other person, while going over every detail of your own behavior.",
+          "So people may see you as generous. But that isn't the whole story.",
           "The standard didn't disappear. It just all moved over to you."
         ],
         "highlight": null,
@@ -69,20 +69,20 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Repeat: THE REEXAMINATION CURVE",
         "body": [
-          "This has probably repeated quite often.",
+          "This pattern may feel familiar.",
           "A relationship ends. Or falls apart.",
           "In that moment, you don't blame the other person. Instead, you go back over it.",
           "You replay the conversation. You replay the behavior. You search for where you could have done better.",
           "It's not something you look at once and let go. You look again. And again.",
           "It's like reopening a trial. Reviewing the same case, the same evidence, over and over.",
-          "But strangely, that court always reaches the same verdict. You gathered plenty of evidence, but somehow the verdict only ever lists your own mistakes.",
-          "Because you only examine your own behavior that closely. You don't look at the other person's behavior nearly as hard."
+          "But that inner court can keep reaching the same verdict. You gather plenty of evidence, yet your own mistakes take up most of the page.",
+          "That happens when your own behavior gets reviewed far more closely than the other person's."
         ],
-        "highlight": "The reason you get hurt isn't that you see too little. It's that everything you saw, you blamed entirely on yourself.",
-        "pattern_name": "THE RE-EXAMINATION CURVE",
+        "highlight": "The pain isn't that you saw too little. It's that you kept turning what you saw back on yourself.",
+        "pattern_name": "THE REEXAMINATION CURVE",
         "chart": {
           "chart_type": "curve",
-          "title": "THE RE-EXAMINATION CURVE",
+          "title": "THE REEXAMINATION CURVE",
           "description": "The pattern of repeatedly reviewing only your own behavior, even after the relationship has ended."
         }
       },
@@ -93,18 +93,18 @@
         "items": [
           {
             "belief": "I'm someone who's too sensitive, who nitpicks too much.",
-            "truth": "No. Your standards are high, that's true. But you've almost never held that standard up to someone else. You've only ever held it up to yourself.",
-            "truth_short": "Your standards are high, but you've mostly aimed them at yourself."
+            "truth": "Your standards are high, that's true. But you may be using them more harshly on yourself than on anyone else.",
+            "truth_short": "Your standards are high, but they may be aimed at you more than anyone else."
           },
           {
             "belief": "If I'd done better, it wouldn't have ended.",
-            "truth": "Well. That's possible. But you've never once asked the same question about the other person. The sentence \"if they had done better\" doesn't exist inside you.",
-            "truth_short": "You ask what you could have done better, but rarely ask what they could have done better."
+            "truth": "Maybe. But that isn't the only question worth asking. What did the other person do, avoid, or leave unexplained?",
+            "truth_short": "Ask what they could have done differently too, not only what you could have changed."
           },
           {
             "belief": "I'm not someone who blames others.",
-            "truth": "True. But the blame didn't disappear. It just moved over to you. The blame still exists, in exactly the same amount. Only the direction changed.",
-            "truth_short": "The blame didn't vanish. It simply changed direction."
+            "truth": "You may not like blaming others. But when all the blame comes back to you, it still weighs just as much.",
+            "truth_short": "Avoiding blame doesn't help if every part of it still lands on you."
           }
         ]
       },
@@ -113,15 +113,15 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You're drawn to people who don't explain themselves.",
-          "That might sound strange. But it's exactly right.",
+          "You can be drawn to people who leave too much unexplained.",
+          "It may sound strange, but the pattern makes sense.",
           "They don't say why they did what they did. Why they were late. Why they withdrew. Why they said it that way.",
           "And you don't just sit there. You start looking for the reason yourself.",
-          "They're probably just busy. They're probably just not the expressive type. Something must have happened.",
-          "You stay up at night building the explanation that's actually their job to give.",
+          "Maybe they're busy. Maybe they struggle to express themselves. Maybe something happened.",
+          "You can end up building the explanation they haven't given you.",
           "But the explanation you build that way ends up being only your own guess. The real reason still hasn't been said by anyone."
         ],
-        "highlight": "Someone who confuses you withholds the reason. Someone who loves you speaks before you have to ask.",
+        "highlight": "Someone who leaves you confused keeps the reason hidden. Someone who cares about clarity helps you understand what happened.",
         "bar_chart": {
           "give_percent": 60,
           "get_percent": 40
@@ -132,13 +132,13 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need isn't even harsher self-examination. You already do more than enough of that.",
-          "What you need is to apply that same scrutiny to the other person, just once.",
-          "When there's no explanation, before you make up a reason for them, ask first: What was the real reason this time? Did I guess this, or did I actually hear it?",
-          "A guessed-in blank is never as accurate as evidence you actually heard.",
-          "Your standard is already accurate enough. Just point it the other way. Before you grade yourself, check whether there's even enough evidence."
+          "What you need isn't even harsher self examination. You already do more than enough of that.",
+          "What you need is to bring the same careful attention to the whole relationship.",
+          "When something is left unexplained, pause before filling in the reason. Ask: What did I actually hear, and what am I guessing?",
+          "A blank filled by guesswork can feel convincing, but it still isn't the same as an explanation.",
+          "Your eye is already sharp enough. Use it to check both sides before deciding what the evidence means."
         ],
-        "action_sentence": "Before you grade yourself, check whether the other person gave you enough evidence in the first place."
+        "action_sentence": "Before judging yourself, check whether the relationship gave you enough real information."
       },
       {
         "chapter_number": 6,
@@ -149,9 +149,9 @@
           "You know how to go back over things. You know how to get better.",
           "But what you'll learn next is how to review evidence fairly.",
           "Not every blank space needs to be filled in by your own guess. Explaining is partly the other person's job too.",
-          "Once you start applying the same review to both sides equally, relationships become far less lonely."
+          "When both sides receive the same careful review, the relationship has more room to feel clear and less lonely."
         ],
-        "transition_note": "You've spent a long time learning how to examine yourself. The next report covers why you always look for the cause in yourself, and how you can start sharing that examination fairly."
+        "transition_note": "You've spent a long time learning how to examine yourself. The next step is learning how to look at the whole relationship with the same fairness."
       },
       {
         "chapter_number": 7,
@@ -159,20 +159,20 @@
         "title": "The Type You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone who keeps quiet",
+            "type_title": "Someone Who Leaves Too Much Unsaid",
             "description": "You ask how their day went, and they simply smile and say, \"Nothing much.\" The conversation ends there, but your thoughts keep going long after. Whenever a blank space opens up, you end up filling it yourself."
           },
           {
-            "type_title": "Someone whose story keeps changing",
-            "description": "Last month they told it one way. Today the details are different. Late at night, you replay old conversations and compare which version felt true."
+            "type_title": "Someone Whose Story Keeps Shifting",
+            "description": "Last month they told it one way. Today the details feel different. You may find yourself replaying old conversations and comparing which version fits."
           },
           {
-            "type_title": "Someone who's vague",
-            "description": "Their answers are always soft around the edges. Maybe. I guess. Something like that. The less defined they are, the more completely you build the missing parts with your own guesses."
+            "type_title": "Someone Who Answers Without Clarity",
+            "description": "Their answers stay soft around the edges. Maybe. I guess. Something like that. The less defined they are, the easier it becomes to build the missing parts yourself."
           },
           {
-            "type_title": "Someone whose story shifts depending on the situation",
-            "description": "Yesterday's explanation doesn't match today's explanation. So you become the person collecting evidence, piecing together what you heard before and what you're hearing now."
+            "type_title": "Someone Whose Explanation Changes With the Moment",
+            "description": "Yesterday's explanation doesn't quite match today's. You start collecting details, trying to make the pieces fit."
           }
         ]
       },
@@ -180,7 +180,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs showed up pretty early. You just filled them all in with your own explanations.",
+        "intro_note": "These signs may have appeared early. You may have answered them with explanations of your own.",
         "signal_strength": [
           {
             "label": "You guess at the reason instead of asking, and move on",
@@ -199,7 +199,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "The same question keeps repeating, but only the explanations you've built keep growing. No one has actually said the real reason yet."
+        "core_signal": "The same question keeps returning, while your own explanation grows more detailed. The real reason still has not been clearly shared."
       },
       {
         "chapter_number": 9,
@@ -212,15 +212,15 @@
           },
           {
             "title": "Your standards aren't only harsh on you.",
-            "description": "The same scrutiny applies to them too."
+            "description": "The same care and scrutiny apply to both sides."
           },
           {
             "title": "Explanations don't only come from one side.",
-            "description": "Guessing isn't your job alone."
+            "description": "You are not the only one responsible for making things clear."
           },
           {
             "title": "The relationship feels safe even without guessing.",
-            "description": "It doesn't fall apart just because you fill in less."
+            "description": "The relationship does not depend on you filling every blank alone."
           }
         ]
       },
@@ -229,12 +229,12 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're weak to people who don't explain themselves. Because they don't tell you the reason, you make one up for them. Since it sounds plausible, they end up talking even less.",
-          "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who gives the reason before you ask, whose words and actions don't drift apart, who doesn't leave things vague. In front of someone like that, you no longer have to fill the blanks with guesses.",
-          "same_pattern_repeats": "",
-          "next_signs": "This time, you'll notice faster. Right before you start building a reason for them, you'll catch yourself in that exact moment. \"Is this something I actually heard, or something I guessed?\" That question will come to you sooner than before.",
-          "try_this": "This time, before reviewing your own behavior, just once, look back at the evidence you've gathered. \"Which of these did I actually hear, and which did I make up on my own?\" Then review your evidence by the same standard, not just on yourself. If you heard little, that's not because you fell short. It's because the other person didn't say it. The Blade's problem isn't that your standards are too low. It's that the blade has only ever pointed at yourself. This time, point that same blade and examine the other person too, in the same place.",
-          "final_line": "That reaction is the answer."
+          "who_breaks_you": "You're vulnerable to someone who leaves too much unexplained. Because the reason is missing, you may build one for them. The more convincing your explanation becomes, the easier it is for the real conversation to never happen.",
+          "who_steadies_you": "A steadier match is someone who explains what happened, keeps words and actions close, and does not leave you alone with every blank. Around someone like this, clarity does not depend on your guesses.",
+          "same_pattern_repeats": "You may still feel drawn to someone who is hard to read. That does not mean the same pattern has to continue. What changes it is whether they meet your questions with real clarity, instead of leaving you to build the whole explanation alone.",
+          "next_signs": "This time, you may catch the moment sooner. Right before you start building the reason for them, ask yourself, \"Did I actually hear this, or am I filling in the blank?\" That pause can bring the real question back into the room.",
+          "try_this": "Before reviewing your own behavior, separate what you know from what you guessed. Then ask for the missing reason directly. Notice whether the other person answers clearly, stays consistent, and helps carry the conversation.",
+          "final_line": "The answer is not in one explanation. It is in whether clarity starts coming from both sides."
         }
       }
     ],
@@ -243,7 +243,7 @@
       "action_items": [
         "Before blaming yourself, separate what you actually heard from what you guessed.",
         "When someone leaves something vague, ask for the reason once instead of filling it in alone.",
-        "Apply the same standard to their behavior that you usually apply to your own."
+        "Use the same care when reviewing their behavior that you usually use when reviewing your own."
       ]
     },
     "closing": {

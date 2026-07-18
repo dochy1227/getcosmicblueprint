@@ -51,10 +51,10 @@
         "subtitle": null,
         "body": [
           "You're someone who notices more than people think. The other person's expression. Their tone. How fast they reply. A mood that's different from usual.",
-          "Things other people just pass by, you pick up on pretty accurately. But here's the funny part. Even while you feel it, you don't really trust yourself.",
-          "\"Am I being too sensitive?\" \"Am I overreacting?\" \"Maybe it's nothing.\" You think it over one more time.",
-          "So people find you unexpected. Your instincts are quick. But your judgment comes late.",
-          "And love is the same way. The feeling of liking someone shows up faster than almost anyone. But certainty shows up the latest of all."
+          "Things other people pass by, you often notice quickly. But even while you feel something, you may not trust yourself right away.",
+          "\"Am I being too sensitive?\" \"Am I reacting too strongly?\" \"Maybe it's nothing.\" You think it over one more time.",
+          "So people can find you unexpected. Your instincts arrive fast, while certainty takes longer.",
+          "Love can feel the same way. Interest shows up early, but you may need more time before you trust what it means."
         ],
         "highlight": null,
         "profile_note": "High warmth and perceptiveness, low drive and expression. You sense things accurately, but in the end doubt yourself and stay silent."
@@ -64,16 +64,16 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Repeat: THE SELF DOUBT CURVE",
         "body": [
-          "This has probably repeated quite often. Something felt off from the start. Something snagged. Something felt uncomfortable. Something didn't quite add up.",
-          "But you let it go. Because there's no proof. Then time passes. And eventually you find out that what you felt at first was right.",
-          "The thought that comes every time is similar: \"I knew it. That feeling back then was right.\"",
-          "But strangely, when the next relationship comes, you repeat it again. Once again, you trust the other person more than your own senses."
+          "This pattern may feel familiar. Something felt off early. Something snagged. Something felt uncomfortable. Something did not quite add up.",
+          "But you let it go because there was no proof. Then time passed, and sometimes the concern you had at the start returned in a clearer form.",
+          "The thought afterward can sound like this: \"I did feel something back then.\"",
+          "And when the next relationship begins, you may still give the other person's explanation more weight than your own discomfort."
         ],
-        "highlight": "The reason you get hurt isn't that you're sensitive. It's that you keep trusting the other person's explanation more than your own senses.",
-        "pattern_name": "THE SELF-DOUBT CURVE",
+        "highlight": "The pain is not that you notice too much. It is that your own discomfort keeps getting pushed behind someone else's explanation.",
+        "pattern_name": "THE SELF DOUBT CURVE",
         "chart": {
           "chart_type": "curve",
-          "title": "THE SELF-DOUBT CURVE",
+          "title": "THE SELF DOUBT CURVE",
           "description": "The pattern of sensing something, then doubting yourself, then eventually confirming it"
         }
       },
@@ -84,18 +84,18 @@
         "items": [
           {
             "belief": "I'm too sensitive.",
-            "truth": "No. You're actually more accurate than you think. The problem isn't sensing things wrong. It's sensing them right and then ignoring it.",
-            "truth_short": "You're not too sensitive. You're often accurate, then you ignore what you felt."
+            "truth": "You may be more perceptive than you give yourself credit for. The question is not whether every feeling is correct. It is whether you keep dismissing feelings that deserve a closer look.",
+            "truth_short": "You may be perceptive. What matters is whether you dismiss feelings that deserve attention."
           },
           {
             "belief": "Wanting to be noticed is too much to ask.",
-            "truth": "No, it's not. It's a natural need. Someone who loves you should want to know your effort too.",
-            "truth_short": "Wanting to be noticed is not too much. It's a natural need."
+            "truth": "Wanting your effort to be noticed is not too much. Care feels safer when appreciation can be spoken instead of guessed.",
+            "truth_short": "Wanting your effort to be noticed is a reasonable need."
           },
           {
             "belief": "Let's just wait a little longer.",
-            "truth": "Hmm. Sometimes that's not waiting. It's avoiding. You're putting off an answer you don't want to confirm.",
-            "truth_short": "Sometimes waiting is avoidance. Postponing an answer you already feel."
+            "truth": "Sometimes waiting gives you useful time. Sometimes it delays a conversation you already know you need to have.",
+            "truth_short": "Waiting can help, but it can also delay a needed conversation."
           }
         ]
       },
@@ -104,11 +104,11 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You're drawn to people who don't express much. People who don't say things easily. Who don't reveal things easily. Who don't easily give you certainty.",
-          "At first they seem deep. There's even some fun in slowly getting to know them.",
-          "But as time passes, you often end up guessing alone. The other person hasn't said anything, but you keep interpreting anyway."
+          "You can be drawn to people who express very little. People who do not say things easily, reveal much, or offer certainty quickly.",
+          "At first, they may seem deep. There can be something meaningful in slowly getting to know them.",
+          "But as time passes, you may find yourself guessing alone. The other person has not said much, and you keep trying to interpret the silence."
         ],
-        "highlight": "Someone who's curious about you tries to express it. Someone who takes you for granted expects you to just figure it out yourself.",
+        "highlight": "Someone who cares about you does not leave every feeling for you to figure out alone.",
         "bar_chart": {
           "give_percent": 60,
           "get_percent": 40
@@ -120,11 +120,11 @@
         "title": "What Actually Changes Something",
         "body": [
           "What you need isn't to see things even better. You already see plenty.",
-          "What you need is to trust what you first felt, just a little more.",
-          "If it's uncomfortable, it's uncomfortable. If it's hurtful, it's hurtful.",
-          "You don't need to prove that feeling like courtroom evidence. Sometimes just feeling it is enough."
+          "What you need is to trust your first feeling enough to pay attention to it.",
+          "If something feels uncomfortable or hurtful, you can pause there instead of explaining it away.",
+          "A feeling is not a verdict, but it is still information worth bringing into the conversation."
         ],
-        "action_sentence": "Sometimes just feeling it is enough."
+        "action_sentence": "A feeling is not a verdict, but it is still information worth paying attention to."
       },
       {
         "chapter_number": 6,
@@ -134,9 +134,9 @@
           "You know how to read people delicately. You know how to be considerate. You know how to think from the other person's perspective.",
           "But what you'll learn next is how to think from your own perspective.",
           "You already understand why they did what they did. Now it's time to look at how that action made you feel.",
-          "That's the moment the relationship changes."
+          "That is where the relationship has a chance to change."
         ],
-        "transition_note": "You've spent a long time learning how to understand others. The next report covers why you always end up understanding the other person first, and how you can learn to trust yourself more."
+        "transition_note": "You've spent a long time understanding others first. The next step is letting your own experience have equal weight."
       },
       {
         "chapter_number": 7,
@@ -144,20 +144,20 @@
         "title": "The Type You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone who talks little",
-            "description": "You ask how their day was, and they answer with one sentence and a smile. You fill in the rest yourself. But mystery and emotional absence are not the same thing."
+            "type_title": "Someone Who Says Very Little",
+            "description": "You ask how their day was, and they answer with one sentence and a smile. You may fill in the rest yourself. But mystery and emotional distance are not always the same thing."
           },
           {
-            "type_title": "Someone stingy with compliments",
-            "description": "They notice your effort but rarely say it out loud. Every small word of recognition becomes precious. Yet love isn't something you should have to earn like a perfect score."
+            "type_title": "Someone Who Rarely Gives Praise",
+            "description": "They may notice your effort but rarely say it out loud. Every small word of recognition starts to feel precious, even though appreciation should not have to be earned."
           },
           {
-            "type_title": "Someone who copes well alone",
-            "description": "They carry everything by themselves and never ask for help. It looks strong and admirable. But sometimes independence is just another way of staying distant."
+            "type_title": "Someone Who Handles Everything Alone",
+            "description": "They carry everything alone and rarely ask for help. It can look strong, but it may also keep closeness at a distance."
           },
           {
-            "type_title": "Someone who doesn't talk about feelings",
-            "description": "Serious conversations always end with, 'I'm fine.' You assume there's depth underneath the silence. But being deep and being emotionally unavailable are two different things."
+            "type_title": "Someone Who Avoids Talking About Feelings",
+            "description": "Serious conversations often end with, \"I'm fine.\" Silence can hold depth, but it can also leave emotional responsibility on one side."
           }
         ]
       },
@@ -165,7 +165,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "The truth is, you felt it pretty early. You just didn't trust yourself.",
+        "intro_note": "You may have felt some of these signs early, then talked yourself out of them.",
         "signal_strength": [
           {
             "label": "There's a moment that hurts, but you let it go right away",
@@ -184,7 +184,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "You keep understanding, while the other person keeps thinking they don't need to explain."
+        "core_signal": "You keep trying to understand, while the other person gets used to leaving more and more unsaid."
       },
       {
         "chapter_number": 9,
@@ -193,19 +193,19 @@
         "checklist": [
           {
             "title": "They don't hold back expression.",
-            "description": "They don't make you guess at their good intentions."
+            "description": "Their care does not depend on you guessing what they mean."
           },
           {
             "title": "They say thank you.",
-            "description": "They don't wait to be noticed."
+            "description": "Your effort is noticed and appreciated out loud."
           },
           {
             "title": "They say it directly.",
-            "description": "They can explain when something hurts."
+            "description": "They can explain what happened and listen when something hurts."
           },
           {
             "title": "There's no guessing game.",
-            "description": "You feel comfortable. You don't have to keep interpreting everything. That's a bigger sense of stability than you think."
+            "description": "You feel steadier because the relationship does not require constant interpretation."
           }
         ]
       },
@@ -214,21 +214,21 @@
         "page_map": "chapter_10",
         "title": "What Happens in Your Next Relationship (THE GEM)",
         "sections": {
-          "who_breaks_you": "You're weak to people who react little. Whether they like it. Dislike it. Are grateful. Aren't. It's hard to tell. So you watch more. Worry more. Interpret more.",
-          "who_steadies_you": "On the other hand, there's someone who fits you well. Someone who says they like it when they like it, says thanks when they're grateful, says it hurts when it hurts. Nothing dramatic. Just someone who doesn't hide things. This kind of person puts you at ease.",
-          "same_pattern_repeats": "",
-          "next_signs": "This time, you'll sense it faster than before. Awkwardness. Discomfort. A small distance. And here's the interesting part. There's a good chance that feeling will be right again this time too. The issue isn't sensing it. It's whether you ignore it again.",
-          "try_this": "This time, don't interpret it alone. Just once. Ask right there in the moment. \"I might be reading this wrong, but is this what you meant?\" And watch how they respond. A healthy person explains. An uncomfortable person makes an issue out of your question itself. The thing The Gem learns last in life isn't how to read people. You're already good at that. It's how to trust yourself.",
-          "final_line": "That reaction is the answer."
+          "who_breaks_you": "You're vulnerable to someone whose feelings stay hard to read. You may end up watching more, worrying more, and building meaning from very little. Over time, the relationship can leave you carrying both the feeling and the explanation.",
+          "who_steadies_you": "A steadier match is someone who says what they feel in simple, direct ways. They show appreciation, explain when something hurts, and do not make closeness depend on guessing.",
+          "same_pattern_repeats": "You may still feel drawn to someone quiet or difficult to read. That does not mean the same pattern has to repeat. What matters is whether they meet your questions with openness, instead of leaving you alone with the silence.",
+          "next_signs": "This time, you may notice discomfort sooner. A small distance. A change in tone. A moment that leaves you unsure. The next step is not deciding what it means alone, but bringing the question into the relationship.",
+          "try_this": "When something feels unclear, ask directly and gently: \"I might be reading this wrong, but is this what you meant?\" Notice whether the conversation becomes clearer and whether both of you can stay present with the question.",
+          "final_line": "What matters is not one response. It is whether clarity and care keep growing between you."
         }
       }
     ],
     "action_plan": {
       "summary": "You already know how to read people. What changes now is trusting what you felt before you talk yourself out of it.",
       "action_items": [
-        "When something feels off, write down the feeling before you explain it away.",
+        "When something feels off, write down the feeling before explaining it away.",
         "Ask one direct question instead of interpreting the whole situation alone.",
-        "When you feel hurt, treat that feeling as enough information to pay attention."
+        "Treat hurt as information that deserves attention, not proof that you are wrong."
       ]
     },
     "closing": {
