@@ -35,7 +35,7 @@
   },
   "free_result": {
     "short_summary": [
-      "You love by becoming someone others can lean on. Steady, quiet, and hard to shake.",
+      "You love by becoming someone others can lean on. Steady, present, and hard to shake.",
       "The loneliness you've felt before wasn't because you were alone. It was because you were always the one holding on.",
       "What you're still learning isn't how to be stronger. It's how to let someone support you too."
     ]
@@ -53,9 +53,9 @@
           "You're not someone who leans on others easily.",
           "When something hard happens, you handle it yourself first. When a problem comes up, you think it through alone before saying a word. You try not to bother people if you can help it.",
           "So people think you're strong. They think you're dependable. They think you're the mature one.",
-          "That is only half the story. You need someone too. You've just forgotten how to say it for a long time now.",
-          "It's the same when you love someone. When they're struggling, you stay close. When they're shaking, you hold them steady. When they're falling apart, you catch them.",
-          "But when you're the one who's shaking. You say nothing.",
+          "That is only half the story. You need someone too. You've just gotten used to keeping that part to yourself.",
+          "Love brings out the same instinct. When they're struggling, you stay close. When they're shaking, you hold them steady. When they're falling apart, you catch them.",
+          "But when you're the one who's shaking, you say nothing.",
           "So this happens: people have no idea how much you're actually carrying."
         ],
         "highlight": null,
@@ -66,13 +66,13 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Keep Repeating",
         "body": [
-          "This pattern is probably older than you think.",
-          "Someone struggles. You're naturally there beside them. They never even asked. It just happens. And slowly, they get more comfortable, while you get more used to it.",
-          "That's where the problem starts. They start to think you're \"fine.\" But you were just acting fine. That gap is huge.",
+          "This pattern may be older than you realize.",
+          "Someone struggles. You're naturally there beside them. They may not even have to ask. It just happens. And slowly, they get more comfortable leaning on you, while you get more used to carrying it.",
+          "That's where the problem can start. They begin to think you're \"fine.\" But sometimes, you were only trying to look fine. That gap matters.",
           "They think you don't need anything. You never say that you do.",
-          "So the longer the relationship goes on, the lonelier you get."
+          "So the longer the relationship goes on, the easier it is to feel lonely inside it."
         ],
-        "highlight": "You're not lonely because you're alone. You're lonely because you've only ever played the role of the one who holds on.",
+        "highlight": "The loneliness isn't always about being alone. Sometimes it comes from always being the one who holds everything together.",
         "pattern_name": "THE UNSEEN WEIGHT CURVE",
         "chart": {
           "chart_type": "curve",
@@ -87,18 +87,18 @@
         "items": [
           {
             "belief": "I'm just someone who's comfortable being alone.",
-            "truth": "Hmm. Probably not.\n\nIt's not that being alone is comfortable. It's that being alone is *familiar*. Familiar and comfortable aren't the same thing.",
+            "truth": "Maybe not.\n\nBeing alone may not feel comfortable so much as familiar. And familiar and comfortable aren't always the same thing.",
             "truth_short": "Being alone may feel familiar, but familiar and comfortable aren't the same thing."
           },
           {
             "belief": "My problems are mine to solve.",
-            "truth": "Why? Who decided that?\n\nThink about it. If someone you cared about told you they were struggling, you'd help them. So why are you the exception?",
+            "truth": "Think about it.\n\nIf someone you cared about told you they were struggling, you'd help them. You deserve that same chance to be supported.",
             "truth_short": "You would help someone you cared about. You don't have to be the exception."
           },
           {
             "belief": "Showing that I'm struggling is a burden to others.",
-            "truth": "No, it isn't.\n\nThe burden isn't asking for help. The burden is never giving the other person a chance to show up for you in the first place. If someone's going to care about you, they at least need to know how you're actually doing.",
-            "truth_short": "Asking for help isn't the burden. Never letting someone show up for you is."
+            "truth": "Asking for help doesn't make you a burden.\n\nKeeping everything to yourself can leave the other person with no clear way to show up for you. If someone's going to care for you, they need a chance to know how you're actually doing.",
+            "truth_short": "Asking for help isn't a burden. It gives someone a chance to show up for you."
           }
         ]
       },
@@ -107,9 +107,9 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You're drawn, again and again, to people who clearly need something to lean on. Someone a little unsteady. Someone a little shaky. Someone who wants to lean on you.",
-          "Because you're good at that role. Taking them in, listening, holding steady.",
-          "But over time, something gets strange. They're receiving help from you, and you're not receiving help from anyone."
+          "You may find yourself drawn to people who clearly need something to lean on. Someone a little unsteady. Someone who feels safer when you're nearby.",
+          "It makes sense. You're good at listening, taking things in, and helping someone feel steady.",
+          "But over time, something can feel off. They're receiving help from you, while your own need for support stays mostly unseen."
         ],
         "highlight": "Someone who trusts you uses your shoulder. Someone who loves you also checks whether that shoulder is getting heavy.",
         "bar_chart": {
@@ -123,12 +123,12 @@
         "title": "What Actually Changes Something",
         "body": [
           "What you need isn't to get even stronger. You're already strong enough.",
-          "What you need is the opposite. A little weaker. More precisely, to show the weaker parts.",
-          "Say it when something's hard. Ask for things. Let yourself receive help.",
-          "It takes more courage than it sounds like it should.",
-          "But that's what actually changes a relationship."
+          "What changes things is letting the parts that need care become visible too.",
+          "Say it when something's hard. Ask for what you need. Let yourself receive help.",
+          "It can take more courage than it sounds like it should.",
+          "That's how care starts moving in both directions."
         ],
-        "action_sentence": "But that's what actually changes a relationship."
+        "action_sentence": "That's how care starts moving in both directions."
       },
       {
         "chapter_number": 6,
@@ -136,11 +136,11 @@
         "title": "Where You Go From Here",
         "body": [
           "You already know how to take responsibility. You already know how to protect someone. You already know how to stay until the end.",
-          "What you're going to learn next is how to hold on together.",
-          "Not holding on alone, but letting the other person be part of holding on too.",
-          "The best relationships, it turns out, are carried by two people at once."
+          "The next step is learning how to hold on together.",
+          "Not carrying everything alone, but letting the other person take part in what keeps the relationship steady.",
+          "The strongest relationships make room for two people to carry what matters."
         ],
-        "transition_note": "The best relationships, it turns out, are carried by two people at once."
+        "transition_note": "The strongest relationships make room for two people to carry what matters."
       },
       {
         "chapter_number": 7,
@@ -148,16 +148,16 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "The Person Who Looks Strong But Needs Someone",
-            "description": "They seem capable. They take care of things. People rely on them. But when no one is watching, they need someone to hold everything together for them."
+            "type_title": "The Person Who Looks Strong But Still Needs Support",
+            "description": "They seem capable. They take care of things. People rely on them. But when life gets heavy, they may turn to you to hold more than your share."
           },
           {
             "type_title": "The Person Who Needs Somewhere To Lean",
             "description": "Something goes wrong, and you're the first person they call. A difficult day. A family problem. A decision they don't want to make alone. At first, being needed feels meaningful. But slowly, you realize they only know how to stand when you're holding part of the weight."
           },
           {
-            "type_title": "Someone who can't quite manage on their own",
-            "description": "They struggle to decide things. They struggle to keep things organized. So you end up doing it. At some point, far more of it than you should."
+            "type_title": "Someone Who Struggles to Manage Alone",
+            "description": "They struggle to decide things or keep them organized. So you step in. At some point, you may notice you're carrying far more than feels fair."
           },
           {
             "type_title": "Someone Who Says Thank You But Never Changes",
@@ -169,7 +169,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "These signs were there every time. You just kept explaining them away. On the other person's behalf.",
+        "intro_note": "These signs can be easy to miss when you're used to making room for the other person's needs first.",
         "signal_strength": [
           {
             "label": "You hear about their problems often, but you barely mention your own",
@@ -184,11 +184,11 @@
             "percent": 85
           },
           {
-            "label": "The harder things get, the quieter you become",
+            "label": "The harder things get, the less you say about what you're carrying",
             "percent": 95
           }
         ],
-        "core_signal": "They believe you're fine. But the only evidence for that belief is a performance you've been putting on."
+        "core_signal": "They may believe you're fine because that's the version you've learned to show them."
       },
       {
         "chapter_number": 9,
@@ -204,12 +204,12 @@
             "description": "Some days you can be exhausted. You can make mistakes. You can lean on someone."
           },
           {
-            "title": "When problems come up, you move on it together.",
-            "description": "One person doesn't become the fixer. You look at it together. You think it through together."
+            "title": "When problems come up, you work on them together.",
+            "description": "One person doesn't automatically become the fixer. You look at the problem together and decide what to do together."
           },
           {
             "title": "The care goes both ways.",
-            "description": "This is the most important one. You're not the only one watching the other person. They're watching you too."
+            "description": "You're not the only one paying attention. They notice when you need care too."
           }
         ]
       },
@@ -218,12 +218,12 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're vulnerable to someone who isn't able to solve their own problems.\n\nAt first it looks fine. Helping them feels a little like love. Being needed feels meaningful.\n\nBut eventually, the same thing happens again. You stop being a partner and become a fixer.",
-          "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who doesn't carry every problem alone. Someone who says when things are hard. Someone who asks when they need something. Someone who actually says thank you.\n\nThis kind of person doesn't use up your sense of responsibility. They share it with you.",
-          "same_pattern_repeats": "",
-          "next_signs": "This time it'll show up sooner.\n\nIn how quickly they tell you about their hard days, and in how you listen when it's about yours.\n\nWhat used to take months to notice, you'll catch within weeks this time.\n\nWho's the one always receiving. Who's actually showing up in the relationship.",
-          "try_this": "This time, run a test. One very small favor. Something genuinely minor.\n\nAsk them to come pick you up. Or to give you a call. Anything at all.\n\nThen watch.\n\nDoes the favor annoy them? Or do they take it like it's an opportunity?\n\nYou've spent your whole life helping others. This time, check something else.\n\nWhether this is someone who can help you too.",
-          "final_line": "That reaction is your answer."
+          "who_breaks_you": "You may feel pulled toward someone who has trouble carrying their own problems.\n\nAt first, helping can feel a lot like love. Being needed can feel meaningful.\n\nBut if responsibility keeps moving in only one direction, you can slowly stop feeling like a partner and start feeling like the fixer.",
+          "who_steadies_you": "A steadier match is someone who can speak clearly about what they need and make room for what you need too. They don't leave every hard thing with you. They ask, listen, and take responsibility for their part.\n\nAround someone like this, support doesn't have to be earned by carrying everything first.",
+          "same_pattern_repeats": "You may still feel drawn to someone who needs your steadiness. That attraction isn't the problem by itself.\n\nWhat matters is whether they also make room for your needs, take responsibility for their own choices, and notice when the weight stops feeling shared.",
+          "next_signs": "This time, the signs may be easier to notice earlier.\n\nPay attention to what happens when you mention a hard day, ask for support, or let someone see that you don't have everything handled.\n\nThe important part isn't one perfect response. It's whether care and responsibility begin moving both ways.",
+          "try_this": "Try asking for one small, honest thing you genuinely need.\n\nIt could be a call, help with a plan, or company on a difficult day.\n\nThen notice what follows over time. Do they remember? Do they make room? Can they support you without turning your need into a problem?\n\nYou already know how to help someone else. This is about learning whether support can feel mutual.",
+          "final_line": "You don't need proof from one moment. You need a pattern that lets you lean too."
         }
       }
     ],
@@ -232,7 +232,7 @@
       "action_items": [
         "This week, ask for one small favor instead of handling everything yourself.",
         "When something feels hard, say it before you have already solved it alone.",
-        "Notice whether the other person checks on your weight, not just uses your shoulder."
+        "Notice whether the other person makes room for your needs, not only their own."
       ]
     },
     "closing": {

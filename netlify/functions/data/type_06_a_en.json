@@ -53,7 +53,7 @@
           "You're more independent than people think.",
           "Even when you fall for someone, you don't suddenly change everything. You still have your own life. Your own plans. Your own way of doing things.",
           "So people often get the wrong idea. They assume you'd never get swept up by anyone.",
-          "But here's the thing. Strangely, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
+          "Still, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
           "You never went out of your way to accommodate them. You never put on an act of being especially nice. They just say being near you feels comfortable.",
           "So love starts the same way. At first it's two people. At some point, you become the center of gravity."
         ],
@@ -86,18 +86,18 @@
         "items": [
           {
             "belief": "I take care of people too much.",
-            "truth": "No, you don't. You actually take care of people less than you think. If anything, you're living life your own way. The real problem is that people mistake your stability for being taken care of.",
-            "truth_short": "You don't take care of people as much as you think. People mistake your stability for being taken care of."
+            "truth": "Maybe not as much as you think.\n\nYou have your own life and your own way of doing things. But because you seem so steady, people can start treating that steadiness like care that's always available.",
+            "truth_short": "You may not take care of people as much as you think. Your steadiness can make care seem automatically available."
           },
           {
             "belief": "I can't say no.",
-            "truth": "Hmm. You can say no. It's that you understand why they need it, and that's why you can't. You get why they're asking. You get why it's hard for them. So you keep making exceptions.",
-            "truth_short": "You can say no. But once you understand why they need it, you keep making exceptions."
+            "truth": "You can say no. It just gets harder once you understand why they need something. You see why they're asking. You see why it's hard for them. So you make one exception, then another.",
+            "truth_short": "You can say no. But understanding why they need something can make exceptions feel easier."
           },
           {
             "belief": "I need to get stronger.",
-            "truth": "No. You don't need to get any stronger. You're already strong enough. What you need isn't strength. It's boundaries.",
-            "truth_short": "You don't need to get any stronger. What you need isn't strength. It's boundaries."
+            "truth": "You don't need to become stronger. You're already carrying enough. What helps now is knowing where your responsibility ends and theirs begins.",
+            "truth_short": "You don't need more strength. You need a clearer line between your responsibility and theirs."
           }
         ]
       },
@@ -107,7 +107,7 @@
         "title": "The Person You Keep Choosing",
         "body": [
           "You're particularly drawn to people whose lives aren't quite put together.",
-          "Good-hearted, but their life is a little messy. Lots of thoughts, but not much follow-through.",
+          "Kind, but their life is a little messy. Lots of thoughts, but not much follow through.",
           "At first it's fine. You can fill in what they're missing.",
           "But the longer the relationship goes on, you split into two roles: the one who fills in, and the one who leans."
         ],
@@ -138,10 +138,10 @@
         "body": [
           "You already know how to hold someone. You already know how to take people in. You already know how to wait.",
           "What you're going to learn next is how to tell things apart.",
-          "Love and responsibility. Care and self-sacrifice. Helping and solving it for them.",
-          "Once that line exists, the relationship will get a lot lighter."
+          "Love and responsibility. Care and self sacrifice. Helping and solving it for them.",
+          "Once that line becomes clearer, the relationship has room to feel lighter."
         ],
-        "transition_note": "Once that line exists, the relationship will get a lot lighter."
+        "transition_note": "Once that line becomes clearer, the relationship has room to feel lighter."
       },
       {
         "chapter_number": 7,
@@ -189,7 +189,7 @@
             "percent": 95
           }
         ],
-        "core_signal": "The better their life gets, the bigger your role grows, and your own life stays exactly the same."
+        "core_signal": "As their life gets better, your role can keep growing while your own needs stay in the background."
       },
       {
         "chapter_number": 9,
@@ -205,8 +205,8 @@
             "description": "They can receive help. But no one's living their life for them."
           },
           {
-            "title": "Asking favors isn't one-sided.",
-            "description": "You're not the only one receiving. It comes back to you too."
+            "title": "Asking favors isn't uneven.",
+            "description": "You are not the only one giving. Care and practical help come back to you too."
           },
           {
             "title": "Being together doesn't add to your responsibilities.",
@@ -219,12 +219,12 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow-through. Because you're capable of follow-through. So you keep stepping in to help.",
+          "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow through. Because you're capable of follow through. So you keep stepping in to help.",
           "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who handles their own things. Someone who moves when a problem comes up. Someone who admits it when they're wrong. Someone who learns when they need to. This kind of person doesn't drain your energy. They build with you.",
-          "same_pattern_repeats": "",
-          "next_signs": "This time it'll show up sooner. In how they handle problems. Whether they look for an excuse, or look for a way through. You'll see it within a few weeks. More precisely than you'd expect.",
-          "try_this": "This time, don't solve it for them. Just once. When they bring you a problem, don't give the answer. Ask instead. \"What do you want to do?\" Then watch. Do they try to find their own answer? Or do they just wait for yours again?",
-          "final_line": "That reaction is your answer."
+          "same_pattern_repeats": "You may still feel drawn to someone who has good intentions but little follow through. That does not mean the same relationship has to repeat. The difference begins when you notice whether they take ownership of their own life, instead of quietly handing that ownership to you.",
+          "next_signs": "This time, the pattern may show up sooner. Watch how they handle small problems. Do they look for a way through, or wait for you to take over? You may notice the difference within the first few weeks.",
+          "try_this": "When they bring you a problem, pause before offering the answer. Ask, \"What do you want to do?\" Then stay with the conversation. Notice whether they begin thinking through their own next step, and whether responsibility starts staying where it belongs.",
+          "final_line": "What matters is whether they keep taking part in solving their own life, instead of leaving you to carry it."
         }
       }
     ],
