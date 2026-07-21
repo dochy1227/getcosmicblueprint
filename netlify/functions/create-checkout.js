@@ -10,7 +10,7 @@
 //
 // 왜 고정 결제 링크(Payment Link)를 안 쓰는가:
 //   우리 상품은 20종(천간×내향/외향)인데 Creem에는 상품이 1개
-//   ("Cosmic Blueprint Full Love Report", $4.99)만 등록되어 있음.
+//   ("Cosmic Blueprint Full Love Report", $6.99)만 등록되어 있음.
 //   어떤 방문자가 어떤 리포트(type_03_a 등)를 결제했는지는 metadata로만
 //   구분 가능하고, 고정 링크는 요청마다 다른 metadata를 실을 수 없음.
 //   → 반드시 체크아웃 세션을 "그때그때" 만들어야 함(Checkout Session API).
@@ -29,7 +29,7 @@
 //                          (Test/Live는 서로 다른 키이며 절대 혼용 불가)
 //   - CREEM_PRODUCT_ID    Creem 대시보드 Products 탭에서 "Copy ID"로 확보한
 //                          상품 ID. 현재 값: (실제 값은 Netlify 환경변수에서 관리)
-//                          (상품명: Cosmic Blueprint Full Love Report, $4.99)
+//                          (상품명: Cosmic Blueprint Full Love Report, $6.99)
 //   - SITE_URL            기본값 https://getcosmicblueprint.com
 //                          (결제 완료 후 리다이렉트될 success_url 조합용)
 //   - CREEM_TEST_MODE     (선택) 'true'/'false'. 실제 분기 기준은 CREEM_API_KEY
