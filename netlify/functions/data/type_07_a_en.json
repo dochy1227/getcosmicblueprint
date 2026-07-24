@@ -35,7 +35,7 @@
   },
   "free_result": {
     "short_summary": [
-      "You do not trust quickly; you watch behavior, compare details, and notice inconsistencies earlier than most people.",
+      "You don't trust quickly; you watch behavior, compare details, and notice inconsistencies earlier than most people.",
       "Your pain often comes from turning every piece of evidence back on yourself instead of reviewing both sides fairly.",
       "What changes love for you is learning to ask for the real reason before filling the blank with your own blame."
     ]
@@ -216,11 +216,11 @@
           },
           {
             "title": "Explanations don't only come from one side.",
-            "description": "You are not the only one responsible for making things clear."
+            "description": "You aren't the only one responsible for making things clear."
           },
           {
             "title": "The relationship feels safe even without guessing.",
-            "description": "The relationship does not depend on you filling every blank alone."
+            "description": "The relationship doesn't depend on you filling every blank alone."
           }
         ]
       },
@@ -230,11 +230,11 @@
         "title": "What Happens In Your Next Relationship",
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who leaves too much unexplained. Because the reason is missing, you may build one for them. The more convincing your explanation becomes, the easier it is for the real conversation to never happen.",
-          "who_steadies_you": "A steadier match is someone who explains what happened, keeps words and actions close, and does not leave you alone with every blank. Around someone like this, clarity does not depend on your guesses.",
-          "same_pattern_repeats": "You may still feel drawn to someone who is hard to read. That does not mean the same pattern has to continue. What changes it is whether they meet your questions with real clarity, instead of leaving you to build the whole explanation alone.",
+          "who_steadies_you": "A steadier match is someone who explains what happened, keeps words and actions close, and doesn't leave you alone with every blank. Around someone like this, clarity doesn't depend on your guesses.",
+          "same_pattern_repeats": "You may still feel drawn to someone who is hard to read. That doesn't mean the same pattern has to continue. What changes it is whether they meet your questions with real clarity, instead of leaving you to build the whole explanation alone.",
           "next_signs": "This time, you may catch the moment sooner. Right before you start building the reason for them, ask yourself, \"Did I actually hear this, or am I filling in the blank?\" That pause can bring the real question back into the room.",
           "try_this": "Before reviewing your own behavior, separate what you know from what you guessed. Then ask for the missing reason directly. Notice whether the other person answers clearly, stays consistent, and helps carry the conversation.",
-          "final_line": "The answer is not in one explanation. It is in whether clarity starts coming from both sides."
+          "final_line": "The answer isn't in one explanation. It is in whether clarity starts coming from both sides."
         }
       }
     ],
@@ -247,7 +247,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to examine yourself. The next report covers why you always look for the cause in yourself, and how you can start sharing that examination fairly.",
+      "message": "You've spent a long time learning how to examine yourself. The next report covers why you keep looking for the cause in yourself, and how you can start sharing that examination fairly.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

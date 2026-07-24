@@ -37,7 +37,7 @@
     "short_summary": [
       "You can get close quickly, warmly, and naturally, but that doesn't mean you've let someone all the way in.",
       "Your loneliness doesn't come from having too few people. It comes from keeping the deepest room untouched.",
-      "What changes love for you is not opening wider, but opening one place deeply."
+      "Love changes when you open one place deeply instead of only opening wider."
     ]
   },
   "full_report": {
@@ -76,12 +76,12 @@
           "But you may keep stopping just before that door opens.",
           "The surface can keep growing warmer while the distance to your core changes very little."
         ],
-        "highlight": "The loneliness is not always about having too few people. It can come from having no place where the deepest part of you is shared.",
+        "highlight": "The loneliness can come from having no place where the deepest part of you is shared, even when plenty of people are around.",
         "pattern_name": "THE SURFACE OCEAN CURVE",
         "chart": {
           "chart_type": "curve",
           "title": "THE SURFACE OCEAN CURVE",
-          "description": "The pattern where the surface gets close fast early on, but even as the relationship goes on, the distance to the core never shrinks, and only the surface intimacy keeps widening."
+          "description": "The pattern where the surface gets close fast early on, but even as the relationship goes on, the distance to the core barely changes, and only the surface intimacy keeps widening."
         }
       },
       {
@@ -127,10 +127,10 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need is not more people around you.",
+          "You already have enough people around you.",
           "You already know how to create connection.",
           "What may help is choosing one person and opening one private part a little more.",
-          "You do not have to show everything.",
+          "You don't have to show everything.",
           "One honest thing you have rarely said may be enough to begin.",
           "For you, that small opening can be a meaningful step toward depth."
         ],
@@ -142,7 +142,7 @@
         "title": "Where to Go From Here",
         "body": [
           "You already know how to be comfortable with many kinds of people.",
-          "That is a real strength.",
+          "That's a real strength.",
           "What you may learn next is how to move past ease and into depth with one person.",
           "Not opening to everyone. Opening one place more fully.",
           "That may feel more vulnerable than broad connection ever did.",
@@ -156,7 +156,7 @@
         "title": "The Type You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone Who Does Not Ask What Lies Underneath",
+            "type_title": "Someone Who Doesn't Ask What Lies Underneath",
             "description": "They enjoy your company exactly as it is. No difficult questions. No pressure. Months can pass comfortably while very little of your inner world is actually shared."
           },
           {
@@ -169,7 +169,7 @@
           },
           {
             "type_title": "Someone Who Mistakes Frequency for Depth",
-            "description": "You meet often and talk every day. That can feel intimate. But frequency alone does not always mean the most important parts have been seen."
+            "description": "You meet often and talk every day. That can feel intimate. But frequency alone doesn't always mean the most important parts have been seen."
           }
         ]
       },
@@ -205,7 +205,7 @@
         "checklist": [
           {
             "title": "They wait without demanding depth.",
-            "description": "They do not rush you, but they stay open to knowing more when you are ready."
+            "description": "They don't rush you, but they stay open to knowing more when you're ready."
           },
           {
             "title": "They tell the difference between surface and real intimacy.",
@@ -228,10 +228,10 @@
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who is satisfied with surface closeness and never asks for more. The relationship can feel warm and easy while the deeper distance stays untouched. Over time, that comfort may begin to feel lonely.",
           "who_steadies_you": "A steadier match is someone who notices when the conversation stays on the surface, but does not force you past your pace. They show curiosity, patience, and care when you share something more private.",
-          "same_pattern_repeats": "You may still feel drawn to someone who enjoys your openness but never asks what lies underneath. That does not mean the same pattern has to continue. What changes it is whether the relationship keeps making room for real depth, not only easy connection.",
+          "same_pattern_repeats": "You may still feel drawn to someone who enjoys your openness but never asks what lies underneath. That doesn't mean the same pattern has to continue. What changes it is whether the relationship keeps making room for real depth, not only easy connection.",
           "next_signs": "This time, the pattern may show up in a brief pause before a deeper answer. You may feel the urge to change the subject or turn the moment into a joke. That pause can be a chance to choose whether you want to stay on the surface or share a little more.",
           "try_this": "When a deeper question comes up, stay with it for one more sentence. Share one honest thing without turning it into a full confession. Then notice whether the relationship continues to feel respectful, curious, and safe over time.",
-          "final_line": "One answer will not settle it. What matters is whether depth keeps finding a place between you."
+          "final_line": "One answer won't settle it. What matters is whether depth keeps finding a place between you."
         }
       }
     ],
@@ -244,7 +244,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to be comfortable with anyone. This report covered why you've always stopped at the surface, and how you can learn to go deeper with one person.",
+      "message": "You've spent a long time learning how to be comfortable with anyone. This report covered why you've kept stopping at the surface, and how you can learn to go deeper with one person.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

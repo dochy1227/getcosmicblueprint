@@ -31,7 +31,7 @@
     "pride": 2,
     "warmth": 5,
     "stability": 3,
-    "caption": "High warmth, low pride. You adjust for everyone, but never quite make a place for yourself."
+    "caption": "High warmth, low pride. You adjust for everyone, but rarely make enough room for your own place."
   },
   "free_result": {
     "short_summary": [
@@ -54,14 +54,14 @@
           "When two people feel awkward around each other, you naturally build a bridge. When someone's uncomfortable, you notice before they even say it. When a mood is about to break, you're the one who quietly steps in first and resets it.",
           "So people say being around you, everyone ends up comfortable.",
           "What goes unnoticed is your own discomfort.",
-          "You are quick to make everyone else comfortable. No one knows when you are uncomfortable.",
-          "Because you're the one who steps right in and smooths everything over, there's never any room left for your own position to even come up.",
+          "You're quick to make everyone else comfortable. Few people know when you're uncomfortable.",
+          "Because you're the one who steps right in and smooths everything over, there's little room left for your own position to come up.",
           "And something else can happen. When someone is struggling, their problem can start to feel like yours. No one asked you to take it on. You just notice the gap and move toward it.",
           "So love starts the same way. At first, things between you and them, and between them and the people around you, all flow naturally, because you're managing both sides.",
           "But in the middle of all that, you're not actually standing anywhere yourself."
         ],
         "highlight": null,
-        "profile_note": "High Care, Low Pride. Adjusting for everyone, but never quite making a place for yourself"
+        "profile_note": "High Care, Low Pride. You make room for everyone else, while your own position can gradually fade."
       },
       {
         "chapter_number": 2,
@@ -74,7 +74,7 @@
           "One day, you look up and realize you've been absorbing most of the friction before anyone else has to face it.",
           "You never chose that role outright. It grew each time you stepped in before the other person had to."
         ],
-        "highlight": "You're not exhausted because there's too much conflict. You're exhausted because every conflict has always disappeared by passing through you.",
+        "highlight": "The exhaustion comes from absorbing so much conflict before anyone else has to face it.",
         "pattern_name": "THE GRAVITY CURVE",
         "chart": {
           "chart_type": "curve",
@@ -98,8 +98,8 @@
             "truth_short": "You can say no, but you often notice everyone else's gap before your own."
           },
           {
-            "belief": "I always have to be the one keeping the balance in the middle.",
-            "truth": "You don't always have to stay in the middle. Sometimes the honest thing is to stand on your own side and let that be visible.",
+            "belief": "I keep feeling like I have to be the one holding the balance in the middle.",
+            "truth": "You don't have to stay in the middle every time. Sometimes the honest thing is to stand on your own side and let that be visible.",
             "truth_short": "You don't always need to stay in the middle. Sometimes you need a position of your own."
           },
           {
@@ -157,7 +157,7 @@
         "items": [
           {
             "type_title": "Someone Who Keeps Handing You the Decision",
-            "description": "They always ask you what to do. At first you assume it's because they trust you. But over time, they turn into someone who can't decide anything without you."
+            "description": "They often ask you what to do. At first you assume it's because they trust you. But over time, they can become someone who struggles to decide without you."
           },
           {
             "type_title": "Someone Who Struggles to Name Their Feelings",
@@ -169,7 +169,7 @@
           },
           {
             "type_title": "Someone Who Needs Constant Reassurance",
-            "description": "\"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\" These questions may come often. Reassurance can help for a moment, but it cannot carry the whole relationship by itself."
+            "description": "\"Are we okay?\" \"You're not mad, are you?\" \"Do you still like me?\" These questions may come often. Reassurance can help for a moment, but it can't carry the whole relationship by itself."
           }
         ]
       },
@@ -228,10 +228,10 @@
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who avoids direct conflict and relies on you to make every awkward moment disappear. You keep standing in the middle, but when the conflict is between you and them, no one takes that role for you. Over time, the relationship can leave you doing all the emotional coordination alone.",
           "who_steadies_you": "A steadier match is someone who tries to work things out directly, even when you don't step in first. With someone like this, you can have your own position without the whole relationship depending on you to restore the balance.",
-          "same_pattern_repeats": "You may still be drawn to someone who feels safer when you take over the difficult parts. That attraction does not decide the ending. What matters is whether they learn to face discomfort with you, instead of leaving you to absorb it.",
+          "same_pattern_repeats": "You may still be drawn to someone who feels safer when you take over the difficult parts. That attraction doesn't decide the ending. What matters is whether they learn to face discomfort with you, instead of leaving you to absorb it.",
           "next_signs": "This time, the pattern may show up in smaller moments. A minor disagreement happens, and they wait for you to smooth it over instead of speaking directly. Notice whether that changes as the two of you get to know each other.",
           "try_this": "When someone brings you a conflict, listen before offering a solution. Ask what they want to say or do next. Stay present, but leave enough room for them to take part in working it through.",
-          "final_line": "The real change is whether conflict can be shared, instead of always disappearing through you."
+          "final_line": "The real change is whether conflict can be shared, instead of repeatedly disappearing through you."
         }
       }
     ],

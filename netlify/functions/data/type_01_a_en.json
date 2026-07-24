@@ -50,9 +50,9 @@
         "title": "When You Love",
         "subtitle": null,
         "body": [
-          "You do not fall in love quickly. When you choose someone, it is rarely just attraction. You watch for a while first, and the decision grows quietly.",
-          "People around you often see only the strong version. The one who handles things alone and shows up when it matters. What sits underneath that strength may stay hidden.",
-          "When you look at someone, you may see not only who they are now, but who they could become. That ability can be a real strength. It can also make it easier to carry hope long after the relationship has become heavy."
+          "You don't fall in love fast. If you choose someone, it's never just attraction. You watch them for a while first, and the decision happens quietly, on its own.",
+          "People around you only see the strong version. The one who handles things alone, who always shows up when it matters. What's underneath that, most of them never see.",
+          "When you look at someone, you don't see who they are right now. You see who they could become. You see it before anyone else does, and once you've seen it, you can't pretend you haven't. That's what makes you rare. It's also exactly why you get hurt."
         ],
         "highlight": null,
         "profile_note": "High Drive · High Care, Low Expression · Low Stability. Once you commit, you carry everything, but you never let your own state show."
@@ -62,10 +62,10 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Keep Repeating",
         "body": [
-          "This pattern may feel familiar. Someone came into your life needing support, so you stayed. You gave time, energy, and steadiness. When they struggled, you helped hold things together.",
-          "Then one day, you may realize you have been carrying most of it alone. It does not mean they were a bad person. The relationship may simply have shifted from being together into managing everything for them."
+          "You've done this before, haven't you? Probably more than once. Someone came into your life needing something. So you stayed. You gave time, energy, certainty. All of it. When they couldn't hold on, you were the one holding everything together.",
+          "Then one day you looked up, and you were doing it alone. It's not that they were a bad person. At some point the relationship just became \"managing them,\" and no one was managing you."
         ],
-        "highlight": "The exhaustion was not only from loving deeply. It came from giving support without feeling it return.",
+        "highlight": "That exhaustion wasn't about how much you loved. It came from giving without anyone giving it back.",
         "pattern_name": "THE EXHAUSTION CURVE",
         "chart": {
           "chart_type": "curve",
@@ -80,18 +80,18 @@
         "items": [
           {
             "belief": "I don't need anyone.",
-            "truth": "You may need people more than you let yourself show. At some point, leaning on someone may have started to feel risky, so handling things alone became familiar.",
-            "truth_short": "You need support too. You may simply be more used to hiding that need."
+            "truth": "No, that's not true. You need people just as much as anyone else does. You just stopped showing it at some point.\n\nThink about it, at some point, leaning on someone started feeling like weakness, didn't it? So you chose to handle it alone. Do that enough times and it starts to feel like personality. It isn't. It's just an old habit.",
+            "truth_short": "You need people too. You just stopped showing it. It's a habit, not a personality trait."
           },
           {
             "belief": "If I love enough, they'll become who I see.",
-            "truth": "The potential you saw may have been real. But potential is not the same as readiness, and love cannot make someone grow before they choose to.",
-            "truth_short": "You may see real potential, but people still grow at their own pace."
+            "truth": "The potential you saw in them wasn't pure fiction. It was probably there, at least partly.\n\nBut you filled in too much of the rest. 30% who they really were, plus 70% your own imagination, and you called the result \"their true self.\" People don't grow faster because someone loves them harder. They grow at their own pace, no matter how long you wait.",
+            "truth_short": "You saw 30% real potential and filled in 70% imagination. People grow at their own pace, not yours."
           },
           {
             "belief": "I got hurt because I gave too much.",
-            "truth": "Giving was not the whole problem. The deeper issue may have been trusting the relationship before enough care, consistency, and responsibility had been shown.",
-            "truth_short": "The issue may not be how much you gave, but whether trust had enough evidence behind it."
+            "truth": "You probably didn't get hurt from giving too much. You got hurt because you trusted someone completely, without question, and they turned out to be different from what you thought. The real issue isn't how much you gave. It's how carefully you checked before you committed.",
+            "truth_short": "You weren't hurt by giving too much. You misjudged who deserved your trust."
           }
         ]
       },
@@ -100,10 +100,10 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "The faces change, but a similar pattern can return. You may be drawn to someone who needs support, direction, or time to become steadier.",
-          "Being needed can feel close to being loved. But needing your strength and caring about your whole experience are not the same thing."
+          "The face changes every time. The situation feels different every time. But look closely and the pattern is always the same. You're drawn to people who need something: people with potential they haven't found yet, a little lost, a little rough, a little unfinished.",
+          "When someone needs you, it feels like love. It feels like connection, like mattering to them. But being \"needed\" by someone and being \"loved\" by someone aren't the same thing."
         ],
-        "highlight": "Someone may need what you give. A caring partner also wants to know how you are doing.",
+        "highlight": "Someone who needs you only ever takes what you give. Someone who loves you also asks, \"And how are you?\"",
         "bar_chart": {
           "give_percent": 60,
           "get_percent": 40
@@ -114,20 +114,20 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need is not someone who is only impressed by your strength.",
-          "What may help is someone who notices when you are tired, checks in before being asked, and does not expect you to stay strong every time."
+          "What you need isn't someone who's impressed by your strength. You've already met enough of those.",
+          "What you actually need is someone who notices when you're exhausted. Someone who reaches out before you have to ask. Someone who makes you feel like you don't have to be strong every single time."
         ],
-        "action_sentence": "In a healthier relationship, support can move toward you too."
+        "action_sentence": "In the right relationship, you're not the only one someone can rely on."
       },
       {
         "chapter_number": 6,
         "page_map": "chapter_06",
         "title": "Where You Go From Here",
         "body": [
-          "You already know how to love and support someone.",
-          "What you may be learning next is how to let care reach you without turning it into a test, assuming it will fail, or hiding your need until no one can see it."
+          "You already know how to love someone. You've done it properly. More than once.",
+          "What you're still learning is how to let someone love you back. Without testing them. Without pre-deciding it will fail. Without keeping one foot out the door."
         ],
-        "transition_note": "You've spent a long time being strong for other people. The next step is letting strength and care move both ways."
+        "transition_note": "This isn't some flaw in your character. It's just what naturally happens to someone who's been strong alone for too long."
       },
       {
         "chapter_number": 7,
@@ -135,20 +135,20 @@
         "title": "The Types You Keep Falling For",
         "items": [
           {
-            "type_title": "Someone Who Seems to Need Saving",
-            "description": "They may seem lost, worn down, or unsure of where they are going. You see what they could become. Over time, you may realize you have become their foundation instead of their partner."
+            "type_title": "The Person Who Seems to Need Rescuing",
+            "description": "Someone lost, not yet where they want to be, a little broken down. You see their potential clearly. It takes a long time before you realize. You didn't sign up to be their partner. You signed up to be their foundation."
           },
           {
-            "type_title": "Someone Who Is Hard to Read",
-            "description": "They open slowly and reveal little. At first, that can feel intriguing. But mystery and emotional distance are not always the same thing."
+            "type_title": "The Person Who's Hard to Read",
+            "description": "Someone who doesn't show emotion easily. Opens up slowly, hard to figure out. At first it's interesting. Like a puzzle worth solving. But what you mistook for depth is sometimes just distance. And distance doesn't always turn into closeness, no matter how long you wait."
           },
           {
-            "type_title": "Someone Who Loves Your Strength",
-            "description": "They admire how capable you are. But admiration for your strength does not always mean they know how to stay close when you are tired or unsure."
+            "type_title": "The Person Who Loves Your Strength",
+            "description": "They love watching you handle anything. At first it feels good. But loving your strength and wanting to know what's beneath it are completely different things. This person needs you to keep being strong. They have no idea what to do when you're not."
           },
           {
-            "type_title": "Someone With Visible Potential",
-            "description": "They have talent, ideas, and promise. You may invest in who they could become, while the present version of the relationship keeps asking you to wait."
+            "type_title": "The Person With Visible Potential",
+            "description": "Talented, full of ideas, just hasn't gotten there yet. You invest, support, wait. More often than not. The gap between who they are and who you imagined stays exactly the same as it was on day one."
           }
         ]
       },
@@ -156,7 +156,7 @@
         "chapter_number": 8,
         "page_map": "chapter_08",
         "title": "The Warning Signs You've Missed",
-        "intro_note": "Some of these signs may have been there early. Hope can make them easier to explain away.",
+        "intro_note": "These signs were there early. It was just easy to explain them away.",
         "signal_strength": [
           {
             "label": "Most of the conversation is about them, and because you're good at listening, it feels natural",
@@ -171,11 +171,11 @@
             "percent": 85
           },
           {
-            "label": "On hard days, you stay quiet because you do not want to add to their load",
+            "label": "On hard days, you stay silent. You don't want to add to their load.",
             "percent": 95
           }
         ],
-        "core_signal": "You notice their difficult days quickly. The question is whether your difficult days receive the same care and attention."
+        "core_signal": "When they're down, you notice instantly. When they're struggling, you're attentive. But when you're down, when you're struggling. They don't pay nearly that much attention. That's the sign that this is only flowing one way."
       },
       {
         "chapter_number": 9,
@@ -184,19 +184,19 @@
         "checklist": [
           {
             "title": "They show up without being asked.",
-            "description": "They notice changes, ask what you need, and follow through with care."
+            "description": "You don't need to hint. When something's hard, they notice, and they do something."
           },
           {
             "title": "They can handle you when you're not okay.",
-            "description": "You do not have to perform strength. They can stay close when you are tired, uncertain, or upset."
+            "description": "You don't have to perform strength. Tired, uncertain, irritable. They stay anyway. Not trying to fix you, just staying close."
           },
           {
             "title": "They're curious about you, not just impressed by you.",
-            "description": "They want to know your inner world, not only admire what you can handle."
+            "description": "The right person asks questions. Real ones. And remembers the answers."
           },
           {
             "title": "Being together makes you lighter, not heavier.",
-            "description": "Time together does not leave you carrying more than before."
+            "description": "Your energy goes up after time together, not down. For you, that's not a small difference. It's everything."
           }
         ]
       },
@@ -205,21 +205,21 @@
         "page_map": "chapter_10",
         "title": "What Happens In Your Next Relationship (THE PIONEER)",
         "sections": {
-          "who_breaks_you": "You're vulnerable to someone whose needs and potential keep pulling you into the role of supporter. You may feel responsible for keeping them moving, while your own needs remain outside the relationship.",
-          "who_steadies_you": "A steadier match is someone with a clear sense of self who does not expect you to carry the whole direction. They can receive your strength without depending on it, and they make room for your uncertainty too.",
-          "same_pattern_repeats": "You may still feel drawn to someone who needs support or shows visible potential. That does not decide the ending. What matters is whether they take responsibility for their own growth and whether care begins moving back toward you.",
-          "next_signs": "This time, the pattern may appear in smaller moments. They accept your help easily, but rarely ask how you are doing. Notice whether that changes as the relationship develops.",
-          "try_this": "Ask for one small form of support before you are exhausted. Say clearly what would help, then notice whether care becomes more mutual over time. Do not use one response as the whole verdict. Look for consistency.",
-          "final_line": "What matters is whether care, responsibility, and attention begin moving in both directions."
+          "who_breaks_you": "You're vulnerable to someone whose potential just keeps growing, and their need for you grows right along with it. You end up carrying the direction for both of you, while your own tired days go unnoticed.",
+          "who_steadies_you": "The better fit is someone who already knows who they are. They don't need you to carry the whole direction. They can take your strength without leaning their entire weight on it, and they leave room for you to not be okay sometimes too.",
+          "same_pattern_repeats": "You'll be drawn again to someone who needs something, someone with potential. That pull isn't something you can just switch off, and that's okay. The issue was never the attraction itself. It's what you do after.",
+          "next_signs": "Remember the signs from Chapter 8? They usually showed up months in. This time they'll show up differently. Sooner, and smaller.\n\nThey rarely say thank you. They take what you do for them as a given. If you see this within the first few weeks, that's the start.",
+          "try_this": "Normally you'd give more. This time, do the opposite. Just once, test what it's like to be on the receiving end. Ask them for something. And watch how they take it.\n\nSomeone who's right for you will just do it, like it's nothing.\nSomeone who isn't will feel apologetic or awkward about it.",
+          "final_line": "How they react to that tells you everything."
         }
       }
     ],
     "action_plan": {
       "summary": "You already know how to carry a relationship. What's left is learning to let someone carry part of it with you.",
       "action_items": [
-        "This week, ask for one small form of support instead of offering first.",
-        "When you feel tired, say so before going quiet.",
-        "Before investing in someone's potential, look at how they are living and acting now."
+        "This week, ask for something small instead of offering first, and watch how it lands.",
+        "When you feel exhausted, say so out loud once, instead of going quiet.",
+        "Before you invest in someone's potential, check what's true about them right now, not just what they could become."
       ]
     },
     "closing": {

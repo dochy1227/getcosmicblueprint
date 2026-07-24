@@ -31,12 +31,12 @@
     "pride": 3,
     "warmth": 4,
     "stability": 4,
-    "caption": "High Stability · High Care, Low Drive · Low Expression. Walking your own path, while always holding someone within it"
+    "caption": "High Stability · High Care, Low Drive · Low Expression. You walk your own path while still making room for people who lean on you."
   },
   "free_result": {
     "short_summary": [
       "You're more independent than people think, but people still keep leaning on you because your steadiness feels comfortable.",
-      "The exhaustion you've felt wasn't weakness. It came from always looking like someone who could hold steady, no matter what.",
+      "The exhaustion you've felt wasn't weakness. It came from looking so steady that people assumed you could keep holding everything.",
       "What changes love for you is learning what is actually yours to carry, and what belongs back with them."
     ]
   },
@@ -52,13 +52,13 @@
         "body": [
           "You're more independent than people think.",
           "Even when you fall for someone, you don't suddenly change everything. You still have your own life. Your own plans. Your own way of doing things.",
-          "So people often get the wrong idea. They assume you'd never get swept up by anyone.",
+          "So people often get the wrong idea. They assume you'd rarely get swept up by anyone.",
           "Still, people keep leaning on you anyway. They come to you for advice. They vent to you. They ask you for help.",
-          "You never went out of your way to accommodate them. You never put on an act of being especially nice. They just say being near you feels comfortable.",
+          "You didn't go out of your way to accommodate them. You didn't put on an act of being especially nice. They just say being near you feels comfortable.",
           "So love starts the same way. At first it's two people. At some point, you become the center of gravity."
         ],
         "highlight": null,
-        "profile_note": "High Stability · High Care, Low Drive · Low Expression. Walking your own path, while always holding someone within it"
+        "profile_note": "High Stability · High Care, Low Drive · Low Expression. You keep your own path, but people often find a place to lean within it."
       },
       {
         "chapter_number": 2,
@@ -67,11 +67,11 @@
         "body": [
           "The early stage of a relationship is good. You like each other. You're curious about each other. You both make an effort.",
           "But as time goes on, something strange happens. They start leaning toward you, more and more. You start carrying more and more.",
-          "You never asked for it. It just happens naturally.",
+          "You didn't ask for it. It just happens naturally.",
           "Because you're good at it. Sorting things out. Making the call. Taking responsibility.",
           "So people gradually hand it all to you. And one day you catch yourself thinking, \"why am I doing everything, again?\""
         ],
-        "highlight": "You're not tired because you're weak. You're tired because you always looked like someone who could hold steady, no matter what.",
+        "highlight": "The tiredness comes from looking so steady that people assume you can keep holding everything, no matter what.",
         "pattern_name": "THE GRAVITY CURVE",
         "chart": {
           "chart_type": "curve",
@@ -86,7 +86,7 @@
         "items": [
           {
             "belief": "I take care of people too much.",
-            "truth": "Maybe not as much as you think.\n\nYou have your own life and your own way of doing things. But because you seem so steady, people can start treating that steadiness like care that's always available.",
+            "truth": "Maybe not as much as you think.\n\nYou have your own life and your own way of doing things. But because you seem so steady, people can start treating that steadiness like care that's readily available.",
             "truth_short": "You may not take care of people as much as you think. Your steadiness can make care seem automatically available."
           },
           {
@@ -158,7 +158,7 @@
           },
           {
             "type_title": "A nice person",
-            "description": "They're genuinely kind. They never mean harm. But kindness alone doesn't create maturity. A good person and a mature partner are not always the same thing."
+            "description": "They're genuinely kind. They rarely mean harm. But kindness alone doesn't create maturity. A good person and a mature partner aren't always the same thing."
           },
           {
             "type_title": "Someone who tells you they need you",
@@ -206,7 +206,7 @@
           },
           {
             "title": "Asking favors isn't uneven.",
-            "description": "You are not the only one giving. Care and practical help come back to you too."
+            "description": "You aren't the only one giving. Care and practical help come back to you too."
           },
           {
             "title": "Being together doesn't add to your responsibilities.",
@@ -221,7 +221,7 @@
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who has no direction. Plenty they want to do, but they never move on it. Plans, but no follow through. Because you're capable of follow through. So you keep stepping in to help.",
           "who_steadies_you": "There's also someone who's a good match for you, in reverse: someone who handles their own things. Someone who moves when a problem comes up. Someone who admits it when they're wrong. Someone who learns when they need to. This kind of person doesn't drain your energy. They build with you.",
-          "same_pattern_repeats": "You may still feel drawn to someone who has good intentions but little follow through. That does not mean the same relationship has to repeat. The difference begins when you notice whether they take ownership of their own life, instead of quietly handing that ownership to you.",
+          "same_pattern_repeats": "You may still feel drawn to someone who has good intentions but little follow through. That doesn't mean the same relationship has to repeat. The difference begins when you notice whether they take ownership of their own life, instead of quietly handing that ownership to you.",
           "next_signs": "This time, the pattern may show up sooner. Watch how they handle small problems. Do they look for a way through, or wait for you to take over? You may notice the difference within the first few weeks.",
           "try_this": "When they bring you a problem, pause before offering the answer. Ask, \"What do you want to do?\" Then stay with the conversation. Notice whether they begin thinking through their own next step, and whether responsibility starts staying where it belongs.",
           "final_line": "What matters is whether they keep taking part in solving their own life, instead of leaving you to carry it."
@@ -237,7 +237,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to hold someone within your own life. The next report covers why people always end up leaning on you, and how that relationship finds its balance again.",
+      "message": "You've spent a long time learning how to hold someone within your own life. The next report covers why people keep leaning on you, and how that relationship finds its balance again.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }

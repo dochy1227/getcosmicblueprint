@@ -51,7 +51,7 @@
         "subtitle": null,
         "body": [
           "You don't give up on people easily. Once you like someone, you keep watching them for a long time. Once you trust someone, you trust them for a long time.",
-          "So people may see you as gentle or easygoing. But that is not the whole picture.",
+          "So people may see you as gentle or easygoing. But that isn't the whole picture.",
           "Your will may be stronger than people realize. Once you make up your mind, it lasts. You don't turn your back easily either.",
           "The difficulty is that this strength can keep you holding on after the relationship has stopped caring for you.",
           "You may hold onto someone long after part of you knows it is hurting.",
@@ -74,7 +74,7 @@
           "You may still keep believing because people make mistakes, circumstances can be difficult, and there were good moments too.",
           "Over time, you may realize you were carrying more hope for the relationship than the other person was showing through action."
         ],
-        "highlight": "The pain is not that you saw nothing. It is that what you saw kept getting pushed behind one more reason to wait.",
+        "highlight": "The pain comes from pushing what you saw behind one more reason to wait.",
         "pattern_name": "THE BENEFIT OF THE DOUBT CURVE",
         "chart": {
           "chart_type": "curve",
@@ -99,7 +99,7 @@
           },
           {
             "belief": "I'm not someone with much desire.",
-            "truth": "You may want love, care, and a clear place in someone's life more than you admit. The issue is not wanting too much. It is staying quiet about those needs for too long.",
+            "truth": "You may want love, care, and a clear place in someone's life more than you admit. Staying quiet about those needs for too long is where the difficulty begins.",
             "truth_short": "You may want to feel loved and valued, while asking for very little."
           }
         ]
@@ -110,9 +110,9 @@
         "title": "The Person You Keep Choosing",
         "body": [
           "You can be drawn to people with a complicated story.",
-          "A hard past. A difficult situation. Feelings they have not worked through yet.",
+          "A hard past. A difficult situation. Feelings they haven't worked through yet.",
           "Their story can help you understand why they act the way they do.",
-          "But understanding the reason does not mean you have to keep accepting the hurt."
+          "But understanding the reason doesn't mean you have to keep accepting the hurt."
         ],
         "highlight": "Someone can give you a reason for their behavior. A caring relationship also makes room for your experience.",
         "bar_chart": {
@@ -125,11 +125,11 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need is not an even greater ability to understand. You already bring plenty of that.",
-          "What may help is one honest question.",
-          "\"I understand that they are having a hard time. But what is this costing me?\"",
+          "You already bring plenty of understanding. What may help now is one honest question.",
+          "Ask yourself one honest question.",
+          "\"I understand that they're having a hard time. But what is this costing me?\"",
           "That question can bring your own experience back into the relationship.",
-          "It does not mean you care less. It means your care finally includes you too."
+          "It doesn't mean you care less. It means your care finally includes you too."
         ],
         "action_sentence": "Let your understanding include what the relationship is costing you."
       },
@@ -141,7 +141,7 @@
           "You know how to forgive.",
           "You know how to wait, make room, and try to trust again.",
           "What you may learn next is how to notice where understanding needs a boundary.",
-          "Knowing why someone acts that way does not require you to keep being hurt by it.",
+          "Knowing why someone acts that way doesn't require you to keep being hurt by it.",
           "When that line becomes clearer, the relationship has more room to become healthier."
         ],
         "transition_note": "You've spent a long time understanding other people's stories. The next step is learning how to protect your own place in the relationship sooner."
@@ -157,7 +157,7 @@
           },
           {
             "type_title": "Someone Whose Life Is Still Unsettled",
-            "description": "Their life is always about to become stable soon. You may keep waiting for a version of them that is not ready yet. Standing beside a problem is not the same as watching them take responsibility for it."
+            "description": "Their life often seems close to becoming stable. You may keep waiting for a version of them that isn't ready yet. Standing beside a problem isn't the same as watching them take responsibility for it."
           },
           {
             "type_title": "Someone Who Is Warm Only Sometimes",
@@ -213,7 +213,7 @@
           },
           {
             "title": "You feel reassured.",
-            "description": "You do not have to stay in uncertainty just to prove that you understand."
+            "description": "You don't have to stay in uncertainty just to prove that you understand."
           }
         ]
       },
@@ -222,12 +222,12 @@
         "page_map": "chapter_10",
         "title": "What Happens in Your Next Relationship",
         "sections": {
-          "who_breaks_you": "You're vulnerable to someone whose circumstances always seem to explain why they cannot show up yet. You may keep waiting because their story makes sense. But a relationship cannot depend only on how well you understand why someone is not ready.",
+          "who_breaks_you": "You're vulnerable to someone whose circumstances keep explaining why they can't show up yet. You may keep waiting because their story makes sense. But a relationship can't depend only on how well you understand why someone isn't ready.",
           "who_steadies_you": "A steadier match is someone whose care is easy to see. They repair what they can, keep promises more often than not, and do not make you carry the whole meaning of the relationship alone.",
-          "same_pattern_repeats": "You may still feel drawn to someone with pain, complexity, or unfinished parts. That does not decide the ending. What matters is whether their story is followed by responsibility, consideration, and change.",
-          "next_signs": "This time, the familiar urge to wait may return sooner. You may notice the hurt, the repetition, and the voice that says, \"Maybe I should give it more time.\" That voice is worth hearing, but it does not have to make the decision alone.",
+          "same_pattern_repeats": "You may still feel drawn to someone with pain, complexity, or unfinished parts. That doesn't decide the ending. What matters is whether their story is followed by responsibility, consideration, and change.",
+          "next_signs": "This time, the familiar urge to wait may return sooner. You may notice the hurt, the repetition, and the voice that says, \"Maybe I should give it more time.\" That voice is worth hearing, but it doesn't have to make the decision alone.",
           "try_this": "When you feel yourself explaining the same hurt again, write down what happened without adding the reasons for it. Then ask what you would want for someone you care about in the same situation. Use that answer to bring your own needs back into view.",
-          "final_line": "What matters is not one answer. It is whether understanding is matched by care, responsibility, and change."
+          "final_line": "What matters isn't one answer. It's whether understanding is matched by care, responsibility, and change."
         }
       }
     ],

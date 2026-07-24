@@ -36,7 +36,7 @@
   "free_result": {
     "short_summary": [
       "You change the mood the moment you enter a room, but people often notice your energy before they notice you.",
-      "The loneliness isn't from being unpopular. It's from being known mostly through the version of you that's always on.",
+      "The loneliness comes from being known mostly through your bright side, while the quieter parts stay out of sight.",
       "What you're learning is that the right person stays connected even when your light is lower."
     ]
   },
@@ -76,7 +76,7 @@
           "People know your spark. Fewer people know your tired days, your uncertainty, or the moments when you don't know what to say.",
           "That's where the loneliness starts."
         ],
-        "highlight": "You're not lonely because you're unpopular. You're lonely because people know the version of you that's always on.",
+        "highlight": "The loneliness starts when people know your bright side well, but rarely meet the quieter parts underneath it.",
         "pattern_name": "THE EMPTY SPOTLIGHT CURVE",
         "chart": {
           "chart_type": "curve",

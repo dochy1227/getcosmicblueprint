@@ -51,9 +51,9 @@
         "subtitle": null,
         "body": [
           "From the outside, you may seem calm.",
-          "Your expression may not change much. Your voice is not loud. You do not always show clearly what you like or dislike.",
+          "Your expression may not change much. Your voice isn't loud. You don't always show clearly what you like or dislike.",
           "So people may read you as easy going. Even up close, part of you can remain hard to read.",
-          "But that is only the surface.",
+          "But that's only the surface.",
           "Underneath, your feelings may be much clearer.",
           "Your pride can be strong. What you want may be clear. Once you decide something, changing course can take time.",
           "When you care about someone, the feeling may run deeper than people can see.",
@@ -91,13 +91,13 @@
         "items": [
           {
             "belief": "I'm just naturally indifferent.",
-            "truth": "You may not be indifferent. You may simply be showing much less than you feel.",
-            "truth_short": "Feeling little and showing little are not the same thing."
+            "truth": "You might feel a lot more than you show.",
+            "truth_short": "Feeling little and showing little aren't the same thing."
           },
           {
             "belief": "Since I don't get angry, I guess I'm okay.",
-            "truth": "Not showing anger does not always mean there is none. A feeling can stay quiet while it keeps gathering weight.",
-            "truth_short": "A calm surface does not always mean nothing is building underneath."
+            "truth": "Not showing anger doesn't always mean there's none. A feeling can stay quiet while it keeps gathering weight.",
+            "truth_short": "A calm surface doesn't always mean nothing is building underneath."
           },
           {
             "belief": "I don't really want much.",
@@ -111,14 +111,14 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You can be drawn to people who are calm and do not ask many questions.",
+          "You can be drawn to people who are calm and don't ask many questions.",
           "Someone who hears \"I'm fine\" and accepts it without looking further.",
-          "Someone who does not press, check again, or ask what is underneath.",
-          "At first, that may feel comfortable because you are not ready to show much either.",
-          "The difficulty is that if you hide and they do not ask, the real problem may never enter the conversation.",
+          "Someone who doesn't press, check again, or ask what's underneath.",
+          "At first, that may feel comfortable because you aren't ready to show much either.",
+          "The difficulty is that if you hide and they don't ask, the real problem may never enter the conversation.",
           "The surface stays calm while only you know how much is building underneath."
         ],
-        "highlight": "Someone who accepts your calm may miss what is underneath. A caring relationship makes room for the question without forcing an answer.",
+        "highlight": "Someone who accepts your calm may miss what's underneath. A caring relationship makes room for the question without forcing an answer.",
         "bar_chart": {
           "give_percent": 40,
           "get_percent": 60
@@ -129,12 +129,12 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need is not a greater ability to endure. You already hold a great deal inside.",
-          "What may help is letting small feelings out while they are still small.",
-          "You do not have to wait until everything feels full before saying something.",
-          "If something hurts, name it simply in the moment. It does not need to become a long explanation.",
+          "You already hold a great deal inside. What may help is letting small feelings out while they're still small.",
+          "Start by letting one small feeling out while it's still small.",
+          "You don't have to wait until everything feels full before saying something.",
+          "If something hurts, name it simply in the moment. It doesn't need to become a long explanation.",
           "\"That hurt a little.\" That can be enough.",
-          "Feelings are easier to work through when they do not have to carry weeks of silence with them."
+          "Feelings are easier to work through when they don't have to carry weeks of silence with them."
         ],
         "action_sentence": "Let one small feeling be heard before it becomes much heavier."
       },
@@ -163,11 +163,11 @@
           },
           {
             "type_title": "Someone Who Takes I'm Fine Literally",
-            "description": "You say you are okay with a small smile. They accept it and move on. Without another question, the silence can feel easy until too much has built up."
+            "description": "You say you're okay with a small smile. They accept it and move on. Without another question, the silence can feel easy until too much has built up."
           },
           {
             "type_title": "Someone Who Loves Your Calmness",
-            "description": "They like that you seem calm and undemanding. But if they never see how deeply you feel, a stronger reaction later may seem sudden to them."
+            "description": "They like that you seem calm and undemanding. But if they rarely see how deeply you feel, a stronger reaction later may seem sudden to them."
           },
           {
             "type_title": "Someone Whose Pride Makes Repair Hard",
@@ -211,11 +211,11 @@
           },
           {
             "title": "Getting angry doesn't break the relationship.",
-            "description": "Expressing anger or disappointment does not automatically threaten the relationship."
+            "description": "Expressing anger or disappointment doesn't automatically threaten the relationship."
           },
           {
             "title": "They tell the difference between your calm and indifference.",
-            "description": "They do not assume quiet always means everything is fine."
+            "description": "They don't assume quiet always means everything is fine."
           },
           {
             "title": "They're not afraid of the intensity inside you.",
@@ -229,11 +229,11 @@
         "title": "What Happens in Your Next Relationship",
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who looks only at the surface and assumes calm means everything is fine. If no one asks and you say very little, your own feelings can remain outside the relationship for too long.",
-          "who_steadies_you": "A steadier match is someone who notices changes without forcing you to explain immediately. They ask gently, listen when you speak, and do not treat your deeper feelings as a problem.",
-          "same_pattern_repeats": "You may still feel drawn to someone who accepts the calm surface and rarely asks what lies underneath. That does not decide the outcome. What matters is whether the relationship makes room for small truths before silence turns into distance.",
+          "who_steadies_you": "A steadier match is someone who notices changes without forcing you to explain immediately. They ask gently, listen when you speak, and don't treat your deeper feelings as a problem.",
+          "same_pattern_repeats": "You may still feel drawn to someone who accepts the calm surface and rarely asks what lies underneath. That doesn't decide the outcome. What matters is whether the relationship makes room for small truths before silence turns into distance.",
           "next_signs": "This time, you may notice the buildup earlier. A small hurt appears, and the familiar urge to let it pass comes with it. That is the moment to ask whether staying quiet will actually protect the relationship.",
-          "try_this": "When something hurts, say one simple sentence while the feeling is still small. You might say, \"That hurt a little,\" or, \"I do not want to let this build.\" Then keep talking over time, instead of using one response to decide what the relationship means.",
-          "final_line": "What matters is not one reaction. It is whether small feelings can be shared, heard, and repaired over time."
+          "try_this": "When something hurts, say one simple sentence while the feeling is still small. You might say, \"That hurt a little,\" or, \"I don't want to let this build.\" Then keep talking over time, instead of using one response to decide what the relationship means.",
+          "final_line": "What matters isn't one reaction. It's whether small feelings can be shared, heard, and repaired over time."
         }
       }
     ],

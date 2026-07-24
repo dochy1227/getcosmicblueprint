@@ -31,12 +31,12 @@
     "pride": 3,
     "warmth": 4,
     "stability": 4,
-    "caption": "High Stability · High Care, Low Expression. Always holding others up, rarely leaning on anyone or showing it"
+    "caption": "High Stability · High Care, Low Expression. You hold others up easily, but rarely lean on anyone or show when you need support."
   },
   "free_result": {
     "short_summary": [
       "You love by becoming someone others can lean on. Steady, present, and hard to shake.",
-      "The loneliness you've felt before wasn't because you were alone. It was because you were always the one holding on.",
+      "The loneliness you've felt before wasn't because you were alone. It came from being the one who kept holding everything together.",
       "What you're still learning isn't how to be stronger. It's how to let someone support you too."
     ]
   },
@@ -59,7 +59,7 @@
           "So this happens: people have no idea how much you're actually carrying."
         ],
         "highlight": null,
-        "profile_note": "High Stability · High Care, Low Expression. Always holding others up, rarely leaning on anyone or showing it"
+        "profile_note": "High Stability · High Care, Low Expression. You often become the steady one, while your own need for support stays mostly hidden."
       },
       {
         "chapter_number": 2,
@@ -69,10 +69,10 @@
           "This pattern may be older than you realize.",
           "Someone struggles. You're naturally there beside them. They may not even have to ask. It just happens. And slowly, they get more comfortable leaning on you, while you get more used to carrying it.",
           "That's where the problem can start. They begin to think you're \"fine.\" But sometimes, you were only trying to look fine. That gap matters.",
-          "They think you don't need anything. You never say that you do.",
+          "They think you don't need anything. You rarely show them when you do.",
           "So the longer the relationship goes on, the easier it is to feel lonely inside it."
         ],
-        "highlight": "The loneliness isn't always about being alone. Sometimes it comes from always being the one who holds everything together.",
+        "highlight": "The loneliness isn't always about being alone. Sometimes it comes from being the one who keeps holding everything together.",
         "pattern_name": "THE UNSEEN WEIGHT CURVE",
         "chart": {
           "chart_type": "curve",
@@ -160,8 +160,8 @@
             "description": "They struggle to decide things or keep them organized. So you step in. At some point, you may notice you're carrying far more than feels fair."
           },
           {
-            "type_title": "Someone Who Says Thank You But Never Changes",
-            "description": "They appreciate you. They mean it. But appreciation alone doesn't make a relationship healthier. You keep giving. They keep thanking you. And nothing actually changes."
+            "type_title": "Someone Who Says Thank You But Rarely Changes",
+            "description": "They appreciate you. They mean it. But appreciation alone doesn't make a relationship healthier. You keep giving. They keep thanking you. And very little actually changes."
           }
         ]
       },

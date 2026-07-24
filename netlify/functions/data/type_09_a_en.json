@@ -76,7 +76,7 @@
           "So you keep checking. One more thought. One more sign. One more reason to feel sure.",
           "While you wait for certainty, the other person may feel you moving further away."
         ],
-        "highlight": "What can slip away is not always the relationship itself. Sometimes it is the timing, while certainty keeps getting postponed.",
+        "highlight": "Sometimes the relationship stays, but the timing slips away while certainty keeps getting postponed.",
         "pattern_name": "THE RETREAT CURVE",
         "chart": {
           "chart_type": "curve",
@@ -91,8 +91,8 @@
         "items": [
           {
             "belief": "I'm more comfortable alone.",
-            "truth": "Being alone may feel easier because there is less chance of disappointment. That does not always mean solitude is what you truly prefer.",
-            "truth_short": "Being alone may feel safer, but safer and more comfortable are not always the same."
+            "truth": "Being alone may feel easier because there is less chance of disappointment. That doesn't always mean solitude is what you truly prefer.",
+            "truth_short": "Being alone may feel safer, but safer and more comfortable aren't always the same."
           },
           {
             "belief": "Let's just check a little more.",
@@ -101,7 +101,7 @@
           },
           {
             "belief": "I'm not an emotional person.",
-            "truth": "You may feel more than people realize. When little of it is expressed, they can assume you are fine even when you are not.",
+            "truth": "You may feel more than people realize. When little of it is expressed, they can assume you're fine even when you aren't.",
             "truth_short": "You may feel deeply while showing very little of it."
           }
         ]
@@ -128,11 +128,11 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need isn't to be even more careful. You're already careful enough.",
-          "What may help is letting a little more of your inner experience be seen.",
-          "More people than you think may not know what is happening inside you, because so little of it gets said.",
+          "You're already careful enough. What may help now is letting a little more of your inner experience be seen.",
+          "Start with one small feeling before everything feels settled.",
+          "More people than you think may not know what's happening inside you, because so little of it gets said.",
           "Try naming one small thing before everything feels settled. That you were hurt. That you missed them. That you felt anxious.",
-          "That is not weakness. It is one way of creating connection."
+          "That isn't weakness. It's one way of creating connection."
         ],
         "action_sentence": "Let one small feeling be known before certainty arrives."
       },
@@ -143,7 +143,7 @@
         "body": [
           "You know how to love deeply. You don't treat it lightly. You don't give up easily either.",
           "What you may learn next is how to stay present even before certainty arrives.",
-          "Relationships are not built from proof alone. At some point, both people have to move with some uncertainty still there.",
+          "Relationships aren't built from proof alone. At some point, both people have to move with some uncertainty still there.",
           "When that becomes possible, love has more room to feel shared instead of lonely."
         ],
         "transition_note": "You've spent a long time protecting yourself through caution. The next step is learning how to stay connected while uncertainty is still present."
@@ -155,7 +155,7 @@
         "items": [
           {
             "type_title": "Someone Who Is Comfortable Alone",
-            "description": "Their weekends are full on their own. They do not pressure you, and they leave the door open. You may admire that independence, then realize neither of you is moving toward the other."
+            "description": "Their weekends are full on their own. They don't pressure you, and they leave the door open. You may admire that independence, then realize neither of you is moving toward the other."
           },
           {
             "type_title": "Someone Who Rarely Shows They Are Shaken",
@@ -163,11 +163,11 @@
           },
           {
             "type_title": "Someone Who Thinks Deeply",
-            "description": "You can talk for hours about life, work, and dreams. The connection feels deep, but thoughtful conversation and committed action are not always the same thing."
+            "description": "You can talk for hours about life, work, and dreams. The connection feels deep, but thoughtful conversation and committed action aren't always the same thing."
           },
           {
             "type_title": "Someone Who Moves Slowly",
-            "description": "They take their time and never rush you. That can feel respectful. But if both of you keep waiting, the relationship may never fully begin."
+            "description": "They take their time and rarely rush you. That can feel respectful. But if both of you keep waiting, the relationship may struggle to fully begin."
           }
         ]
       },
@@ -203,7 +203,7 @@
         "checklist": [
           {
             "title": "You can say how you feel.",
-            "description": "Your feelings do not have to remain hidden until they are perfectly clear."
+            "description": "Your feelings don't have to remain hidden until they're perfectly clear."
           },
           {
             "title": "You don't handle things alone.",
@@ -226,17 +226,17 @@
         "sections": {
           "who_breaks_you": "You're vulnerable to someone who rarely says how they feel. You may interpret for them, wait for them, and carry the uncertainty for both of you. Over time, the relationship can become more guesswork than connection.",
           "who_steadies_you": "A steadier match is someone who says what they think, names when something hurts, and shows affection without making you pull it out of them. Their openness can make it easier for you to stay present instead of checking alone.",
-          "same_pattern_repeats": "You may still feel drawn to someone independent, quiet, or slow to open. That does not mean the same pattern has to repeat. What matters is whether both of you keep moving toward each other, instead of waiting in separate corners.",
-          "next_signs": "This time, you may notice two feelings arriving together. Fondness grows, and so does the urge to step back. That urge is not always proof that the relationship is wrong. It may be a sign that the relationship has become important enough to feel risky.",
+          "same_pattern_repeats": "You may still feel drawn to someone independent, quiet, or slow to open. That doesn't mean the same pattern has to repeat. What matters is whether both of you keep moving toward each other, instead of waiting in separate corners.",
+          "next_signs": "This time, you may notice two feelings arriving together. Fondness grows, and so does the urge to step back. That urge isn't always proof that the relationship is wrong. It may be a sign that the relationship has become important enough to feel risky.",
           "try_this": "When you feel the urge to retreat, name one small part of what is happening. You might say, \"I've been feeling a little anxious,\" or, \"I've been thinking about this a lot.\" Then stay in the conversation long enough to see whether care and honesty continue over time.",
-          "final_line": "What matters is not one response. It is whether both of you keep making room for honesty and closeness."
+          "final_line": "What matters isn't one response. It's whether both of you keep making room for honesty and closeness."
         }
       }
     ],
     "action_plan": {
       "summary": "You already know how to protect yourself. What's left is learning how to stay present when the relationship starts to matter.",
       "action_items": [
-        "This week, share one small feeling before you are completely certain.",
+        "This week, share one small feeling before you're completely certain.",
         "When you want to step back, ask whether the relationship feels unsafe or simply important.",
         "Let one person know when you feel anxious instead of carrying it alone."
       ]

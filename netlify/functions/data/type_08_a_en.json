@@ -37,7 +37,7 @@
     "short_summary": [
       "You notice the smallest shifts in tone, timing, and mood, but you often question yourself before trusting what you felt.",
       "The pattern wasn't that you were too sensitive. It was that you kept believing someone else's explanation more than your own senses.",
-      "What changes next is not seeing people better. It's trusting yourself sooner."
+      "The next change is trusting yourself sooner, rather than trying to read people even better."
     ]
   },
   "full_report": {
@@ -64,12 +64,12 @@
         "page_map": "chapter_02",
         "title": "The Pattern You Repeat: THE SELF DOUBT CURVE",
         "body": [
-          "This pattern may feel familiar. Something felt off early. Something snagged. Something felt uncomfortable. Something did not quite add up.",
+          "This pattern may feel familiar. Something felt off early. Something snagged. Something felt uncomfortable. Something didn't quite add up.",
           "But you let it go because there was no proof. Then time passed, and sometimes the concern you had at the start returned in a clearer form.",
           "The thought afterward can sound like this: \"I did feel something back then.\"",
           "And when the next relationship begins, you may still give the other person's explanation more weight than your own discomfort."
         ],
-        "highlight": "The pain is not that you notice too much. It is that your own discomfort keeps getting pushed behind someone else's explanation.",
+        "highlight": "The pain comes from letting someone else's explanation push your own discomfort into the background.",
         "pattern_name": "THE SELF DOUBT CURVE",
         "chart": {
           "chart_type": "curve",
@@ -84,12 +84,12 @@
         "items": [
           {
             "belief": "I'm too sensitive.",
-            "truth": "You may be more perceptive than you give yourself credit for. The question is not whether every feeling is correct. It is whether you keep dismissing feelings that deserve a closer look.",
+            "truth": "You may be more perceptive than you give yourself credit for. The question isn't whether every feeling is correct. It is whether you keep dismissing feelings that deserve a closer look.",
             "truth_short": "You may be perceptive. What matters is whether you dismiss feelings that deserve attention."
           },
           {
             "belief": "Wanting to be noticed is too much to ask.",
-            "truth": "Wanting your effort to be noticed is not too much. Care feels safer when appreciation can be spoken instead of guessed.",
+            "truth": "Wanting your effort to be noticed isn't too much. Care feels safer when appreciation can be spoken instead of guessed.",
             "truth_short": "Wanting your effort to be noticed is a reasonable need."
           },
           {
@@ -104,11 +104,11 @@
         "page_map": "chapter_04",
         "title": "The Person You Keep Choosing",
         "body": [
-          "You can be drawn to people who express very little. People who do not say things easily, reveal much, or offer certainty quickly.",
+          "You can be drawn to people who express very little. People who don't say things easily, reveal much, or offer certainty quickly.",
           "At first, they may seem deep. There can be something meaningful in slowly getting to know them.",
           "But as time passes, you may find yourself guessing alone. The other person has not said much, and you keep trying to interpret the silence."
         ],
-        "highlight": "Someone who cares about you does not leave every feeling for you to figure out alone.",
+        "highlight": "Someone who cares about you doesn't leave every feeling for you to figure out alone.",
         "bar_chart": {
           "give_percent": 60,
           "get_percent": 40
@@ -119,12 +119,12 @@
         "page_map": "chapter_05",
         "title": "What Actually Changes Something",
         "body": [
-          "What you need isn't to see things even better. You already see plenty.",
+          "You already see plenty. The next step is trusting what you notice.",
           "What you need is to trust your first feeling enough to pay attention to it.",
           "If something feels uncomfortable or hurtful, you can pause there instead of explaining it away.",
-          "A feeling is not a verdict, but it is still information worth bringing into the conversation."
+          "A feeling isn't a verdict, but it is still information worth bringing into the conversation."
         ],
-        "action_sentence": "A feeling is not a verdict, but it is still information worth paying attention to."
+        "action_sentence": "Treat the feeling as a signal worth checking, not a final conclusion."
       },
       {
         "chapter_number": 6,
@@ -145,7 +145,7 @@
         "items": [
           {
             "type_title": "Someone Who Says Very Little",
-            "description": "You ask how their day was, and they answer with one sentence and a smile. You may fill in the rest yourself. But mystery and emotional distance are not always the same thing."
+            "description": "You ask how their day was, and they answer with one sentence and a smile. You may fill in the rest yourself. But mystery and emotional distance aren't always the same thing."
           },
           {
             "type_title": "Someone Who Rarely Gives Praise",
@@ -193,7 +193,7 @@
         "checklist": [
           {
             "title": "They don't hold back expression.",
-            "description": "Their care does not depend on you guessing what they mean."
+            "description": "Their care doesn't depend on you guessing what they mean."
           },
           {
             "title": "They say thank you.",
@@ -205,7 +205,7 @@
           },
           {
             "title": "There's no guessing game.",
-            "description": "You feel steadier because the relationship does not require constant interpretation."
+            "description": "You feel steadier because the relationship doesn't require constant interpretation."
           }
         ]
       },
@@ -215,11 +215,11 @@
         "title": "What Happens in Your Next Relationship (THE GEM)",
         "sections": {
           "who_breaks_you": "You're vulnerable to someone whose feelings stay hard to read. You may end up watching more, worrying more, and building meaning from very little. Over time, the relationship can leave you carrying both the feeling and the explanation.",
-          "who_steadies_you": "A steadier match is someone who says what they feel in simple, direct ways. They show appreciation, explain when something hurts, and do not make closeness depend on guessing.",
-          "same_pattern_repeats": "You may still feel drawn to someone quiet or difficult to read. That does not mean the same pattern has to repeat. What matters is whether they meet your questions with openness, instead of leaving you alone with the silence.",
-          "next_signs": "This time, you may notice discomfort sooner. A small distance. A change in tone. A moment that leaves you unsure. The next step is not deciding what it means alone, but bringing the question into the relationship.",
+          "who_steadies_you": "A steadier match is someone who says what they feel in simple, direct ways. They show appreciation, explain when something hurts, and don't make closeness depend on guessing.",
+          "same_pattern_repeats": "You may still feel drawn to someone quiet or difficult to read. That doesn't mean the same pattern has to repeat. What matters is whether they meet your questions with openness, instead of leaving you alone with the silence.",
+          "next_signs": "This time, you may notice discomfort sooner. A small distance. A change in tone. A moment that leaves you unsure. The next step isn't deciding what it means alone, but bringing the question into the relationship.",
           "try_this": "When something feels unclear, ask directly and gently: \"I might be reading this wrong, but is this what you meant?\" Notice whether the conversation becomes clearer and whether both of you can stay present with the question.",
-          "final_line": "What matters is not one response. It is whether clarity and care keep growing between you."
+          "final_line": "What matters isn't one response. It is whether clarity and care keep growing between you."
         }
       }
     ],
@@ -232,7 +232,7 @@
       ]
     },
     "closing": {
-      "message": "You've spent a long time learning how to understand others. This report covered why you always end up understanding the other person first, and how you can learn to trust yourself more.",
+      "message": "You've spent a long time learning how to understand others. This report covered why you keep understanding the other person first, and how you can learn to trust yourself more.",
       "cross_sell_cta": "Curious what your partner's pattern looks like? See their Cosmic Blueprint."
     }
   }
