@@ -192,7 +192,7 @@ function generateReportHTML(data, options) {
     'framework_intro',
     `
     <h2>Where This Framework Begins</h2>
-    <p>Popular Western astrology and Eastern Myeongrihak (&#20219;&#29702;&#23416;) both use birth information to explore personal patterns. But they come from separate traditions and begin from different systems.</p>
+    <p>Popular Western astrology and Eastern Myeongrihak, known through systems such as Saju and BaZi, both use birth information to explore personal patterns. But they come from separate traditions and begin from different systems.</p>
     <table class="framework-table">
       <tr><th></th><th>Popular Western Astrology</th><th>Eastern Myeongrihak</th></tr>
       <tr><td>Starting point</td><td>The Sun's zodiac position at birth</td><td>Birth data interpreted through systems such as Saju and BaZi</td></tr>
