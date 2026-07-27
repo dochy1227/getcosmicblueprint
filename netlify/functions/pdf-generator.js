@@ -84,6 +84,14 @@ function coverTextTheme(visualKey) {
   return COVER_TEXT_THEME[visualKey] || 'light'; // 'light' = 흰색 글자, 'dark' = 어두운 글자
 }
 
+// 2026.07.27 추가: 유료 리포트 표지에 내향/외향 표시가 빠져있던 문제 수정용.
+// identity.orientation_display는 "introvert"/"extrovert"(영문 소문자, 사주 용어 비노출 원칙 유지)로
+// 저장되어 있으므로, 표지에 노출할 대문자 라벨("INTROVERTED"/"EXTROVERTED")로 변환.
+const ORIENTATION_LABEL = { introvert: 'INTROVERTED', extrovert: 'EXTROVERTED' };
+function orientationLabel(raw) {
+  return ORIENTATION_LABEL[String(raw || '').toLowerCase()] || '';
+}
+
 // 5축 레이더차트 각도 (5각형, POC와 동일 — 변경 금지)
 const RADAR_AXES = ['drive', 'expression', 'pride', 'warmth', 'stability'];
 const RADAR_ANGLES = [-90, -18, 54, 126, 198];
@@ -161,8 +169,9 @@ function generateReportHTML(data, options) {
     <div class="cover-page theme-${coverTextTheme(id.visual_key)}" style="background-image:url('${coverBgUrl(id.visual_key)}');">
       <div class="cover-topbar">
         <div class="cover-brand">COSMIC BLUEPRINT<br><span>YOUR RELATIONSHIP ARCHETYPE REPORT</span></div>
-        <div class="cover-pagenum">01<br><span>/16</span></div>
+        <div class="cover-pagenum">01<br><span>/18</span></div>
       </div>
+      ${orientationLabel(id.orientation_display) ? `<div class="cover-orientation-row"><div class="cover-orientation"><span>${orientationLabel(id.orientation_display)}</span></div></div>` : (missing.push('identity.orientation_display'), '')}
       <div class="cover-body">
         <div class="cover-eyebrow"><span>YOUR ARCHETYPE</span></div>
         <div class="cover-title"><span>${need('cover.title', cover.title)}</span></div>
@@ -175,12 +184,58 @@ function generateReportHTML(data, options) {
   `
   );
 
-  // ---------- PAGE 2: Archetype Intro ----------
+  // ---------- PAGE 2: Framework — Where This Begins ----------
+  // 2026.07.27 추가: 사주/명리학 근거 공개 안내문(고정 콘텐츠, 20개 리포트 전체 공통).
+  // report_id별 변수 없음 — JSON 스키마 변경 불필요, 이 파일 수정만으로 20개 전체에 반영됨.
   page(
     2,
+    'framework_intro',
+    `
+    <h2>Where This Framework Begins</h2>
+    <p>Popular Western astrology and Eastern Myeongrihak (&#20219;&#29702;&#23416;) both use birth information to explore personal patterns. But they come from separate traditions and begin from different systems.</p>
+    <table class="framework-table">
+      <tr><th></th><th>Popular Western Astrology</th><th>Eastern Myeongrihak</th></tr>
+      <tr><td>Starting point</td><td>The Sun's zodiac position at birth</td><td>Birth data interpreted through systems such as Saju and BaZi</td></tr>
+      <tr><td>Core classification</td><td>12 sun signs</td><td>10 day-stem types</td></tr>
+      <tr><td>What it may explore</td><td>Personality, relationships, and life patterns</td><td>Personality, relationships, work, family, and broader life patterns</td></tr>
+      <tr><td>How it is interpreted</td><td>Zodiac signs and planetary placements</td><td>Several interacting components within a person's birth data</td></tr>
+      <tr><td>How Cosmic Blueprint uses it</td><td>Not used directly</td><td>The starting point for our 10 base archetypes</td></tr>
+    </table>
+    <p>These are independent traditions that look at the same person through different frameworks. Your sun sign and your Cosmic Blueprint archetype do not need to match. They were never designed to correspond directly.</p>
+  `
+  );
+
+  // ---------- PAGE 3: Framework — What We Do Differently ----------
+  page(
+    3,
+    'framework_reconstruction',
+    `
+    <div class="fw-tight">
+    <h2>What Cosmic Blueprint Does Differently</h2>
+    <p>Myeongrihak traditionally explores much more than relationships — personality, work, family, timing, environment, and broader life direction. Cosmic Blueprint does not reproduce that entire framework. We focused on what readers are most curious about: the patterns that repeat in love and relationships, translated into modern, everyday language.</p>
+    <table class="framework-table">
+      <tr><th>Traditional Starting Point</th><th>Cosmic Blueprint's Reconstruction</th></tr>
+      <tr><td>10 base day-stem types</td><td>10 memorable archetypes</td></tr>
+      <tr><td>Interpretation across many areas of life</td><td>A focused exploration of relationship patterns</td></tr>
+      <tr><td>Several traditional birth-data components</td><td>A simplified birth-date-only calculation</td></tr>
+      <tr><td>Traditional terminology</td><td>Modern, everyday relationship language</td></tr>
+      <tr><td>10 base types</td><td>20 archetypes divided by inward and outward expression</td></tr>
+    </table>
+    <h3>Why 20 Instead of 10?</h3>
+    <p>People who share the same base type may still express themselves very differently. Some turn their feelings, judgments, and reactions inward; others express or act on them outwardly. Cosmic Blueprint divides each base type into an inward and an outward expression to reflect that difference.</p>
+    <p class="punch">10 base types &times; 2 relationship expressions = 20 Cosmic Blueprint archetypes</p>
+    <p>These reports are not offered as predictions or psychological diagnoses. They are original self-reflection tools inspired by a long-standing Eastern tradition and redesigned for modern relationship patterns.</p>
+    <div class="quote-box">Don't know your archetype yet? Use the birth-date Archetype Calculator available in our shop, then choose the Mini Report or Full Report that matches your result.</div>
+    </div>
+  `
+  );
+
+  // ---------- PAGE 4: Archetype Intro ----------
+  page(
+    4,
     'archetype_intro',
     `
-    <div class="badge">${escapeHtml(id.archetype_name)}</div>
+    <div class="badge">${escapeHtml(id.archetype_name)}${orientationLabel(id.orientation_display) ? ' &middot; ' + orientationLabel(id.orientation_display) : ''}</div>
     <div class="archetype-title small">${need('full_report.headline', fr.headline)}</div>
     <p>${need('full_report.intro', fr.intro)}</p>
   `
@@ -213,7 +268,7 @@ function generateReportHTML(data, options) {
     )}" fill="#d1ceda" font-size="11" text-anchor="middle">${a}</text>`;
   }).join('');
   page(
-    3,
+    5,
     'profile_scores',
     `
     <div class="center-label">YOUR LOVE PROFILE</div>
@@ -244,7 +299,7 @@ function generateReportHTML(data, options) {
     )
     .join('');
   page(
-    4,
+    6,
     'summary',
     `
     <h2>Your Blueprint Summary</h2>
@@ -256,7 +311,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 5: Chapter 01 ----------
   const c0 = ch[0] || {};
   page(
-    5,
+    7,
     c0.page_map,
     `
     <h2>01. ${need('chapters[0].title', c0.title)}</h2>
@@ -269,7 +324,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 6: Chapter 02 ----------
   const c1 = ch[1] || {};
   page(
-    6,
+    8,
     c1.page_map,
     `
     <h2>02. ${need('chapters[1].title', c1.title)}</h2>
@@ -288,7 +343,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 7: Chapter 03 ----------
   const c2 = ch[2] || {};
   page(
-    7,
+    9,
     c2.page_map,
     `
     <h2>03. ${need('chapters[2].title', c2.title)}</h2>
@@ -312,7 +367,7 @@ function generateReportHTML(data, options) {
   const giveNum = Number(give) || 0;
   const getNum = Number(get) || 0;
   page(
-    8,
+    10,
     c3.page_map,
     `
     <h2>04. ${need('chapters[3].title', c3.title)}</h2>
@@ -337,7 +392,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 9: Chapter 05 ----------
   const c4 = ch[4] || {};
   page(
-    9,
+    11,
     c4.page_map,
     `
     <h2>05. ${need('chapters[4].title', c4.title)}</h2>
@@ -349,7 +404,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 10: Chapter 06 ----------
   const c5 = ch[5] || {};
   page(
-    10,
+    12,
     c5.page_map,
     `
     <h2>06. ${need('chapters[5].title', c5.title)}</h2>
@@ -361,7 +416,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 11: Chapter 07 (2x2 grid) ----------
   const c6 = ch[6] || {};
   page(
-    11,
+    13,
     c6.page_map,
     `
     <h2>07. ${need('chapters[6].title', c6.title)}</h2>
@@ -385,7 +440,7 @@ function generateReportHTML(data, options) {
   const c7 = ch[7] || {};
   const sigs = c7.signal_strength || [];
   page(
-    12,
+    14,
     c7.page_map,
     `
     <h2>08. ${need('chapters[7].title', c7.title)}</h2>
@@ -414,7 +469,7 @@ function generateReportHTML(data, options) {
   const c8 = ch[8] || {};
   const checklist = c8.checklist || [];
   page(
-    13,
+    15,
     c8.page_map,
     `
     <h2>09. ${need('chapters[8].title', c8.title)}</h2>
@@ -443,7 +498,7 @@ function generateReportHTML(data, options) {
     ? `<h3>The Pattern Repeats</h3><p>${escapeHtml(sec.same_pattern_repeats)}</p>`
     : '';
   page(
-    14,
+    16,
     c9.page_map,
     `
     <div class="ch10-tight">
@@ -464,7 +519,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 15: Action Plan ----------
   const ap = fr.action_plan || {};
   page(
-    15,
+    17,
     'action_plan',
     `
     <h2>This Week, Try This</h2>
@@ -484,7 +539,7 @@ function generateReportHTML(data, options) {
   // ---------- PAGE 16: Closing ----------
   const cl = fr.closing || {};
   page(
-    16,
+    18,
     'closing',
     `
     <div class="footer-brand">COSMIC BLUEPRINT</div>
@@ -548,6 +603,16 @@ function generateReportHTML(data, options) {
   /* 기본(theme-light): 어두운 사진 위 흰 글자 — 오버레이 그라디언트로 대비 확보 */
   .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; }
   .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; }
+  /* 2026.07.27 추가: 유료 리포트 표지에 내향/외향 표시 — 미니 리포트("THE GEM · INTROVERTED")와
+     동일한 정보를 유료 리포트 표지에도 노출.
+     2026.07.27 2차 수정(또치님 피드백): 14px 얇은 글자 -> 22px 굵은 배지로 확대.
+     2026.07.27 3차 수정(또치님 실제 캡처로 겹침 버그 확인): 하단 cover-body 블록 안에 넣었을 때,
+     그 블록이 margin-top:auto로 바닥에 붙는 구조라 배지가 늘어난 만큼 블록 상단이 위로 밀려
+     상단 로고바(cover-topbar)와 겹쳤음. 하단 블록에서 완전히 빼서, 로고바 바로 아래 별도의
+     상단 고정 줄(cover-orientation-row)로 이동 — 하단 블록 높이는 원래대로 복귀해 겹침 원천 차단. */
+  .cover-orientation-row { position: relative; z-index: 1; text-align: center; margin-top: 14px; }
+  .cover-orientation { display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 5px 18px; border: 2px solid rgba(255,255,255,0.85); border-radius: 22px; background: rgba(0,0,0,0.28); color: #ffffff; }
+  .cover-page.theme-dark .cover-orientation { color: #17151f; border-color: rgba(23,21,31,0.85); background: rgba(255,255,255,0.35); }
   .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; }
   .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; }
   .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); }
@@ -580,6 +645,11 @@ function generateReportHTML(data, options) {
      divider가 3개(기존 가정 2개보다 많음)로 늘어나면서 7→8페이지 문제가 재발함이 실제 PDF로 확인됨.
      항목 개수(3개/4개)에 관계없이 안전하도록 마진을 한 단계 더 축소. */
   .divider { height: 1px; background: rgba(255,255,255,0.1); margin: 8px 0; }
+  /* 2026.07.27 추가: 사주/명리학 근거 공개 페이지(2·3페이지)용 비교표. 기존 색상 토큰만 재사용. */
+  .framework-table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; }
+  .framework-table th { font-size: 11px; color: #00f0ff; text-transform: uppercase; letter-spacing: 0.5px; text-align: left; padding: 6px 6px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+  .framework-table td { font-size: 12px; color: #d1ceda; line-height: 1.4; padding: 7px 6px; border-bottom: 1px solid rgba(255,255,255,0.08); vertical-align: top; }
+  .framework-table td:first-child { color: #fff; font-weight: 700; width: 34%; }
   .chart-wrap { background: rgba(255,255,255,0.03); border-radius: 14px; padding: 14px; margin: 10px 0; text-align: center; }
   .chart-caption { font-size: 12px; color: #8a85a0; margin-top: 8px; }
   .pattern-name { color: #00f0ff; font-weight: 700; margin-bottom: 8px; }
@@ -607,6 +677,16 @@ function generateReportHTML(data, options) {
   .ch10-tight h3 { margin: 6px 0 4px 0; font-size: 14px; }
   .ch10-tight p { margin-bottom: 6px; font-size: 13px; line-height: 1.55; }
   .ch10-tight .punch { font-size: 14px; line-height: 1.5; }
+  /* 2026.07.27 추가: 3페이지(프레임워크 재구성 설명)가 표+본문+quote-box까지 겹쳐 854px를
+     넘치는 문제 확인됨(테스트 렌더 결과 4페이지로 밀림) — ch10-tight와 동일한 방식으로 축소. */
+  .fw-tight h2 { margin: 0 0 8px 0; }
+  .fw-tight h3 { margin: 10px 0 4px 0; font-size: 14px; }
+  .fw-tight p { margin-bottom: 8px; font-size: 13px; line-height: 1.5; }
+  .fw-tight .punch { font-size: 13px; line-height: 1.4; margin-bottom: 8px; }
+  .fw-tight .quote-box { font-size: 12px; padding: 8px 12px; margin-top: 4px; }
+  .fw-tight .framework-table { margin: 8px 0 10px 0; }
+  .fw-tight .framework-table th { padding: 4px 6px; }
+  .fw-tight .framework-table td { padding: 5px 6px; font-size: 11px; }
 </style>
 </head>
 <body>
