@@ -161,22 +161,27 @@ function generateReportHTML(data, options) {
   // 아직 JSON에 없으면 그 줄만 비워짐 (graceful degradation).
   // 배경 이미지는 identity.visual_key 기준 파일을 자동 매핑 (재치님이 텍스트 없는
   // 배경 사진만 만들어주시면, 파일명을 visual_key.jpg로 맞춰 넣는 것만으로 연결됨).
-  const traits = (cover.traits || []).map((t) => escapeHtml(String(t).toUpperCase())).join(' &middot; ');
+  const traits = (cover.traits || []).map((t) => escapeHtml(String(t))).join(' &middot; ');
+  const orientationText = orientationLabel(id.orientation_display) || (missing.push('identity.orientation_display'), '');
   page(
     1,
     'cover',
     `
     <div class="cover-page theme-${coverTextTheme(id.visual_key)}" style="background-image:url('${coverBgUrl(id.visual_key)}');">
-      <div class="cover-topbar">
-        <div class="cover-brand">COSMIC BLUEPRINT<br><span>YOUR RELATIONSHIP ARCHETYPE REPORT</span></div>
-        <div class="cover-pagenum">01<br><span>/18</span></div>
+      <div class="cover-top">
+        <div class="cover-brand">Cosmic Blueprint</div>
+        <div class="cover-divider"></div>
+        <div class="cover-tierbig">FULL<br>BLUEPRINT</div>
+        <div class="cover-tiersub">Your Relationship Archetype Report &middot; 18 Pages</div>
       </div>
-      ${orientationLabel(id.orientation_display) ? `<div class="cover-orientation-row"><div class="cover-orientation"><span>${orientationLabel(id.orientation_display)}</span></div></div>` : (missing.push('identity.orientation_display'), '')}
+      <div class="cover-mid">
+        ${orientationText ? `<div class="cover-small-tag">${orientationText}</div>` : ''}
+        <div class="cover-archetype-small"><span>${need('cover.title', cover.title)}</span></div>
+        ${traits ? `<div class="cover-traits-small"><span>${traits}</span></div>` : ''}
+      </div>
       <div class="cover-body">
-        <div class="cover-eyebrow"><span>YOUR ARCHETYPE</span></div>
-        <div class="cover-title"><span>${need('cover.title', cover.title)}</span></div>
-        ${traits ? `<div class="cover-traits"><span>${traits}</span></div>` : ''}
         <div class="cover-quote"><span>&ldquo;${need('cover.subtitle', cover.subtitle)}&rdquo;</span></div>
+        <div class="cover-divider2"></div>
         <div class="cover-mood"><span>${need('cover.tagline', cover.tagline)}</span></div>
       </div>
       <div class="cover-icon" data-visual-key="${escapeHtml(id.visual_key)}"></div>
@@ -558,7 +563,7 @@ function generateReportHTML(data, options) {
 <meta charset="UTF-8">
 <title>Cosmic Blueprint — ${escapeHtml(data.report_id)}${opts.coverOnly ? ' (cover only)' : ''}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
 <style>
   @page { size: 480px 854px; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -577,54 +582,52 @@ function generateReportHTML(data, options) {
   }
   .cover-page::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.08) 30%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(180deg, rgba(10,8,6,0.8) 0%, rgba(10,8,6,0.42) 30%, rgba(10,8,6,0.08) 46%, rgba(10,8,6,0.1) 60%, rgba(8,6,4,0.72) 100%);
     z-index: 0;
   }
-  .cover-topbar, .cover-body, .cover-icon { position: relative; z-index: 1; }
-  .cover-topbar { display: flex; justify-content: space-between; align-items: flex-start; }
-  .cover-brand { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
-  .cover-brand span { display: block; font-size: 8px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; margin-top: 2px; }
-  .cover-pagenum { font-size: 16px; font-weight: 700; text-align: right; }
-  .cover-pagenum span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; }
-  /* 2026.07.04 3차 수정(인계노트 v55 최종 결론 반영): 박스/카드/필 전부 제거.
-     1차(큰 카드) → "사진이 가려진다", 2차(줄단위 캡션바) → "더 산만하다",
-     3차(카드+상단이동+반전) → "표지 수준이 낮아 보인다"는 피드백을 거쳐,
-     최종적으로 배경 없이 텍스트 색상 자체 + text-shadow(halo)만으로 대비 처리하기로 함.
-     대비 수치(WCAG)보다 사진의 프리미엄한 느낌을 우선한다는 원칙 — 완벽한 대비 보장은 아님.
-     위치도 원래대로 하단 복귀: margin-top:auto로 cover-topbar/cover-icon과의
-     flex space-between 관계 안에서 자연스럽게 아래쪽에 붙도록 함(고정 음수 margin 제거).
-     2026.07.11 4차 수정(인계노트 v72+ 대응): PDF 텍스트 복사 시 중복 추출되는 버그의
-     원인이 "text-shadow 레이어 수"가 아니라 text-shadow 자체(Doppio/Chromium 계열
-     렌더러가 그림자를 글자 사본을 한 벌 더 그리는 방식으로 처리, 1겹이어도 중복 발생)로
-     재진단됨에 따라, text-shadow를 전부 제거하고 ::before 그라디언트 오버레이의
-     투명도를 올려(0.45→0.5 상단, 0.55→0.7 하단) 대비를 대신 확보함. */
-  .cover-body { position: relative; text-align: center; padding: 0 14px; margin-top: auto; }
+  .cover-top, .cover-mid, .cover-body, .cover-icon { position: relative; z-index: 1; }
+  /* 2026.08.02 표지 전면 재구성(또치님·재치님·Claude 3자 확정, 인계노트 v125 이후 세션):
+     기존엔 브랜드명(작게, 상단)과 아키타입 제목(크게, 하단 2/3 지점)이 분리되어 있어
+     "이게 유료 상품이다"라는 신호가 표지에서 전혀 읽히지 않는 문제가 있었음.
+     또한 아키타입명(THE PIONEER 등)은 아직 판매 실적도 없고 고객에게 전혀 알려지지 않은
+     내부 분류명이라, 크게 써도 실제 후킹 효과가 없다는 점이 확인됨 — 대신 "FULL BLUEPRINT"
+     라는 상품 등급명을 상단 중앙에 가장 크게 배치하고, 아키타입명/오리엔테이션은 중간에
+     보조 정보로 축소. 인용구(quote)는 낯선 방문자가 실제로 자신을 알아보는 유일한 감정적
+     후킹 지점이므로 하단에서 가장 크게 유지.
+     폰트는 Playfair Display(제목·인용구, 굵은 세리프)+Cormorant Garamond(라벨류, 얇은
+     세리프)를 조합 — 다만 작은 글자에 얇은 굵기를 쓰면 사진 배경 위에서 가독성이 크게
+     떨어지는 것이 목업 검수로 확인되어, 모든 보조 텍스트를 font-weight:700(bold)+불투명도
+     100%로 통일함. 밝은 사진 5장(theme-dark)에서도 같은 규칙으로 색만 반전. */
+  .cover-brand { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #ffffff; margin-bottom: 8px; }
+  .cover-divider { width: 120px; height: 1px; margin: 0 auto 18px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent); position: relative; }
+  .cover-divider::after { content: '\\2726'; position: absolute; top: -7px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #ffffff; }
+  .cover-tierbig { text-align: center; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 58px; line-height: 1.02; letter-spacing: 1px; text-transform: uppercase; color: #ffffff; margin-bottom: 8px; }
+  .cover-tiersub { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 12.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; margin-bottom: 20px; }
+  .cover-mid { text-align: center; margin-top: 22px; }
+  .cover-small-tag { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #ffffff; margin-bottom: 6px; }
+  .cover-archetype-small { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 22px; font-weight: 700; letter-spacing: 1px; color: #ffffff; margin-bottom: 4px; }
+  .cover-traits-small { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #ffffff; }
+  .cover-body { text-align: center; padding: 0 16px; margin-top: auto; }
   .cover-body span { display: inline; }
-  /* 기본(theme-light): 어두운 사진 위 흰 글자 — 오버레이 그라디언트로 대비 확보 */
-  .cover-eyebrow { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: #ffffff; }
-  .cover-title { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 10px; color: #ffffff; }
-  /* 2026.07.27 추가: 유료 리포트 표지에 내향/외향 표시 — 미니 리포트("THE GEM · INTROVERTED")와
-     동일한 정보를 유료 리포트 표지에도 노출.
-     2026.07.27 2차 수정(또치님 피드백): 14px 얇은 글자 -> 22px 굵은 배지로 확대.
-     2026.07.27 3차 수정(또치님 실제 캡처로 겹침 버그 확인): 하단 cover-body 블록 안에 넣었을 때,
-     그 블록이 margin-top:auto로 바닥에 붙는 구조라 배지가 늘어난 만큼 블록 상단이 위로 밀려
-     상단 로고바(cover-topbar)와 겹쳤음. 하단 블록에서 완전히 빼서, 로고바 바로 아래 별도의
-     상단 고정 줄(cover-orientation-row)로 이동 — 하단 블록 높이는 원래대로 복귀해 겹침 원천 차단. */
-  .cover-orientation-row { position: relative; z-index: 1; text-align: center; margin-top: 14px; }
-  .cover-orientation { display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 5px 18px; border: 2px solid rgba(255,255,255,0.85); border-radius: 22px; background: rgba(0,0,0,0.28); color: #ffffff; }
-  .cover-page.theme-dark .cover-orientation { color: #17151f; border-color: rgba(23,21,31,0.85); background: rgba(255,255,255,0.35); }
-  .cover-traits { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; color: #ffffff; }
-  .cover-quote { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.5; font-style: italic; margin: 0 auto 16px; max-width: 320px; color: #ffffff; }
-  .cover-mood { font-size: 12px; font-style: italic; line-height: 1.6; max-width: 260px; margin: 0 auto; color: rgba(255,255,255,0.92); }
-  /* theme-dark: 밝은 사진(다이아몬드/설산 등) 위 어두운 글자.
-     검은 오버레이는 밝은 배경 사진을 한 단계 눌러줘서 어두운 글자와의 대비를 보강하는
-     역할을 겸함(사진이 아주 밝을 때는 그래도 부족할 수 있어 배포 후 재검수 필요). */
-  .cover-page.theme-dark .cover-eyebrow,
-  .cover-page.theme-dark .cover-traits { color: #17151f; }
-  .cover-page.theme-dark .cover-title { color: #17151f; }
-  .cover-page.theme-dark .cover-quote { color: #17151f; }
-  .cover-page.theme-dark .cover-mood { color: rgba(23,21,31,0.92); }
-  .cover-icon { width: 36px; height: 36px; margin: 18px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
+  .cover-quote { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-weight: 600; font-size: 23px; line-height: 1.42; font-style: italic; color: #ffffff; margin: 0 auto 14px; max-width: 340px; }
+  .cover-divider2 { width: 90px; height: 1px; margin: 0 auto 14px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent); }
+  .cover-mood { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 13.5px; font-weight: 700; font-style: italic; line-height: 1.6; max-width: 270px; margin: 0 auto; color: #ffffff; }
+  /* theme-dark: 밝은 사진(다이아몬드·설산 등) 위 어두운 글자 + 밝은 오버레이로 반전.
+     색상만 반전하고 폰트·자간·굵기·레이아웃은 완전히 동일 — 유지보수 시 이 두 색만 관리. */
+  .cover-page.theme-dark::before { background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.32) 30%, rgba(255,255,255,0.06) 46%, rgba(255,255,255,0.08) 60%, rgba(255,255,255,0.55) 100%); }
+  .cover-page.theme-dark .cover-brand,
+  .cover-page.theme-dark .cover-tierbig,
+  .cover-page.theme-dark .cover-tiersub,
+  .cover-page.theme-dark .cover-small-tag,
+  .cover-page.theme-dark .cover-archetype-small,
+  .cover-page.theme-dark .cover-traits-small,
+  .cover-page.theme-dark .cover-quote,
+  .cover-page.theme-dark .cover-mood { color: #17151f; }
+  .cover-page.theme-dark .cover-divider,
+  .cover-page.theme-dark .cover-divider2 { background: linear-gradient(90deg, transparent, rgba(23,21,31,0.6), transparent); }
+  .cover-page.theme-dark .cover-divider::after { color: #17151f; }
+  .cover-icon { width: 32px; height: 32px; margin: 16px auto 0; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; }
+  .cover-page.theme-dark .cover-icon { border-color: rgba(23,21,31,0.6); }
   .badge { font-size: 13px; font-weight: 700; color: #00f0ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
   .archetype-title { font-size: 26px; font-weight: 800; line-height: 1.3; background: linear-gradient(45deg, #00f0ff, #b600ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 4px; }
   .archetype-title.small { font-size: 20px; }
